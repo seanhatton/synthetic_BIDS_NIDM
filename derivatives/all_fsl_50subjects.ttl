@@ -1,0 +1,2810 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix fsl: <http://purl.org/nidash/fsl#> .
+@prefix ndar: <https://ndar.nih.gov/api/datadictionary/v2/dataelement/> .
+@prefix nidm: <http://purl.org/nidash/nidm#> .
+@prefix niiri: <http://iri.nidash.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sio: <http://semanticscience.org/ontology/sio.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+niiri:bb075086-a65e-ceb8-accd-2a58bce3ed61 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 172973671 ;
+    fsl:fsl_000002 "375364304"^^xsd:float ;
+    fsl:fsl_000003 431 ;
+    fsl:fsl_000004 "308.67"^^xsd:float ;
+    fsl:fsl_000005 336 ;
+    fsl:fsl_000006 "633.66"^^xsd:float ;
+    fsl:fsl_000007 3431 ;
+    fsl:fsl_000008 "4662.73"^^xsd:float ;
+    fsl:fsl_000009 2773 ;
+    fsl:fsl_000010 "6613.93"^^xsd:float ;
+    fsl:fsl_000011 846 ;
+    fsl:fsl_000012 "3909.28"^^xsd:float ;
+    fsl:fsl_000013 2883 ;
+    fsl:fsl_000014 "7414.9"^^xsd:float ;
+    fsl:fsl_000015 6070 ;
+    fsl:fsl_000016 "12970.81"^^xsd:float ;
+    fsl:fsl_000017 130 ;
+    fsl:fsl_000018 "719.12"^^xsd:float ;
+    fsl:fsl_000019 885 ;
+    fsl:fsl_000020 "994.78"^^xsd:float ;
+    fsl:fsl_000021 3150 ;
+    fsl:fsl_000022 "5892.04"^^xsd:float ;
+    fsl:fsl_000023 2213 ;
+    fsl:fsl_000024 "4758.39"^^xsd:float ;
+    fsl:fsl_000025 840 ;
+    fsl:fsl_000026 "1973.47"^^xsd:float ;
+    fsl:fsl_000027 2662 ;
+    fsl:fsl_000028 "7233.26"^^xsd:float ;
+    fsl:fsl_000029 6738 ;
+    fsl:fsl_000030 "12543.3"^^xsd:float ;
+    fsl:fsl_000031 278255 ;
+    fsl:fsl_000032 "342644"^^xsd:float ;
+    fsl:fsl_000033 606216 ;
+    fsl:fsl_000034 "631158"^^xsd:float ;
+    fsl:fsl_000035 612619 ;
+    fsl:fsl_000036 "497085"^^xsd:float ;
+    prov:wasGeneratedBy niiri:1c4d2030-be45-a6fb-f35f-af2cf0c325d8 .
+
+niiri:1c4d2030-be45-a6fb-f35f-af2cf0c325d8 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:3dfcf67e-6dbc-1bd0-bfaa-9dd15320fcb3 ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:ddfbdb81-eeae-0ba8-ac99-aec28ef76fc2 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:3dfcf67e-6dbc-1bd0-bfaa-9dd15320fcb3 a prov:Agent,
+        prov:SoftwareAgent ;
+    nidm:NIDM_0000164 fsl: .
+
+niiri:ddfbdb81-eeae-0ba8-ac99-aec28ef76fc2 a prov:Agent ;
+    ndar:src_subject_id "sub-01"^^xsd:string .
+
+niiri:b05cba5e-af59-c0f8-69e5-25d9f9d71cba a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 172909169 ;
+    fsl:fsl_000002 "375266919"^^xsd:float ;
+    fsl:fsl_000003 472 ;
+    fsl:fsl_000004 "288.93"^^xsd:float ;
+    fsl:fsl_000005 816 ;
+    fsl:fsl_000006 "1426.28"^^xsd:float ;
+    fsl:fsl_000007 3014 ;
+    fsl:fsl_000008 "4617.93"^^xsd:float ;
+    fsl:fsl_000009 3233 ;
+    fsl:fsl_000010 "5778.82"^^xsd:float ;
+    fsl:fsl_000011 565 ;
+    fsl:fsl_000012 "3263.3"^^xsd:float ;
+    fsl:fsl_000013 2162 ;
+    fsl:fsl_000014 "7026.24"^^xsd:float ;
+    fsl:fsl_000015 6601 ;
+    fsl:fsl_000016 "9214.02"^^xsd:float ;
+    fsl:fsl_000017 241 ;
+    fsl:fsl_000018 "270.49"^^xsd:float ;
+    fsl:fsl_000019 795 ;
+    fsl:fsl_000020 "1871.25"^^xsd:float ;
+    fsl:fsl_000021 2532 ;
+    fsl:fsl_000022 "4702.52"^^xsd:float ;
+    fsl:fsl_000023 2444 ;
+    fsl:fsl_000024 "5555.7"^^xsd:float ;
+    fsl:fsl_000025 859 ;
+    fsl:fsl_000026 "2266.13"^^xsd:float ;
+    fsl:fsl_000027 3740 ;
+    fsl:fsl_000028 "6394.69"^^xsd:float ;
+    fsl:fsl_000029 6562 ;
+    fsl:fsl_000030 "13183.91"^^xsd:float ;
+    fsl:fsl_000031 390779 ;
+    fsl:fsl_000032 "378325"^^xsd:float ;
+    fsl:fsl_000033 576822 ;
+    fsl:fsl_000034 "599718"^^xsd:float ;
+    fsl:fsl_000035 666493 ;
+    fsl:fsl_000036 "458201"^^xsd:float ;
+    prov:wasGeneratedBy niiri:11d1b25c-a473-eaaa-cf2d-06a9b4d0f7a3 .
+
+niiri:11d1b25c-a473-eaaa-cf2d-06a9b4d0f7a3 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:18a9112c-b3d5-0fa8-36e8-b3bee7eed8cb ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:ee994dea-a67a-8aed-fd55-cfa0f81fabcf ;
+            prov:hadRole sio:Subject ] .
+
+niiri:18a9112c-b3d5-0fa8-36e8-b3bee7eed8cb a prov:Agent,
+        prov:SoftwareAgent ;
+    nidm:NIDM_0000164 fsl: .
+
+niiri:ee994dea-a67a-8aed-fd55-cfa0f81fabcf a prov:Agent ;
+    ndar:src_subject_id "sub-02"^^xsd:string .
+
+niiri:42d43a3f-f303-fdbb-c0a4-1cceca9cfe25 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 172907895 ;
+    fsl:fsl_000002 "375091471"^^xsd:float ;
+    fsl:fsl_000003 179 ;
+    fsl:fsl_000004 "1010.81"^^xsd:float ;
+    fsl:fsl_000005 866 ;
+    fsl:fsl_000006 "1425.68"^^xsd:float ;
+    fsl:fsl_000007 3195 ;
+    fsl:fsl_000008 "5219.04"^^xsd:float ;
+    fsl:fsl_000009 2516 ;
+    fsl:fsl_000010 "5903.81"^^xsd:float ;
+    fsl:fsl_000011 534 ;
+    fsl:fsl_000012 "2143.39"^^xsd:float ;
+    fsl:fsl_000013 2573 ;
+    fsl:fsl_000014 "5336.47"^^xsd:float ;
+    fsl:fsl_000015 6195 ;
+    fsl:fsl_000016 "10646.99"^^xsd:float ;
+    fsl:fsl_000017 183 ;
+    fsl:fsl_000018 "290.74"^^xsd:float ;
+    fsl:fsl_000019 921 ;
+    fsl:fsl_000020 "1630.95"^^xsd:float ;
+    fsl:fsl_000021 2277 ;
+    fsl:fsl_000022 "6491.09"^^xsd:float ;
+    fsl:fsl_000023 2698 ;
+    fsl:fsl_000024 "4980.0"^^xsd:float ;
+    fsl:fsl_000025 807 ;
+    fsl:fsl_000026 "1856.72"^^xsd:float ;
+    fsl:fsl_000027 2819 ;
+    fsl:fsl_000028 "6455.98"^^xsd:float ;
+    fsl:fsl_000029 6398 ;
+    fsl:fsl_000030 "10259.56"^^xsd:float ;
+    fsl:fsl_000031 313970 ;
+    fsl:fsl_000032 "212145"^^xsd:float ;
+    fsl:fsl_000033 631527 ;
+    fsl:fsl_000034 "642162"^^xsd:float ;
+    fsl:fsl_000035 668401 ;
+    fsl:fsl_000036 "533637"^^xsd:float ;
+    prov:wasGeneratedBy niiri:33e6875e-f8c9-ddbd-09c6-1adccb30eadd .
+
+niiri:33e6875e-f8c9-ddbd-09c6-1adccb30eadd a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:99d5858b-cd24-ad5e-63e3-fce7bd1dbbad ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:2e438a8c-c9e4-fda6-aca7-2209483dabeb ;
+            prov:hadRole sio:Subject ] .
+
+niiri:99d5858b-cd24-ad5e-63e3-fce7bd1dbbad a prov:Agent,
+        prov:SoftwareAgent ;
+    nidm:NIDM_0000164 fsl: .
+
+niiri:2e438a8c-c9e4-fda6-aca7-2209483dabeb a prov:Agent ;
+    ndar:src_subject_id "sub-03"^^xsd:string .
+
+niiri:947dc8c7-84ee-b440-9dcb-d79fd24e11f8 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 172949058 ;
+    fsl:fsl_000002 "375425021"^^xsd:float ;
+    fsl:fsl_000003 456 ;
+    fsl:fsl_000004 "777.09"^^xsd:float ;
+    fsl:fsl_000005 1135 ;
+    fsl:fsl_000006 "2471.74"^^xsd:float ;
+    fsl:fsl_000007 3570 ;
+    fsl:fsl_000008 "6619.36"^^xsd:float ;
+    fsl:fsl_000009 2985 ;
+    fsl:fsl_000010 "3759.49"^^xsd:float ;
+    fsl:fsl_000011 857 ;
+    fsl:fsl_000012 "2380.39"^^xsd:float ;
+    fsl:fsl_000013 2951 ;
+    fsl:fsl_000014 "7216.42"^^xsd:float ;
+    fsl:fsl_000015 6796 ;
+    fsl:fsl_000016 "11477.19"^^xsd:float ;
+    fsl:fsl_000017 300 ;
+    fsl:fsl_000018 "354.95"^^xsd:float ;
+    fsl:fsl_000019 585 ;
+    fsl:fsl_000020 "1384.87"^^xsd:float ;
+    fsl:fsl_000021 3423 ;
+    fsl:fsl_000022 "6331.81"^^xsd:float ;
+    fsl:fsl_000023 2396 ;
+    fsl:fsl_000024 "4731.71"^^xsd:float ;
+    fsl:fsl_000025 748 ;
+    fsl:fsl_000026 "2281.39"^^xsd:float ;
+    fsl:fsl_000027 3535 ;
+    fsl:fsl_000028 "6826.0"^^xsd:float ;
+    fsl:fsl_000029 4633 ;
+    fsl:fsl_000030 "12406.33"^^xsd:float ;
+    fsl:fsl_000031 379939 ;
+    fsl:fsl_000032 "248511"^^xsd:float ;
+    fsl:fsl_000033 598751 ;
+    fsl:fsl_000034 "530832"^^xsd:float ;
+    fsl:fsl_000035 729167 ;
+    fsl:fsl_000036 "637150"^^xsd:float ;
+    prov:wasGeneratedBy niiri:8df4270b-e593-5bea-f98a-cae85ece475b .
+
+niiri:8df4270b-e593-5bea-f98a-cae85ece475b a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:d0ebae7a-dca7-d949-dfa7-f55cc4f9cf54 ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:1aa86fe8-fad7-3f0d-fddf-c8c0f72fd2a3 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:d0ebae7a-dca7-d949-dfa7-f55cc4f9cf54 a prov:Agent,
+        prov:SoftwareAgent ;
+    nidm:NIDM_0000164 fsl: .
+
+niiri:1aa86fe8-fad7-3f0d-fddf-c8c0f72fd2a3 a prov:Agent ;
+    ndar:src_subject_id "sub-04"^^xsd:string .
+
+niiri:e35ff6a9-c3f5-f8cf-a7ce-1c2dc7eeeec5 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 172928119 ;
+    fsl:fsl_000002 "375466395"^^xsd:float ;
+    fsl:fsl_000003 152 ;
+    fsl:fsl_000004 "307.68"^^xsd:float ;
+    fsl:fsl_000005 1061 ;
+    fsl:fsl_000006 "1681.39"^^xsd:float ;
+    fsl:fsl_000007 3664 ;
+    fsl:fsl_000008 "5162.43"^^xsd:float ;
+    fsl:fsl_000009 2054 ;
+    fsl:fsl_000010 "4231.91"^^xsd:float ;
+    fsl:fsl_000011 611 ;
+    fsl:fsl_000012 "2122.39"^^xsd:float ;
+    fsl:fsl_000013 2975 ;
+    fsl:fsl_000014 "5982.75"^^xsd:float ;
+    fsl:fsl_000015 4606 ;
+    fsl:fsl_000016 "10131.42"^^xsd:float ;
+    fsl:fsl_000017 240 ;
+    fsl:fsl_000018 "784.46"^^xsd:float ;
+    fsl:fsl_000019 890 ;
+    fsl:fsl_000020 "1004.85"^^xsd:float ;
+    fsl:fsl_000021 3028 ;
+    fsl:fsl_000022 "4540.55"^^xsd:float ;
+    fsl:fsl_000023 3188 ;
+    fsl:fsl_000024 "5116.77"^^xsd:float ;
+    fsl:fsl_000025 705 ;
+    fsl:fsl_000026 "2315.68"^^xsd:float ;
+    fsl:fsl_000027 3403 ;
+    fsl:fsl_000028 "7363.77"^^xsd:float ;
+    fsl:fsl_000029 5539 ;
+    fsl:fsl_000030 "13978.33"^^xsd:float ;
+    fsl:fsl_000031 317187 ;
+    fsl:fsl_000032 "284897"^^xsd:float ;
+    fsl:fsl_000033 630253 ;
+    fsl:fsl_000034 "567739"^^xsd:float ;
+    fsl:fsl_000035 591453 ;
+    fsl:fsl_000036 "504715"^^xsd:float ;
+    prov:wasGeneratedBy niiri:bdc59bfd-1a1e-bb21-1e2a-4fcff90d7f61 .
+
+niiri:bdc59bfd-1a1e-bb21-1e2a-4fcff90d7f61 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:bfec6ffd-7ed1-8a99-a84f-6c89ef71ba5d ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:ba3d2a80-c2bc-dbbb-bd5a-bfef188ee47d ;
+            prov:hadRole sio:Subject ] .
+
+niiri:bfec6ffd-7ed1-8a99-a84f-6c89ef71ba5d a prov:Agent,
+        prov:SoftwareAgent ;
+    nidm:NIDM_0000164 fsl: .
+
+niiri:ba3d2a80-c2bc-dbbb-bd5a-bfef188ee47d a prov:Agent ;
+    ndar:src_subject_id "sub-05"^^xsd:string .
+
+niiri:5ac0ed61-a94e-f06b-0637-651b7520fa3b a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 172922982 ;
+    fsl:fsl_000002 "375161443"^^xsd:float ;
+    fsl:fsl_000003 213 ;
+    fsl:fsl_000004 "157.17"^^xsd:float ;
+    fsl:fsl_000005 361 ;
+    fsl:fsl_000006 "751.77"^^xsd:float ;
+    fsl:fsl_000007 3103 ;
+    fsl:fsl_000008 "5669.57"^^xsd:float ;
+    fsl:fsl_000009 2269 ;
+    fsl:fsl_000010 "3046.71"^^xsd:float ;
+    fsl:fsl_000011 1284 ;
+    fsl:fsl_000012 "1174.96"^^xsd:float ;
+    fsl:fsl_000013 2533 ;
+    fsl:fsl_000014 "5850.31"^^xsd:float ;
+    fsl:fsl_000015 6666 ;
+    fsl:fsl_000016 "9410.39"^^xsd:float ;
+    fsl:fsl_000017 224 ;
+    fsl:fsl_000018 "701.08"^^xsd:float ;
+    fsl:fsl_000019 697 ;
+    fsl:fsl_000020 "2671.38"^^xsd:float ;
+    fsl:fsl_000021 2257 ;
+    fsl:fsl_000022 "5219.81"^^xsd:float ;
+    fsl:fsl_000023 2756 ;
+    fsl:fsl_000024 "6406.42"^^xsd:float ;
+    fsl:fsl_000025 1135 ;
+    fsl:fsl_000026 "1531.87"^^xsd:float ;
+    fsl:fsl_000027 3121 ;
+    fsl:fsl_000028 "6268.71"^^xsd:float ;
+    fsl:fsl_000029 7381 ;
+    fsl:fsl_000030 "9834.17"^^xsd:float ;
+    fsl:fsl_000031 377619 ;
+    fsl:fsl_000032 "305216"^^xsd:float ;
+    fsl:fsl_000033 731803 ;
+    fsl:fsl_000034 "760388"^^xsd:float ;
+    fsl:fsl_000035 747812 ;
+    fsl:fsl_000036 "624271"^^xsd:float ;
+    prov:wasGeneratedBy niiri:9de2a2bd-b65d-5d6e-9f35-49174217f5e3 .
+
+niiri:9de2a2bd-b65d-5d6e-9f35-49174217f5e3 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:86e7ac33-aad9-faa4-5c3d-0229a80c7bc6 ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:ed12c558-eb97-bdad-8314-b523bffad226 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:86e7ac33-aad9-faa4-5c3d-0229a80c7bc6 a prov:Agent,
+        prov:SoftwareAgent ;
+    nidm:NIDM_0000164 fsl: .
+
+niiri:ed12c558-eb97-bdad-8314-b523bffad226 a prov:Agent ;
+    ndar:src_subject_id "sub-06"^^xsd:string .
+
+niiri:cf08c09f-abcd-f6d0-0fda-47a8def1a00a a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 172923806 ;
+    fsl:fsl_000002 "375153662"^^xsd:float ;
+    fsl:fsl_000003 152 ;
+    fsl:fsl_000004 "250.17"^^xsd:float ;
+    fsl:fsl_000005 453 ;
+    fsl:fsl_000006 "1788.35"^^xsd:float ;
+    fsl:fsl_000007 3483 ;
+    fsl:fsl_000008 "6484.42"^^xsd:float ;
+    fsl:fsl_000009 1892 ;
+    fsl:fsl_000010 "6158.24"^^xsd:float ;
+    fsl:fsl_000011 891 ;
+    fsl:fsl_000012 "3954.56"^^xsd:float ;
+    fsl:fsl_000013 3375 ;
+    fsl:fsl_000014 "5954.31"^^xsd:float ;
+    fsl:fsl_000015 6059 ;
+    fsl:fsl_000016 "9028.68"^^xsd:float ;
+    fsl:fsl_000017 298 ;
+    fsl:fsl_000018 "729.47"^^xsd:float ;
+    fsl:fsl_000019 1062 ;
+    fsl:fsl_000020 "909.11"^^xsd:float ;
+    fsl:fsl_000021 2318 ;
+    fsl:fsl_000022 "5481.11"^^xsd:float ;
+    fsl:fsl_000023 2051 ;
+    fsl:fsl_000024 "5259.84"^^xsd:float ;
+    fsl:fsl_000025 1097 ;
+    fsl:fsl_000026 "1673.63"^^xsd:float ;
+    fsl:fsl_000027 2747 ;
+    fsl:fsl_000028 "6396.2"^^xsd:float ;
+    fsl:fsl_000029 7284 ;
+    fsl:fsl_000030 "14033.23"^^xsd:float ;
+    fsl:fsl_000031 349129 ;
+    fsl:fsl_000032 "274120"^^xsd:float ;
+    fsl:fsl_000033 607585 ;
+    fsl:fsl_000034 "535328"^^xsd:float ;
+    fsl:fsl_000035 662839 ;
+    fsl:fsl_000036 "710970"^^xsd:float ;
+    prov:wasGeneratedBy niiri:9cd0c4d1-48b1-1dae-28f0-a73e3fd7d9cd .
+
+niiri:9cd0c4d1-48b1-1dae-28f0-a73e3fd7d9cd a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:7ccaa06f-dcb7-987f-dca8-f31beafd1b5d ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:1cbed0f1-2bca-4ca6-78eb-e0df7eebe9ab ;
+            prov:hadRole sio:Subject ] .
+
+niiri:7ccaa06f-dcb7-987f-dca8-f31beafd1b5d a prov:Agent,
+        prov:SoftwareAgent ;
+    nidm:NIDM_0000164 fsl: .
+
+niiri:1cbed0f1-2bca-4ca6-78eb-e0df7eebe9ab a prov:Agent ;
+    ndar:src_subject_id "sub-07"^^xsd:string .
+
+niiri:987df6dc-e257-0d22-0e15-863eeea3aeb8 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 172974253 ;
+    fsl:fsl_000002 "375105536"^^xsd:float ;
+    fsl:fsl_000003 93 ;
+    fsl:fsl_000004 "491.48"^^xsd:float ;
+    fsl:fsl_000005 1076 ;
+    fsl:fsl_000006 "921.45"^^xsd:float ;
+    fsl:fsl_000007 2115 ;
+    fsl:fsl_000008 "6212.32"^^xsd:float ;
+    fsl:fsl_000009 2633 ;
+    fsl:fsl_000010 "4219.83"^^xsd:float ;
+    fsl:fsl_000011 914 ;
+    fsl:fsl_000012 "2211.22"^^xsd:float ;
+    fsl:fsl_000013 2679 ;
+    fsl:fsl_000014 "5734.07"^^xsd:float ;
+    fsl:fsl_000015 6259 ;
+    fsl:fsl_000016 "14619.46"^^xsd:float ;
+    fsl:fsl_000017 198 ;
+    fsl:fsl_000018 "687.6"^^xsd:float ;
+    fsl:fsl_000019 535 ;
+    fsl:fsl_000020 "836.75"^^xsd:float ;
+    fsl:fsl_000021 2440 ;
+    fsl:fsl_000022 "4273.85"^^xsd:float ;
+    fsl:fsl_000023 2087 ;
+    fsl:fsl_000024 "5525.21"^^xsd:float ;
+    fsl:fsl_000025 1213 ;
+    fsl:fsl_000026 "1761.45"^^xsd:float ;
+    fsl:fsl_000027 3487 ;
+    fsl:fsl_000028 "6752.8"^^xsd:float ;
+    fsl:fsl_000029 6529 ;
+    fsl:fsl_000030 "14818.78"^^xsd:float ;
+    fsl:fsl_000031 353081 ;
+    fsl:fsl_000032 "204208"^^xsd:float ;
+    fsl:fsl_000033 511338 ;
+    fsl:fsl_000034 "593774"^^xsd:float ;
+    fsl:fsl_000035 707630 ;
+    fsl:fsl_000036 "593063"^^xsd:float ;
+    prov:wasGeneratedBy niiri:59c61aa1-ad6f-4f2d-96be-23fd373efcc8 .
+
+niiri:59c61aa1-ad6f-4f2d-96be-23fd373efcc8 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:b8a8dc6e-3e2c-a0a0-40d8-a3227a3deec9 ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:5cdceea0-bd43-46e6-8c6e-f617529a9ac8 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:b8a8dc6e-3e2c-a0a0-40d8-a3227a3deec9 a prov:Agent,
+        prov:SoftwareAgent ;
+    nidm:NIDM_0000164 fsl: .
+
+niiri:5cdceea0-bd43-46e6-8c6e-f617529a9ac8 a prov:Agent ;
+    ndar:src_subject_id "sub-08"^^xsd:string .
+
+niiri:fe9cad80-5f82-f4b4-eb59-8f220adb04d8 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 172901216 ;
+    fsl:fsl_000002 "375205744"^^xsd:float ;
+    fsl:fsl_000003 223 ;
+    fsl:fsl_000004 "132.6"^^xsd:float ;
+    fsl:fsl_000005 326 ;
+    fsl:fsl_000006 "2552.52"^^xsd:float ;
+    fsl:fsl_000007 2972 ;
+    fsl:fsl_000008 "4856.9"^^xsd:float ;
+    fsl:fsl_000009 2145 ;
+    fsl:fsl_000010 "4037.87"^^xsd:float ;
+    fsl:fsl_000011 1487 ;
+    fsl:fsl_000012 "2866.66"^^xsd:float ;
+    fsl:fsl_000013 2716 ;
+    fsl:fsl_000014 "5819.74"^^xsd:float ;
+    fsl:fsl_000015 4404 ;
+    fsl:fsl_000016 "12275.78"^^xsd:float ;
+    fsl:fsl_000017 151 ;
+    fsl:fsl_000018 "460.35"^^xsd:float ;
+    fsl:fsl_000019 504 ;
+    fsl:fsl_000020 "1953.63"^^xsd:float ;
+    fsl:fsl_000021 2231 ;
+    fsl:fsl_000022 "4076.44"^^xsd:float ;
+    fsl:fsl_000023 2625 ;
+    fsl:fsl_000024 "4619.38"^^xsd:float ;
+    fsl:fsl_000025 883 ;
+    fsl:fsl_000026 "1611.65"^^xsd:float ;
+    fsl:fsl_000027 3691 ;
+    fsl:fsl_000028 "7773.2"^^xsd:float ;
+    fsl:fsl_000029 4590 ;
+    fsl:fsl_000030 "11250.36"^^xsd:float ;
+    fsl:fsl_000031 235760 ;
+    fsl:fsl_000032 "230598"^^xsd:float ;
+    fsl:fsl_000033 600197 ;
+    fsl:fsl_000034 "539513"^^xsd:float ;
+    fsl:fsl_000035 516570 ;
+    fsl:fsl_000036 "613969"^^xsd:float ;
+    prov:wasGeneratedBy niiri:4561acae-ed1b-ebda-aaa9-11bbdd04bfda .
+
+niiri:4561acae-ed1b-ebda-aaa9-11bbdd04bfda a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:5c7de02a-0c0d-17b4-ba23-e4add57c969d ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:c7fb448b-506d-e877-bbbb-7d9457afafcd ;
+            prov:hadRole sio:Subject ] .
+
+niiri:5c7de02a-0c0d-17b4-ba23-e4add57c969d a prov:Agent,
+        prov:SoftwareAgent ;
+    nidm:NIDM_0000164 fsl: .
+
+niiri:c7fb448b-506d-e877-bbbb-7d9457afafcd a prov:Agent ;
+    ndar:src_subject_id "sub-09"^^xsd:string .
+
+niiri:bff2fd3c-9e9f-a1a3-89e9-bf9f6f9a416f a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 172921428 ;
+    fsl:fsl_000002 "375121369"^^xsd:float ;
+    fsl:fsl_000003 496 ;
+    fsl:fsl_000004 "369.63"^^xsd:float ;
+    fsl:fsl_000005 739 ;
+    fsl:fsl_000006 "1581.07"^^xsd:float ;
+    fsl:fsl_000007 2982 ;
+    fsl:fsl_000008 "5049.86"^^xsd:float ;
+    fsl:fsl_000009 2172 ;
+    fsl:fsl_000010 "6416.33"^^xsd:float ;
+    fsl:fsl_000011 1495 ;
+    fsl:fsl_000012 "3811.69"^^xsd:float ;
+    fsl:fsl_000013 3234 ;
+    fsl:fsl_000014 "5865.32"^^xsd:float ;
+    fsl:fsl_000015 6160 ;
+    fsl:fsl_000016 "12615.77"^^xsd:float ;
+    fsl:fsl_000017 272 ;
+    fsl:fsl_000018 "431.81"^^xsd:float ;
+    fsl:fsl_000019 692 ;
+    fsl:fsl_000020 "823.23"^^xsd:float ;
+    fsl:fsl_000021 2945 ;
+    fsl:fsl_000022 "4350.92"^^xsd:float ;
+    fsl:fsl_000023 2685 ;
+    fsl:fsl_000024 "5903.31"^^xsd:float ;
+    fsl:fsl_000025 1285 ;
+    fsl:fsl_000026 "1921.13"^^xsd:float ;
+    fsl:fsl_000027 2801 ;
+    fsl:fsl_000028 "8306.42"^^xsd:float ;
+    fsl:fsl_000029 5778 ;
+    fsl:fsl_000030 "15454.72"^^xsd:float ;
+    fsl:fsl_000031 338118 ;
+    fsl:fsl_000032 "274698"^^xsd:float ;
+    fsl:fsl_000033 602781 ;
+    fsl:fsl_000034 "559707"^^xsd:float ;
+    fsl:fsl_000035 626286 ;
+    fsl:fsl_000036 "495906"^^xsd:float ;
+    prov:wasGeneratedBy niiri:2c662d9d-c03c-fd1f-68ca-6b4ec3e42fa6 .
+
+niiri:2c662d9d-c03c-fd1f-68ca-6b4ec3e42fa6 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:c45eca2c-5c98-c2fd-854f-f2ed88de9cfb ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:bdd8b928-aee4-cdf1-f0bb-6e7a1c27bcea ;
+            prov:hadRole sio:Subject ] .
+
+niiri:c45eca2c-5c98-c2fd-854f-f2ed88de9cfb a prov:Agent,
+        prov:SoftwareAgent ;
+    nidm:NIDM_0000164 fsl: .
+
+niiri:bdd8b928-aee4-cdf1-f0bb-6e7a1c27bcea a prov:Agent ;
+    ndar:src_subject_id "sub-10"^^xsd:string .
+
+niiri:42920ed3-61e9-cc22-60ff-ebc2cbc3a4b5 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 172928355 ;
+    fsl:fsl_000002 "375290218"^^xsd:float ;
+    fsl:fsl_000003 290 ;
+    fsl:fsl_000004 "264.59"^^xsd:float ;
+    fsl:fsl_000005 466 ;
+    fsl:fsl_000006 "650.78"^^xsd:float ;
+    fsl:fsl_000007 2946 ;
+    fsl:fsl_000008 "6396.58"^^xsd:float ;
+    fsl:fsl_000009 2830 ;
+    fsl:fsl_000010 "3892.3"^^xsd:float ;
+    fsl:fsl_000011 857 ;
+    fsl:fsl_000012 "2736.46"^^xsd:float ;
+    fsl:fsl_000013 2295 ;
+    fsl:fsl_000014 "5995.15"^^xsd:float ;
+    fsl:fsl_000015 7383 ;
+    fsl:fsl_000016 "10845.17"^^xsd:float ;
+    fsl:fsl_000017 298 ;
+    fsl:fsl_000018 "257.63"^^xsd:float ;
+    fsl:fsl_000019 485 ;
+    fsl:fsl_000020 "1454.19"^^xsd:float ;
+    fsl:fsl_000021 2053 ;
+    fsl:fsl_000022 "4352.47"^^xsd:float ;
+    fsl:fsl_000023 2481 ;
+    fsl:fsl_000024 "6448.82"^^xsd:float ;
+    fsl:fsl_000025 1020 ;
+    fsl:fsl_000026 "2782.84"^^xsd:float ;
+    fsl:fsl_000027 3872 ;
+    fsl:fsl_000028 "6519.86"^^xsd:float ;
+    fsl:fsl_000029 6020 ;
+    fsl:fsl_000030 "15092.22"^^xsd:float ;
+    fsl:fsl_000031 214421 ;
+    fsl:fsl_000032 "220359"^^xsd:float ;
+    fsl:fsl_000033 716511 ;
+    fsl:fsl_000034 "726961"^^xsd:float ;
+    fsl:fsl_000035 557544 ;
+    fsl:fsl_000036 "712529"^^xsd:float ;
+    prov:wasGeneratedBy niiri:b9c8ce5e-4dda-aaab-f962-9efbe7c84cbb .
+
+niiri:b9c8ce5e-4dda-aaab-f962-9efbe7c84cbb a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:f1b2c3e1-23cb-de6b-9ba0-ac01964b79a2 ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:25d2ce8f-921f-a6db-0cbb-12808bf0eea3 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:f1b2c3e1-23cb-de6b-9ba0-ac01964b79a2 a prov:Agent,
+        prov:SoftwareAgent ;
+    nidm:NIDM_0000164 fsl: .
+
+niiri:25d2ce8f-921f-a6db-0cbb-12808bf0eea3 a prov:Agent ;
+    ndar:src_subject_id "sub-11"^^xsd:string .
+
+niiri:ae86ea69-d5fb-c3d1-b0ad-0cff16dcd52e a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 172943644 ;
+    fsl:fsl_000002 "375222688"^^xsd:float ;
+    fsl:fsl_000003 300 ;
+    fsl:fsl_000004 "664.63"^^xsd:float ;
+    fsl:fsl_000005 206 ;
+    fsl:fsl_000006 "2491.56"^^xsd:float ;
+    fsl:fsl_000007 2133 ;
+    fsl:fsl_000008 "6458.25"^^xsd:float ;
+    fsl:fsl_000009 2058 ;
+    fsl:fsl_000010 "6271.4"^^xsd:float ;
+    fsl:fsl_000011 564 ;
+    fsl:fsl_000012 "2351.57"^^xsd:float ;
+    fsl:fsl_000013 2066 ;
+    fsl:fsl_000014 "7418.33"^^xsd:float ;
+    fsl:fsl_000015 7107 ;
+    fsl:fsl_000016 "14075.42"^^xsd:float ;
+    fsl:fsl_000017 184 ;
+    fsl:fsl_000018 "281.21"^^xsd:float ;
+    fsl:fsl_000019 674 ;
+    fsl:fsl_000020 "2694.59"^^xsd:float ;
+    fsl:fsl_000021 3372 ;
+    fsl:fsl_000022 "6435.38"^^xsd:float ;
+    fsl:fsl_000023 2609 ;
+    fsl:fsl_000024 "6105.31"^^xsd:float ;
+    fsl:fsl_000025 715 ;
+    fsl:fsl_000026 "2742.07"^^xsd:float ;
+    fsl:fsl_000027 3770 ;
+    fsl:fsl_000028 "8238.54"^^xsd:float ;
+    fsl:fsl_000029 4994 ;
+    fsl:fsl_000030 "12393.98"^^xsd:float ;
+    fsl:fsl_000031 382402 ;
+    fsl:fsl_000032 "249242"^^xsd:float ;
+    fsl:fsl_000033 799837 ;
+    fsl:fsl_000034 "518671"^^xsd:float ;
+    fsl:fsl_000035 478291 ;
+    fsl:fsl_000036 "712998"^^xsd:float ;
+    prov:wasGeneratedBy niiri:4decc5a4-4c79-edaf-6e2f-d8b6adf95fde .
+
+niiri:4decc5a4-4c79-edaf-6e2f-d8b6adf95fde a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ebc7d64d-ffb4-2fc4-02b9-aadcb3e9683c ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:3daefab7-6aef-7b10-d98f-20a1bf71ebec ;
+            prov:hadRole sio:Subject ] .
+
+niiri:ebc7d64d-ffb4-2fc4-02b9-aadcb3e9683c a prov:Agent,
+        prov:SoftwareAgent ;
+    nidm:NIDM_0000164 fsl: .
+
+niiri:3daefab7-6aef-7b10-d98f-20a1bf71ebec a prov:Agent ;
+    ndar:src_subject_id "sub-12"^^xsd:string .
+
+niiri:1615ab9a-c88f-f4a2-30fe-01a679ba03cf a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 172953276 ;
+    fsl:fsl_000002 "375074554"^^xsd:float ;
+    fsl:fsl_000003 125 ;
+    fsl:fsl_000004 "386.23"^^xsd:float ;
+    fsl:fsl_000005 345 ;
+    fsl:fsl_000006 "1350.42"^^xsd:float ;
+    fsl:fsl_000007 2570 ;
+    fsl:fsl_000008 "5452.47"^^xsd:float ;
+    fsl:fsl_000009 3135 ;
+    fsl:fsl_000010 "3719.88"^^xsd:float ;
+    fsl:fsl_000011 1076 ;
+    fsl:fsl_000012 "3810.95"^^xsd:float ;
+    fsl:fsl_000013 2681 ;
+    fsl:fsl_000014 "5653.76"^^xsd:float ;
+    fsl:fsl_000015 5981 ;
+    fsl:fsl_000016 "13205.99"^^xsd:float ;
+    fsl:fsl_000017 173 ;
+    fsl:fsl_000018 "795.98"^^xsd:float ;
+    fsl:fsl_000019 924 ;
+    fsl:fsl_000020 "1819.43"^^xsd:float ;
+    fsl:fsl_000021 2260 ;
+    fsl:fsl_000022 "5651.23"^^xsd:float ;
+    fsl:fsl_000023 2901 ;
+    fsl:fsl_000024 "6495.17"^^xsd:float ;
+    fsl:fsl_000025 817 ;
+    fsl:fsl_000026 "1883.54"^^xsd:float ;
+    fsl:fsl_000027 3756 ;
+    fsl:fsl_000028 "6140.56"^^xsd:float ;
+    fsl:fsl_000029 7162 ;
+    fsl:fsl_000030 "10456.09"^^xsd:float ;
+    fsl:fsl_000031 266241 ;
+    fsl:fsl_000032 "391306"^^xsd:float ;
+    fsl:fsl_000033 586293 ;
+    fsl:fsl_000034 "656181"^^xsd:float ;
+    fsl:fsl_000035 523746 ;
+    fsl:fsl_000036 "591799"^^xsd:float ;
+    prov:wasGeneratedBy niiri:332b347f-a8dc-bad8-9888-1ddd68a138d4 .
+
+niiri:332b347f-a8dc-bad8-9888-1ddd68a138d4 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:a571ea09-780d-b0cf-0fef-ffee3e8adb0b ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:68f614c2-63da-f87c-ffbd-d95f5cde4ab4 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:a571ea09-780d-b0cf-0fef-ffee3e8adb0b a prov:Agent,
+        prov:SoftwareAgent ;
+    nidm:NIDM_0000164 fsl: .
+
+niiri:68f614c2-63da-f87c-ffbd-d95f5cde4ab4 a prov:Agent ;
+    ndar:src_subject_id "sub-13"^^xsd:string .
+
+niiri:2fcc6b49-c799-e108-7274-e17fd024f09a a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 172976603 ;
+    fsl:fsl_000002 "375319930"^^xsd:float ;
+    fsl:fsl_000003 53 ;
+    fsl:fsl_000004 "657.6"^^xsd:float ;
+    fsl:fsl_000005 869 ;
+    fsl:fsl_000006 "2174.71"^^xsd:float ;
+    fsl:fsl_000007 2178 ;
+    fsl:fsl_000008 "6090.79"^^xsd:float ;
+    fsl:fsl_000009 2189 ;
+    fsl:fsl_000010 "4365.02"^^xsd:float ;
+    fsl:fsl_000011 579 ;
+    fsl:fsl_000012 "2255.43"^^xsd:float ;
+    fsl:fsl_000013 3422 ;
+    fsl:fsl_000014 "5534.2"^^xsd:float ;
+    fsl:fsl_000015 7456 ;
+    fsl:fsl_000016 "10425.87"^^xsd:float ;
+    fsl:fsl_000017 238 ;
+    fsl:fsl_000018 "708.26"^^xsd:float ;
+    fsl:fsl_000019 984 ;
+    fsl:fsl_000020 "870.13"^^xsd:float ;
+    fsl:fsl_000021 2975 ;
+    fsl:fsl_000022 "4256.97"^^xsd:float ;
+    fsl:fsl_000023 2575 ;
+    fsl:fsl_000024 "6196.24"^^xsd:float ;
+    fsl:fsl_000025 980 ;
+    fsl:fsl_000026 "1612.06"^^xsd:float ;
+    fsl:fsl_000027 3168 ;
+    fsl:fsl_000028 "6977.42"^^xsd:float ;
+    fsl:fsl_000029 7353 ;
+    fsl:fsl_000030 "15574.23"^^xsd:float ;
+    fsl:fsl_000031 252967 ;
+    fsl:fsl_000032 "239117"^^xsd:float ;
+    fsl:fsl_000033 791867 ;
+    fsl:fsl_000034 "521089"^^xsd:float ;
+    fsl:fsl_000035 737868 ;
+    fsl:fsl_000036 "731105"^^xsd:float ;
+    prov:wasGeneratedBy niiri:7e9cbac0-ed29-4eb6-6d35-bffbc8e3eb31 .
+
+niiri:7e9cbac0-ed29-4eb6-6d35-bffbc8e3eb31 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:e7692f24-dcc4-f80d-40f5-56dfbfb0d977 ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:427beef3-1a60-ceaf-bc9f-f60a8a3bb18d ;
+            prov:hadRole sio:Subject ] .
+
+niiri:e7692f24-dcc4-f80d-40f5-56dfbfb0d977 a prov:Agent,
+        prov:SoftwareAgent ;
+    nidm:NIDM_0000164 fsl: .
+
+niiri:427beef3-1a60-ceaf-bc9f-f60a8a3bb18d a prov:Agent ;
+    ndar:src_subject_id "sub-14"^^xsd:string .
+
+niiri:442e3fad-0492-f63b-abf4-1c29fa1e7b82 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 172982829 ;
+    fsl:fsl_000002 "375315142"^^xsd:float ;
+    fsl:fsl_000003 417 ;
+    fsl:fsl_000004 "515.73"^^xsd:float ;
+    fsl:fsl_000005 699 ;
+    fsl:fsl_000006 "1747.78"^^xsd:float ;
+    fsl:fsl_000007 2454 ;
+    fsl:fsl_000008 "6725.92"^^xsd:float ;
+    fsl:fsl_000009 1912 ;
+    fsl:fsl_000010 "4620.96"^^xsd:float ;
+    fsl:fsl_000011 1103 ;
+    fsl:fsl_000012 "3770.82"^^xsd:float ;
+    fsl:fsl_000013 2692 ;
+    fsl:fsl_000014 "6047.63"^^xsd:float ;
+    fsl:fsl_000015 4791 ;
+    fsl:fsl_000016 "12009.6"^^xsd:float ;
+    fsl:fsl_000017 185 ;
+    fsl:fsl_000018 "301.03"^^xsd:float ;
+    fsl:fsl_000019 546 ;
+    fsl:fsl_000020 "2402.73"^^xsd:float ;
+    fsl:fsl_000021 2693 ;
+    fsl:fsl_000022 "4231.26"^^xsd:float ;
+    fsl:fsl_000023 3052 ;
+    fsl:fsl_000024 "6408.85"^^xsd:float ;
+    fsl:fsl_000025 1062 ;
+    fsl:fsl_000026 "2303.46"^^xsd:float ;
+    fsl:fsl_000027 3347 ;
+    fsl:fsl_000028 "7557.34"^^xsd:float ;
+    fsl:fsl_000029 5962 ;
+    fsl:fsl_000030 "11745.17"^^xsd:float ;
+    fsl:fsl_000031 378588 ;
+    fsl:fsl_000032 "206572"^^xsd:float ;
+    fsl:fsl_000033 617545 ;
+    fsl:fsl_000034 "651681"^^xsd:float ;
+    fsl:fsl_000035 647834 ;
+    fsl:fsl_000036 "543305"^^xsd:float ;
+    prov:wasGeneratedBy niiri:59ceb45c-fc30-0ac3-d723-ba203a67bcff .
+
+niiri:59ceb45c-fc30-0ac3-d723-ba203a67bcff a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:4cd69aba-2ecd-b292-7b80-faec4af52a8c ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:cdeda150-f4b3-4862-9db9-b4f0b5dadc7e ;
+            prov:hadRole sio:Subject ] .
+
+niiri:4cd69aba-2ecd-b292-7b80-faec4af52a8c a prov:Agent,
+        prov:SoftwareAgent ;
+    nidm:NIDM_0000164 fsl: .
+
+niiri:cdeda150-f4b3-4862-9db9-b4f0b5dadc7e a prov:Agent ;
+    ndar:src_subject_id "sub-15"^^xsd:string .
+
+niiri:b468cdd7-9bbd-befe-836a-2fbdbaea34da a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 172950292 ;
+    fsl:fsl_000002 "375044065"^^xsd:float ;
+    fsl:fsl_000003 116 ;
+    fsl:fsl_000004 "758.63"^^xsd:float ;
+    fsl:fsl_000005 940 ;
+    fsl:fsl_000006 "1655.11"^^xsd:float ;
+    fsl:fsl_000007 2205 ;
+    fsl:fsl_000008 "5520.96"^^xsd:float ;
+    fsl:fsl_000009 3441 ;
+    fsl:fsl_000010 "5357.82"^^xsd:float ;
+    fsl:fsl_000011 909 ;
+    fsl:fsl_000012 "1182.34"^^xsd:float ;
+    fsl:fsl_000013 2818 ;
+    fsl:fsl_000014 "6345.72"^^xsd:float ;
+    fsl:fsl_000015 6364 ;
+    fsl:fsl_000016 "10590.41"^^xsd:float ;
+    fsl:fsl_000017 212 ;
+    fsl:fsl_000018 "743.18"^^xsd:float ;
+    fsl:fsl_000019 830 ;
+    fsl:fsl_000020 "1241.62"^^xsd:float ;
+    fsl:fsl_000021 3245 ;
+    fsl:fsl_000022 "6107.93"^^xsd:float ;
+    fsl:fsl_000023 3008 ;
+    fsl:fsl_000024 "5742.73"^^xsd:float ;
+    fsl:fsl_000025 882 ;
+    fsl:fsl_000026 "2184.6"^^xsd:float ;
+    fsl:fsl_000027 3601 ;
+    fsl:fsl_000028 "5704.14"^^xsd:float ;
+    fsl:fsl_000029 7361 ;
+    fsl:fsl_000030 "16307.13"^^xsd:float ;
+    fsl:fsl_000031 366748 ;
+    fsl:fsl_000032 "314340"^^xsd:float ;
+    fsl:fsl_000033 663642 ;
+    fsl:fsl_000034 "712337"^^xsd:float ;
+    fsl:fsl_000035 725743 ;
+    fsl:fsl_000036 "607688"^^xsd:float ;
+    prov:wasGeneratedBy niiri:31dcc8ba-cad9-b145-2dd9-9c87c247bff5 .
+
+niiri:31dcc8ba-cad9-b145-2dd9-9c87c247bff5 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:d5fd6b1b-6d3d-a622-1db9-68cab27cc6c1 ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:88770adf-2d09-51df-d609-84ce0dfddaee ;
+            prov:hadRole sio:Subject ] .
+
+niiri:d5fd6b1b-6d3d-a622-1db9-68cab27cc6c1 a prov:Agent,
+        prov:SoftwareAgent ;
+    nidm:NIDM_0000164 fsl: .
+
+niiri:88770adf-2d09-51df-d609-84ce0dfddaee a prov:Agent ;
+    ndar:src_subject_id "sub-16"^^xsd:string .
+
+niiri:83ec2be3-5fa8-cf99-5dd5-f09d5c3c55ef a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 172996203 ;
+    fsl:fsl_000002 "375115370"^^xsd:float ;
+    fsl:fsl_000003 93 ;
+    fsl:fsl_000004 "491.69"^^xsd:float ;
+    fsl:fsl_000005 346 ;
+    fsl:fsl_000006 "1263.86"^^xsd:float ;
+    fsl:fsl_000007 2320 ;
+    fsl:fsl_000008 "5199.37"^^xsd:float ;
+    fsl:fsl_000009 3380 ;
+    fsl:fsl_000010 "6351.16"^^xsd:float ;
+    fsl:fsl_000011 666 ;
+    fsl:fsl_000012 "2800.64"^^xsd:float ;
+    fsl:fsl_000013 2902 ;
+    fsl:fsl_000014 "6738.53"^^xsd:float ;
+    fsl:fsl_000015 7094 ;
+    fsl:fsl_000016 "13665.85"^^xsd:float ;
+    fsl:fsl_000017 222 ;
+    fsl:fsl_000018 "645.92"^^xsd:float ;
+    fsl:fsl_000019 852 ;
+    fsl:fsl_000020 "1625.41"^^xsd:float ;
+    fsl:fsl_000021 2526 ;
+    fsl:fsl_000022 "5938.56"^^xsd:float ;
+    fsl:fsl_000023 2544 ;
+    fsl:fsl_000024 "5950.1"^^xsd:float ;
+    fsl:fsl_000025 707 ;
+    fsl:fsl_000026 "2297.09"^^xsd:float ;
+    fsl:fsl_000027 3280 ;
+    fsl:fsl_000028 "6185.04"^^xsd:float ;
+    fsl:fsl_000029 5216 ;
+    fsl:fsl_000030 "14909.07"^^xsd:float ;
+    fsl:fsl_000031 326573 ;
+    fsl:fsl_000032 "376684"^^xsd:float ;
+    fsl:fsl_000033 769952 ;
+    fsl:fsl_000034 "571277"^^xsd:float ;
+    fsl:fsl_000035 736965 ;
+    fsl:fsl_000036 "544521"^^xsd:float ;
+    prov:wasGeneratedBy niiri:7ac36e0a-a63f-7c1c-8817-eefc071fa072 .
+
+niiri:7ac36e0a-a63f-7c1c-8817-eefc071fa072 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:4becda58-784a-ae75-ebde-eb75eede4d19 ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:cc51b7af-c971-2677-f3a1-5aaaf63df7aa ;
+            prov:hadRole sio:Subject ] .
+
+niiri:4becda58-784a-ae75-ebde-eb75eede4d19 a prov:Agent,
+        prov:SoftwareAgent ;
+    nidm:NIDM_0000164 fsl: .
+
+niiri:cc51b7af-c971-2677-f3a1-5aaaf63df7aa a prov:Agent ;
+    ndar:src_subject_id "sub-17"^^xsd:string .
+
+niiri:b9d55cf7-756f-7dee-dc4f-ff7f453682de a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 172916810 ;
+    fsl:fsl_000002 "375321945"^^xsd:float ;
+    fsl:fsl_000003 50 ;
+    fsl:fsl_000004 "1065.85"^^xsd:float ;
+    fsl:fsl_000005 883 ;
+    fsl:fsl_000006 "781.86"^^xsd:float ;
+    fsl:fsl_000007 2380 ;
+    fsl:fsl_000008 "4770.26"^^xsd:float ;
+    fsl:fsl_000009 2069 ;
+    fsl:fsl_000010 "3572.0"^^xsd:float ;
+    fsl:fsl_000011 1400 ;
+    fsl:fsl_000012 "3491.81"^^xsd:float ;
+    fsl:fsl_000013 2116 ;
+    fsl:fsl_000014 "5790.05"^^xsd:float ;
+    fsl:fsl_000015 5804 ;
+    fsl:fsl_000016 "10812.3"^^xsd:float ;
+    fsl:fsl_000017 180 ;
+    fsl:fsl_000018 "300.54"^^xsd:float ;
+    fsl:fsl_000019 879 ;
+    fsl:fsl_000020 "1147.16"^^xsd:float ;
+    fsl:fsl_000021 3028 ;
+    fsl:fsl_000022 "6072.64"^^xsd:float ;
+    fsl:fsl_000023 2829 ;
+    fsl:fsl_000024 "5995.62"^^xsd:float ;
+    fsl:fsl_000025 1248 ;
+    fsl:fsl_000026 "2386.65"^^xsd:float ;
+    fsl:fsl_000027 3072 ;
+    fsl:fsl_000028 "8075.82"^^xsd:float ;
+    fsl:fsl_000029 5130 ;
+    fsl:fsl_000030 "13094.93"^^xsd:float ;
+    fsl:fsl_000031 347818 ;
+    fsl:fsl_000032 "319579"^^xsd:float ;
+    fsl:fsl_000033 530046 ;
+    fsl:fsl_000034 "696796"^^xsd:float ;
+    fsl:fsl_000035 492160 ;
+    fsl:fsl_000036 "680533"^^xsd:float ;
+    prov:wasGeneratedBy niiri:7ba7ff96-decd-461d-1eae-9b4eab26666a .
+
+niiri:7ba7ff96-decd-461d-1eae-9b4eab26666a a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:8a2b7819-737f-053f-a96d-dd3dbef4ee20 ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:be1ce980-5ba6-3d1a-df77-958f157c68d9 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:8a2b7819-737f-053f-a96d-dd3dbef4ee20 a prov:Agent,
+        prov:SoftwareAgent ;
+    nidm:NIDM_0000164 fsl: .
+
+niiri:be1ce980-5ba6-3d1a-df77-958f157c68d9 a prov:Agent ;
+    ndar:src_subject_id "sub-18"^^xsd:string .
+
+niiri:cd1dd5cc-af8a-0f57-e5ad-c8adde78cdba a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 172972240 ;
+    fsl:fsl_000002 "375271619"^^xsd:float ;
+    fsl:fsl_000003 276 ;
+    fsl:fsl_000004 "226.32"^^xsd:float ;
+    fsl:fsl_000005 435 ;
+    fsl:fsl_000006 "1207.7"^^xsd:float ;
+    fsl:fsl_000007 2635 ;
+    fsl:fsl_000008 "5725.16"^^xsd:float ;
+    fsl:fsl_000009 1874 ;
+    fsl:fsl_000010 "3569.3"^^xsd:float ;
+    fsl:fsl_000011 1209 ;
+    fsl:fsl_000012 "1139.89"^^xsd:float ;
+    fsl:fsl_000013 3065 ;
+    fsl:fsl_000014 "6818.38"^^xsd:float ;
+    fsl:fsl_000015 5988 ;
+    fsl:fsl_000016 "14502.32"^^xsd:float ;
+    fsl:fsl_000017 284 ;
+    fsl:fsl_000018 "690.03"^^xsd:float ;
+    fsl:fsl_000019 659 ;
+    fsl:fsl_000020 "2310.82"^^xsd:float ;
+    fsl:fsl_000021 3019 ;
+    fsl:fsl_000022 "4114.47"^^xsd:float ;
+    fsl:fsl_000023 2689 ;
+    fsl:fsl_000024 "5871.24"^^xsd:float ;
+    fsl:fsl_000025 744 ;
+    fsl:fsl_000026 "2817.63"^^xsd:float ;
+    fsl:fsl_000027 3614 ;
+    fsl:fsl_000028 "7352.51"^^xsd:float ;
+    fsl:fsl_000029 7490 ;
+    fsl:fsl_000030 "11390.99"^^xsd:float ;
+    fsl:fsl_000031 396968 ;
+    fsl:fsl_000032 "370186"^^xsd:float ;
+    fsl:fsl_000033 515631 ;
+    fsl:fsl_000034 "622701"^^xsd:float ;
+    fsl:fsl_000035 629361 ;
+    fsl:fsl_000036 "454159"^^xsd:float ;
+    prov:wasGeneratedBy niiri:cba7da4c-9b07-486c-86bc-dbf5cecacc0c .
+
+niiri:cba7da4c-9b07-486c-86bc-dbf5cecacc0c a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:60aacbae-bea7-0833-3a0a-91f5fca917cc ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:b99af74c-08cb-bdfc-aadf-fbee5bf5e7ef ;
+            prov:hadRole sio:Subject ] .
+
+niiri:60aacbae-bea7-0833-3a0a-91f5fca917cc a prov:Agent,
+        prov:SoftwareAgent ;
+    nidm:NIDM_0000164 fsl: .
+
+niiri:b99af74c-08cb-bdfc-aadf-fbee5bf5e7ef a prov:Agent ;
+    ndar:src_subject_id "sub-19"^^xsd:string .
+
+niiri:6effb5f2-a70e-eebd-832d-d205592f1d47 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 172986969 ;
+    fsl:fsl_000002 "375225151"^^xsd:float ;
+    fsl:fsl_000003 251 ;
+    fsl:fsl_000004 "664.57"^^xsd:float ;
+    fsl:fsl_000005 1196 ;
+    fsl:fsl_000006 "1880.97"^^xsd:float ;
+    fsl:fsl_000007 2500 ;
+    fsl:fsl_000008 "4548.25"^^xsd:float ;
+    fsl:fsl_000009 2212 ;
+    fsl:fsl_000010 "4344.87"^^xsd:float ;
+    fsl:fsl_000011 1233 ;
+    fsl:fsl_000012 "2725.91"^^xsd:float ;
+    fsl:fsl_000013 2077 ;
+    fsl:fsl_000014 "7048.09"^^xsd:float ;
+    fsl:fsl_000015 6492 ;
+    fsl:fsl_000016 "15210.97"^^xsd:float ;
+    fsl:fsl_000017 261 ;
+    fsl:fsl_000018 "273.09"^^xsd:float ;
+    fsl:fsl_000019 684 ;
+    fsl:fsl_000020 "835.95"^^xsd:float ;
+    fsl:fsl_000021 2711 ;
+    fsl:fsl_000022 "4149.84"^^xsd:float ;
+    fsl:fsl_000023 2164 ;
+    fsl:fsl_000024 "5237.23"^^xsd:float ;
+    fsl:fsl_000025 1053 ;
+    fsl:fsl_000026 "2707.84"^^xsd:float ;
+    fsl:fsl_000027 3967 ;
+    fsl:fsl_000028 "6073.78"^^xsd:float ;
+    fsl:fsl_000029 7096 ;
+    fsl:fsl_000030 "15854.67"^^xsd:float ;
+    fsl:fsl_000031 326690 ;
+    fsl:fsl_000032 "391179"^^xsd:float ;
+    fsl:fsl_000033 720498 ;
+    fsl:fsl_000034 "603724"^^xsd:float ;
+    fsl:fsl_000035 496470 ;
+    fsl:fsl_000036 "472431"^^xsd:float ;
+    prov:wasGeneratedBy niiri:8b52fbed-a286-b63f-1cba-6ba4adeeabf8 .
+
+niiri:8b52fbed-a286-b63f-1cba-6ba4adeeabf8 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:6e654b87-db6e-bd9a-dd39-0afd21bf5ded ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:ddf4297f-53a9-cc3b-efbd-fa768ecb9d5a ;
+            prov:hadRole sio:Subject ] .
+
+niiri:6e654b87-db6e-bd9a-dd39-0afd21bf5ded a prov:Agent,
+        prov:SoftwareAgent ;
+    nidm:NIDM_0000164 fsl: .
+
+niiri:ddf4297f-53a9-cc3b-efbd-fa768ecb9d5a a prov:Agent ;
+    ndar:src_subject_id "sub-20"^^xsd:string .
+
+niiri:19fe7aba-7ed5-b4df-3fab-05cdda5f29ec a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 172923578 ;
+    fsl:fsl_000002 "375215784"^^xsd:float ;
+    fsl:fsl_000003 262 ;
+    fsl:fsl_000004 "273.94"^^xsd:float ;
+    fsl:fsl_000005 961 ;
+    fsl:fsl_000006 "1473.33"^^xsd:float ;
+    fsl:fsl_000007 3190 ;
+    fsl:fsl_000008 "6481.35"^^xsd:float ;
+    fsl:fsl_000009 2966 ;
+    fsl:fsl_000010 "6725.85"^^xsd:float ;
+    fsl:fsl_000011 1040 ;
+    fsl:fsl_000012 "2608.71"^^xsd:float ;
+    fsl:fsl_000013 3345 ;
+    fsl:fsl_000014 "4562.5"^^xsd:float ;
+    fsl:fsl_000015 7318 ;
+    fsl:fsl_000016 "10608.52"^^xsd:float ;
+    fsl:fsl_000017 156 ;
+    fsl:fsl_000018 "457.69"^^xsd:float ;
+    fsl:fsl_000019 893 ;
+    fsl:fsl_000020 "2390.34"^^xsd:float ;
+    fsl:fsl_000021 2788 ;
+    fsl:fsl_000022 "4109.1"^^xsd:float ;
+    fsl:fsl_000023 2950 ;
+    fsl:fsl_000024 "5932.59"^^xsd:float ;
+    fsl:fsl_000025 708 ;
+    fsl:fsl_000026 "2419.58"^^xsd:float ;
+    fsl:fsl_000027 2759 ;
+    fsl:fsl_000028 "6766.12"^^xsd:float ;
+    fsl:fsl_000029 6854 ;
+    fsl:fsl_000030 "10250.49"^^xsd:float ;
+    fsl:fsl_000031 201297 ;
+    fsl:fsl_000032 "309049"^^xsd:float ;
+    fsl:fsl_000033 798838 ;
+    fsl:fsl_000034 "502944"^^xsd:float ;
+    fsl:fsl_000035 521201 ;
+    fsl:fsl_000036 "739957"^^xsd:float ;
+    prov:wasGeneratedBy niiri:61dc0dcf-5da9-d3d7-271d-fbe82fbd7d8d .
+
+niiri:61dc0dcf-5da9-d3d7-271d-fbe82fbd7d8d a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:1de2e8f2-6a4e-a436-9fa3-4d17369d22e9 ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:e43cedca-d58d-a8fa-75ea-cd574cbd9e5b ;
+            prov:hadRole sio:Subject ] .
+
+niiri:1de2e8f2-6a4e-a436-9fa3-4d17369d22e9 a prov:Agent,
+        prov:SoftwareAgent ;
+    nidm:NIDM_0000164 fsl: .
+
+niiri:e43cedca-d58d-a8fa-75ea-cd574cbd9e5b a prov:Agent ;
+    ndar:src_subject_id "sub-21"^^xsd:string .
+
+niiri:9276defa-b2cc-97c6-da0d-b7fbdeb8f143 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 172962109 ;
+    fsl:fsl_000002 "375079892"^^xsd:float ;
+    fsl:fsl_000003 221 ;
+    fsl:fsl_000004 "579.98"^^xsd:float ;
+    fsl:fsl_000005 864 ;
+    fsl:fsl_000006 "1949.48"^^xsd:float ;
+    fsl:fsl_000007 3766 ;
+    fsl:fsl_000008 "4177.78"^^xsd:float ;
+    fsl:fsl_000009 3185 ;
+    fsl:fsl_000010 "6023.44"^^xsd:float ;
+    fsl:fsl_000011 717 ;
+    fsl:fsl_000012 "3156.45"^^xsd:float ;
+    fsl:fsl_000013 2680 ;
+    fsl:fsl_000014 "5812.19"^^xsd:float ;
+    fsl:fsl_000015 4727 ;
+    fsl:fsl_000016 "12687.22"^^xsd:float ;
+    fsl:fsl_000017 157 ;
+    fsl:fsl_000018 "635.73"^^xsd:float ;
+    fsl:fsl_000019 1034 ;
+    fsl:fsl_000020 "1434.18"^^xsd:float ;
+    fsl:fsl_000021 3278 ;
+    fsl:fsl_000022 "6256.44"^^xsd:float ;
+    fsl:fsl_000023 2666 ;
+    fsl:fsl_000024 "5027.78"^^xsd:float ;
+    fsl:fsl_000025 708 ;
+    fsl:fsl_000026 "1636.54"^^xsd:float ;
+    fsl:fsl_000027 3232 ;
+    fsl:fsl_000028 "6837.61"^^xsd:float ;
+    fsl:fsl_000029 6651 ;
+    fsl:fsl_000030 "10478.96"^^xsd:float ;
+    fsl:fsl_000031 297115 ;
+    fsl:fsl_000032 "385687"^^xsd:float ;
+    fsl:fsl_000033 798522 ;
+    fsl:fsl_000034 "659619"^^xsd:float ;
+    fsl:fsl_000035 546775 ;
+    fsl:fsl_000036 "450349"^^xsd:float ;
+    prov:wasGeneratedBy niiri:cd152cad-fcad-97f1-af55-d21ea0afa06f .
+
+niiri:cd152cad-fcad-97f1-af55-d21ea0afa06f a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ba3fd9db-2dba-d4f6-d5ad-d804df99d48a ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:b2bc58bd-997d-f991-ebec-1caa436c4e07 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:ba3fd9db-2dba-d4f6-d5ad-d804df99d48a a prov:Agent,
+        prov:SoftwareAgent ;
+    nidm:NIDM_0000164 fsl: .
+
+niiri:b2bc58bd-997d-f991-ebec-1caa436c4e07 a prov:Agent ;
+    ndar:src_subject_id "sub-22"^^xsd:string .
+
+niiri:045c57ec-a8f0-b0ae-e9b1-2d46cefc887f a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 172972253 ;
+    fsl:fsl_000002 "375113900"^^xsd:float ;
+    fsl:fsl_000003 246 ;
+    fsl:fsl_000004 "938.04"^^xsd:float ;
+    fsl:fsl_000005 407 ;
+    fsl:fsl_000006 "1780.14"^^xsd:float ;
+    fsl:fsl_000007 3290 ;
+    fsl:fsl_000008 "6027.71"^^xsd:float ;
+    fsl:fsl_000009 3300 ;
+    fsl:fsl_000010 "3325.48"^^xsd:float ;
+    fsl:fsl_000011 1349 ;
+    fsl:fsl_000012 "3164.23"^^xsd:float ;
+    fsl:fsl_000013 2942 ;
+    fsl:fsl_000014 "4707.33"^^xsd:float ;
+    fsl:fsl_000015 5199 ;
+    fsl:fsl_000016 "9138.13"^^xsd:float ;
+    fsl:fsl_000017 113 ;
+    fsl:fsl_000018 "713.34"^^xsd:float ;
+    fsl:fsl_000019 430 ;
+    fsl:fsl_000020 "2646.91"^^xsd:float ;
+    fsl:fsl_000021 3397 ;
+    fsl:fsl_000022 "4928.61"^^xsd:float ;
+    fsl:fsl_000023 2901 ;
+    fsl:fsl_000024 "5956.53"^^xsd:float ;
+    fsl:fsl_000025 1067 ;
+    fsl:fsl_000026 "2842.9"^^xsd:float ;
+    fsl:fsl_000027 3789 ;
+    fsl:fsl_000028 "5858.69"^^xsd:float ;
+    fsl:fsl_000029 6674 ;
+    fsl:fsl_000030 "10301.82"^^xsd:float ;
+    fsl:fsl_000031 270530 ;
+    fsl:fsl_000032 "245500"^^xsd:float ;
+    fsl:fsl_000033 771687 ;
+    fsl:fsl_000034 "612898"^^xsd:float ;
+    fsl:fsl_000035 506206 ;
+    fsl:fsl_000036 "515783"^^xsd:float ;
+    prov:wasGeneratedBy niiri:ecc933b7-bebc-dccf-22c8-4df4182d8ff8 .
+
+niiri:ecc933b7-bebc-dccf-22c8-4df4182d8ff8 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:4eeefaed-ed48-4cff-da23-1dbec4fbdefe ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:cddb0c5b-f4fb-d779-bd4d-f57fdc0ba93d ;
+            prov:hadRole sio:Subject ] .
+
+niiri:4eeefaed-ed48-4cff-da23-1dbec4fbdefe a prov:Agent,
+        prov:SoftwareAgent ;
+    nidm:NIDM_0000164 fsl: .
+
+niiri:cddb0c5b-f4fb-d779-bd4d-f57fdc0ba93d a prov:Agent ;
+    ndar:src_subject_id "sub-23"^^xsd:string .
+
+niiri:85935592-72fc-401d-1cbf-e2c90e8c9bc0 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 172978594 ;
+    fsl:fsl_000002 "375462043"^^xsd:float ;
+    fsl:fsl_000003 464 ;
+    fsl:fsl_000004 "638.61"^^xsd:float ;
+    fsl:fsl_000005 429 ;
+    fsl:fsl_000006 "2902.74"^^xsd:float ;
+    fsl:fsl_000007 2449 ;
+    fsl:fsl_000008 "5160.16"^^xsd:float ;
+    fsl:fsl_000009 3215 ;
+    fsl:fsl_000010 "4591.47"^^xsd:float ;
+    fsl:fsl_000011 1144 ;
+    fsl:fsl_000012 "2049.96"^^xsd:float ;
+    fsl:fsl_000013 2946 ;
+    fsl:fsl_000014 "6256.16"^^xsd:float ;
+    fsl:fsl_000015 5054 ;
+    fsl:fsl_000016 "10632.27"^^xsd:float ;
+    fsl:fsl_000017 251 ;
+    fsl:fsl_000018 "486.42"^^xsd:float ;
+    fsl:fsl_000019 1180 ;
+    fsl:fsl_000020 "2361.75"^^xsd:float ;
+    fsl:fsl_000021 2078 ;
+    fsl:fsl_000022 "6331.39"^^xsd:float ;
+    fsl:fsl_000023 2613 ;
+    fsl:fsl_000024 "5942.01"^^xsd:float ;
+    fsl:fsl_000025 790 ;
+    fsl:fsl_000026 "2155.34"^^xsd:float ;
+    fsl:fsl_000027 3281 ;
+    fsl:fsl_000028 "8221.85"^^xsd:float ;
+    fsl:fsl_000029 4695 ;
+    fsl:fsl_000030 "10403.62"^^xsd:float ;
+    fsl:fsl_000031 251512 ;
+    fsl:fsl_000032 "216243"^^xsd:float ;
+    fsl:fsl_000033 542388 ;
+    fsl:fsl_000034 "618289"^^xsd:float ;
+    fsl:fsl_000035 620122 ;
+    fsl:fsl_000036 "624011"^^xsd:float ;
+    prov:wasGeneratedBy niiri:e18dbd99-b820-c1e0-ffab-1da4cdefbaea .
+
+niiri:e18dbd99-b820-c1e0-ffab-1da4cdefbaea a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:f53ac43e-d1dc-f0da-9bc2-9ab278dc6ad9 ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:0f9aedb1-0052-e1fb-90cf-be166e9d9a5a ;
+            prov:hadRole sio:Subject ] .
+
+niiri:f53ac43e-d1dc-f0da-9bc2-9ab278dc6ad9 a prov:Agent,
+        prov:SoftwareAgent ;
+    nidm:NIDM_0000164 fsl: .
+
+niiri:0f9aedb1-0052-e1fb-90cf-be166e9d9a5a a prov:Agent ;
+    ndar:src_subject_id "sub-24"^^xsd:string .
+
+niiri:79d0ca22-b4e3-5de6-b149-8dca38bd0d9e a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 172919598 ;
+    fsl:fsl_000002 "375455991"^^xsd:float ;
+    fsl:fsl_000003 279 ;
+    fsl:fsl_000004 "989.78"^^xsd:float ;
+    fsl:fsl_000005 473 ;
+    fsl:fsl_000006 "694.01"^^xsd:float ;
+    fsl:fsl_000007 3784 ;
+    fsl:fsl_000008 "5824.37"^^xsd:float ;
+    fsl:fsl_000009 3115 ;
+    fsl:fsl_000010 "5117.09"^^xsd:float ;
+    fsl:fsl_000011 1083 ;
+    fsl:fsl_000012 "3529.41"^^xsd:float ;
+    fsl:fsl_000013 3279 ;
+    fsl:fsl_000014 "7353.21"^^xsd:float ;
+    fsl:fsl_000015 5535 ;
+    fsl:fsl_000016 "11718.55"^^xsd:float ;
+    fsl:fsl_000017 285 ;
+    fsl:fsl_000018 "757.62"^^xsd:float ;
+    fsl:fsl_000019 918 ;
+    fsl:fsl_000020 "1569.68"^^xsd:float ;
+    fsl:fsl_000021 2392 ;
+    fsl:fsl_000022 "4243.67"^^xsd:float ;
+    fsl:fsl_000023 2610 ;
+    fsl:fsl_000024 "4935.93"^^xsd:float ;
+    fsl:fsl_000025 1209 ;
+    fsl:fsl_000026 "2700.39"^^xsd:float ;
+    fsl:fsl_000027 3433 ;
+    fsl:fsl_000028 "6139.54"^^xsd:float ;
+    fsl:fsl_000029 5172 ;
+    fsl:fsl_000030 "12443.91"^^xsd:float ;
+    fsl:fsl_000031 230827 ;
+    fsl:fsl_000032 "276667"^^xsd:float ;
+    fsl:fsl_000033 637227 ;
+    fsl:fsl_000034 "500158"^^xsd:float ;
+    fsl:fsl_000035 510624 ;
+    fsl:fsl_000036 "531464"^^xsd:float ;
+    prov:wasGeneratedBy niiri:736c0eae-a3a3-2117-b7a5-acbff75e58aa .
+
+niiri:736c0eae-a3a3-2117-b7a5-acbff75e58aa a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:9cad253f-acea-3724-feaa-fd82f4e816da ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:e7fca498-cc67-dc93-ec5e-4a3f9badc4a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:9cad253f-acea-3724-feaa-fd82f4e816da a prov:Agent,
+        prov:SoftwareAgent ;
+    nidm:NIDM_0000164 fsl: .
+
+niiri:e7fca498-cc67-dc93-ec5e-4a3f9badc4a1 a prov:Agent ;
+    ndar:src_subject_id "sub-25"^^xsd:string .
+
+niiri:8da223a2-91a4-faea-bbaf-dce666da38ec a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 172943966 ;
+    fsl:fsl_000002 "375177576"^^xsd:float ;
+    fsl:fsl_000003 214 ;
+    fsl:fsl_000004 "1001.3"^^xsd:float ;
+    fsl:fsl_000005 428 ;
+    fsl:fsl_000006 "512.17"^^xsd:float ;
+    fsl:fsl_000007 3939 ;
+    fsl:fsl_000008 "4764.51"^^xsd:float ;
+    fsl:fsl_000009 3155 ;
+    fsl:fsl_000010 "4624.3"^^xsd:float ;
+    fsl:fsl_000011 970 ;
+    fsl:fsl_000012 "1278.31"^^xsd:float ;
+    fsl:fsl_000013 2882 ;
+    fsl:fsl_000014 "6070.78"^^xsd:float ;
+    fsl:fsl_000015 7379 ;
+    fsl:fsl_000016 "14486.89"^^xsd:float ;
+    fsl:fsl_000017 293 ;
+    fsl:fsl_000018 "645.42"^^xsd:float ;
+    fsl:fsl_000019 856 ;
+    fsl:fsl_000020 "1473.26"^^xsd:float ;
+    fsl:fsl_000021 2382 ;
+    fsl:fsl_000022 "4677.69"^^xsd:float ;
+    fsl:fsl_000023 2730 ;
+    fsl:fsl_000024 "6121.21"^^xsd:float ;
+    fsl:fsl_000025 712 ;
+    fsl:fsl_000026 "2060.79"^^xsd:float ;
+    fsl:fsl_000027 2571 ;
+    fsl:fsl_000028 "7254.7"^^xsd:float ;
+    fsl:fsl_000029 7289 ;
+    fsl:fsl_000030 "11809.34"^^xsd:float ;
+    fsl:fsl_000031 251808 ;
+    fsl:fsl_000032 "268219"^^xsd:float ;
+    fsl:fsl_000033 778032 ;
+    fsl:fsl_000034 "523866"^^xsd:float ;
+    fsl:fsl_000035 730150 ;
+    fsl:fsl_000036 "461049"^^xsd:float ;
+    prov:wasGeneratedBy niiri:8b35d2fe-fc76-fc27-75ef-d96c9dcc603b .
+
+niiri:8b35d2fe-fc76-fc27-75ef-d96c9dcc603b a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:bee5bdfe-ff21-afcc-13ab-8fd6ceeb36da ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:c597cce9-fca3-edc7-c1b5-0a3fc2a7bdbb ;
+            prov:hadRole sio:Subject ] .
+
+niiri:bee5bdfe-ff21-afcc-13ab-8fd6ceeb36da a prov:Agent,
+        prov:SoftwareAgent ;
+    nidm:NIDM_0000164 fsl: .
+
+niiri:c597cce9-fca3-edc7-c1b5-0a3fc2a7bdbb a prov:Agent ;
+    ndar:src_subject_id "sub-26"^^xsd:string .
+
+niiri:21eb7f9c-cdb1-3aea-db61-78b4ecdd49ff a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 172901416 ;
+    fsl:fsl_000002 "375209106"^^xsd:float ;
+    fsl:fsl_000003 414 ;
+    fsl:fsl_000004 "893.94"^^xsd:float ;
+    fsl:fsl_000005 533 ;
+    fsl:fsl_000006 "875.78"^^xsd:float ;
+    fsl:fsl_000007 2737 ;
+    fsl:fsl_000008 "4641.13"^^xsd:float ;
+    fsl:fsl_000009 3151 ;
+    fsl:fsl_000010 "6448.59"^^xsd:float ;
+    fsl:fsl_000011 1100 ;
+    fsl:fsl_000012 "1998.3"^^xsd:float ;
+    fsl:fsl_000013 2491 ;
+    fsl:fsl_000014 "5647.15"^^xsd:float ;
+    fsl:fsl_000015 6983 ;
+    fsl:fsl_000016 "11342.31"^^xsd:float ;
+    fsl:fsl_000017 288 ;
+    fsl:fsl_000018 "573.69"^^xsd:float ;
+    fsl:fsl_000019 838 ;
+    fsl:fsl_000020 "1441.92"^^xsd:float ;
+    fsl:fsl_000021 2729 ;
+    fsl:fsl_000022 "4177.45"^^xsd:float ;
+    fsl:fsl_000023 2898 ;
+    fsl:fsl_000024 "5198.04"^^xsd:float ;
+    fsl:fsl_000025 899 ;
+    fsl:fsl_000026 "2687.54"^^xsd:float ;
+    fsl:fsl_000027 3887 ;
+    fsl:fsl_000028 "6852.77"^^xsd:float ;
+    fsl:fsl_000029 7362 ;
+    fsl:fsl_000030 "13166.44"^^xsd:float ;
+    fsl:fsl_000031 296090 ;
+    fsl:fsl_000032 "238562"^^xsd:float ;
+    fsl:fsl_000033 668070 ;
+    fsl:fsl_000034 "778918"^^xsd:float ;
+    fsl:fsl_000035 713360 ;
+    fsl:fsl_000036 "510652"^^xsd:float ;
+    prov:wasGeneratedBy niiri:7bf1297a-adc5-f72a-1d9b-3f2bbee3cee4 .
+
+niiri:7bf1297a-adc5-f72a-1d9b-3f2bbee3cee4 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:bccaeedd-497b-eaea-7811-23bebe7424da ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:1eb9c4ff-eb90-0b35-0300-ba4b257e2cf7 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:bccaeedd-497b-eaea-7811-23bebe7424da a prov:Agent,
+        prov:SoftwareAgent ;
+    nidm:NIDM_0000164 fsl: .
+
+niiri:1eb9c4ff-eb90-0b35-0300-ba4b257e2cf7 a prov:Agent ;
+    ndar:src_subject_id "sub-27"^^xsd:string .
+
+niiri:0f4d0646-43b3-5ceb-ad4d-c23162a5bdbd a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 172994723 ;
+    fsl:fsl_000002 "375133567"^^xsd:float ;
+    fsl:fsl_000003 60 ;
+    fsl:fsl_000004 "789.07"^^xsd:float ;
+    fsl:fsl_000005 789 ;
+    fsl:fsl_000006 "1227.75"^^xsd:float ;
+    fsl:fsl_000007 3603 ;
+    fsl:fsl_000008 "6373.22"^^xsd:float ;
+    fsl:fsl_000009 3103 ;
+    fsl:fsl_000010 "4678.13"^^xsd:float ;
+    fsl:fsl_000011 1079 ;
+    fsl:fsl_000012 "2813.68"^^xsd:float ;
+    fsl:fsl_000013 2173 ;
+    fsl:fsl_000014 "5232.85"^^xsd:float ;
+    fsl:fsl_000015 5557 ;
+    fsl:fsl_000016 "11331.76"^^xsd:float ;
+    fsl:fsl_000017 131 ;
+    fsl:fsl_000018 "414.22"^^xsd:float ;
+    fsl:fsl_000019 1103 ;
+    fsl:fsl_000020 "2672.29"^^xsd:float ;
+    fsl:fsl_000021 2630 ;
+    fsl:fsl_000022 "5758.02"^^xsd:float ;
+    fsl:fsl_000023 2625 ;
+    fsl:fsl_000024 "4812.74"^^xsd:float ;
+    fsl:fsl_000025 724 ;
+    fsl:fsl_000026 "1909.24"^^xsd:float ;
+    fsl:fsl_000027 3743 ;
+    fsl:fsl_000028 "6485.01"^^xsd:float ;
+    fsl:fsl_000029 4881 ;
+    fsl:fsl_000030 "11402.45"^^xsd:float ;
+    fsl:fsl_000031 315153 ;
+    fsl:fsl_000032 "390751"^^xsd:float ;
+    fsl:fsl_000033 616514 ;
+    fsl:fsl_000034 "617394"^^xsd:float ;
+    fsl:fsl_000035 468632 ;
+    fsl:fsl_000036 "518040"^^xsd:float ;
+    prov:wasGeneratedBy niiri:2edcfa6b-0d5c-b192-da03-e958834e9d2d .
+
+niiri:2edcfa6b-0d5c-b192-da03-e958834e9d2d a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:acadfa7c-cf9d-ea4f-04f5-b40c1cbd0c3e ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:c19a698b-ce6e-711f-acb7-dfc3eba7df7f ;
+            prov:hadRole sio:Subject ] .
+
+niiri:acadfa7c-cf9d-ea4f-04f5-b40c1cbd0c3e a prov:Agent,
+        prov:SoftwareAgent ;
+    nidm:NIDM_0000164 fsl: .
+
+niiri:c19a698b-ce6e-711f-acb7-dfc3eba7df7f a prov:Agent ;
+    ndar:src_subject_id "sub-28"^^xsd:string .
+
+niiri:acfe072e-559d-3f24-0550-a1c48f393ff7 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 172941363 ;
+    fsl:fsl_000002 "375454084"^^xsd:float ;
+    fsl:fsl_000003 244 ;
+    fsl:fsl_000004 "729.63"^^xsd:float ;
+    fsl:fsl_000005 1183 ;
+    fsl:fsl_000006 "1521.82"^^xsd:float ;
+    fsl:fsl_000007 3487 ;
+    fsl:fsl_000008 "4941.38"^^xsd:float ;
+    fsl:fsl_000009 3125 ;
+    fsl:fsl_000010 "3006.91"^^xsd:float ;
+    fsl:fsl_000011 1291 ;
+    fsl:fsl_000012 "1419.17"^^xsd:float ;
+    fsl:fsl_000013 3397 ;
+    fsl:fsl_000014 "5452.76"^^xsd:float ;
+    fsl:fsl_000015 6814 ;
+    fsl:fsl_000016 "12718.78"^^xsd:float ;
+    fsl:fsl_000017 274 ;
+    fsl:fsl_000018 "357.17"^^xsd:float ;
+    fsl:fsl_000019 551 ;
+    fsl:fsl_000020 "1292.53"^^xsd:float ;
+    fsl:fsl_000021 2443 ;
+    fsl:fsl_000022 "5796.55"^^xsd:float ;
+    fsl:fsl_000023 3173 ;
+    fsl:fsl_000024 "6095.25"^^xsd:float ;
+    fsl:fsl_000025 1080 ;
+    fsl:fsl_000026 "1621.31"^^xsd:float ;
+    fsl:fsl_000027 3157 ;
+    fsl:fsl_000028 "6793.69"^^xsd:float ;
+    fsl:fsl_000029 7189 ;
+    fsl:fsl_000030 "14502.71"^^xsd:float ;
+    fsl:fsl_000031 344343 ;
+    fsl:fsl_000032 "362450"^^xsd:float ;
+    fsl:fsl_000033 514379 ;
+    fsl:fsl_000034 "525685"^^xsd:float ;
+    fsl:fsl_000035 604491 ;
+    fsl:fsl_000036 "531565"^^xsd:float ;
+    prov:wasGeneratedBy niiri:ca01fc58-96e5-e1b3-47be-8adc018dab2a .
+
+niiri:ca01fc58-96e5-e1b3-47be-8adc018dab2a a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:d82d1c87-e0d7-6704-8aa2-942faa7b8cbb ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:ca37eccf-eecd-72bd-ffad-58f17fc5c5fa ;
+            prov:hadRole sio:Subject ] .
+
+niiri:d82d1c87-e0d7-6704-8aa2-942faa7b8cbb a prov:Agent,
+        prov:SoftwareAgent ;
+    nidm:NIDM_0000164 fsl: .
+
+niiri:ca37eccf-eecd-72bd-ffad-58f17fc5c5fa a prov:Agent ;
+    ndar:src_subject_id "sub-29"^^xsd:string .
+
+niiri:d9b7d7ba-dfee-dfeb-281d-aff4f7ea3efc a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 172961529 ;
+    fsl:fsl_000002 "375166789"^^xsd:float ;
+    fsl:fsl_000003 78 ;
+    fsl:fsl_000004 "749.73"^^xsd:float ;
+    fsl:fsl_000005 327 ;
+    fsl:fsl_000006 "1958.36"^^xsd:float ;
+    fsl:fsl_000007 3981 ;
+    fsl:fsl_000008 "4943.89"^^xsd:float ;
+    fsl:fsl_000009 1715 ;
+    fsl:fsl_000010 "6863.74"^^xsd:float ;
+    fsl:fsl_000011 1230 ;
+    fsl:fsl_000012 "1744.23"^^xsd:float ;
+    fsl:fsl_000013 2092 ;
+    fsl:fsl_000014 "6720.89"^^xsd:float ;
+    fsl:fsl_000015 7198 ;
+    fsl:fsl_000016 "10337.46"^^xsd:float ;
+    fsl:fsl_000017 290 ;
+    fsl:fsl_000018 "393.09"^^xsd:float ;
+    fsl:fsl_000019 572 ;
+    fsl:fsl_000020 "2119.89"^^xsd:float ;
+    fsl:fsl_000021 2553 ;
+    fsl:fsl_000022 "6235.71"^^xsd:float ;
+    fsl:fsl_000023 2700 ;
+    fsl:fsl_000024 "5600.88"^^xsd:float ;
+    fsl:fsl_000025 1261 ;
+    fsl:fsl_000026 "1791.57"^^xsd:float ;
+    fsl:fsl_000027 3243 ;
+    fsl:fsl_000028 "8210.75"^^xsd:float ;
+    fsl:fsl_000029 6105 ;
+    fsl:fsl_000030 "11166.68"^^xsd:float ;
+    fsl:fsl_000031 299033 ;
+    fsl:fsl_000032 "218570"^^xsd:float ;
+    fsl:fsl_000033 556127 ;
+    fsl:fsl_000034 "586649"^^xsd:float ;
+    fsl:fsl_000035 595641 ;
+    fsl:fsl_000036 "632670"^^xsd:float ;
+    prov:wasGeneratedBy niiri:c9d3ebea-9d9c-8bcb-1eff-94ccc1e36c94 .
+
+niiri:c9d3ebea-9d9c-8bcb-1eff-94ccc1e36c94 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:9bfc2b4d-9bda-d3c0-56dc-fe0ab5ccfb50 ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:3e2e36ff-ba5f-fd5f-0fd6-5d2df89fa0db ;
+            prov:hadRole sio:Subject ] .
+
+niiri:9bfc2b4d-9bda-d3c0-56dc-fe0ab5ccfb50 a prov:Agent,
+        prov:SoftwareAgent ;
+    nidm:NIDM_0000164 fsl: .
+
+niiri:3e2e36ff-ba5f-fd5f-0fd6-5d2df89fa0db a prov:Agent ;
+    ndar:src_subject_id "sub-30"^^xsd:string .
+
+niiri:f77faacb-775d-edaf-cd65-eaca8d40e43e a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 172985557 ;
+    fsl:fsl_000002 "375137189"^^xsd:float ;
+    fsl:fsl_000003 100 ;
+    fsl:fsl_000004 "590.31"^^xsd:float ;
+    fsl:fsl_000005 893 ;
+    fsl:fsl_000006 "1178.63"^^xsd:float ;
+    fsl:fsl_000007 3559 ;
+    fsl:fsl_000008 "5953.79"^^xsd:float ;
+    fsl:fsl_000009 2042 ;
+    fsl:fsl_000010 "6126.46"^^xsd:float ;
+    fsl:fsl_000011 1171 ;
+    fsl:fsl_000012 "1196.14"^^xsd:float ;
+    fsl:fsl_000013 3326 ;
+    fsl:fsl_000014 "7050.42"^^xsd:float ;
+    fsl:fsl_000015 5489 ;
+    fsl:fsl_000016 "14303.76"^^xsd:float ;
+    fsl:fsl_000017 239 ;
+    fsl:fsl_000018 "750.92"^^xsd:float ;
+    fsl:fsl_000019 942 ;
+    fsl:fsl_000020 "2356.1"^^xsd:float ;
+    fsl:fsl_000021 3111 ;
+    fsl:fsl_000022 "6338.02"^^xsd:float ;
+    fsl:fsl_000023 2230 ;
+    fsl:fsl_000024 "4532.95"^^xsd:float ;
+    fsl:fsl_000025 963 ;
+    fsl:fsl_000026 "2969.23"^^xsd:float ;
+    fsl:fsl_000027 3001 ;
+    fsl:fsl_000028 "5536.69"^^xsd:float ;
+    fsl:fsl_000029 5829 ;
+    fsl:fsl_000030 "11864.0"^^xsd:float ;
+    fsl:fsl_000031 241529 ;
+    fsl:fsl_000032 "384045"^^xsd:float ;
+    fsl:fsl_000033 580239 ;
+    fsl:fsl_000034 "717074"^^xsd:float ;
+    fsl:fsl_000035 740527 ;
+    fsl:fsl_000036 "536969"^^xsd:float ;
+    prov:wasGeneratedBy niiri:df0faa6f-970b-f0e9-289c-296dbaf3400e .
+
+niiri:df0faa6f-970b-f0e9-289c-296dbaf3400e a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:d9aa6e2f-dbd3-dc60-3a0a-c2a4aed4900e ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:3ff259cf-ca2c-6a4a-ea53-4496cb2cc24c ;
+            prov:hadRole sio:Subject ] .
+
+niiri:d9aa6e2f-dbd3-dc60-3a0a-c2a4aed4900e a prov:Agent,
+        prov:SoftwareAgent ;
+    nidm:NIDM_0000164 fsl: .
+
+niiri:3ff259cf-ca2c-6a4a-ea53-4496cb2cc24c a prov:Agent ;
+    ndar:src_subject_id "sub-31"^^xsd:string .
+
+niiri:23d8838e-fcdc-ef39-eab4-b8ea3ecc921d a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 172924997 ;
+    fsl:fsl_000002 "375195646"^^xsd:float ;
+    fsl:fsl_000003 273 ;
+    fsl:fsl_000004 "101.67"^^xsd:float ;
+    fsl:fsl_000005 712 ;
+    fsl:fsl_000006 "2032.11"^^xsd:float ;
+    fsl:fsl_000007 2187 ;
+    fsl:fsl_000008 "6651.68"^^xsd:float ;
+    fsl:fsl_000009 2129 ;
+    fsl:fsl_000010 "5555.33"^^xsd:float ;
+    fsl:fsl_000011 1098 ;
+    fsl:fsl_000012 "1584.48"^^xsd:float ;
+    fsl:fsl_000013 2168 ;
+    fsl:fsl_000014 "5624.43"^^xsd:float ;
+    fsl:fsl_000015 5782 ;
+    fsl:fsl_000016 "12870.55"^^xsd:float ;
+    fsl:fsl_000017 249 ;
+    fsl:fsl_000018 "585.05"^^xsd:float ;
+    fsl:fsl_000019 683 ;
+    fsl:fsl_000020 "2637.69"^^xsd:float ;
+    fsl:fsl_000021 3494 ;
+    fsl:fsl_000022 "6003.7"^^xsd:float ;
+    fsl:fsl_000023 2869 ;
+    fsl:fsl_000024 "4928.22"^^xsd:float ;
+    fsl:fsl_000025 997 ;
+    fsl:fsl_000026 "1907.78"^^xsd:float ;
+    fsl:fsl_000027 3073 ;
+    fsl:fsl_000028 "8346.31"^^xsd:float ;
+    fsl:fsl_000029 4679 ;
+    fsl:fsl_000030 "15815.48"^^xsd:float ;
+    fsl:fsl_000031 299451 ;
+    fsl:fsl_000032 "250609"^^xsd:float ;
+    fsl:fsl_000033 657775 ;
+    fsl:fsl_000034 "502265"^^xsd:float ;
+    fsl:fsl_000035 704125 ;
+    fsl:fsl_000036 "724673"^^xsd:float ;
+    prov:wasGeneratedBy niiri:c7acef54-db44-3d13-8a1d-bfdf3e228a10 .
+
+niiri:c7acef54-db44-3d13-8a1d-bfdf3e228a10 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:bd82f1c5-d7cc-6b6d-697d-84e71f09e3af ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:eecbc5f3-9fdf-5c0f-fc0c-f197eb2bfc7f ;
+            prov:hadRole sio:Subject ] .
+
+niiri:bd82f1c5-d7cc-6b6d-697d-84e71f09e3af a prov:Agent,
+        prov:SoftwareAgent ;
+    nidm:NIDM_0000164 fsl: .
+
+niiri:eecbc5f3-9fdf-5c0f-fc0c-f197eb2bfc7f a prov:Agent ;
+    ndar:src_subject_id "sub-32"^^xsd:string .
+
+niiri:bad5bcf9-bdb3-efed-cbc4-e3f5e3c11e57 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 172903138 ;
+    fsl:fsl_000002 "375429305"^^xsd:float ;
+    fsl:fsl_000003 327 ;
+    fsl:fsl_000004 "474.91"^^xsd:float ;
+    fsl:fsl_000005 479 ;
+    fsl:fsl_000006 "925.12"^^xsd:float ;
+    fsl:fsl_000007 3226 ;
+    fsl:fsl_000008 "5487.37"^^xsd:float ;
+    fsl:fsl_000009 2912 ;
+    fsl:fsl_000010 "3937.77"^^xsd:float ;
+    fsl:fsl_000011 687 ;
+    fsl:fsl_000012 "3572.72"^^xsd:float ;
+    fsl:fsl_000013 3241 ;
+    fsl:fsl_000014 "6607.34"^^xsd:float ;
+    fsl:fsl_000015 5885 ;
+    fsl:fsl_000016 "15094.06"^^xsd:float ;
+    fsl:fsl_000017 149 ;
+    fsl:fsl_000018 "451.18"^^xsd:float ;
+    fsl:fsl_000019 832 ;
+    fsl:fsl_000020 "1347.82"^^xsd:float ;
+    fsl:fsl_000021 2367 ;
+    fsl:fsl_000022 "6451.27"^^xsd:float ;
+    fsl:fsl_000023 2272 ;
+    fsl:fsl_000024 "5108.76"^^xsd:float ;
+    fsl:fsl_000025 1219 ;
+    fsl:fsl_000026 "2071.26"^^xsd:float ;
+    fsl:fsl_000027 3490 ;
+    fsl:fsl_000028 "8071.52"^^xsd:float ;
+    fsl:fsl_000029 7197 ;
+    fsl:fsl_000030 "14457.43"^^xsd:float ;
+    fsl:fsl_000031 234144 ;
+    fsl:fsl_000032 "326342"^^xsd:float ;
+    fsl:fsl_000033 706993 ;
+    fsl:fsl_000034 "740539"^^xsd:float ;
+    fsl:fsl_000035 583416 ;
+    fsl:fsl_000036 "608721"^^xsd:float ;
+    prov:wasGeneratedBy niiri:fe75a64f-6b1a-9b79-d7bd-f4ebbcc3bed0 .
+
+niiri:fe75a64f-6b1a-9b79-d7bd-f4ebbcc3bed0 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:e7d5c1ac-03ed-19eb-aea0-8b64dfe48aac ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:bbccb6b3-9707-7bdc-e6d9-fb98fbd5b265 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:e7d5c1ac-03ed-19eb-aea0-8b64dfe48aac a prov:Agent,
+        prov:SoftwareAgent ;
+    nidm:NIDM_0000164 fsl: .
+
+niiri:bbccb6b3-9707-7bdc-e6d9-fb98fbd5b265 a prov:Agent ;
+    ndar:src_subject_id "sub-33"^^xsd:string .
+
+niiri:5327c1e1-b3cb-6edf-8c8c-a76a14f6bc4b a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 172974506 ;
+    fsl:fsl_000002 "375250302"^^xsd:float ;
+    fsl:fsl_000003 292 ;
+    fsl:fsl_000004 "1013.96"^^xsd:float ;
+    fsl:fsl_000005 525 ;
+    fsl:fsl_000006 "556.03"^^xsd:float ;
+    fsl:fsl_000007 3602 ;
+    fsl:fsl_000008 "4047.4"^^xsd:float ;
+    fsl:fsl_000009 3228 ;
+    fsl:fsl_000010 "5850.27"^^xsd:float ;
+    fsl:fsl_000011 879 ;
+    fsl:fsl_000012 "3127.88"^^xsd:float ;
+    fsl:fsl_000013 2500 ;
+    fsl:fsl_000014 "5691.8"^^xsd:float ;
+    fsl:fsl_000015 4579 ;
+    fsl:fsl_000016 "12190.5"^^xsd:float ;
+    fsl:fsl_000017 268 ;
+    fsl:fsl_000018 "455.72"^^xsd:float ;
+    fsl:fsl_000019 593 ;
+    fsl:fsl_000020 "1082.06"^^xsd:float ;
+    fsl:fsl_000021 3415 ;
+    fsl:fsl_000022 "4188.68"^^xsd:float ;
+    fsl:fsl_000023 2724 ;
+    fsl:fsl_000024 "5627.62"^^xsd:float ;
+    fsl:fsl_000025 1123 ;
+    fsl:fsl_000026 "1801.52"^^xsd:float ;
+    fsl:fsl_000027 3469 ;
+    fsl:fsl_000028 "5775.63"^^xsd:float ;
+    fsl:fsl_000029 6753 ;
+    fsl:fsl_000030 "15081.1"^^xsd:float ;
+    fsl:fsl_000031 345408 ;
+    fsl:fsl_000032 "348853"^^xsd:float ;
+    fsl:fsl_000033 560012 ;
+    fsl:fsl_000034 "544974"^^xsd:float ;
+    fsl:fsl_000035 689844 ;
+    fsl:fsl_000036 "686038"^^xsd:float ;
+    prov:wasGeneratedBy niiri:8925a2cc-0dab-39f5-4071-2ee7d3ac7aee .
+
+niiri:8925a2cc-0dab-39f5-4071-2ee7d3ac7aee a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:70faf2b4-a2db-6ddc-d3b5-b328d9a152c2 ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:dfcac56e-2378-63d9-97f8-dedf9d27bdce ;
+            prov:hadRole sio:Subject ] .
+
+niiri:70faf2b4-a2db-6ddc-d3b5-b328d9a152c2 a prov:Agent,
+        prov:SoftwareAgent ;
+    nidm:NIDM_0000164 fsl: .
+
+niiri:dfcac56e-2378-63d9-97f8-dedf9d27bdce a prov:Agent ;
+    ndar:src_subject_id "sub-34"^^xsd:string .
+
+niiri:d06fb266-ffca-e408-85bf-bfc4ac1b00db a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 172954396 ;
+    fsl:fsl_000002 "375464257"^^xsd:float ;
+    fsl:fsl_000003 237 ;
+    fsl:fsl_000004 "272.52"^^xsd:float ;
+    fsl:fsl_000005 971 ;
+    fsl:fsl_000006 "1182.59"^^xsd:float ;
+    fsl:fsl_000007 3741 ;
+    fsl:fsl_000008 "4073.78"^^xsd:float ;
+    fsl:fsl_000009 2166 ;
+    fsl:fsl_000010 "6911.16"^^xsd:float ;
+    fsl:fsl_000011 1296 ;
+    fsl:fsl_000012 "1194.48"^^xsd:float ;
+    fsl:fsl_000013 2562 ;
+    fsl:fsl_000014 "5967.91"^^xsd:float ;
+    fsl:fsl_000015 4729 ;
+    fsl:fsl_000016 "10489.89"^^xsd:float ;
+    fsl:fsl_000017 235 ;
+    fsl:fsl_000018 "482.74"^^xsd:float ;
+    fsl:fsl_000019 410 ;
+    fsl:fsl_000020 "1191.48"^^xsd:float ;
+    fsl:fsl_000021 3028 ;
+    fsl:fsl_000022 "4780.15"^^xsd:float ;
+    fsl:fsl_000023 3091 ;
+    fsl:fsl_000024 "5738.96"^^xsd:float ;
+    fsl:fsl_000025 1043 ;
+    fsl:fsl_000026 "2691.15"^^xsd:float ;
+    fsl:fsl_000027 3959 ;
+    fsl:fsl_000028 "5767.63"^^xsd:float ;
+    fsl:fsl_000029 7168 ;
+    fsl:fsl_000030 "10320.6"^^xsd:float ;
+    fsl:fsl_000031 235011 ;
+    fsl:fsl_000032 "238902"^^xsd:float ;
+    fsl:fsl_000033 551638 ;
+    fsl:fsl_000034 "717539"^^xsd:float ;
+    fsl:fsl_000035 518958 ;
+    fsl:fsl_000036 "629894"^^xsd:float ;
+    prov:wasGeneratedBy niiri:d2b2826c-d1cd-aad4-bd6e-b1acee11cde8 .
+
+niiri:d2b2826c-d1cd-aad4-bd6e-b1acee11cde8 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:db4fd273-8de1-e19c-ac1d-cbc2d0fbd2a5 ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:c96b38e9-fc07-7345-c770-92f1bc21229e ;
+            prov:hadRole sio:Subject ] .
+
+niiri:db4fd273-8de1-e19c-ac1d-cbc2d0fbd2a5 a prov:Agent,
+        prov:SoftwareAgent ;
+    nidm:NIDM_0000164 fsl: .
+
+niiri:c96b38e9-fc07-7345-c770-92f1bc21229e a prov:Agent ;
+    ndar:src_subject_id "sub-35"^^xsd:string .
+
+niiri:37d1d014-184b-a74a-26de-a84c37d20da1 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 172922898 ;
+    fsl:fsl_000002 "375280504"^^xsd:float ;
+    fsl:fsl_000003 199 ;
+    fsl:fsl_000004 "1049.82"^^xsd:float ;
+    fsl:fsl_000005 824 ;
+    fsl:fsl_000006 "1807.05"^^xsd:float ;
+    fsl:fsl_000007 3687 ;
+    fsl:fsl_000008 "5016.1"^^xsd:float ;
+    fsl:fsl_000009 2340 ;
+    fsl:fsl_000010 "6682.73"^^xsd:float ;
+    fsl:fsl_000011 775 ;
+    fsl:fsl_000012 "2704.95"^^xsd:float ;
+    fsl:fsl_000013 2841 ;
+    fsl:fsl_000014 "4815.2"^^xsd:float ;
+    fsl:fsl_000015 6490 ;
+    fsl:fsl_000016 "15583.36"^^xsd:float ;
+    fsl:fsl_000017 214 ;
+    fsl:fsl_000018 "311.34"^^xsd:float ;
+    fsl:fsl_000019 604 ;
+    fsl:fsl_000020 "1565.38"^^xsd:float ;
+    fsl:fsl_000021 2017 ;
+    fsl:fsl_000022 "4420.36"^^xsd:float ;
+    fsl:fsl_000023 2568 ;
+    fsl:fsl_000024 "5142.23"^^xsd:float ;
+    fsl:fsl_000025 702 ;
+    fsl:fsl_000026 "2844.27"^^xsd:float ;
+    fsl:fsl_000027 3288 ;
+    fsl:fsl_000028 "6518.3"^^xsd:float ;
+    fsl:fsl_000029 7123 ;
+    fsl:fsl_000030 "9723.21"^^xsd:float ;
+    fsl:fsl_000031 302526 ;
+    fsl:fsl_000032 "304026"^^xsd:float ;
+    fsl:fsl_000033 678364 ;
+    fsl:fsl_000034 "538970"^^xsd:float ;
+    fsl:fsl_000035 510726 ;
+    fsl:fsl_000036 "685653"^^xsd:float ;
+    prov:wasGeneratedBy niiri:000e2682-f92a-1bef-acec-cf10b37d865e .
+
+niiri:000e2682-f92a-1bef-acec-cf10b37d865e a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:e8ebfd2d-a8db-0aab-ba53-bec57e6c4bf3 ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:0eecf0e9-326b-ce49-1c48-bee27fd6dad7 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:e8ebfd2d-a8db-0aab-ba53-bec57e6c4bf3 a prov:Agent,
+        prov:SoftwareAgent ;
+    nidm:NIDM_0000164 fsl: .
+
+niiri:0eecf0e9-326b-ce49-1c48-bee27fd6dad7 a prov:Agent ;
+    ndar:src_subject_id "sub-36"^^xsd:string .
+
+niiri:d3cd3f19-f7b3-1ddd-f0bd-f48b9afdfcfd a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 172935351 ;
+    fsl:fsl_000002 "375424523"^^xsd:float ;
+    fsl:fsl_000003 324 ;
+    fsl:fsl_000004 "505.68"^^xsd:float ;
+    fsl:fsl_000005 519 ;
+    fsl:fsl_000006 "715.28"^^xsd:float ;
+    fsl:fsl_000007 3381 ;
+    fsl:fsl_000008 "4448.63"^^xsd:float ;
+    fsl:fsl_000009 1725 ;
+    fsl:fsl_000010 "5208.83"^^xsd:float ;
+    fsl:fsl_000011 713 ;
+    fsl:fsl_000012 "2757.31"^^xsd:float ;
+    fsl:fsl_000013 2142 ;
+    fsl:fsl_000014 "7145.66"^^xsd:float ;
+    fsl:fsl_000015 7263 ;
+    fsl:fsl_000016 "10597.16"^^xsd:float ;
+    fsl:fsl_000017 289 ;
+    fsl:fsl_000018 "474.5"^^xsd:float ;
+    fsl:fsl_000019 685 ;
+    fsl:fsl_000020 "1175.12"^^xsd:float ;
+    fsl:fsl_000021 2216 ;
+    fsl:fsl_000022 "4440.87"^^xsd:float ;
+    fsl:fsl_000023 2051 ;
+    fsl:fsl_000024 "6492.92"^^xsd:float ;
+    fsl:fsl_000025 1264 ;
+    fsl:fsl_000026 "2701.7"^^xsd:float ;
+    fsl:fsl_000027 2882 ;
+    fsl:fsl_000028 "7633.43"^^xsd:float ;
+    fsl:fsl_000029 5307 ;
+    fsl:fsl_000030 "14272.33"^^xsd:float ;
+    fsl:fsl_000031 254330 ;
+    fsl:fsl_000032 "282065"^^xsd:float ;
+    fsl:fsl_000033 594127 ;
+    fsl:fsl_000034 "774488"^^xsd:float ;
+    fsl:fsl_000035 723785 ;
+    fsl:fsl_000036 "561693"^^xsd:float ;
+    prov:wasGeneratedBy niiri:168ba2b6-e6cd-5bba-36d9-b9a2dfecbba0 .
+
+niiri:168ba2b6-e6cd-5bba-36d9-b9a2dfecbba0 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:99c27cad-c04f-dec6-43de-ceb90eed9975 ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:8a8ddbab-6a19-8979-7f0b-d97db4fcc31c ;
+            prov:hadRole sio:Subject ] .
+
+niiri:99c27cad-c04f-dec6-43de-ceb90eed9975 a prov:Agent,
+        prov:SoftwareAgent ;
+    nidm:NIDM_0000164 fsl: .
+
+niiri:8a8ddbab-6a19-8979-7f0b-d97db4fcc31c a prov:Agent ;
+    ndar:src_subject_id "sub-37"^^xsd:string .
+
+niiri:8d33adc6-d3d0-a8f2-b2f4-5ef5a9dbdf83 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 172923368 ;
+    fsl:fsl_000002 "375172782"^^xsd:float ;
+    fsl:fsl_000003 147 ;
+    fsl:fsl_000004 "1011.08"^^xsd:float ;
+    fsl:fsl_000005 1048 ;
+    fsl:fsl_000006 "1110.34"^^xsd:float ;
+    fsl:fsl_000007 3093 ;
+    fsl:fsl_000008 "5495.29"^^xsd:float ;
+    fsl:fsl_000009 3391 ;
+    fsl:fsl_000010 "3325.24"^^xsd:float ;
+    fsl:fsl_000011 1418 ;
+    fsl:fsl_000012 "2878.77"^^xsd:float ;
+    fsl:fsl_000013 3018 ;
+    fsl:fsl_000014 "4769.8"^^xsd:float ;
+    fsl:fsl_000015 4172 ;
+    fsl:fsl_000016 "11133.66"^^xsd:float ;
+    fsl:fsl_000017 209 ;
+    fsl:fsl_000018 "480.02"^^xsd:float ;
+    fsl:fsl_000019 977 ;
+    fsl:fsl_000020 "2796.2"^^xsd:float ;
+    fsl:fsl_000021 2178 ;
+    fsl:fsl_000022 "4303.1"^^xsd:float ;
+    fsl:fsl_000023 2608 ;
+    fsl:fsl_000024 "4881.61"^^xsd:float ;
+    fsl:fsl_000025 1186 ;
+    fsl:fsl_000026 "2879.01"^^xsd:float ;
+    fsl:fsl_000027 2526 ;
+    fsl:fsl_000028 "7000.11"^^xsd:float ;
+    fsl:fsl_000029 5170 ;
+    fsl:fsl_000030 "9849.33"^^xsd:float ;
+    fsl:fsl_000031 277785 ;
+    fsl:fsl_000032 "279408"^^xsd:float ;
+    fsl:fsl_000033 650093 ;
+    fsl:fsl_000034 "686734"^^xsd:float ;
+    fsl:fsl_000035 472497 ;
+    fsl:fsl_000036 "618282"^^xsd:float ;
+    prov:wasGeneratedBy niiri:1cb75aaa-bb31-bb2e-f7e0-ff8cd9f0d79f .
+
+niiri:1cb75aaa-bb31-bb2e-f7e0-ff8cd9f0d79f a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:dfdab5e4-b42f-a00c-d082-defc074eb030 ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:5dca38aa-fd1c-757f-e722-7a568accc5fa ;
+            prov:hadRole sio:Subject ] .
+
+niiri:dfdab5e4-b42f-a00c-d082-defc074eb030 a prov:Agent,
+        prov:SoftwareAgent ;
+    nidm:NIDM_0000164 fsl: .
+
+niiri:5dca38aa-fd1c-757f-e722-7a568accc5fa a prov:Agent ;
+    ndar:src_subject_id "sub-38"^^xsd:string .
+
+niiri:aeca77db-b64f-eb91-0fe1-04ffb1fbe3d2 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 172923125 ;
+    fsl:fsl_000002 "375277415"^^xsd:float ;
+    fsl:fsl_000003 108 ;
+    fsl:fsl_000004 "136.83"^^xsd:float ;
+    fsl:fsl_000005 410 ;
+    fsl:fsl_000006 "1363.08"^^xsd:float ;
+    fsl:fsl_000007 3891 ;
+    fsl:fsl_000008 "5654.93"^^xsd:float ;
+    fsl:fsl_000009 2599 ;
+    fsl:fsl_000010 "6518.34"^^xsd:float ;
+    fsl:fsl_000011 525 ;
+    fsl:fsl_000012 "2587.23"^^xsd:float ;
+    fsl:fsl_000013 2907 ;
+    fsl:fsl_000014 "6962.03"^^xsd:float ;
+    fsl:fsl_000015 4917 ;
+    fsl:fsl_000016 "10099.17"^^xsd:float ;
+    fsl:fsl_000017 246 ;
+    fsl:fsl_000018 "470.02"^^xsd:float ;
+    fsl:fsl_000019 513 ;
+    fsl:fsl_000020 "2045.22"^^xsd:float ;
+    fsl:fsl_000021 2189 ;
+    fsl:fsl_000022 "4189.01"^^xsd:float ;
+    fsl:fsl_000023 2083 ;
+    fsl:fsl_000024 "5562.42"^^xsd:float ;
+    fsl:fsl_000025 903 ;
+    fsl:fsl_000026 "1752.72"^^xsd:float ;
+    fsl:fsl_000027 3807 ;
+    fsl:fsl_000028 "7996.33"^^xsd:float ;
+    fsl:fsl_000029 6116 ;
+    fsl:fsl_000030 "14739.33"^^xsd:float ;
+    fsl:fsl_000031 255446 ;
+    fsl:fsl_000032 "382053"^^xsd:float ;
+    fsl:fsl_000033 774071 ;
+    fsl:fsl_000034 "691464"^^xsd:float ;
+    fsl:fsl_000035 730243 ;
+    fsl:fsl_000036 "459853"^^xsd:float ;
+    prov:wasGeneratedBy niiri:dbceae5e-575f-cd35-8ee2-c3fb1c0cf62f .
+
+niiri:dbceae5e-575f-cd35-8ee2-c3fb1c0cf62f a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:8aebeec0-cad3-5e3f-3fdb-46b0090f4fbe ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:a06a1bab-aa54-2e8b-1e23-aa2fdbdcf4c3 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:8aebeec0-cad3-5e3f-3fdb-46b0090f4fbe a prov:Agent,
+        prov:SoftwareAgent ;
+    nidm:NIDM_0000164 fsl: .
+
+niiri:a06a1bab-aa54-2e8b-1e23-aa2fdbdcf4c3 a prov:Agent ;
+    ndar:src_subject_id "sub-39"^^xsd:string .
+
+niiri:4be84dcb-bd5a-acfc-ffba-b6bee58a32cf a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 172982820 ;
+    fsl:fsl_000002 "375289499"^^xsd:float ;
+    fsl:fsl_000003 445 ;
+    fsl:fsl_000004 "223.9"^^xsd:float ;
+    fsl:fsl_000005 1074 ;
+    fsl:fsl_000006 "2905.89"^^xsd:float ;
+    fsl:fsl_000007 3986 ;
+    fsl:fsl_000008 "5656.32"^^xsd:float ;
+    fsl:fsl_000009 3342 ;
+    fsl:fsl_000010 "6587.2"^^xsd:float ;
+    fsl:fsl_000011 813 ;
+    fsl:fsl_000012 "2865.62"^^xsd:float ;
+    fsl:fsl_000013 3104 ;
+    fsl:fsl_000014 "6339.61"^^xsd:float ;
+    fsl:fsl_000015 4109 ;
+    fsl:fsl_000016 "12284.09"^^xsd:float ;
+    fsl:fsl_000017 222 ;
+    fsl:fsl_000018 "736.83"^^xsd:float ;
+    fsl:fsl_000019 1025 ;
+    fsl:fsl_000020 "1595.75"^^xsd:float ;
+    fsl:fsl_000021 3042 ;
+    fsl:fsl_000022 "4511.67"^^xsd:float ;
+    fsl:fsl_000023 2410 ;
+    fsl:fsl_000024 "4744.85"^^xsd:float ;
+    fsl:fsl_000025 843 ;
+    fsl:fsl_000026 "1587.48"^^xsd:float ;
+    fsl:fsl_000027 3502 ;
+    fsl:fsl_000028 "5832.22"^^xsd:float ;
+    fsl:fsl_000029 5921 ;
+    fsl:fsl_000030 "12944.74"^^xsd:float ;
+    fsl:fsl_000031 220946 ;
+    fsl:fsl_000032 "340291"^^xsd:float ;
+    fsl:fsl_000033 714975 ;
+    fsl:fsl_000034 "752192"^^xsd:float ;
+    fsl:fsl_000035 735410 ;
+    fsl:fsl_000036 "577562"^^xsd:float ;
+    prov:wasGeneratedBy niiri:4b1eedf0-ceff-84aa-0a0b-9eb2392f2ccc .
+
+niiri:4b1eedf0-ceff-84aa-0a0b-9eb2392f2ccc a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:dab67f2e-a3db-841e-ebf7-cef209bfa64e ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:eee40ca9-61a7-df9e-a9ac-4b6fdb1c8f1f ;
+            prov:hadRole sio:Subject ] .
+
+niiri:dab67f2e-a3db-841e-ebf7-cef209bfa64e a prov:Agent,
+        prov:SoftwareAgent ;
+    nidm:NIDM_0000164 fsl: .
+
+niiri:eee40ca9-61a7-df9e-a9ac-4b6fdb1c8f1f a prov:Agent ;
+    ndar:src_subject_id "sub-40"^^xsd:string .
+
+niiri:24da2f98-e4ca-b7f3-d42f-f41ecbc1c1c0 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 172957989 ;
+    fsl:fsl_000002 "375277576"^^xsd:float ;
+    fsl:fsl_000003 64 ;
+    fsl:fsl_000004 "548.6"^^xsd:float ;
+    fsl:fsl_000005 543 ;
+    fsl:fsl_000006 "2766.79"^^xsd:float ;
+    fsl:fsl_000007 2217 ;
+    fsl:fsl_000008 "6568.91"^^xsd:float ;
+    fsl:fsl_000009 1704 ;
+    fsl:fsl_000010 "3507.56"^^xsd:float ;
+    fsl:fsl_000011 563 ;
+    fsl:fsl_000012 "3477.59"^^xsd:float ;
+    fsl:fsl_000013 2726 ;
+    fsl:fsl_000014 "6567.86"^^xsd:float ;
+    fsl:fsl_000015 4207 ;
+    fsl:fsl_000016 "15412.25"^^xsd:float ;
+    fsl:fsl_000017 180 ;
+    fsl:fsl_000018 "500.24"^^xsd:float ;
+    fsl:fsl_000019 664 ;
+    fsl:fsl_000020 "1085.73"^^xsd:float ;
+    fsl:fsl_000021 3018 ;
+    fsl:fsl_000022 "5756.0"^^xsd:float ;
+    fsl:fsl_000023 2045 ;
+    fsl:fsl_000024 "6233.76"^^xsd:float ;
+    fsl:fsl_000025 1217 ;
+    fsl:fsl_000026 "2170.3"^^xsd:float ;
+    fsl:fsl_000027 3518 ;
+    fsl:fsl_000028 "6805.84"^^xsd:float ;
+    fsl:fsl_000029 4612 ;
+    fsl:fsl_000030 "16379.02"^^xsd:float ;
+    fsl:fsl_000031 258882 ;
+    fsl:fsl_000032 "321182"^^xsd:float ;
+    fsl:fsl_000033 509706 ;
+    fsl:fsl_000034 "740958"^^xsd:float ;
+    fsl:fsl_000035 640152 ;
+    fsl:fsl_000036 "657540"^^xsd:float ;
+    prov:wasGeneratedBy niiri:34f8d5ab-6701-c76a-a2c0-0cada74f6b19 .
+
+niiri:34f8d5ab-6701-c76a-a2c0-0cada74f6b19 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:fe7b401c-2bca-3f6e-8e84-79bd1e7ad29f ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:c2cb4fb5-7bd8-e0d4-7f8c-5dcec5b9bedb ;
+            prov:hadRole sio:Subject ] .
+
+niiri:fe7b401c-2bca-3f6e-8e84-79bd1e7ad29f a prov:Agent,
+        prov:SoftwareAgent ;
+    nidm:NIDM_0000164 fsl: .
+
+niiri:c2cb4fb5-7bd8-e0d4-7f8c-5dcec5b9bedb a prov:Agent ;
+    ndar:src_subject_id "sub-41"^^xsd:string .
+
+niiri:cedbbeeb-58ac-921e-13ab-ab5fdfefeb3d a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 172908315 ;
+    fsl:fsl_000002 "375011696"^^xsd:float ;
+    fsl:fsl_000003 450 ;
+    fsl:fsl_000004 "461.03"^^xsd:float ;
+    fsl:fsl_000005 625 ;
+    fsl:fsl_000006 "2406.04"^^xsd:float ;
+    fsl:fsl_000007 3041 ;
+    fsl:fsl_000008 "4664.15"^^xsd:float ;
+    fsl:fsl_000009 1507 ;
+    fsl:fsl_000010 "6307.82"^^xsd:float ;
+    fsl:fsl_000011 968 ;
+    fsl:fsl_000012 "3231.99"^^xsd:float ;
+    fsl:fsl_000013 2251 ;
+    fsl:fsl_000014 "7343.64"^^xsd:float ;
+    fsl:fsl_000015 4162 ;
+    fsl:fsl_000016 "11817.42"^^xsd:float ;
+    fsl:fsl_000017 233 ;
+    fsl:fsl_000018 "265.05"^^xsd:float ;
+    fsl:fsl_000019 744 ;
+    fsl:fsl_000020 "2482.0"^^xsd:float ;
+    fsl:fsl_000021 2962 ;
+    fsl:fsl_000022 "5773.17"^^xsd:float ;
+    fsl:fsl_000023 2892 ;
+    fsl:fsl_000024 "5111.6"^^xsd:float ;
+    fsl:fsl_000025 1135 ;
+    fsl:fsl_000026 "2208.26"^^xsd:float ;
+    fsl:fsl_000027 3152 ;
+    fsl:fsl_000028 "7157.41"^^xsd:float ;
+    fsl:fsl_000029 4824 ;
+    fsl:fsl_000030 "12437.94"^^xsd:float ;
+    fsl:fsl_000031 399834 ;
+    fsl:fsl_000032 "364877"^^xsd:float ;
+    fsl:fsl_000033 614924 ;
+    fsl:fsl_000034 "672459"^^xsd:float ;
+    fsl:fsl_000035 706317 ;
+    fsl:fsl_000036 "637771"^^xsd:float ;
+    prov:wasGeneratedBy niiri:bd9332cb-06c5-a7d0-8fc3-f3fbf49dce9f .
+
+niiri:bd9332cb-06c5-a7d0-8fc3-f3fbf49dce9f a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:d29ab905-9690-fcfe-fbfa-44ce09d7edd9 ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:bb9c6fde-95e9-deea-b7b6-ca981faf4c1b ;
+            prov:hadRole sio:Subject ] .
+
+niiri:d29ab905-9690-fcfe-fbfa-44ce09d7edd9 a prov:Agent,
+        prov:SoftwareAgent ;
+    nidm:NIDM_0000164 fsl: .
+
+niiri:bb9c6fde-95e9-deea-b7b6-ca981faf4c1b a prov:Agent ;
+    ndar:src_subject_id "sub-42"^^xsd:string .
+
+niiri:aaad4df4-4bef-a17a-fcc9-a79eab27b2ad a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 172916712 ;
+    fsl:fsl_000002 "375265986"^^xsd:float ;
+    fsl:fsl_000003 463 ;
+    fsl:fsl_000004 "643.59"^^xsd:float ;
+    fsl:fsl_000005 1140 ;
+    fsl:fsl_000006 "1872.51"^^xsd:float ;
+    fsl:fsl_000007 2393 ;
+    fsl:fsl_000008 "6320.54"^^xsd:float ;
+    fsl:fsl_000009 1830 ;
+    fsl:fsl_000010 "5472.83"^^xsd:float ;
+    fsl:fsl_000011 617 ;
+    fsl:fsl_000012 "1929.35"^^xsd:float ;
+    fsl:fsl_000013 3355 ;
+    fsl:fsl_000014 "4857.12"^^xsd:float ;
+    fsl:fsl_000015 7089 ;
+    fsl:fsl_000016 "15609.82"^^xsd:float ;
+    fsl:fsl_000017 273 ;
+    fsl:fsl_000018 "472.23"^^xsd:float ;
+    fsl:fsl_000019 965 ;
+    fsl:fsl_000020 "1831.15"^^xsd:float ;
+    fsl:fsl_000021 2300 ;
+    fsl:fsl_000022 "6173.97"^^xsd:float ;
+    fsl:fsl_000023 2173 ;
+    fsl:fsl_000024 "5280.71"^^xsd:float ;
+    fsl:fsl_000025 1171 ;
+    fsl:fsl_000026 "2477.82"^^xsd:float ;
+    fsl:fsl_000027 2911 ;
+    fsl:fsl_000028 "7038.13"^^xsd:float ;
+    fsl:fsl_000029 6788 ;
+    fsl:fsl_000030 "13932.73"^^xsd:float ;
+    fsl:fsl_000031 378911 ;
+    fsl:fsl_000032 "256334"^^xsd:float ;
+    fsl:fsl_000033 736828 ;
+    fsl:fsl_000034 "629856"^^xsd:float ;
+    fsl:fsl_000035 606682 ;
+    fsl:fsl_000036 "560593"^^xsd:float ;
+    prov:wasGeneratedBy niiri:7f5b8e47-ec8d-de00-3da2-a065b7bbed28 .
+
+niiri:7f5b8e47-ec8d-de00-3da2-a065b7bbed28 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:3716aadb-019f-fc2c-cbb9-adec4a3cbcac ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:73fcd20c-6eff-eeb3-df58-9ec37e6ba8ee ;
+            prov:hadRole sio:Subject ] .
+
+niiri:3716aadb-019f-fc2c-cbb9-adec4a3cbcac a prov:Agent,
+        prov:SoftwareAgent ;
+    nidm:NIDM_0000164 fsl: .
+
+niiri:73fcd20c-6eff-eeb3-df58-9ec37e6ba8ee a prov:Agent ;
+    ndar:src_subject_id "sub-43"^^xsd:string .
+
+niiri:4dda4e9c-9be5-bb51-e818-5f952cfaaabc a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 172989628 ;
+    fsl:fsl_000002 "375300537"^^xsd:float ;
+    fsl:fsl_000003 195 ;
+    fsl:fsl_000004 "701.46"^^xsd:float ;
+    fsl:fsl_000005 922 ;
+    fsl:fsl_000006 "669.54"^^xsd:float ;
+    fsl:fsl_000007 2531 ;
+    fsl:fsl_000008 "4920.38"^^xsd:float ;
+    fsl:fsl_000009 3385 ;
+    fsl:fsl_000010 "6324.16"^^xsd:float ;
+    fsl:fsl_000011 1471 ;
+    fsl:fsl_000012 "1985.19"^^xsd:float ;
+    fsl:fsl_000013 2193 ;
+    fsl:fsl_000014 "6931.31"^^xsd:float ;
+    fsl:fsl_000015 4600 ;
+    fsl:fsl_000016 "11901.88"^^xsd:float ;
+    fsl:fsl_000017 241 ;
+    fsl:fsl_000018 "600.62"^^xsd:float ;
+    fsl:fsl_000019 1140 ;
+    fsl:fsl_000020 "1673.84"^^xsd:float ;
+    fsl:fsl_000021 3307 ;
+    fsl:fsl_000022 "4859.21"^^xsd:float ;
+    fsl:fsl_000023 2157 ;
+    fsl:fsl_000024 "5578.92"^^xsd:float ;
+    fsl:fsl_000025 1088 ;
+    fsl:fsl_000026 "2368.75"^^xsd:float ;
+    fsl:fsl_000027 3963 ;
+    fsl:fsl_000028 "7288.96"^^xsd:float ;
+    fsl:fsl_000029 6729 ;
+    fsl:fsl_000030 "10635.26"^^xsd:float ;
+    fsl:fsl_000031 215046 ;
+    fsl:fsl_000032 "278861"^^xsd:float ;
+    fsl:fsl_000033 563792 ;
+    fsl:fsl_000034 "563484"^^xsd:float ;
+    fsl:fsl_000035 512797 ;
+    fsl:fsl_000036 "744833"^^xsd:float ;
+    prov:wasGeneratedBy niiri:e7eda8a2-b3ab-da1d-80cf-b4ade1cbb7e7 .
+
+niiri:e7eda8a2-b3ab-da1d-80cf-b4ade1cbb7e7 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:f6ce9cc0-bbc6-e1cb-43ed-59b4ec5c9e1a ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:fe8fb1fa-fa07-6c3c-f9da-da7a6fd75a8c ;
+            prov:hadRole sio:Subject ] .
+
+niiri:f6ce9cc0-bbc6-e1cb-43ed-59b4ec5c9e1a a prov:Agent,
+        prov:SoftwareAgent ;
+    nidm:NIDM_0000164 fsl: .
+
+niiri:fe8fb1fa-fa07-6c3c-f9da-da7a6fd75a8c a prov:Agent ;
+    ndar:src_subject_id "sub-44"^^xsd:string .
+
+niiri:c5dbaf6c-b22e-982e-d4ea-d254e130ceac a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 172993683 ;
+    fsl:fsl_000002 "375442494"^^xsd:float ;
+    fsl:fsl_000003 80 ;
+    fsl:fsl_000004 "626.57"^^xsd:float ;
+    fsl:fsl_000005 427 ;
+    fsl:fsl_000006 "744.4"^^xsd:float ;
+    fsl:fsl_000007 3164 ;
+    fsl:fsl_000008 "4602.6"^^xsd:float ;
+    fsl:fsl_000009 2456 ;
+    fsl:fsl_000010 "4165.88"^^xsd:float ;
+    fsl:fsl_000011 1122 ;
+    fsl:fsl_000012 "2997.5"^^xsd:float ;
+    fsl:fsl_000013 3053 ;
+    fsl:fsl_000014 "4604.3"^^xsd:float ;
+    fsl:fsl_000015 6967 ;
+    fsl:fsl_000016 "15978.69"^^xsd:float ;
+    fsl:fsl_000017 250 ;
+    fsl:fsl_000018 "267.8"^^xsd:float ;
+    fsl:fsl_000019 638 ;
+    fsl:fsl_000020 "1074.4"^^xsd:float ;
+    fsl:fsl_000021 2230 ;
+    fsl:fsl_000022 "4133.33"^^xsd:float ;
+    fsl:fsl_000023 2347 ;
+    fsl:fsl_000024 "6075.22"^^xsd:float ;
+    fsl:fsl_000025 981 ;
+    fsl:fsl_000026 "2066.85"^^xsd:float ;
+    fsl:fsl_000027 3279 ;
+    fsl:fsl_000028 "6084.27"^^xsd:float ;
+    fsl:fsl_000029 7422 ;
+    fsl:fsl_000030 "11101.45"^^xsd:float ;
+    fsl:fsl_000031 286379 ;
+    fsl:fsl_000032 "253190"^^xsd:float ;
+    fsl:fsl_000033 739969 ;
+    fsl:fsl_000034 "544677"^^xsd:float ;
+    fsl:fsl_000035 506137 ;
+    fsl:fsl_000036 "590948"^^xsd:float ;
+    prov:wasGeneratedBy niiri:a6ef8cf6-63f8-1b1c-7ffd-1f79afdbe29c .
+
+niiri:a6ef8cf6-63f8-1b1c-7ffd-1f79afdbe29c a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:2a34c723-14d3-ab3d-2bcb-eddd457b6794 ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:e6f4aa2f-eba6-dbf4-5a69-8f9f2b3dc1df ;
+            prov:hadRole sio:Subject ] .
+
+niiri:2a34c723-14d3-ab3d-2bcb-eddd457b6794 a prov:Agent,
+        prov:SoftwareAgent ;
+    nidm:NIDM_0000164 fsl: .
+
+niiri:e6f4aa2f-eba6-dbf4-5a69-8f9f2b3dc1df a prov:Agent ;
+    ndar:src_subject_id "sub-45"^^xsd:string .
+
+niiri:6d01a214-9c8b-ab9a-dddc-8ebb6c37cd09 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 172922098 ;
+    fsl:fsl_000002 "375320261"^^xsd:float ;
+    fsl:fsl_000003 303 ;
+    fsl:fsl_000004 "637.5"^^xsd:float ;
+    fsl:fsl_000005 1135 ;
+    fsl:fsl_000006 "1024.0"^^xsd:float ;
+    fsl:fsl_000007 2410 ;
+    fsl:fsl_000008 "4187.67"^^xsd:float ;
+    fsl:fsl_000009 1785 ;
+    fsl:fsl_000010 "5340.51"^^xsd:float ;
+    fsl:fsl_000011 817 ;
+    fsl:fsl_000012 "1735.51"^^xsd:float ;
+    fsl:fsl_000013 2356 ;
+    fsl:fsl_000014 "4895.31"^^xsd:float ;
+    fsl:fsl_000015 5989 ;
+    fsl:fsl_000016 "10822.61"^^xsd:float ;
+    fsl:fsl_000017 150 ;
+    fsl:fsl_000018 "389.72"^^xsd:float ;
+    fsl:fsl_000019 1033 ;
+    fsl:fsl_000020 "1040.93"^^xsd:float ;
+    fsl:fsl_000021 2968 ;
+    fsl:fsl_000022 "5130.88"^^xsd:float ;
+    fsl:fsl_000023 2183 ;
+    fsl:fsl_000024 "5109.49"^^xsd:float ;
+    fsl:fsl_000025 1054 ;
+    fsl:fsl_000026 "1600.54"^^xsd:float ;
+    fsl:fsl_000027 3075 ;
+    fsl:fsl_000028 "6655.51"^^xsd:float ;
+    fsl:fsl_000029 6712 ;
+    fsl:fsl_000030 "16473.26"^^xsd:float ;
+    fsl:fsl_000031 280792 ;
+    fsl:fsl_000032 "354787"^^xsd:float ;
+    fsl:fsl_000033 610078 ;
+    fsl:fsl_000034 "687596"^^xsd:float ;
+    fsl:fsl_000035 479718 ;
+    fsl:fsl_000036 "476025"^^xsd:float ;
+    prov:wasGeneratedBy niiri:1b6a5e6e-e1ba-d3bd-f507-ec8a9c5adc31 .
+
+niiri:1b6a5e6e-e1ba-d3bd-f507-ec8a9c5adc31 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:120c19e5-bbd8-ecba-ade0-6fb53b2fbca1 ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:d5fe5aad-3fdc-ffcb-420e-dec68e4f7422 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:120c19e5-bbd8-ecba-ade0-6fb53b2fbca1 a prov:Agent,
+        prov:SoftwareAgent ;
+    nidm:NIDM_0000164 fsl: .
+
+niiri:d5fe5aad-3fdc-ffcb-420e-dec68e4f7422 a prov:Agent ;
+    ndar:src_subject_id "sub-46"^^xsd:string .
+
+niiri:ed5e1fea-bef3-cfea-fc1d-a3afd19fcc0f a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 172919619 ;
+    fsl:fsl_000002 "375420654"^^xsd:float ;
+    fsl:fsl_000003 116 ;
+    fsl:fsl_000004 "376.93"^^xsd:float ;
+    fsl:fsl_000005 982 ;
+    fsl:fsl_000006 "581.21"^^xsd:float ;
+    fsl:fsl_000007 3098 ;
+    fsl:fsl_000008 "5279.42"^^xsd:float ;
+    fsl:fsl_000009 2048 ;
+    fsl:fsl_000010 "3824.84"^^xsd:float ;
+    fsl:fsl_000011 562 ;
+    fsl:fsl_000012 "3446.83"^^xsd:float ;
+    fsl:fsl_000013 3030 ;
+    fsl:fsl_000014 "5670.42"^^xsd:float ;
+    fsl:fsl_000015 5733 ;
+    fsl:fsl_000016 "15679.9"^^xsd:float ;
+    fsl:fsl_000017 298 ;
+    fsl:fsl_000018 "534.06"^^xsd:float ;
+    fsl:fsl_000019 670 ;
+    fsl:fsl_000020 "2244.09"^^xsd:float ;
+    fsl:fsl_000021 3318 ;
+    fsl:fsl_000022 "5234.17"^^xsd:float ;
+    fsl:fsl_000023 2268 ;
+    fsl:fsl_000024 "4570.46"^^xsd:float ;
+    fsl:fsl_000025 1247 ;
+    fsl:fsl_000026 "2061.89"^^xsd:float ;
+    fsl:fsl_000027 2998 ;
+    fsl:fsl_000028 "7375.38"^^xsd:float ;
+    fsl:fsl_000029 5563 ;
+    fsl:fsl_000030 "12044.23"^^xsd:float ;
+    fsl:fsl_000031 347048 ;
+    fsl:fsl_000032 "350082"^^xsd:float ;
+    fsl:fsl_000033 704878 ;
+    fsl:fsl_000034 "707773"^^xsd:float ;
+    fsl:fsl_000035 709434 ;
+    fsl:fsl_000036 "555316"^^xsd:float ;
+    prov:wasGeneratedBy niiri:c7c84b8b-eb8c-b24f-fcef-911e7bf93cc5 .
+
+niiri:c7c84b8b-eb8c-b24f-fcef-911e7bf93cc5 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:c29b62e9-cc0f-ead4-2c1e-d2e6ffaece82 ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:0a1bffb9-a1e2-b17b-bd9a-c3b0a9ab4d91 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:c29b62e9-cc0f-ead4-2c1e-d2e6ffaece82 a prov:Agent,
+        prov:SoftwareAgent ;
+    nidm:NIDM_0000164 fsl: .
+
+niiri:0a1bffb9-a1e2-b17b-bd9a-c3b0a9ab4d91 a prov:Agent ;
+    ndar:src_subject_id "sub-47"^^xsd:string .
+
+niiri:aea0a278-d5e6-b908-85fc-28f5ff8bfceb a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 172910155 ;
+    fsl:fsl_000002 "375369062"^^xsd:float ;
+    fsl:fsl_000003 274 ;
+    fsl:fsl_000004 "444.35"^^xsd:float ;
+    fsl:fsl_000005 1109 ;
+    fsl:fsl_000006 "887.89"^^xsd:float ;
+    fsl:fsl_000007 3080 ;
+    fsl:fsl_000008 "6658.07"^^xsd:float ;
+    fsl:fsl_000009 2761 ;
+    fsl:fsl_000010 "5889.17"^^xsd:float ;
+    fsl:fsl_000011 1255 ;
+    fsl:fsl_000012 "2958.57"^^xsd:float ;
+    fsl:fsl_000013 3442 ;
+    fsl:fsl_000014 "6000.87"^^xsd:float ;
+    fsl:fsl_000015 5997 ;
+    fsl:fsl_000016 "13459.03"^^xsd:float ;
+    fsl:fsl_000017 287 ;
+    fsl:fsl_000018 "389.41"^^xsd:float ;
+    fsl:fsl_000019 732 ;
+    fsl:fsl_000020 "1116.81"^^xsd:float ;
+    fsl:fsl_000021 2715 ;
+    fsl:fsl_000022 "4817.52"^^xsd:float ;
+    fsl:fsl_000023 2487 ;
+    fsl:fsl_000024 "5676.07"^^xsd:float ;
+    fsl:fsl_000025 799 ;
+    fsl:fsl_000026 "2285.66"^^xsd:float ;
+    fsl:fsl_000027 2643 ;
+    fsl:fsl_000028 "7506.3"^^xsd:float ;
+    fsl:fsl_000029 7374 ;
+    fsl:fsl_000030 "14351.11"^^xsd:float ;
+    fsl:fsl_000031 256505 ;
+    fsl:fsl_000032 "290576"^^xsd:float ;
+    fsl:fsl_000033 739573 ;
+    fsl:fsl_000034 "545623"^^xsd:float ;
+    fsl:fsl_000035 660308 ;
+    fsl:fsl_000036 "735797"^^xsd:float ;
+    prov:wasGeneratedBy niiri:356dc225-e92b-15fb-95e1-e2bcc87f2cf0 .
+
+niiri:356dc225-e92b-15fb-95e1-e2bcc87f2cf0 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:c3adc774-fc66-fb2a-b35a-dea3f279de95 ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:f40533be-c733-fa2e-697e-c5b5bf9ccddc ;
+            prov:hadRole sio:Subject ] .
+
+niiri:c3adc774-fc66-fb2a-b35a-dea3f279de95 a prov:Agent,
+        prov:SoftwareAgent ;
+    nidm:NIDM_0000164 fsl: .
+
+niiri:f40533be-c733-fa2e-697e-c5b5bf9ccddc a prov:Agent ;
+    ndar:src_subject_id "sub-48"^^xsd:string .
+
+niiri:ddc74411-e2ae-eda4-f1a3-9f5ba7da22ad a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 172963456 ;
+    fsl:fsl_000002 "375256516"^^xsd:float ;
+    fsl:fsl_000003 127 ;
+    fsl:fsl_000004 "691.78"^^xsd:float ;
+    fsl:fsl_000005 822 ;
+    fsl:fsl_000006 "1887.3"^^xsd:float ;
+    fsl:fsl_000007 2795 ;
+    fsl:fsl_000008 "5350.99"^^xsd:float ;
+    fsl:fsl_000009 2723 ;
+    fsl:fsl_000010 "6329.24"^^xsd:float ;
+    fsl:fsl_000011 814 ;
+    fsl:fsl_000012 "1616.25"^^xsd:float ;
+    fsl:fsl_000013 3371 ;
+    fsl:fsl_000014 "5740.68"^^xsd:float ;
+    fsl:fsl_000015 6229 ;
+    fsl:fsl_000016 "15076.34"^^xsd:float ;
+    fsl:fsl_000017 162 ;
+    fsl:fsl_000018 "397.32"^^xsd:float ;
+    fsl:fsl_000019 514 ;
+    fsl:fsl_000020 "2483.84"^^xsd:float ;
+    fsl:fsl_000021 2950 ;
+    fsl:fsl_000022 "4115.97"^^xsd:float ;
+    fsl:fsl_000023 2886 ;
+    fsl:fsl_000024 "5400.0"^^xsd:float ;
+    fsl:fsl_000025 1208 ;
+    fsl:fsl_000026 "2828.91"^^xsd:float ;
+    fsl:fsl_000027 3432 ;
+    fsl:fsl_000028 "6475.33"^^xsd:float ;
+    fsl:fsl_000029 6450 ;
+    fsl:fsl_000030 "13148.25"^^xsd:float ;
+    fsl:fsl_000031 322969 ;
+    fsl:fsl_000032 "271898"^^xsd:float ;
+    fsl:fsl_000033 529547 ;
+    fsl:fsl_000034 "671925"^^xsd:float ;
+    fsl:fsl_000035 539083 ;
+    fsl:fsl_000036 "650293"^^xsd:float ;
+    prov:wasGeneratedBy niiri:c7e3d35d-78de-2eba-01fa-b85b54bdfc62 .
+
+niiri:c7e3d35d-78de-2eba-01fa-b85b54bdfc62 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:b5cd6615-4bc7-4745-3a16-eeba6ccbed23 ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:49d2d0fe-0907-ddd0-3efd-feaad46dee55 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:b5cd6615-4bc7-4745-3a16-eeba6ccbed23 a prov:Agent,
+        prov:SoftwareAgent ;
+    nidm:NIDM_0000164 fsl: .
+
+niiri:49d2d0fe-0907-ddd0-3efd-feaad46dee55 a prov:Agent ;
+    ndar:src_subject_id "sub-49"^^xsd:string .
+
+niiri:6405bdfc-ff2c-d3d3-cd3b-0bc1be719e2f a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 172932120 ;
+    fsl:fsl_000002 "375177556"^^xsd:float ;
+    fsl:fsl_000003 186 ;
+    fsl:fsl_000004 "341.69"^^xsd:float ;
+    fsl:fsl_000005 772 ;
+    fsl:fsl_000006 "1761.83"^^xsd:float ;
+    fsl:fsl_000007 3651 ;
+    fsl:fsl_000008 "4830.16"^^xsd:float ;
+    fsl:fsl_000009 1999 ;
+    fsl:fsl_000010 "5886.67"^^xsd:float ;
+    fsl:fsl_000011 1140 ;
+    fsl:fsl_000012 "3971.04"^^xsd:float ;
+    fsl:fsl_000013 2799 ;
+    fsl:fsl_000014 "6619.1"^^xsd:float ;
+    fsl:fsl_000015 6450 ;
+    fsl:fsl_000016 "15283.14"^^xsd:float ;
+    fsl:fsl_000017 291 ;
+    fsl:fsl_000018 "459.2"^^xsd:float ;
+    fsl:fsl_000019 505 ;
+    fsl:fsl_000020 "1664.07"^^xsd:float ;
+    fsl:fsl_000021 3442 ;
+    fsl:fsl_000022 "4279.83"^^xsd:float ;
+    fsl:fsl_000023 2809 ;
+    fsl:fsl_000024 "5338.26"^^xsd:float ;
+    fsl:fsl_000025 1069 ;
+    fsl:fsl_000026 "2900.37"^^xsd:float ;
+    fsl:fsl_000027 3701 ;
+    fsl:fsl_000028 "6261.99"^^xsd:float ;
+    fsl:fsl_000029 5085 ;
+    fsl:fsl_000030 "16387.79"^^xsd:float ;
+    fsl:fsl_000031 394025 ;
+    fsl:fsl_000032 "362258"^^xsd:float ;
+    fsl:fsl_000033 763740 ;
+    fsl:fsl_000034 "756960"^^xsd:float ;
+    fsl:fsl_000035 706892 ;
+    fsl:fsl_000036 "700899"^^xsd:float ;
+    prov:wasGeneratedBy niiri:1ce5d542-ee1f-8a43-fbb3-68faaeaaf08f .
+
+niiri:1ce5d542-ee1f-8a43-fbb3-68faaeaaf08f a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:5ceb9dfa-f2ff-af24-cbf9-768f5556f946 ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:00151623-bf09-ddcc-d5de-f7bcd7b1158b ;
+            prov:hadRole sio:Subject ] .
+
+niiri:5ceb9dfa-f2ff-af24-cbf9-768f5556f946 a prov:Agent,
+        prov:SoftwareAgent ;
+    nidm:NIDM_0000164 fsl: .
+
+niiri:00151623-bf09-ddcc-d5de-f7bcd7b1158b a prov:Agent ;
+    ndar:src_subject_id "sub-50"^^xsd:string .
+fsl:DataElement rdfs:subClassOf nidm:DataElement .

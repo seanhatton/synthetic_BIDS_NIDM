@@ -1,0 +1,61 @@
+{
+    "age": {
+        "label": "age",
+        "description": "Age of the participant",
+        "source_variable": "age",
+        "isAbout": [
+            {
+                "@id": "http://uri.interlex.org/ilx_0100400",
+                "label": "Age"
+            }
+        ]
+    },
+    "sex": {
+        "label": "sex",
+        "description": "Biological sex of the participant",
+        "source_variable": "sex",
+        "levels": {
+            "M": "male",
+            "F": "female"
+        },
+        "isAbout": [
+            {
+                "@id": "http://id.nlm.nih.gov/mesh/2018/M0446358",
+                "label": "Genotypic Sex"
+            }
+        ]
+    },
+    "scanner": {
+        "label": "scanner",
+        "description": "MRI hardware manufacturer model",
+        "source_variable": "scanner",
+        "isAbout": [
+            {
+                "@id": "http://uri.neuinfo.org/nif/nifstd/birnlex_2100",
+                "label": "Magnetic resonance imaging scanner"
+            }
+        ]
+    },
+    "wais_iv_fsiq": {
+        "label": "wais_iv_fsiq",
+        "description": "Wechsler abbreviated scale of intelligence",
+        "source_variable": "wais_iv_fsiq",
+        "isAbout": [
+            {
+                "@id": "http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00718",
+                "label": "Wechsler abbreviated scale of intelligence"
+            }
+        ]
+    },
+    "hamd_17": {
+        "label": "Hamilton Depression Rating Scale (HAM-D)",
+        "description": "Hamilton Depression Rating Scale",
+        "source_variable": "hamd_17",
+        "isAbout": [
+            {
+                "@id": "http://uri.interlex.org/base/cde_0161290",
+                "label": "Hamilton Depression Rating Scale (HAM-D)"
+            }
+        ]
+    }
+}

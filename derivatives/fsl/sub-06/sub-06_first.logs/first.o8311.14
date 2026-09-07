@@ -1,0 +1,11 @@
+create shapeModel 
+done creating shapeModel 
+0.972071 -0.0179497 0.0241651 
+-0.00266751 0.879641 -0.31613 
+-0.0353495 0.315299 0.819169 
+NEw done imodes transform
+mode  258.677
+D 
+336 1926 1926 336
+open file sub-06/sub-06_first-R_Thal_first.vtk to save.
+succesfully opened file sub-06/sub-06_first-R_Thal_first.vtk to save.

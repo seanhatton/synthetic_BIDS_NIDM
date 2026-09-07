@@ -1,0 +1,10 @@
+{
+    "Manufacturer": "GE",
+    "ManufacturersModelName": "Discovery 750",
+    "ScanningSequence": "GR/IR",
+    "MRAcquisitionType": "3D",
+    "RepetitionTime": 2.3,
+    "EchoTime": 0.0025,
+    "InversionTime": 0.9,
+    "FlipAngle": 8.0
+}

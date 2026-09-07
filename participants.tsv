@@ -1,0 +1,51 @@
+participant_id	age	sex	scanner	wais_iv_fsiq	hamd_17
+sub-01	39	F	GE Discovery 750	110	6
+sub-02	34	F	Siemens Prisma	77	5
+sub-03	41	F	GE Discovery 750	71	24
+sub-04	49	F	Siemens Prisma	117	6
+sub-05	33	F	Siemens Prisma	87	22
+sub-06	33	F	GE Discovery 750	85	22
+sub-07	49	F	Siemens Prisma	84	38
+sub-08	42	F	GE Discovery 750	78	16
+sub-09	31	F	GE Discovery 750	117	51
+sub-10	40	F	GE Discovery 750	76	2
+sub-11	31	F	GE Discovery 750	113	46
+sub-12	31	F	GE Discovery 750	117	29
+sub-13	37	F	GE Discovery 750	127	34
+sub-14	18	F	GE Discovery 750	104	7
+sub-15	19	F	GE Discovery 750	75	24
+sub-16	30	F	Siemens Prisma	107	5
+sub-17	26	F	GE Discovery 750	97	35
+sub-18	38	F	GE Discovery 750	72	18
+sub-19	27	F	Siemens Prisma	71	40
+sub-20	22	F	GE Discovery 750	75	39
+sub-21	48	F	Siemens Prisma	83	23
+sub-22	33	F	GE Discovery 750	84	36
+sub-23	36	F	Siemens Prisma	102	12
+sub-24	22	F	GE Discovery 750	108	45
+sub-25	30	F	Siemens Prisma	71	4
+sub-26	35	M	Siemens Prisma	105	2
+sub-27	24	M	GE Discovery 750	82	42
+sub-28	37	M	Siemens Prisma	115	14
+sub-29	29	M	Siemens Prisma	111	49
+sub-30	31	M	Siemens Prisma	114	18
+sub-31	29	M	Siemens Prisma	104	5
+sub-32	50	M	Siemens Prisma	96	14
+sub-33	34	M	Siemens Prisma	84	6
+sub-34	24	M	GE Discovery 750	98	24
+sub-35	41	M	Siemens Prisma	107	17
+sub-36	23	M	Siemens Prisma	87	29
+sub-37	36	M	GE Discovery 750	121	40
+sub-38	18	M	GE Discovery 750	125	23
+sub-39	22	M	Siemens Prisma	70	10
+sub-40	36	M	Siemens Prisma	118	23
+sub-41	41	M	GE Discovery 750	121	22
+sub-42	36	M	Siemens Prisma	80	13
+sub-43	33	M	GE Discovery 750	114	42
+sub-44	31	M	Siemens Prisma	97	17
+sub-45	21	M	GE Discovery 750	91	44
+sub-46	28	M	GE Discovery 750	87	43
+sub-47	30	M	GE Discovery 750	79	41
+sub-48	44	M	Siemens Prisma	83	4
+sub-49	37	M	Siemens Prisma	118	38
+sub-50	18	M	Siemens Prisma	91	40

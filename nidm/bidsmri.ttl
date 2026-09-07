@@ -1,0 +1,3313 @@
+@prefix bids: <http://bids.neuroimaging.io/> .
+@prefix crypto: <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dctypes: <http://purl.org/dc/dcmitype/> .
+@prefix dicom: <http://neurolex.org/wiki/Category/DICOM_term/> .
+@prefix ndar: <https://ndar.nih.gov/api/datadictionary/v2/dataelement/> .
+@prefix nfo: <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#> .
+@prefix nidm: <http://purl.org/nidash/nidm#> .
+@prefix niiri: <http://iri.nidash.org/> .
+@prefix onli: <http://neurolog.unice.fr/ontoneurolog/v3.0/instrument.owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reproschema: <http://schema.repronim.org/> .
+@prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/ontology/sio.owl#> .
+@prefix term_CAO_00718: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00718> .
+@prefix term_M0446358: <http://id.nlm.nih.gov/mesh/2018/M0446358> .
+@prefix term_birnlex_2100: <http://uri.neuinfo.org/nif/nifstd/birnlex_2100> .
+@prefix term_cde_0161290: <http://uri.interlex.org/base/cde_0161290> .
+@prefix term_ilx_0100400: <http://uri.interlex.org/ilx_0100400> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+niiri:age_1l5g3rg a nidm:PersonalDataElement,
+        prov:Entity ;
+    rdfs:label "age" ;
+    dct:description "Age of the participant" ;
+    nidm:isAbout term_ilx_0100400: ;
+    nidm:sourceVariable "age" .
+
+niiri:df394b86-aae2-11f1-82fc-00155d2356a1 a prov:Entity ;
+    rdfs:label "NIDM RDF document" ;
+    dct:format "turtle" ;
+    nidm:outputFormat "turtle" ;
+    nfo:filename "bidsmri.ttl" ;
+    prov:wasGeneratedBy niiri:ff394780-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:hamd_17_3et8dvi a nidm:PersonalDataElement,
+        prov:Entity ;
+    rdfs:label "Hamilton Depression Rating Scale (HAM-D)" ;
+    dct:description "Hamilton Depression Rating Scale" ;
+    nidm:isAbout term_cde_0161290: ;
+    nidm:sourceVariable "hamd_17" .
+
+niiri:scanner_3j8v8tu a nidm:PersonalDataElement,
+        prov:Entity ;
+    rdfs:label "scanner" ;
+    dct:description "MRI hardware manufacturer model" ;
+    nidm:isAbout term_birnlex_2100: ;
+    nidm:sourceVariable "scanner" .
+
+niiri:sex_cpa8jp a nidm:PersonalDataElement,
+        prov:Entity ;
+    rdfs:label "sex" ;
+    dct:description "Biological sex of the participant" ;
+    nidm:isAbout term_M0446358: ;
+    nidm:sourceVariable "sex" ;
+    reproschema:choices [ rdfs:label "F" ;
+            reproschema:value "female" ],
+        [ rdfs:label "M" ;
+            reproschema:value "male" ] .
+
+niiri:wais_iv_fsiq_3eqpd5t a nidm:PersonalDataElement,
+        prov:Entity ;
+    rdfs:label "wais_iv_fsiq" ;
+    dct:description "Wechsler abbreviated scale of intelligence" ;
+    nidm:isAbout term_CAO_00718: ;
+    nidm:sourceVariable "wais_iv_fsiq" .
+
+term_M0446358: a prov:Entity ;
+    rdfs:label "Genotypic Sex" .
+
+niiri:ac6f2f4c-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ac7147f0-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ac739af0-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ac8cf5d6-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ac8ea156-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ac9b485c-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ac9f5f28-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ac9f695a-aae2-11f1-82fc-00155d2356a1 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "35" ;
+    niiri:hamd_17_3et8dvi "2" ;
+    niiri:scanner_3j8v8tu "Siemens Prisma" ;
+    niiri:sex_cpa8jp "M" ;
+    niiri:wais_iv_fsiq_3eqpd5t "105" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:dc9f65a4-aae2-11f1-82fc-00155d2356a1 ;
+    prov:wasInfluencedBy niiri:bca05d88-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:aca10dfa-aae2-11f1-82fc-00155d2356a1 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "24" ;
+    niiri:hamd_17_3et8dvi "42" ;
+    niiri:scanner_3j8v8tu "GE Discovery 750" ;
+    niiri:sex_cpa8jp "M" ;
+    niiri:wais_iv_fsiq_3eqpd5t "82" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:dca10bde-aae2-11f1-82fc-00155d2356a1 ;
+    prov:wasInfluencedBy niiri:bca31956-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:aca43a84-aae2-11f1-82fc-00155d2356a1 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "37" ;
+    niiri:hamd_17_3et8dvi "14" ;
+    niiri:scanner_3j8v8tu "Siemens Prisma" ;
+    niiri:sex_cpa8jp "M" ;
+    niiri:wais_iv_fsiq_3eqpd5t "115" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:fca43818-aae2-11f1-82fc-00155d2356a1 ;
+    prov:wasInfluencedBy niiri:aca5525c-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:aca9074e-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:acad3be8-aae2-11f1-82fc-00155d2356a1 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "50" ;
+    niiri:hamd_17_3et8dvi "14" ;
+    niiri:scanner_3j8v8tu "Siemens Prisma" ;
+    niiri:sex_cpa8jp "M" ;
+    niiri:wais_iv_fsiq_3eqpd5t "96" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:bcad358a-aae2-11f1-82fc-00155d2356a1 ;
+    prov:wasInfluencedBy niiri:ccae72b0-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:acb66fec-aae2-11f1-82fc-00155d2356a1 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "23" ;
+    niiri:hamd_17_3et8dvi "29" ;
+    niiri:scanner_3j8v8tu "Siemens Prisma" ;
+    niiri:sex_cpa8jp "M" ;
+    niiri:wais_iv_fsiq_3eqpd5t "87" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:ecb66d8a-aae2-11f1-82fc-00155d2356a1 ;
+    prov:wasInfluencedBy niiri:ccb7a2e0-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:acbcc14e-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:acc07546-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:acc681ac-aae2-11f1-82fc-00155d2356a1 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "31" ;
+    niiri:hamd_17_3et8dvi "17" ;
+    niiri:scanner_3j8v8tu "Siemens Prisma" ;
+    niiri:sex_cpa8jp "M" ;
+    niiri:wais_iv_fsiq_3eqpd5t "97" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:dcc67d2e-aae2-11f1-82fc-00155d2356a1 ;
+    prov:wasInfluencedBy niiri:ccc73340-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:acef2e36-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:acfa5806-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ad20090c-aae2-11f1-82fc-00155d2356a1 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:fd1edf8c-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:bc76511e-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:ad52c784-aae2-11f1-82fc-00155d2356a1 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:dd5132a2-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:dc823b3c-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:ad52f308-aae2-11f1-82fc-00155d2356a1 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 2.5e-03 ;
+    bids:FlipAngle 8e+00 ;
+    crypto:sha512 "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e" ;
+    dicom:InversionTime 9e-01 ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 2.3e+00 ;
+    dicom:ScanningSequence "GR/IR" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::mnt/c/Users/seanh/Downloads/testBIDS/synthetic_bids_scanners/sub-12/ses-01/anat/sub-12_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:ad52c784-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ad633a92-aae2-11f1-82fc-00155d2356a1 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 2.5e-03 ;
+    bids:FlipAngle 8e+00 ;
+    crypto:sha512 "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e" ;
+    dicom:InversionTime 9e-01 ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 2.3e+00 ;
+    dicom:ScanningSequence "GR/IR" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::mnt/c/Users/seanh/Downloads/testBIDS/synthetic_bids_scanners/sub-14/ses-01/anat/sub-14_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:fd632980-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ad6b2d38-aae2-11f1-82fc-00155d2356a1 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:dd69b174-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:dc88db86-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:ad8c637c-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:addaf5a0-aae2-11f1-82fc-00155d2356a1 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:bdd9fbfa-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:bca43e6c-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:addb1576-aae2-11f1-82fc-00155d2356a1 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 2.2e-03 ;
+    bids:FlipAngle 9e+00 ;
+    crypto:sha512 "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e" ;
+    dicom:InversionTime 9e-01 ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 2e+00 ;
+    dicom:ScanningSequence "GR/IR" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::mnt/c/Users/seanh/Downloads/testBIDS/synthetic_bids_scanners/sub-28/ses-01/anat/sub-28_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:addaf5a0-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:adf74764-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:adffcf2e-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ae010dda-aae2-11f1-82fc-00155d2356a1 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:adffcf2e-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:fcad40c0-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:ae093ed8-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ae11983a-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ae2aaa96-aae2-11f1-82fc-00155d2356a1 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:ee283c8e-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:bcb896b4-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:ae9d76e8-aae2-11f1-82fc-00155d2356a1 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:ce9c9a34-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ccbe83da-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:aea6ec14-aae2-11f1-82fc-00155d2356a1 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:cea54fb2-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ccc0843c-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:aea71c7a-aae2-11f1-82fc-00155d2356a1 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 2.5e-03 ;
+    bids:FlipAngle 8e+00 ;
+    crypto:sha512 "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e" ;
+    dicom:InversionTime 9e-01 ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 2.3e+00 ;
+    dicom:ScanningSequence "GR/IR" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::mnt/c/Users/seanh/Downloads/testBIDS/synthetic_bids_scanners/sub-41/ses-01/anat/sub-41_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:aea6ec14-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:aeafe2ba-aae2-11f1-82fc-00155d2356a1 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 2.2e-03 ;
+    bids:FlipAngle 9e+00 ;
+    crypto:sha512 "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e" ;
+    dicom:InversionTime 9e-01 ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 2e+00 ;
+    dicom:ScanningSequence "GR/IR" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::mnt/c/Users/seanh/Downloads/testBIDS/synthetic_bids_scanners/sub-42/ses-01/anat/sub-42_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:ceafd8ec-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:aec94f34-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:aecae2d6-aae2-11f1-82fc-00155d2356a1 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 2.5e-03 ;
+    bids:FlipAngle 8e+00 ;
+    crypto:sha512 "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e" ;
+    dicom:InversionTime 9e-01 ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 2.3e+00 ;
+    dicom:ScanningSequence "GR/IR" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::mnt/c/Users/seanh/Downloads/testBIDS/synthetic_bids_scanners/sub-45/ses-01/anat/sub-45_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:fecad7dc-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:aed265d8-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:aed3f902-aae2-11f1-82fc-00155d2356a1 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:aed265d8-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ecca1ace-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:aedc88ec-aae2-11f1-82fc-00155d2356a1 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:dedacc78-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:eccbf0e2-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:aedce800-aae2-11f1-82fc-00155d2356a1 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 2.5e-03 ;
+    bids:FlipAngle 8e+00 ;
+    crypto:sha512 "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e" ;
+    dicom:InversionTime 9e-01 ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 2.3e+00 ;
+    dicom:ScanningSequence "GR/IR" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::mnt/c/Users/seanh/Downloads/testBIDS/synthetic_bids_scanners/sub-47/ses-01/anat/sub-47_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:aedc88ec-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:aef4fc10-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:bc6cb71c-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:bc7a909e-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:bc7fd2e8-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:bc8664a0-aae2-11f1-82fc-00155d2356a1 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "18" ;
+    niiri:hamd_17_3et8dvi "7" ;
+    niiri:scanner_3j8v8tu "GE Discovery 750" ;
+    niiri:sex_cpa8jp "F" ;
+    niiri:wais_iv_fsiq_3eqpd5t "104" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:ec866068-aae2-11f1-82fc-00155d2356a1 ;
+    prov:wasInfluencedBy niiri:cc878af6-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:bc95550a-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:bc99342c-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:bc9cb714-aae2-11f1-82fc-00155d2356a1 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "30" ;
+    niiri:hamd_17_3et8dvi "4" ;
+    niiri:scanner_3j8v8tu "Siemens Prisma" ;
+    niiri:sex_cpa8jp "F" ;
+    niiri:wais_iv_fsiq_3eqpd5t "71" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:dc9cb2dc-aae2-11f1-82fc-00155d2356a1 ;
+    prov:wasInfluencedBy niiri:ac9e3b2a-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:bcb41f30-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:bcb4280e-aae2-11f1-82fc-00155d2356a1 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "41" ;
+    niiri:hamd_17_3et8dvi "17" ;
+    niiri:scanner_3j8v8tu "Siemens Prisma" ;
+    niiri:sex_cpa8jp "M" ;
+    niiri:wais_iv_fsiq_3eqpd5t "107" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:bcb425d4-aae2-11f1-82fc-00155d2356a1 ;
+    prov:wasInfluencedBy niiri:ccb4f9be-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:bcb89178-aae2-11f1-82fc-00155d2356a1 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "36" ;
+    niiri:hamd_17_3et8dvi "40" ;
+    niiri:scanner_3j8v8tu "GE Discovery 750" ;
+    niiri:sex_cpa8jp "M" ;
+    niiri:wais_iv_fsiq_3eqpd5t "121" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:ecb88e62-aae2-11f1-82fc-00155d2356a1 ;
+    prov:wasInfluencedBy niiri:acb97fe8-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:bcc23dfe-aae2-11f1-82fc-00155d2356a1 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "36" ;
+    niiri:hamd_17_3et8dvi "13" ;
+    niiri:scanner_3j8v8tu "Siemens Prisma" ;
+    niiri:sex_cpa8jp "M" ;
+    niiri:wais_iv_fsiq_3eqpd5t "80" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:bcc23b42-aae2-11f1-82fc-00155d2356a1 ;
+    prov:wasInfluencedBy niiri:dcc32c8c-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:bcca01f6-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:bcf06d28-aae2-11f1-82fc-00155d2356a1 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:acef2e36-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ec6a72ae-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:bd06057a-aae2-11f1-82fc-00155d2356a1 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:dd043ca4-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:bc6f3f78-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:bd0f3e1a-aae2-11f1-82fc-00155d2356a1 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 2.2e-03 ;
+    bids:FlipAngle 9e+00 ;
+    crypto:sha512 "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e" ;
+    dicom:InversionTime 9e-01 ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 2e+00 ;
+    dicom:ScanningSequence "GR/IR" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::mnt/c/Users/seanh/Downloads/testBIDS/synthetic_bids_scanners/sub-04/ses-01/anat/sub-04_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:cd0f321c-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:bd178e9e-aae2-11f1-82fc-00155d2356a1 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 2.2e-03 ;
+    bids:FlipAngle 9e+00 ;
+    crypto:sha512 "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e" ;
+    dicom:InversionTime 9e-01 ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 2e+00 ;
+    dicom:ScanningSequence "GR/IR" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::mnt/c/Users/seanh/Downloads/testBIDS/synthetic_bids_scanners/sub-05/ses-01/anat/sub-05_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:ed17807a-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:bd282c22-aae2-11f1-82fc-00155d2356a1 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 2.2e-03 ;
+    bids:FlipAngle 9e+00 ;
+    crypto:sha512 "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e" ;
+    dicom:InversionTime 9e-01 ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 2e+00 ;
+    dicom:ScanningSequence "GR/IR" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::mnt/c/Users/seanh/Downloads/testBIDS/synthetic_bids_scanners/sub-07/ses-01/anat/sub-07_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:dd2823bc-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:bd3813a8-aae2-11f1-82fc-00155d2356a1 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 2.5e-03 ;
+    bids:FlipAngle 8e+00 ;
+    crypto:sha512 "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e" ;
+    dicom:InversionTime 9e-01 ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 2.3e+00 ;
+    dicom:ScanningSequence "GR/IR" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::mnt/c/Users/seanh/Downloads/testBIDS/synthetic_bids_scanners/sub-09/ses-01/anat/sub-09_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:fd37dcb2-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:bd47bb28-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:bd7aef02-aae2-11f1-82fc-00155d2356a1 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:dd79fb42-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ac8d03dc-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:bd962eb6-aae2-11f1-82fc-00155d2356a1 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 2.5e-03 ;
+    bids:FlipAngle 8e+00 ;
+    crypto:sha512 "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e" ;
+    dicom:InversionTime 9e-01 ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 2.3e+00 ;
+    dicom:ScanningSequence "GR/IR" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::mnt/c/Users/seanh/Downloads/testBIDS/synthetic_bids_scanners/sub-20/ses-01/anat/sub-20_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:cd9623bc-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:bdd9fbfa-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:bde6ae86-aae2-11f1-82fc-00155d2356a1 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 2.2e-03 ;
+    bids:FlipAngle 9e+00 ;
+    crypto:sha512 "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e" ;
+    dicom:InversionTime 9e-01 ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 2e+00 ;
+    dicom:ScanningSequence "GR/IR" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::mnt/c/Users/seanh/Downloads/testBIDS/synthetic_bids_scanners/sub-29/ses-01/anat/sub-29_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:ede69ff4-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:be0a210e-aae2-11f1-82fc-00155d2356a1 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:ae093ed8-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ecaf618e-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:be132812-aae2-11f1-82fc-00155d2356a1 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 2.5e-03 ;
+    bids:FlipAngle 8e+00 ;
+    crypto:sha512 "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e" ;
+    dicom:InversionTime 9e-01 ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 2.3e+00 ;
+    dicom:ScanningSequence "GR/IR" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::mnt/c/Users/seanh/Downloads/testBIDS/synthetic_bids_scanners/sub-34/ses-01/anat/sub-34_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:ce12f7ca-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:be917ae6-aae2-11f1-82fc-00155d2356a1 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 2.2e-03 ;
+    bids:FlipAngle 9e+00 ;
+    crypto:sha512 "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e" ;
+    dicom:InversionTime 9e-01 ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 2e+00 ;
+    dicom:ScanningSequence "GR/IR" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::mnt/c/Users/seanh/Downloads/testBIDS/synthetic_bids_scanners/sub-39/ses-01/anat/sub-39_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:ee917028-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:be9d7e5e-aae2-11f1-82fc-00155d2356a1 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 2.2e-03 ;
+    bids:FlipAngle 9e+00 ;
+    crypto:sha512 "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e" ;
+    dicom:InversionTime 9e-01 ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 2e+00 ;
+    dicom:ScanningSequence "GR/IR" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::mnt/c/Users/seanh/Downloads/testBIDS/synthetic_bids_scanners/sub-40/ses-01/anat/sub-40_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:ae9d76e8-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:beb87088-aae2-11f1-82fc-00155d2356a1 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 2.5e-03 ;
+    bids:FlipAngle 8e+00 ;
+    crypto:sha512 "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e" ;
+    dicom:InversionTime 9e-01 ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 2.3e+00 ;
+    dicom:ScanningSequence "GR/IR" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::mnt/c/Users/seanh/Downloads/testBIDS/synthetic_bids_scanners/sub-43/ses-01/anat/sub-43_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:ceb86386-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:bef6cfae-aae2-11f1-82fc-00155d2356a1 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 2.2e-03 ;
+    bids:FlipAngle 9e+00 ;
+    crypto:sha512 "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e" ;
+    dicom:InversionTime 9e-01 ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 2e+00 ;
+    dicom:ScanningSequence "GR/IR" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::mnt/c/Users/seanh/Downloads/testBIDS/synthetic_bids_scanners/sub-50/ses-01/anat/sub-50_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:eef69818-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:cc6cbe6a-aae2-11f1-82fc-00155d2356a1 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "34" ;
+    niiri:hamd_17_3et8dvi "5" ;
+    niiri:scanner_3j8v8tu "Siemens Prisma" ;
+    niiri:sex_cpa8jp "F" ;
+    niiri:wais_iv_fsiq_3eqpd5t "77" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:bc6cbc12-aae2-11f1-82fc-00155d2356a1 ;
+    prov:wasInfluencedBy niiri:fc6de970-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:cc764228-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:cc764cfa-aae2-11f1-82fc-00155d2356a1 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "33" ;
+    niiri:hamd_17_3et8dvi "22" ;
+    niiri:scanner_3j8v8tu "GE Discovery 750" ;
+    niiri:sex_cpa8jp "F" ;
+    niiri:wais_iv_fsiq_3eqpd5t "85" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:ec764930-aae2-11f1-82fc-00155d2356a1 ;
+    prov:wasInfluencedBy niiri:dc77727e-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:cc7fd928-aae2-11f1-82fc-00155d2356a1 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "31" ;
+    niiri:hamd_17_3et8dvi "46" ;
+    niiri:scanner_3j8v8tu "GE Discovery 750" ;
+    niiri:sex_cpa8jp "F" ;
+    niiri:wais_iv_fsiq_3eqpd5t "113" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:bc7fd6f8-aae2-11f1-82fc-00155d2356a1 ;
+    prov:wasInfluencedBy niiri:fc812fc6-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:cc823704-aae2-11f1-82fc-00155d2356a1 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "31" ;
+    niiri:hamd_17_3et8dvi "29" ;
+    niiri:scanner_3j8v8tu "GE Discovery 750" ;
+    niiri:sex_cpa8jp "F" ;
+    niiri:wais_iv_fsiq_3eqpd5t "117" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:ac8234c0-aae2-11f1-82fc-00155d2356a1 ;
+    prov:wasInfluencedBy niiri:cc83896a-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:cc8442ba-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:cc932bc2-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:cc971d68-aae2-11f1-82fc-00155d2356a1 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "33" ;
+    niiri:hamd_17_3et8dvi "36" ;
+    niiri:scanner_3j8v8tu "GE Discovery 750" ;
+    niiri:sex_cpa8jp "F" ;
+    niiri:wais_iv_fsiq_3eqpd5t "84" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:dc971a5c-aae2-11f1-82fc-00155d2356a1 ;
+    prov:wasInfluencedBy niiri:bc9823d4-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:cc9b50d6-aae2-11f1-82fc-00155d2356a1 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "22" ;
+    niiri:hamd_17_3et8dvi "45" ;
+    niiri:scanner_3j8v8tu "GE Discovery 750" ;
+    niiri:sex_cpa8jp "F" ;
+    niiri:wais_iv_fsiq_3eqpd5t "108" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:ac9b4e9c-aae2-11f1-82fc-00155d2356a1 ;
+    prov:wasInfluencedBy niiri:bc9bf50e-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ccb887be-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ccba3316-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ccba3f64-aae2-11f1-82fc-00155d2356a1 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "18" ;
+    niiri:hamd_17_3et8dvi "23" ;
+    niiri:scanner_3j8v8tu "GE Discovery 750" ;
+    niiri:sex_cpa8jp "M" ;
+    niiri:wais_iv_fsiq_3eqpd5t "125" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:fcba3c80-aae2-11f1-82fc-00155d2356a1 ;
+    prov:wasInfluencedBy niiri:dcbb968e-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ccc2346c-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ccc67716-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ccc7df02-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ccd17396-aae2-11f1-82fc-00155d2356a1 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "18" ;
+    niiri:hamd_17_3et8dvi "40" ;
+    niiri:scanner_3j8v8tu "Siemens Prisma" ;
+    niiri:sex_cpa8jp "M" ;
+    niiri:wais_iv_fsiq_3eqpd5t "91" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:dcd171a2-aae2-11f1-82fc-00155d2356a1 ;
+    prov:wasInfluencedBy niiri:bcd2761a-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:cd0f321c-aae2-11f1-82fc-00155d2356a1 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:fd0dd7fa-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ec71551a-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:cd30d034-aae2-11f1-82fc-00155d2356a1 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 2.5e-03 ;
+    bids:FlipAngle 8e+00 ;
+    crypto:sha512 "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e" ;
+    dicom:InversionTime 9e-01 ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 2.3e+00 ;
+    dicom:ScanningSequence "GR/IR" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::mnt/c/Users/seanh/Downloads/testBIDS/synthetic_bids_scanners/sub-08/ses-01/anat/sub-08_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:fd30c4a4-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:cd6b5a06-aae2-11f1-82fc-00155d2356a1 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 2.5e-03 ;
+    bids:FlipAngle 8e+00 ;
+    crypto:sha512 "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e" ;
+    dicom:InversionTime 9e-01 ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 2.3e+00 ;
+    dicom:ScanningSequence "GR/IR" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::mnt/c/Users/seanh/Downloads/testBIDS/synthetic_bids_scanners/sub-15/ses-01/anat/sub-15_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:ad6b2d38-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:cd72944c-aae2-11f1-82fc-00155d2356a1 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:fd71454c-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:cc8aabaa-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:cd7af6f0-aae2-11f1-82fc-00155d2356a1 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 2.5e-03 ;
+    bids:FlipAngle 8e+00 ;
+    crypto:sha512 "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e" ;
+    dicom:InversionTime 9e-01 ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 2.3e+00 ;
+    dicom:ScanningSequence "GR/IR" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::mnt/c/Users/seanh/Downloads/testBIDS/synthetic_bids_scanners/sub-17/ses-01/anat/sub-17_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:bd7aef02-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:cd85d4b2-aae2-11f1-82fc-00155d2356a1 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 2.5e-03 ;
+    bids:FlipAngle 8e+00 ;
+    crypto:sha512 "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e" ;
+    dicom:InversionTime 9e-01 ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 2.3e+00 ;
+    dicom:ScanningSequence "GR/IR" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::mnt/c/Users/seanh/Downloads/testBIDS/synthetic_bids_scanners/sub-18/ses-01/anat/sub-18_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:dd858a8e-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:cd8d7398-aae2-11f1-82fc-00155d2356a1 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:ad8c637c-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:cc90c166-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:cd9623bc-aae2-11f1-82fc-00155d2356a1 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:ed94f226-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:cc933b9e-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:cda6c8d4-aae2-11f1-82fc-00155d2356a1 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:eda5e752-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:fc972092-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:cda6d73e-aae2-11f1-82fc-00155d2356a1 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 2.5e-03 ;
+    bids:FlipAngle 8e+00 ;
+    crypto:sha512 "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e" ;
+    dicom:InversionTime 9e-01 ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 2.3e+00 ;
+    dicom:ScanningSequence "GR/IR" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::mnt/c/Users/seanh/Downloads/testBIDS/synthetic_bids_scanners/sub-22/ses-01/anat/sub-22_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:cda6c8d4-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:cdaee96a-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:cdb041d4-aae2-11f1-82fc-00155d2356a1 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 2.2e-03 ;
+    bids:FlipAngle 9e+00 ;
+    crypto:sha512 "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e" ;
+    dicom:InversionTime 9e-01 ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 2e+00 ;
+    dicom:ScanningSequence "GR/IR" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::mnt/c/Users/seanh/Downloads/testBIDS/synthetic_bids_scanners/sub-23/ses-01/anat/sub-23_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:edb034dc-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:cdb7d6b0-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:cdb8d13c-aae2-11f1-82fc-00155d2356a1 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:cdb7d6b0-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ac9b5392-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:cdb8d97a-aae2-11f1-82fc-00155d2356a1 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 2.5e-03 ;
+    bids:FlipAngle 8e+00 ;
+    crypto:sha512 "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e" ;
+    dicom:InversionTime 9e-01 ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 2.3e+00 ;
+    dicom:ScanningSequence "GR/IR" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::mnt/c/Users/seanh/Downloads/testBIDS/synthetic_bids_scanners/sub-24/ses-01/anat/sub-24_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:cdb8d13c-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:cdc01190-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:cdd283fc-aae2-11f1-82fc-00155d2356a1 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:ddd13a06-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:eca11084-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:cdd293c4-aae2-11f1-82fc-00155d2356a1 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 2.5e-03 ;
+    bids:FlipAngle 8e+00 ;
+    crypto:sha512 "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e" ;
+    dicom:InversionTime 9e-01 ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 2.3e+00 ;
+    dicom:ScanningSequence "GR/IR" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::mnt/c/Users/seanh/Downloads/testBIDS/synthetic_bids_scanners/sub-27/ses-01/anat/sub-27_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:cdd283fc-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:cdee12fc-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:cdf86dc4-aae2-11f1-82fc-00155d2356a1 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:adf74764-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ccaacea8-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:ce01270c-aae2-11f1-82fc-00155d2356a1 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 2.2e-03 ;
+    bids:FlipAngle 9e+00 ;
+    crypto:sha512 "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e" ;
+    dicom:InversionTime 9e-01 ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 2e+00 ;
+    dicom:ScanningSequence "GR/IR" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::mnt/c/Users/seanh/Downloads/testBIDS/synthetic_bids_scanners/sub-32/ses-01/anat/sub-32_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:ae010dda-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ce12f7ca-aae2-11f1-82fc-00155d2356a1 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:ae11983a-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ecb1b768-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:ce1918e4-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ce19f868-aae2-11f1-82fc-00155d2356a1 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:ce1918e4-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:dcb42b06-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:ce20edda-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ce2252ba-aae2-11f1-82fc-00155d2356a1 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 2.2e-03 ;
+    bids:FlipAngle 9e+00 ;
+    crypto:sha512 "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e" ;
+    dicom:InversionTime 9e-01 ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 2e+00 ;
+    dicom:ScanningSequence "GR/IR" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::mnt/c/Users/seanh/Downloads/testBIDS/synthetic_bids_scanners/sub-36/ses-01/anat/sub-36_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:ee2247ca-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ce31caa6-aae2-11f1-82fc-00155d2356a1 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 2.5e-03 ;
+    bids:FlipAngle 8e+00 ;
+    crypto:sha512 "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e" ;
+    dicom:InversionTime 9e-01 ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 2.3e+00 ;
+    dicom:ScanningSequence "GR/IR" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::mnt/c/Users/seanh/Downloads/testBIDS/synthetic_bids_scanners/sub-38/ses-01/anat/sub-38_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:fe31c0ec-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ce9c9a34-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:cea54fb2-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ceafd8ec-aae2-11f1-82fc-00155d2356a1 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:feae9e5a-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:acc2424a-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:ceb86386-aae2-11f1-82fc-00155d2356a1 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:feb70f40-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:acc47c4a-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:cec117ce-aae2-11f1-82fc-00155d2356a1 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:febf3de6-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ecc684e0-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:cf394af0-aae2-11f1-82fc-00155d2356a1 a prov:SoftwareAgent ;
+    rdfs:label "bidsmri2nidm" ;
+    nidm:command "bidsmri2nidm.py" ;
+    schema:isPartOf niiri:cf394b4a-aae2-11f1-82fc-00155d2356a1 ;
+    schema:runtimePlatform "Python 3.14.7" ;
+    schema:softwareVersion "1.0.0" .
+
+niiri:cf394b4a-aae2-11f1-82fc-00155d2356a1 a prov:SoftwareAgent ;
+    rdfs:label "PyNIDM" ;
+    schema:softwareVersion "4.5.4" .
+
+niiri:dc6a6db8-aae2-11f1-82fc-00155d2356a1 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "39" ;
+    niiri:hamd_17_3et8dvi "6" ;
+    niiri:scanner_3j8v8tu "GE Discovery 750" ;
+    niiri:sex_cpa8jp "F" ;
+    niiri:wais_iv_fsiq_3eqpd5t "110" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:fc6a68f4-aae2-11f1-82fc-00155d2356a1 ;
+    prov:wasInfluencedBy niiri:bc6bc65e-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:dc71513c-aae2-11f1-82fc-00155d2356a1 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "49" ;
+    niiri:hamd_17_3et8dvi "6" ;
+    niiri:scanner_3j8v8tu "Siemens Prisma" ;
+    niiri:sex_cpa8jp "F" ;
+    niiri:wais_iv_fsiq_3eqpd5t "117" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:ac714dea-aae2-11f1-82fc-00155d2356a1 ;
+    prov:wasInfluencedBy niiri:ec727a58-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:dc7e77ea-aae2-11f1-82fc-00155d2356a1 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "40" ;
+    niiri:hamd_17_3et8dvi "2" ;
+    niiri:scanner_3j8v8tu "GE Discovery 750" ;
+    niiri:sex_cpa8jp "F" ;
+    niiri:wais_iv_fsiq_3eqpd5t "76" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:bc7e756a-aae2-11f1-82fc-00155d2356a1 ;
+    prov:wasInfluencedBy niiri:dc7f3568-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:dc822eda-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:dc8a9656-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:dc8ea782-aae2-11f1-82fc-00155d2356a1 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "38" ;
+    niiri:hamd_17_3et8dvi "18" ;
+    niiri:scanner_3j8v8tu "GE Discovery 750" ;
+    niiri:sex_cpa8jp "F" ;
+    niiri:wais_iv_fsiq_3eqpd5t "72" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:cc8ea598-aae2-11f1-82fc-00155d2356a1 ;
+    prov:wasInfluencedBy niiri:ac8fb3f2-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:dc90b310-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:dc90bd38-aae2-11f1-82fc-00155d2356a1 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "27" ;
+    niiri:hamd_17_3et8dvi "40" ;
+    niiri:scanner_3j8v8tu "Siemens Prisma" ;
+    niiri:sex_cpa8jp "F" ;
+    niiri:wais_iv_fsiq_3eqpd5t "71" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:dc90ba18-aae2-11f1-82fc-00155d2356a1 ;
+    prov:wasInfluencedBy niiri:bc922b28-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:dc9564d2-aae2-11f1-82fc-00155d2356a1 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "48" ;
+    niiri:hamd_17_3et8dvi "23" ;
+    niiri:scanner_3j8v8tu "Siemens Prisma" ;
+    niiri:sex_cpa8jp "F" ;
+    niiri:wais_iv_fsiq_3eqpd5t "83" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:bc955f8c-aae2-11f1-82fc-00155d2356a1 ;
+    prov:wasInfluencedBy niiri:dc9664ae-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:dc9caaa8-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:dcaac34a-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:dcaf4faa-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:dcaf58ce-aae2-11f1-82fc-00155d2356a1 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "34" ;
+    niiri:hamd_17_3et8dvi "6" ;
+    niiri:scanner_3j8v8tu "Siemens Prisma" ;
+    niiri:sex_cpa8jp "M" ;
+    niiri:wais_iv_fsiq_3eqpd5t "84" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:fcaf5590-aae2-11f1-82fc-00155d2356a1 ;
+    prov:wasInfluencedBy niiri:bcb01aca-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:dcb1b3bc-aae2-11f1-82fc-00155d2356a1 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "24" ;
+    niiri:hamd_17_3et8dvi "24" ;
+    niiri:scanner_3j8v8tu "GE Discovery 750" ;
+    niiri:sex_cpa8jp "M" ;
+    niiri:wais_iv_fsiq_3eqpd5t "98" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:bcb1b0f6-aae2-11f1-82fc-00155d2356a1 ;
+    prov:wasInfluencedBy niiri:ccb30ac8-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:dcc478ee-aae2-11f1-82fc-00155d2356a1 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "33" ;
+    niiri:hamd_17_3et8dvi "42" ;
+    niiri:scanner_3j8v8tu "GE Discovery 750" ;
+    niiri:sex_cpa8jp "M" ;
+    niiri:wais_iv_fsiq_3eqpd5t "114" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:bcc47538-aae2-11f1-82fc-00155d2356a1 ;
+    prov:wasInfluencedBy niiri:fcc5abec-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:dccd9ad2-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:dccff200-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:dcfbf1e8-aae2-11f1-82fc-00155d2356a1 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:acfa5806-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:bc6cc162-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:dcfbfc88-aae2-11f1-82fc-00155d2356a1 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 2.2e-03 ;
+    bids:FlipAngle 9e+00 ;
+    crypto:sha512 "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e" ;
+    dicom:InversionTime 9e-01 ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 2e+00 ;
+    dicom:ScanningSequence "GR/IR" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::mnt/c/Users/seanh/Downloads/testBIDS/synthetic_bids_scanners/sub-02/ses-01/anat/sub-02_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:dcfbf1e8-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:dd043ca4-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:dd063e82-aae2-11f1-82fc-00155d2356a1 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 2.5e-03 ;
+    bids:FlipAngle 8e+00 ;
+    crypto:sha512 "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e" ;
+    dicom:InversionTime 9e-01 ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 2.3e+00 ;
+    dicom:ScanningSequence "GR/IR" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::mnt/c/Users/seanh/Downloads/testBIDS/synthetic_bids_scanners/sub-03/ses-01/anat/sub-03_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:bd06057a-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:dd2823bc-aae2-11f1-82fc-00155d2356a1 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:fd27302e-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:dc78aec8-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:dd48ecdc-aae2-11f1-82fc-00155d2356a1 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:bd47bb28-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:dc7fdba8-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:dd5132a2-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:dd5a24ac-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:dd62283c-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:dd69b174-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:dd72a036-aae2-11f1-82fc-00155d2356a1 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 2.2e-03 ;
+    bids:FlipAngle 9e+00 ;
+    crypto:sha512 "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e" ;
+    dicom:InversionTime 9e-01 ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 2e+00 ;
+    dicom:ScanningSequence "GR/IR" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::mnt/c/Users/seanh/Downloads/testBIDS/synthetic_bids_scanners/sub-16/ses-01/anat/sub-16_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:cd72944c-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:dd79fb42-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:dd858a8e-aae2-11f1-82fc-00155d2356a1 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:ed832c26-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ec8ea9da-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:dd9f4cda-aae2-11f1-82fc-00155d2356a1 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 2.2e-03 ;
+    bids:FlipAngle 9e+00 ;
+    crypto:sha512 "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e" ;
+    dicom:InversionTime 9e-01 ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 2e+00 ;
+    dicom:ScanningSequence "GR/IR" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::mnt/c/Users/seanh/Downloads/testBIDS/synthetic_bids_scanners/sub-21/ses-01/anat/sub-21_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:ed9f41c2-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ddc80382-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ddc933b0-aae2-11f1-82fc-00155d2356a1 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:ddc80382-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:cc9f727e-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:ddd13a06-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:dde50626-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:de0a292e-aae2-11f1-82fc-00155d2356a1 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 2.2e-03 ;
+    bids:FlipAngle 9e+00 ;
+    crypto:sha512 "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e" ;
+    dicom:InversionTime 9e-01 ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 2e+00 ;
+    dicom:ScanningSequence "GR/IR" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::mnt/c/Users/seanh/Downloads/testBIDS/synthetic_bids_scanners/sub-33/ses-01/anat/sub-33_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:be0a210e-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:de2addc2-aae2-11f1-82fc-00155d2356a1 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 2.5e-03 ;
+    bids:FlipAngle 8e+00 ;
+    crypto:sha512 "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e" ;
+    dicom:InversionTime 9e-01 ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 2.3e+00 ;
+    dicom:ScanningSequence "GR/IR" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::mnt/c/Users/seanh/Downloads/testBIDS/synthetic_bids_scanners/sub-37/ses-01/anat/sub-37_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:ae2aaa96-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:dedacc78-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:deed9e7a-aae2-11f1-82fc-00155d2356a1 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 2.2e-03 ;
+    bids:FlipAngle 9e+00 ;
+    crypto:sha512 "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e" ;
+    dicom:InversionTime 9e-01 ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 2e+00 ;
+    dicom:ScanningSequence "GR/IR" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::mnt/c/Users/seanh/Downloads/testBIDS/synthetic_bids_scanners/sub-49/ses-01/anat/sub-49_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:eeed938a-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:e3b90d82-aae2-11f1-82fc-00155d2356a1 a bids:Dataset,
+        prov:Collection,
+        prov:Entity ;
+    bids:BIDSVersion "1.8.0" ;
+    prov:hadMember niiri:ac7550b6-aae2-11f1-82fc-00155d2356a1,
+        niiri:ac7b3134-aae2-11f1-82fc-00155d2356a1,
+        niiri:ac8bfe10-aae2-11f1-82fc-00155d2356a1,
+        niiri:ac8de93c-aae2-11f1-82fc-00155d2356a1,
+        niiri:ac8fb3f2-aae2-11f1-82fc-00155d2356a1,
+        niiri:ac9e3b2a-aae2-11f1-82fc-00155d2356a1,
+        niiri:ac9f695a-aae2-11f1-82fc-00155d2356a1,
+        niiri:aca10dfa-aae2-11f1-82fc-00155d2356a1,
+        niiri:aca43a84-aae2-11f1-82fc-00155d2356a1,
+        niiri:aca5525c-aae2-11f1-82fc-00155d2356a1,
+        niiri:acad3be8-aae2-11f1-82fc-00155d2356a1,
+        niiri:acb66fec-aae2-11f1-82fc-00155d2356a1,
+        niiri:acb97fe8-aae2-11f1-82fc-00155d2356a1,
+        niiri:acc681ac-aae2-11f1-82fc-00155d2356a1,
+        niiri:acd0d7f6-aae2-11f1-82fc-00155d2356a1,
+        niiri:ad52f308-aae2-11f1-82fc-00155d2356a1,
+        niiri:ad633a92-aae2-11f1-82fc-00155d2356a1,
+        niiri:addb1576-aae2-11f1-82fc-00155d2356a1,
+        niiri:aea71c7a-aae2-11f1-82fc-00155d2356a1,
+        niiri:aeafe2ba-aae2-11f1-82fc-00155d2356a1,
+        niiri:aecae2d6-aae2-11f1-82fc-00155d2356a1,
+        niiri:aedce800-aae2-11f1-82fc-00155d2356a1,
+        niiri:bc6bc65e-aae2-11f1-82fc-00155d2356a1,
+        niiri:bc85138e-aae2-11f1-82fc-00155d2356a1,
+        niiri:bc8664a0-aae2-11f1-82fc-00155d2356a1,
+        niiri:bc922b28-aae2-11f1-82fc-00155d2356a1,
+        niiri:bc9823d4-aae2-11f1-82fc-00155d2356a1,
+        niiri:bc9a8340-aae2-11f1-82fc-00155d2356a1,
+        niiri:bc9bf50e-aae2-11f1-82fc-00155d2356a1,
+        niiri:bc9cb714-aae2-11f1-82fc-00155d2356a1,
+        niiri:bca05d88-aae2-11f1-82fc-00155d2356a1,
+        niiri:bca31956-aae2-11f1-82fc-00155d2356a1,
+        niiri:bcb01aca-aae2-11f1-82fc-00155d2356a1,
+        niiri:bcb4280e-aae2-11f1-82fc-00155d2356a1,
+        niiri:bcb89178-aae2-11f1-82fc-00155d2356a1,
+        niiri:bcbda604-aae2-11f1-82fc-00155d2356a1,
+        niiri:bcc23dfe-aae2-11f1-82fc-00155d2356a1,
+        niiri:bcd2761a-aae2-11f1-82fc-00155d2356a1,
+        niiri:bd0f3e1a-aae2-11f1-82fc-00155d2356a1,
+        niiri:bd178e9e-aae2-11f1-82fc-00155d2356a1,
+        niiri:bd282c22-aae2-11f1-82fc-00155d2356a1,
+        niiri:bd3813a8-aae2-11f1-82fc-00155d2356a1,
+        niiri:bd962eb6-aae2-11f1-82fc-00155d2356a1,
+        niiri:bde6ae86-aae2-11f1-82fc-00155d2356a1,
+        niiri:be132812-aae2-11f1-82fc-00155d2356a1,
+        niiri:be917ae6-aae2-11f1-82fc-00155d2356a1,
+        niiri:be9d7e5e-aae2-11f1-82fc-00155d2356a1,
+        niiri:beb87088-aae2-11f1-82fc-00155d2356a1,
+        niiri:bef6cfae-aae2-11f1-82fc-00155d2356a1,
+        niiri:cc6cbe6a-aae2-11f1-82fc-00155d2356a1,
+        niiri:cc764cfa-aae2-11f1-82fc-00155d2356a1,
+        niiri:cc7d3d44-aae2-11f1-82fc-00155d2356a1,
+        niiri:cc7fd928-aae2-11f1-82fc-00155d2356a1,
+        niiri:cc823704-aae2-11f1-82fc-00155d2356a1,
+        niiri:cc83896a-aae2-11f1-82fc-00155d2356a1,
+        niiri:cc878af6-aae2-11f1-82fc-00155d2356a1,
+        niiri:cc89c01e-aae2-11f1-82fc-00155d2356a1,
+        niiri:cc971d68-aae2-11f1-82fc-00155d2356a1,
+        niiri:cc9b50d6-aae2-11f1-82fc-00155d2356a1,
+        niiri:cca7690c-aae2-11f1-82fc-00155d2356a1,
+        niiri:ccae72b0-aae2-11f1-82fc-00155d2356a1,
+        niiri:ccb30ac8-aae2-11f1-82fc-00155d2356a1,
+        niiri:ccb4f9be-aae2-11f1-82fc-00155d2356a1,
+        niiri:ccb7a2e0-aae2-11f1-82fc-00155d2356a1,
+        niiri:ccba3f64-aae2-11f1-82fc-00155d2356a1,
+        niiri:ccbfa602-aae2-11f1-82fc-00155d2356a1,
+        niiri:ccc73340-aae2-11f1-82fc-00155d2356a1,
+        niiri:ccc92042-aae2-11f1-82fc-00155d2356a1,
+        niiri:ccd17396-aae2-11f1-82fc-00155d2356a1,
+        niiri:cd30d034-aae2-11f1-82fc-00155d2356a1,
+        niiri:cd6b5a06-aae2-11f1-82fc-00155d2356a1,
+        niiri:cd7af6f0-aae2-11f1-82fc-00155d2356a1,
+        niiri:cd85d4b2-aae2-11f1-82fc-00155d2356a1,
+        niiri:cda6d73e-aae2-11f1-82fc-00155d2356a1,
+        niiri:cdb041d4-aae2-11f1-82fc-00155d2356a1,
+        niiri:cdb8d97a-aae2-11f1-82fc-00155d2356a1,
+        niiri:cdd293c4-aae2-11f1-82fc-00155d2356a1,
+        niiri:ce01270c-aae2-11f1-82fc-00155d2356a1,
+        niiri:ce2252ba-aae2-11f1-82fc-00155d2356a1,
+        niiri:ce31caa6-aae2-11f1-82fc-00155d2356a1,
+        niiri:dc6a6db8-aae2-11f1-82fc-00155d2356a1,
+        niiri:dc706baa-aae2-11f1-82fc-00155d2356a1,
+        niiri:dc71513c-aae2-11f1-82fc-00155d2356a1,
+        niiri:dc77727e-aae2-11f1-82fc-00155d2356a1,
+        niiri:dc7e77ea-aae2-11f1-82fc-00155d2356a1,
+        niiri:dc7f3568-aae2-11f1-82fc-00155d2356a1,
+        niiri:dc8ea782-aae2-11f1-82fc-00155d2356a1,
+        niiri:dc90bd38-aae2-11f1-82fc-00155d2356a1,
+        niiri:dc9564d2-aae2-11f1-82fc-00155d2356a1,
+        niiri:dc9664ae-aae2-11f1-82fc-00155d2356a1,
+        niiri:dcaf58ce-aae2-11f1-82fc-00155d2356a1,
+        niiri:dcb1b3bc-aae2-11f1-82fc-00155d2356a1,
+        niiri:dcbb968e-aae2-11f1-82fc-00155d2356a1,
+        niiri:dcc32c8c-aae2-11f1-82fc-00155d2356a1,
+        niiri:dcc478ee-aae2-11f1-82fc-00155d2356a1,
+        niiri:dccebb06-aae2-11f1-82fc-00155d2356a1,
+        niiri:dcfbfc88-aae2-11f1-82fc-00155d2356a1,
+        niiri:dd063e82-aae2-11f1-82fc-00155d2356a1,
+        niiri:dd72a036-aae2-11f1-82fc-00155d2356a1,
+        niiri:dd9f4cda-aae2-11f1-82fc-00155d2356a1,
+        niiri:de0a292e-aae2-11f1-82fc-00155d2356a1,
+        niiri:de2addc2-aae2-11f1-82fc-00155d2356a1,
+        niiri:deed9e7a-aae2-11f1-82fc-00155d2356a1,
+        niiri:ec727a58-aae2-11f1-82fc-00155d2356a1,
+        niiri:ec78aaae-aae2-11f1-82fc-00155d2356a1,
+        niiri:ec844c4c-aae2-11f1-82fc-00155d2356a1,
+        niiri:ec88d76c-aae2-11f1-82fc-00155d2356a1,
+        niiri:ec8aa1b4-aae2-11f1-82fc-00155d2356a1,
+        niiri:ec8d008a-aae2-11f1-82fc-00155d2356a1,
+        niiri:ec9337d4-aae2-11f1-82fc-00155d2356a1,
+        niiri:ec993d32-aae2-11f1-82fc-00155d2356a1,
+        niiri:eca912d4-aae2-11f1-82fc-00155d2356a1,
+        niiri:ecaa1fa8-aae2-11f1-82fc-00155d2356a1,
+        niiri:ecaacc1e-aae2-11f1-82fc-00155d2356a1,
+        niiri:ecbccb62-aae2-11f1-82fc-00155d2356a1,
+        niiri:eccc9ef2-aae2-11f1-82fc-00155d2356a1,
+        niiri:ecf07746-aae2-11f1-82fc-00155d2356a1,
+        niiri:ed2055ba-aae2-11f1-82fc-00155d2356a1,
+        niiri:ed402b74-aae2-11f1-82fc-00155d2356a1,
+        niiri:ed48f92a-aae2-11f1-82fc-00155d2356a1,
+        niiri:edc93eb4-aae2-11f1-82fc-00155d2356a1,
+        niiri:edef7b9c-aae2-11f1-82fc-00155d2356a1,
+        niiri:edf8dc3c-aae2-11f1-82fc-00155d2356a1,
+        niiri:fc6de970-aae2-11f1-82fc-00155d2356a1,
+        niiri:fc6f3942-aae2-11f1-82fc-00155d2356a1,
+        niiri:fc73a568-aae2-11f1-82fc-00155d2356a1,
+        niiri:fc79e04a-aae2-11f1-82fc-00155d2356a1,
+        niiri:fc7a971a-aae2-11f1-82fc-00155d2356a1,
+        niiri:fc7c222e-aae2-11f1-82fc-00155d2356a1,
+        niiri:fc812fc6-aae2-11f1-82fc-00155d2356a1,
+        niiri:fc945d76-aae2-11f1-82fc-00155d2356a1,
+        niiri:fca625ce-aae2-11f1-82fc-00155d2356a1,
+        niiri:fcabbbf6-aae2-11f1-82fc-00155d2356a1,
+        niiri:fcbe7e6c-aae2-11f1-82fc-00155d2356a1,
+        niiri:fcc080cc-aae2-11f1-82fc-00155d2356a1,
+        niiri:fcc1902a-aae2-11f1-82fc-00155d2356a1,
+        niiri:fcc5abec-aae2-11f1-82fc-00155d2356a1,
+        niiri:fcc7e7b8-aae2-11f1-82fc-00155d2356a1,
+        niiri:fcca14fc-aae2-11f1-82fc-00155d2356a1,
+        niiri:fccb2d92-aae2-11f1-82fc-00155d2356a1,
+        niiri:fccbed9a-aae2-11f1-82fc-00155d2356a1,
+        niiri:fccdad4c-aae2-11f1-82fc-00155d2356a1,
+        niiri:fccffec6-aae2-11f1-82fc-00155d2356a1,
+        niiri:fd5b7fb4-aae2-11f1-82fc-00155d2356a1,
+        niiri:fd8d7b90-aae2-11f1-82fc-00155d2356a1,
+        niiri:fdc1d818-aae2-11f1-82fc-00155d2356a1,
+        niiri:fe1a0074-aae2-11f1-82fc-00155d2356a1,
+        niiri:fec14b0e-aae2-11f1-82fc-00155d2356a1,
+        niiri:fed404ec-aae2-11f1-82fc-00155d2356a1,
+        niiri:fee4e078-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ec78aaae-aae2-11f1-82fc-00155d2356a1 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "49" ;
+    niiri:hamd_17_3et8dvi "38" ;
+    niiri:scanner_3j8v8tu "Siemens Prisma" ;
+    niiri:sex_cpa8jp "F" ;
+    niiri:wais_iv_fsiq_3eqpd5t "84" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:dc78a630-aae2-11f1-82fc-00155d2356a1 ;
+    prov:wasInfluencedBy niiri:fc79e04a-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ec7c17d4-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ec844c4c-aae2-11f1-82fc-00155d2356a1 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "37" ;
+    niiri:hamd_17_3et8dvi "34" ;
+    niiri:scanner_3j8v8tu "GE Discovery 750" ;
+    niiri:sex_cpa8jp "F" ;
+    niiri:wais_iv_fsiq_3eqpd5t "127" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:ec84495e-aae2-11f1-82fc-00155d2356a1 ;
+    prov:wasInfluencedBy niiri:bc85138e-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ec86585c-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ec88d76c-aae2-11f1-82fc-00155d2356a1 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "19" ;
+    niiri:hamd_17_3et8dvi "24" ;
+    niiri:scanner_3j8v8tu "GE Discovery 750" ;
+    niiri:sex_cpa8jp "F" ;
+    niiri:wais_iv_fsiq_3eqpd5t "75" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:fc88d514-aae2-11f1-82fc-00155d2356a1 ;
+    prov:wasInfluencedBy niiri:cc89c01e-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ec8aa1b4-aae2-11f1-82fc-00155d2356a1 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "30" ;
+    niiri:hamd_17_3et8dvi "5" ;
+    niiri:scanner_3j8v8tu "Siemens Prisma" ;
+    niiri:sex_cpa8jp "F" ;
+    niiri:wais_iv_fsiq_3eqpd5t "107" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:fc8a9ec6-aae2-11f1-82fc-00155d2356a1 ;
+    prov:wasInfluencedBy niiri:ac8bfe10-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ec8d008a-aae2-11f1-82fc-00155d2356a1 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "26" ;
+    niiri:hamd_17_3et8dvi "35" ;
+    niiri:scanner_3j8v8tu "GE Discovery 750" ;
+    niiri:sex_cpa8jp "F" ;
+    niiri:wais_iv_fsiq_3eqpd5t "97" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:fc8cfc5c-aae2-11f1-82fc-00155d2356a1 ;
+    prov:wasInfluencedBy niiri:ac8de93c-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ec9337d4-aae2-11f1-82fc-00155d2356a1 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "22" ;
+    niiri:hamd_17_3et8dvi "39" ;
+    niiri:scanner_3j8v8tu "GE Discovery 750" ;
+    niiri:sex_cpa8jp "F" ;
+    niiri:wais_iv_fsiq_3eqpd5t "75" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:ac933324-aae2-11f1-82fc-00155d2356a1 ;
+    prov:wasInfluencedBy niiri:fc945d76-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ec993d32-aae2-11f1-82fc-00155d2356a1 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "36" ;
+    niiri:hamd_17_3et8dvi "12" ;
+    niiri:scanner_3j8v8tu "Siemens Prisma" ;
+    niiri:sex_cpa8jp "F" ;
+    niiri:wais_iv_fsiq_3eqpd5t "102" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:bc993ada-aae2-11f1-82fc-00155d2356a1 ;
+    prov:wasInfluencedBy niiri:bc9a8340-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:eca1076a-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:eca61d86-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:eca912d4-aae2-11f1-82fc-00155d2356a1 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "31" ;
+    niiri:hamd_17_3et8dvi "18" ;
+    niiri:scanner_3j8v8tu "Siemens Prisma" ;
+    niiri:sex_cpa8jp "M" ;
+    niiri:wais_iv_fsiq_3eqpd5t "114" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:aca90fdc-aae2-11f1-82fc-00155d2356a1 ;
+    prov:wasInfluencedBy niiri:ecaa1fa8-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ecaacc1e-aae2-11f1-82fc-00155d2356a1 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "29" ;
+    niiri:hamd_17_3et8dvi "5" ;
+    niiri:scanner_3j8v8tu "Siemens Prisma" ;
+    niiri:sex_cpa8jp "M" ;
+    niiri:wais_iv_fsiq_3eqpd5t "104" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:dcaac944-aae2-11f1-82fc-00155d2356a1 ;
+    prov:wasInfluencedBy niiri:fcabbbf6-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ecb66362-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ecbccb62-aae2-11f1-82fc-00155d2356a1 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "22" ;
+    niiri:hamd_17_3et8dvi "10" ;
+    niiri:scanner_3j8v8tu "Siemens Prisma" ;
+    niiri:sex_cpa8jp "M" ;
+    niiri:wais_iv_fsiq_3eqpd5t "70" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:bcbcc8ec-aae2-11f1-82fc-00155d2356a1 ;
+    prov:wasInfluencedBy niiri:bcbda604-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ecbe744e-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ecc46e08-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:eccbe5c0-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ecf07746-aae2-11f1-82fc-00155d2356a1 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 2.5e-03 ;
+    bids:FlipAngle 8e+00 ;
+    crypto:sha512 "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e" ;
+    dicom:InversionTime 9e-01 ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 2.3e+00 ;
+    dicom:ScanningSequence "GR/IR" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::mnt/c/Users/seanh/Downloads/testBIDS/synthetic_bids_scanners/sub-01/ses-01/anat/sub-01_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:bcf06d28-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ed17807a-aae2-11f1-82fc-00155d2356a1 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:fd15ccc6-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:bc73a9aa-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:ed2055ba-aae2-11f1-82fc-00155d2356a1 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 2.5e-03 ;
+    bids:FlipAngle 8e+00 ;
+    crypto:sha512 "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e" ;
+    dicom:InversionTime 9e-01 ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 2.3e+00 ;
+    dicom:ScanningSequence "GR/IR" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::mnt/c/Users/seanh/Downloads/testBIDS/synthetic_bids_scanners/sub-06/ses-01/anat/sub-06_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:ad20090c-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ed2f651e-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ed3ed8e6-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ed402b74-aae2-11f1-82fc-00155d2356a1 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 2.5e-03 ;
+    bids:FlipAngle 8e+00 ;
+    crypto:sha512 "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e" ;
+    dicom:InversionTime 9e-01 ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 2.3e+00 ;
+    dicom:ScanningSequence "GR/IR" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::mnt/c/Users/seanh/Downloads/testBIDS/synthetic_bids_scanners/sub-10/ses-01/anat/sub-10_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:fd401ff8-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ed48f92a-aae2-11f1-82fc-00155d2356a1 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 2.5e-03 ;
+    bids:FlipAngle 8e+00 ;
+    crypto:sha512 "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e" ;
+    dicom:InversionTime 9e-01 ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 2.3e+00 ;
+    dicom:ScanningSequence "GR/IR" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::mnt/c/Users/seanh/Downloads/testBIDS/synthetic_bids_scanners/sub-11/ses-01/anat/sub-11_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:dd48ecdc-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ed5b73a2-aae2-11f1-82fc-00155d2356a1 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:dd5a24ac-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ec844ff8-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:ed832c26-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ed94f226-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ed9f41c2-aae2-11f1-82fc-00155d2356a1 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:fd9deb2e-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:dc95696e-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:eda5e752-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:edb034dc-aae2-11f1-82fc-00155d2356a1 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:cdaee96a-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:bc9940ca-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:edc93eb4-aae2-11f1-82fc-00155d2356a1 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 2.2e-03 ;
+    bids:FlipAngle 9e+00 ;
+    crypto:sha512 "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e" ;
+    dicom:InversionTime 9e-01 ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 2e+00 ;
+    dicom:ScanningSequence "GR/IR" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::mnt/c/Users/seanh/Downloads/testBIDS/synthetic_bids_scanners/sub-26/ses-01/anat/sub-26_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:ddc933b0-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ede69ff4-aae2-11f1-82fc-00155d2356a1 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:dde50626-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:cca628bc-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:edef7b9c-aae2-11f1-82fc-00155d2356a1 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 2.2e-03 ;
+    bids:FlipAngle 9e+00 ;
+    crypto:sha512 "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e" ;
+    dicom:InversionTime 9e-01 ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 2e+00 ;
+    dicom:ScanningSequence "GR/IR" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::mnt/c/Users/seanh/Downloads/testBIDS/synthetic_bids_scanners/sub-30/ses-01/anat/sub-30_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:fdef6cce-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:edf8dc3c-aae2-11f1-82fc-00155d2356a1 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 2.2e-03 ;
+    bids:FlipAngle 9e+00 ;
+    crypto:sha512 "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e" ;
+    dicom:InversionTime 9e-01 ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 2e+00 ;
+    dicom:ScanningSequence "GR/IR" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::mnt/c/Users/seanh/Downloads/testBIDS/synthetic_bids_scanners/sub-31/ses-01/anat/sub-31_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:cdf86dc4-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ee2247ca-aae2-11f1-82fc-00155d2356a1 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:ce20edda-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:fcb67302-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:ee283c8e-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ee30a036-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ee90123c-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ee917028-aae2-11f1-82fc-00155d2356a1 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:ee90123c-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ccbcd03a-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:eee3e9ca-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:eee4d812-aae2-11f1-82fc-00155d2356a1 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:eee3e9ca-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:eccdb116-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:eeed938a-aae2-11f1-82fc-00155d2356a1 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:feec4e12-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:dcd00452-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:eef69818-aae2-11f1-82fc-00155d2356a1 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:aef4fc10-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:acd17620-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:fc6a247a-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:fc6f3942-aae2-11f1-82fc-00155d2356a1 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "41" ;
+    niiri:hamd_17_3et8dvi "24" ;
+    niiri:scanner_3j8v8tu "GE Discovery 750" ;
+    niiri:sex_cpa8jp "F" ;
+    niiri:wais_iv_fsiq_3eqpd5t "71" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:bc6f355a-aae2-11f1-82fc-00155d2356a1 ;
+    prov:wasInfluencedBy niiri:dc706baa-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:fc73a568-aae2-11f1-82fc-00155d2356a1 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "33" ;
+    niiri:hamd_17_3et8dvi "22" ;
+    niiri:scanner_3j8v8tu "Siemens Prisma" ;
+    niiri:sex_cpa8jp "F" ;
+    niiri:wais_iv_fsiq_3eqpd5t "87" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:cc73a2ac-aae2-11f1-82fc-00155d2356a1 ;
+    prov:wasInfluencedBy niiri:ac7550b6-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:fc789dac-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:fc7a971a-aae2-11f1-82fc-00155d2356a1 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "42" ;
+    niiri:hamd_17_3et8dvi "16" ;
+    niiri:scanner_3j8v8tu "GE Discovery 750" ;
+    niiri:sex_cpa8jp "F" ;
+    niiri:wais_iv_fsiq_3eqpd5t "78" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:cc7a94fe-aae2-11f1-82fc-00155d2356a1 ;
+    prov:wasInfluencedBy niiri:ac7b3134-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:fc7c222e-aae2-11f1-82fc-00155d2356a1 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "31" ;
+    niiri:hamd_17_3et8dvi "51" ;
+    niiri:scanner_3j8v8tu "GE Discovery 750" ;
+    niiri:sex_cpa8jp "F" ;
+    niiri:wais_iv_fsiq_3eqpd5t "117" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:fc7c1f5e-aae2-11f1-82fc-00155d2356a1 ;
+    prov:wasInfluencedBy niiri:cc7d3d44-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:fc7e6f34-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:fc88cf4c-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:fc971138-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:fca430fc-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:fca625ce-aae2-11f1-82fc-00155d2356a1 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "29" ;
+    niiri:hamd_17_3et8dvi "49" ;
+    niiri:scanner_3j8v8tu "Siemens Prisma" ;
+    niiri:sex_cpa8jp "M" ;
+    niiri:wais_iv_fsiq_3eqpd5t "111" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:cca62376-aae2-11f1-82fc-00155d2356a1 ;
+    prov:wasInfluencedBy niiri:cca7690c-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:fcad2d42-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:fcb1a796-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:fcbe7e6c-aae2-11f1-82fc-00155d2356a1 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "36" ;
+    niiri:hamd_17_3et8dvi "23" ;
+    niiri:scanner_3j8v8tu "Siemens Prisma" ;
+    niiri:sex_cpa8jp "M" ;
+    niiri:wais_iv_fsiq_3eqpd5t "118" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:acbe7b92-aae2-11f1-82fc-00155d2356a1 ;
+    prov:wasInfluencedBy niiri:ccbfa602-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:fcc080cc-aae2-11f1-82fc-00155d2356a1 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "41" ;
+    niiri:hamd_17_3et8dvi "22" ;
+    niiri:scanner_3j8v8tu "GE Discovery 750" ;
+    niiri:sex_cpa8jp "M" ;
+    niiri:wais_iv_fsiq_3eqpd5t "121" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:ecc07e38-aae2-11f1-82fc-00155d2356a1 ;
+    prov:wasInfluencedBy niiri:fcc1902a-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:fcc7e7b8-aae2-11f1-82fc-00155d2356a1 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "21" ;
+    niiri:hamd_17_3et8dvi "44" ;
+    niiri:scanner_3j8v8tu "GE Discovery 750" ;
+    niiri:sex_cpa8jp "M" ;
+    niiri:wais_iv_fsiq_3eqpd5t "91" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:fcc7e4f2-aae2-11f1-82fc-00155d2356a1 ;
+    prov:wasInfluencedBy niiri:ccc92042-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:fcca14fc-aae2-11f1-82fc-00155d2356a1 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "28" ;
+    niiri:hamd_17_3et8dvi "43" ;
+    niiri:scanner_3j8v8tu "GE Discovery 750" ;
+    niiri:sex_cpa8jp "M" ;
+    niiri:wais_iv_fsiq_3eqpd5t "87" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:ecca1074-aae2-11f1-82fc-00155d2356a1 ;
+    prov:wasInfluencedBy niiri:fccb2d92-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:fccbed9a-aae2-11f1-82fc-00155d2356a1 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "30" ;
+    niiri:hamd_17_3et8dvi "41" ;
+    niiri:scanner_3j8v8tu "GE Discovery 750" ;
+    niiri:sex_cpa8jp "M" ;
+    niiri:wais_iv_fsiq_3eqpd5t "79" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:accbeb88-aae2-11f1-82fc-00155d2356a1 ;
+    prov:wasInfluencedBy niiri:eccc9ef2-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:fccdad4c-aae2-11f1-82fc-00155d2356a1 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "44" ;
+    niiri:hamd_17_3et8dvi "4" ;
+    niiri:scanner_3j8v8tu "Siemens Prisma" ;
+    niiri:sex_cpa8jp "M" ;
+    niiri:wais_iv_fsiq_3eqpd5t "83" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:eccda946-aae2-11f1-82fc-00155d2356a1 ;
+    prov:wasInfluencedBy niiri:dccebb06-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:fccffec6-aae2-11f1-82fc-00155d2356a1 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "37" ;
+    niiri:hamd_17_3et8dvi "38" ;
+    niiri:scanner_3j8v8tu "Siemens Prisma" ;
+    niiri:sex_cpa8jp "M" ;
+    niiri:wais_iv_fsiq_3eqpd5t "118" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:fccffb2e-aae2-11f1-82fc-00155d2356a1 ;
+    prov:wasInfluencedBy niiri:acd0d7f6-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:fcd16cf2-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:fd0dd7fa-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:fd15ccc6-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:fd1edf8c-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:fd27302e-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:fd30c4a4-aae2-11f1-82fc-00155d2356a1 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:ed2f651e-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ac7a9a44-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:fd36c3fe-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:fd37dcb2-aae2-11f1-82fc-00155d2356a1 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:fd36c3fe-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:bc7c2576-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:fd401ff8-aae2-11f1-82fc-00155d2356a1 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:ed3ed8e6-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:bc7e7b3c-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:fd5b7fb4-aae2-11f1-82fc-00155d2356a1 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 2.5e-03 ;
+    bids:FlipAngle 8e+00 ;
+    crypto:sha512 "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e" ;
+    dicom:InversionTime 9e-01 ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 2.3e+00 ;
+    dicom:ScanningSequence "GR/IR" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::mnt/c/Users/seanh/Downloads/testBIDS/synthetic_bids_scanners/sub-13/ses-01/anat/sub-13_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:ed5b73a2-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:fd632980-aae2-11f1-82fc-00155d2356a1 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:dd62283c-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:cc866ba8-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:fd71454c-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:fd8d7b90-aae2-11f1-82fc-00155d2356a1 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 2.2e-03 ;
+    bids:FlipAngle 9e+00 ;
+    crypto:sha512 "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e" ;
+    dicom:InversionTime 9e-01 ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 2e+00 ;
+    dicom:ScanningSequence "GR/IR" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::mnt/c/Users/seanh/Downloads/testBIDS/synthetic_bids_scanners/sub-19/ses-01/anat/sub-19_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:cd8d7398-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:fd9deb2e-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:fdc190d8-aae2-11f1-82fc-00155d2356a1 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:cdc01190-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:fc9cbd7c-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:fdc1d818-aae2-11f1-82fc-00155d2356a1 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 2.2e-03 ;
+    bids:FlipAngle 9e+00 ;
+    crypto:sha512 "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e" ;
+    dicom:InversionTime 9e-01 ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 2e+00 ;
+    dicom:ScanningSequence "GR/IR" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::mnt/c/Users/seanh/Downloads/testBIDS/synthetic_bids_scanners/sub-25/ses-01/anat/sub-25_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:fdc190d8-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:fdef6cce-aae2-11f1-82fc-00155d2356a1 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:cdee12fc-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:eca9182e-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:fe1a0074-aae2-11f1-82fc-00155d2356a1 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 2.2e-03 ;
+    bids:FlipAngle 9e+00 ;
+    crypto:sha512 "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e" ;
+    dicom:InversionTime 9e-01 ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 2e+00 ;
+    dicom:ScanningSequence "GR/IR" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::mnt/c/Users/seanh/Downloads/testBIDS/synthetic_bids_scanners/sub-35/ses-01/anat/sub-35_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:ce19f868-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:fe31c0ec-aae2-11f1-82fc-00155d2356a1 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:ee30a036-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:dcba4428-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:feae9e5a-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:feb70f40-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:febf3de6-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:fec14b0e-aae2-11f1-82fc-00155d2356a1 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 2.2e-03 ;
+    bids:FlipAngle 9e+00 ;
+    crypto:sha512 "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e" ;
+    dicom:InversionTime 9e-01 ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 2e+00 ;
+    dicom:ScanningSequence "GR/IR" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::mnt/c/Users/seanh/Downloads/testBIDS/synthetic_bids_scanners/sub-44/ses-01/anat/sub-44_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:cec117ce-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:fecad7dc-aae2-11f1-82fc-00155d2356a1 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:aec94f34-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ccc7f15e-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:fed404ec-aae2-11f1-82fc-00155d2356a1 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 2.5e-03 ;
+    bids:FlipAngle 8e+00 ;
+    crypto:sha512 "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e" ;
+    dicom:InversionTime 9e-01 ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 2.3e+00 ;
+    dicom:ScanningSequence "GR/IR" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::mnt/c/Users/seanh/Downloads/testBIDS/synthetic_bids_scanners/sub-46/ses-01/anat/sub-46_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:aed3f902-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:fee4e078-aae2-11f1-82fc-00155d2356a1 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 2.2e-03 ;
+    bids:FlipAngle 9e+00 ;
+    crypto:sha512 "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e" ;
+    dicom:InversionTime 9e-01 ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 2e+00 ;
+    dicom:ScanningSequence "GR/IR" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::mnt/c/Users/seanh/Downloads/testBIDS/synthetic_bids_scanners/sub-48/ses-01/anat/sub-48_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:eee4d812-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:feec4e12-aae2-11f1-82fc-00155d2356a1 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ff394780-aae2-11f1-82fc-00155d2356a1 a prov:Activity ;
+    rdfs:label "Create NIDM RDF from BIDS dataset" ;
+    nidm:outputFormat "turtle" ;
+    prov:endedAtTime "2026-09-07T17:34:53.055281+00:00" ;
+    prov:startedAtTime "2026-09-07T17:34:53.055281+00:00" ;
+    prov:used niiri:e3b90d82-aae2-11f1-82fc-00155d2356a1 ;
+    prov:wasAssociatedWith niiri:cf394af0-aae2-11f1-82fc-00155d2356a1 .
+
+term_cde_0161290: a prov:Entity ;
+    rdfs:label "Hamilton Depression Rating Scale (HAM-D)" .
+
+term_ilx_0100400: a prov:Entity ;
+    rdfs:label "Age" .
+
+term_birnlex_2100: a prov:Entity ;
+    rdfs:label "Magnetic resonance imaging scanner" .
+
+term_CAO_00718: a prov:Entity ;
+    rdfs:label "Wechsler abbreviated scale of intelligence" .
+
+niiri:ac714dea-aae2-11f1-82fc-00155d2356a1 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:ac7147f0-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ec71551a-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:ac7550b6-aae2-11f1-82fc-00155d2356a1 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:cc73a2ac-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ac7a9a44-aae2-11f1-82fc-00155d2356a1 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-08" .
+
+niiri:ac7b3134-aae2-11f1-82fc-00155d2356a1 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:cc7a94fe-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ac8234c0-aae2-11f1-82fc-00155d2356a1 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:dc822eda-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:dc823b3c-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:ac8bfe10-aae2-11f1-82fc-00155d2356a1 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:fc8a9ec6-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ac8d03dc-aae2-11f1-82fc-00155d2356a1 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-17" .
+
+niiri:ac8de93c-aae2-11f1-82fc-00155d2356a1 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:fc8cfc5c-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ac8fb3f2-aae2-11f1-82fc-00155d2356a1 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:cc8ea598-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ac933324-aae2-11f1-82fc-00155d2356a1 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:cc932bc2-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:cc933b9e-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:ac9b4e9c-aae2-11f1-82fc-00155d2356a1 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:ac9b485c-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ac9b5392-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:ac9b5392-aae2-11f1-82fc-00155d2356a1 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-24" .
+
+niiri:ac9e3b2a-aae2-11f1-82fc-00155d2356a1 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:dc9cb2dc-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:aca5525c-aae2-11f1-82fc-00155d2356a1 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:fca43818-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:aca90fdc-aae2-11f1-82fc-00155d2356a1 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:aca9074e-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:eca9182e-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:acb97fe8-aae2-11f1-82fc-00155d2356a1 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:ecb88e62-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:acbe7b92-aae2-11f1-82fc-00155d2356a1 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:ecbe744e-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ccbe83da-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:acc2424a-aae2-11f1-82fc-00155d2356a1 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-42" .
+
+niiri:acc47c4a-aae2-11f1-82fc-00155d2356a1 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-43" .
+
+niiri:accbeb88-aae2-11f1-82fc-00155d2356a1 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:eccbe5c0-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:eccbf0e2-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:acd0d7f6-aae2-11f1-82fc-00155d2356a1 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:fccffb2e-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:acd17620-aae2-11f1-82fc-00155d2356a1 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-50" .
+
+niiri:bc6bc65e-aae2-11f1-82fc-00155d2356a1 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:fc6a68f4-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:bc6cbc12-aae2-11f1-82fc-00155d2356a1 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:bc6cb71c-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:bc6cc162-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:bc6cc162-aae2-11f1-82fc-00155d2356a1 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-02" .
+
+niiri:bc6f355a-aae2-11f1-82fc-00155d2356a1 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:ac6f2f4c-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:bc6f3f78-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:bc6f3f78-aae2-11f1-82fc-00155d2356a1 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-03" .
+
+niiri:bc73a9aa-aae2-11f1-82fc-00155d2356a1 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-05" .
+
+niiri:bc76511e-aae2-11f1-82fc-00155d2356a1 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-06" .
+
+niiri:bc7c2576-aae2-11f1-82fc-00155d2356a1 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-09" .
+
+niiri:bc7e756a-aae2-11f1-82fc-00155d2356a1 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:fc7e6f34-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:bc7e7b3c-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:bc7e7b3c-aae2-11f1-82fc-00155d2356a1 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-10" .
+
+niiri:bc7fd6f8-aae2-11f1-82fc-00155d2356a1 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:bc7fd2e8-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:dc7fdba8-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:bc85138e-aae2-11f1-82fc-00155d2356a1 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:ec84495e-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:bc922b28-aae2-11f1-82fc-00155d2356a1 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:dc90ba18-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:bc955f8c-aae2-11f1-82fc-00155d2356a1 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:bc95550a-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:dc95696e-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:bc9823d4-aae2-11f1-82fc-00155d2356a1 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:dc971a5c-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:bc993ada-aae2-11f1-82fc-00155d2356a1 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:bc99342c-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:bc9940ca-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:bc9940ca-aae2-11f1-82fc-00155d2356a1 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-23" .
+
+niiri:bc9a8340-aae2-11f1-82fc-00155d2356a1 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:bc993ada-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:bc9bf50e-aae2-11f1-82fc-00155d2356a1 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:ac9b4e9c-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:bca05d88-aae2-11f1-82fc-00155d2356a1 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:dc9f65a4-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:bca31956-aae2-11f1-82fc-00155d2356a1 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:dca10bde-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:bca43e6c-aae2-11f1-82fc-00155d2356a1 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-28" .
+
+niiri:bcad358a-aae2-11f1-82fc-00155d2356a1 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:fcad2d42-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:fcad40c0-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:bcb01aca-aae2-11f1-82fc-00155d2356a1 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:fcaf5590-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:bcb1b0f6-aae2-11f1-82fc-00155d2356a1 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:fcb1a796-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ecb1b768-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:bcb425d4-aae2-11f1-82fc-00155d2356a1 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:bcb41f30-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:dcb42b06-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:bcb896b4-aae2-11f1-82fc-00155d2356a1 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-37" .
+
+niiri:bcbcc8ec-aae2-11f1-82fc-00155d2356a1 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:acbcc14e-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ccbcd03a-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:bcbda604-aae2-11f1-82fc-00155d2356a1 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:bcbcc8ec-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:bcc23b42-aae2-11f1-82fc-00155d2356a1 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:ccc2346c-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:acc2424a-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:bcc47538-aae2-11f1-82fc-00155d2356a1 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:ecc46e08-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:acc47c4a-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:bcd2761a-aae2-11f1-82fc-00155d2356a1 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:dcd171a2-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:cc73a2ac-aae2-11f1-82fc-00155d2356a1 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:ac739af0-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:bc73a9aa-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:cc7a94fe-aae2-11f1-82fc-00155d2356a1 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:bc7a909e-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ac7a9a44-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:cc7d3d44-aae2-11f1-82fc-00155d2356a1 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:fc7c1f5e-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:cc83896a-aae2-11f1-82fc-00155d2356a1 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:ac8234c0-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:cc866ba8-aae2-11f1-82fc-00155d2356a1 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-14" .
+
+niiri:cc878af6-aae2-11f1-82fc-00155d2356a1 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:ec866068-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:cc89c01e-aae2-11f1-82fc-00155d2356a1 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:fc88d514-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:cc8aabaa-aae2-11f1-82fc-00155d2356a1 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-16" .
+
+niiri:cc8ea598-aae2-11f1-82fc-00155d2356a1 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:ac8ea156-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ec8ea9da-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:cc90c166-aae2-11f1-82fc-00155d2356a1 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-19" .
+
+niiri:cc933b9e-aae2-11f1-82fc-00155d2356a1 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-20" .
+
+niiri:cc9f727e-aae2-11f1-82fc-00155d2356a1 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-26" .
+
+niiri:cca62376-aae2-11f1-82fc-00155d2356a1 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:eca61d86-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:cca628bc-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:cca628bc-aae2-11f1-82fc-00155d2356a1 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-29" .
+
+niiri:cca7690c-aae2-11f1-82fc-00155d2356a1 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:cca62376-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ccaacea8-aae2-11f1-82fc-00155d2356a1 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-31" .
+
+niiri:ccae72b0-aae2-11f1-82fc-00155d2356a1 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:bcad358a-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ccb30ac8-aae2-11f1-82fc-00155d2356a1 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:bcb1b0f6-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ccb4f9be-aae2-11f1-82fc-00155d2356a1 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:bcb425d4-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ccb7a2e0-aae2-11f1-82fc-00155d2356a1 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:ecb66d8a-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ccbcd03a-aae2-11f1-82fc-00155d2356a1 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-39" .
+
+niiri:ccbe83da-aae2-11f1-82fc-00155d2356a1 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-40" .
+
+niiri:ccbfa602-aae2-11f1-82fc-00155d2356a1 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:acbe7b92-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ccc0843c-aae2-11f1-82fc-00155d2356a1 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-41" .
+
+niiri:ccc73340-aae2-11f1-82fc-00155d2356a1 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:dcc67d2e-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ccc7f15e-aae2-11f1-82fc-00155d2356a1 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-45" .
+
+niiri:ccc92042-aae2-11f1-82fc-00155d2356a1 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:fcc7e4f2-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:dc706baa-aae2-11f1-82fc-00155d2356a1 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:bc6f355a-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:dc77727e-aae2-11f1-82fc-00155d2356a1 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:ec764930-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:dc78a630-aae2-11f1-82fc-00155d2356a1 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:fc789dac-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:dc78aec8-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:dc78aec8-aae2-11f1-82fc-00155d2356a1 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-07" .
+
+niiri:dc7f3568-aae2-11f1-82fc-00155d2356a1 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:bc7e756a-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:dc7fdba8-aae2-11f1-82fc-00155d2356a1 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-11" .
+
+niiri:dc823b3c-aae2-11f1-82fc-00155d2356a1 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-12" .
+
+niiri:dc88db86-aae2-11f1-82fc-00155d2356a1 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-15" .
+
+niiri:dc90ba18-aae2-11f1-82fc-00155d2356a1 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:dc90b310-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:cc90c166-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:dc95696e-aae2-11f1-82fc-00155d2356a1 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-21" .
+
+niiri:dc9664ae-aae2-11f1-82fc-00155d2356a1 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:bc955f8c-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:dc971a5c-aae2-11f1-82fc-00155d2356a1 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:fc971138-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:fc972092-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:dc9cb2dc-aae2-11f1-82fc-00155d2356a1 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:dc9caaa8-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:fc9cbd7c-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:dc9f65a4-aae2-11f1-82fc-00155d2356a1 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:ac9f5f28-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:cc9f727e-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:dca10bde-aae2-11f1-82fc-00155d2356a1 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:eca1076a-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:eca11084-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:dcaac944-aae2-11f1-82fc-00155d2356a1 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:dcaac34a-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ccaacea8-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:dcb42b06-aae2-11f1-82fc-00155d2356a1 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-35" .
+
+niiri:dcba4428-aae2-11f1-82fc-00155d2356a1 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-38" .
+
+niiri:dcbb968e-aae2-11f1-82fc-00155d2356a1 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:fcba3c80-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:dcc32c8c-aae2-11f1-82fc-00155d2356a1 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:bcc23b42-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:dcc67d2e-aae2-11f1-82fc-00155d2356a1 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:ccc67716-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ecc684e0-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:dccebb06-aae2-11f1-82fc-00155d2356a1 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:eccda946-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:dcd00452-aae2-11f1-82fc-00155d2356a1 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-49" .
+
+niiri:dcd171a2-aae2-11f1-82fc-00155d2356a1 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:fcd16cf2-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:acd17620-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:ec6a72ae-aae2-11f1-82fc-00155d2356a1 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-01" .
+
+niiri:ec71551a-aae2-11f1-82fc-00155d2356a1 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-04" .
+
+niiri:ec727a58-aae2-11f1-82fc-00155d2356a1 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:ac714dea-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ec764930-aae2-11f1-82fc-00155d2356a1 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:cc764228-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:bc76511e-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:ec84495e-aae2-11f1-82fc-00155d2356a1 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:cc8442ba-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ec844ff8-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:ec844ff8-aae2-11f1-82fc-00155d2356a1 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-13" .
+
+niiri:ec866068-aae2-11f1-82fc-00155d2356a1 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:ec86585c-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:cc866ba8-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:ec8ea9da-aae2-11f1-82fc-00155d2356a1 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-18" .
+
+niiri:eca11084-aae2-11f1-82fc-00155d2356a1 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-27" .
+
+niiri:eca9182e-aae2-11f1-82fc-00155d2356a1 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-30" .
+
+niiri:ecaa1fa8-aae2-11f1-82fc-00155d2356a1 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:aca90fdc-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:ecaf618e-aae2-11f1-82fc-00155d2356a1 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-33" .
+
+niiri:ecb1b768-aae2-11f1-82fc-00155d2356a1 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-34" .
+
+niiri:ecb66d8a-aae2-11f1-82fc-00155d2356a1 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:ecb66362-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:fcb67302-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:ecb88e62-aae2-11f1-82fc-00155d2356a1 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:ccb887be-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:bcb896b4-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:ecc07e38-aae2-11f1-82fc-00155d2356a1 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:acc07546-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ccc0843c-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:ecc684e0-aae2-11f1-82fc-00155d2356a1 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-44" .
+
+niiri:ecca1074-aae2-11f1-82fc-00155d2356a1 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:bcca01f6-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ecca1ace-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:ecca1ace-aae2-11f1-82fc-00155d2356a1 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-46" .
+
+niiri:eccbf0e2-aae2-11f1-82fc-00155d2356a1 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-47" .
+
+niiri:eccc9ef2-aae2-11f1-82fc-00155d2356a1 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:accbeb88-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:eccda946-aae2-11f1-82fc-00155d2356a1 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:dccd9ad2-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:eccdb116-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:eccdb116-aae2-11f1-82fc-00155d2356a1 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-48" .
+
+niiri:fc6a68f4-aae2-11f1-82fc-00155d2356a1 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:fc6a247a-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ec6a72ae-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:fc6de970-aae2-11f1-82fc-00155d2356a1 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:bc6cbc12-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:fc79e04a-aae2-11f1-82fc-00155d2356a1 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:dc78a630-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:fc7c1f5e-aae2-11f1-82fc-00155d2356a1 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:ec7c17d4-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:bc7c2576-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:fc812fc6-aae2-11f1-82fc-00155d2356a1 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:bc7fd6f8-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:fc88d514-aae2-11f1-82fc-00155d2356a1 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:fc88cf4c-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:dc88db86-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:fc8a9ec6-aae2-11f1-82fc-00155d2356a1 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:dc8a9656-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:cc8aabaa-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:fc8cfc5c-aae2-11f1-82fc-00155d2356a1 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:ac8cf5d6-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ac8d03dc-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:fc945d76-aae2-11f1-82fc-00155d2356a1 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:ac933324-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:fc972092-aae2-11f1-82fc-00155d2356a1 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-22" .
+
+niiri:fc9cbd7c-aae2-11f1-82fc-00155d2356a1 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-25" .
+
+niiri:fca43818-aae2-11f1-82fc-00155d2356a1 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:fca430fc-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:bca43e6c-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:fcabbbf6-aae2-11f1-82fc-00155d2356a1 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:dcaac944-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:fcad40c0-aae2-11f1-82fc-00155d2356a1 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-32" .
+
+niiri:fcaf5590-aae2-11f1-82fc-00155d2356a1 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:dcaf4faa-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ecaf618e-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:fcb67302-aae2-11f1-82fc-00155d2356a1 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-36" .
+
+niiri:fcba3c80-aae2-11f1-82fc-00155d2356a1 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:ccba3316-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:dcba4428-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:fcc1902a-aae2-11f1-82fc-00155d2356a1 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:ecc07e38-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:fcc5abec-aae2-11f1-82fc-00155d2356a1 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:bcc47538-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:fcc7e4f2-aae2-11f1-82fc-00155d2356a1 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:ccc7df02-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ccc7f15e-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:fccb2d92-aae2-11f1-82fc-00155d2356a1 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:ecca1074-aae2-11f1-82fc-00155d2356a1 .
+
+niiri:fccffb2e-aae2-11f1-82fc-00155d2356a1 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:dccff200-aae2-11f1-82fc-00155d2356a1 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:dcd00452-aae2-11f1-82fc-00155d2356a1 ;
+            prov:hadRole sio:Subject ] .
+
+nidm:PersonalDataElement rdfs:subClassOf nidm:DataElement .
+
+niiri:d3b8fe64-aae2-11f1-82fc-00155d2356a1 a nidm:Project,
+        prov:Activity ;
+    dctypes:title "Synthetic Multi-Scanner Clinical Dataset" .
+
