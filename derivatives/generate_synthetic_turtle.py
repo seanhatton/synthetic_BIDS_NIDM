@@ -1,77 +1,81 @@
 #!/usr/bin/env python3
-"""Generate synthetic NIDM RDF Turtle data for 50 subjects with sex-based left putamen differences"""
 import random
 import string
 
 def generate_uuid():
-    return ''.join(random.choices(string.hexdigits.lower(), k=8)) + '-' + \
-           ''.join(random.choices(string.hexdigits.lower(), k=4)) + '-' + \
-           ''.join(random.choices(string.hexdigits.lower(), k=4)) + '-' + \
-           ''.join(random.choices(string.hexdigits.lower(), k=4)) + '-' + \
-           ''.join(random.choices(string.hexdigits.lower(), k=12))
+    return ''.join(random.choices(string.hexdigits.lower(), k=8)) + '-' + ''.join(random.choices(string.hexdigits.lower(), k=4)) + '-' + ''.join(random.choices(string.hexdigits.lower(), k=4)) + '-' + ''.join(random.choices(string.hexdigits.lower(), k=4)) + '-' + ''.join(random.choices(string.hexdigits.lower(), k=12))
 
 def get_sex(subject_id):
-    """Read sex from participants.tsv"""
     sub_num = int(subject_id.split('-')[1])
-    # sub-01 to sub-25 are F, sub-26 to sub-50 are M
     return 'M' if sub_num >= 26 else 'F'
 
 def generate_fsl_values(subject_id):
-    """Generate synthetic FSL stats values"""
     random.seed(hash(subject_id) % (2**32))
-    base = 172900000 + random.randint(0, 100000)
     sex = get_sex(subject_id)
     
-    # Base left putamen values
-    left_putamen_voxels_base = random.randint(2000, 3500)
-    left_putamen_vol_base = round(4500 + random.uniform(0, 3000), 2)
+    mean_vol = 4500
+    std_vol = mean_vol * 0.05
+    base_putamen_vol = max(0, random.gauss(mean_vol, std_vol))
+    left_putamen_voxels_base = int(base_putamen_vol / 4) + random.gauss(0, 50)
     
-    # Males have on average 5% larger left putamen
     if sex == 'M':
-        # Multiply by 1.05
+        left_putamen_vol = round(base_putamen_vol * 1.05, 2)
         left_putamen_voxels = int(left_putamen_voxels_base * 1.05)
-        left_putamen_vol = round(left_putamen_vol_base * 1.05, 2)
     else:
-        left_putamen_voxels = left_putamen_voxels_base
-        left_putamen_vol = left_putamen_vol_base
+        left_putamen_vol = round(base_putamen_vol, 2)
+        left_putamen_voxels = int(left_putamen_voxels_base)
+    
+    base = 172900000
+    metrics = [
+        (base, 1000), (375000000, 500000), (275, 225), (600, 500),
+        (700, 500), (1750, 1250), (3000, 1000), (5500, 1500),
+        (2500, 1000), (5000, 2000), (1000, 500), (2000, 1500),
+        (left_putamen_voxels, 1), (left_putamen_vol, 1), (5750, 1750),
+        (12500, 3500), (200, 100), (500, 300), (800, 400),
+        (1400, 600), (2750, 750), (5250, 1250), (2600, 600),
+        (5500, 1000), (1000, 300), (2250, 750), (3250, 750),
+        (7000, 1500), (6000, 1500), (13000, 3500),
+        (300000, 100000), (300000, 100000), (650000, 150000),
+        (650000, 150000), (600000, 150000), (600000, 150000),
+    ]
     
     return {
-        'fsl:fsl_000001': base + random.randint(0, 1000),
-        'fsl:fsl_000002': round(375000000 + random.randint(0, 500000), 1),
-        'fsl:fsl_000003': random.randint(50, 500),
-        'fsl:fsl_000004': round(100 + random.uniform(0, 1000), 2),
-        'fsl:fsl_000005': random.randint(200, 1200),
-        'fsl:fsl_000006': round(500 + random.uniform(0, 2500), 2),
-        'fsl:fsl_000007': random.randint(2000, 4000),
-        'fsl:fsl_000008': round(4000 + random.uniform(0, 3000), 2),
-        'fsl:fsl_000009': random.randint(1500, 3500),
-        'fsl:fsl_000010': round(3000 + random.uniform(0, 4000), 2),
-        'fsl:fsl_000011': random.randint(500, 1500),
-        'fsl:fsl_000012': round(1000 + random.uniform(0, 3000), 2),
+        'fsl:fsl_000001': round(metrics[0][0] + metrics[0][1] * random.gauss(0, 1), 0),
+        'fsl:fsl_000002': round(metrics[1][0] + metrics[1][1] * random.gauss(0, 1), 1),
+        'fsl:fsl_000003': int(round(metrics[2][0] + metrics[2][1] * random.gauss(0, 1), 0)),
+        'fsl:fsl_000004': round(metrics[3][0] + metrics[3][1] * random.gauss(0, 1), 2),
+        'fsl:fsl_000005': int(round(metrics[4][0] + metrics[4][1] * random.gauss(0, 1), 0)),
+        'fsl:fsl_000006': round(metrics[5][0] + metrics[5][1] * random.gauss(0, 1), 2),
+        'fsl:fsl_000007': int(round(metrics[6][0] + metrics[6][1] * random.gauss(0, 1), 0)),
+        'fsl:fsl_000008': round(metrics[7][0] + metrics[7][1] * random.gauss(0, 1), 2),
+        'fsl:fsl_000009': int(round(metrics[8][0] + metrics[8][1] * random.gauss(0, 1), 0)),
+        'fsl:fsl_000010': round(metrics[9][0] + metrics[9][1] * random.gauss(0, 1), 2),
+        'fsl:fsl_000011': int(round(metrics[10][0] + metrics[10][1] * random.gauss(0, 1), 0)),
+        'fsl:fsl_000012': round(metrics[11][0] + metrics[11][1] * random.gauss(0, 1), 2),
         'fsl:fsl_000013': left_putamen_voxels,
         'fsl:fsl_000014': left_putamen_vol,
-        'fsl:fsl_000015': random.randint(4000, 7500),
-        'fsl:fsl_000016': round(9000 + random.uniform(0, 7000), 2),
-        'fsl:fsl_000017': random.randint(100, 300),
-        'fsl:fsl_000018': round(200 + random.uniform(0, 600), 2),
-        'fsl:fsl_000019': random.randint(400, 1200),
-        'fsl:fsl_000020': round(800 + random.uniform(0, 2000), 2),
-        'fsl:fsl_000021': random.randint(2000, 3500),
-        'fsl:fsl_000022': round(4000 + random.uniform(0, 2500), 2),
-        'fsl:fsl_000023': random.randint(2000, 3200),
-        'fsl:fsl_000024': round(4500 + random.uniform(0, 2000), 2),
-        'fsl:fsl_000025': random.randint(700, 1300),
-        'fsl:fsl_000026': round(1500 + random.uniform(0, 1500), 2),
-        'fsl:fsl_000027': random.randint(2500, 4000),
-        'fsl:fsl_000028': round(5500 + random.uniform(0, 3000), 2),
-        'fsl:fsl_000029': random.randint(4500, 7500),
-        'fsl:fsl_000030': round(9500 + random.uniform(0, 7000), 2),
-        'fsl:fsl_000031': random.randint(200000, 400000),
-        'fsl:fsl_000032': random.randint(200000, 400000),
-        'fsl:fsl_000033': random.randint(500000, 800000),
-        'fsl:fsl_000034': random.randint(500000, 800000),
-        'fsl:fsl_000035': random.randint(450000, 750000),
-        'fsl:fsl_000036': random.randint(450000, 750000),
+        'fsl:fsl_000015': int(round(metrics[14][0] + metrics[14][1] * random.gauss(0, 1), 0)),
+        'fsl:fsl_000016': round(metrics[15][0] + metrics[15][1] * random.gauss(0, 1), 2),
+        'fsl:fsl_000017': int(round(metrics[16][0] + metrics[16][1] * random.gauss(0, 1), 0)),
+        'fsl:fsl_000018': round(metrics[17][0] + metrics[17][1] * random.gauss(0, 1), 2),
+        'fsl:fsl_000019': int(round(metrics[18][0] + metrics[18][1] * random.gauss(0, 1), 0)),
+        'fsl:fsl_000020': round(metrics[19][0] + metrics[19][1] * random.gauss(0, 1), 2),
+        'fsl:fsl_000021': int(round(metrics[20][0] + metrics[20][1] * random.gauss(0, 1), 0)),
+        'fsl:fsl_000022': round(metrics[21][0] + metrics[21][1] * random.gauss(0, 1), 2),
+        'fsl:fsl_000023': int(round(metrics[22][0] + metrics[22][1] * random.gauss(0, 1), 0)),
+        'fsl:fsl_000024': round(metrics[23][0] + metrics[23][1] * random.gauss(0, 1), 2),
+        'fsl:fsl_000025': int(round(metrics[24][0] + metrics[24][1] * random.gauss(0, 1), 0)),
+        'fsl:fsl_000026': round(metrics[25][0] + metrics[25][1] * random.gauss(0, 1), 2),
+        'fsl:fsl_000027': int(round(metrics[26][0] + metrics[26][1] * random.gauss(0, 1), 0)),
+        'fsl:fsl_000028': round(metrics[27][0] + metrics[27][1] * random.gauss(0, 1), 2),
+        'fsl:fsl_000029': int(round(metrics[28][0] + metrics[28][1] * random.gauss(0, 1), 0)),
+        'fsl:fsl_000030': round(metrics[29][0] + metrics[29][1] * random.gauss(0, 1), 2),
+        'fsl:fsl_000031': int(round(metrics[30][0] + metrics[30][1] * random.gauss(0, 1), 0)),
+        'fsl:fsl_000032': int(round(metrics[31][0] + metrics[31][1] * random.gauss(0, 1), 0)),
+        'fsl:fsl_000033': int(round(metrics[32][0] + metrics[32][1] * random.gauss(0, 1), 0)),
+        'fsl:fsl_000034': int(round(metrics[33][0] + metrics[33][1] * random.gauss(0, 1), 0)),
+        'fsl:fsl_000035': int(round(metrics[34][0] + metrics[34][1] * random.gauss(0, 1), 0)),
+        'fsl:fsl_000036': int(round(metrics[35][0] + metrics[35][1] * random.gauss(0, 1), 0)),
     }
 
 def format_value(key, val):
