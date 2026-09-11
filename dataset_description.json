@@ -1,5 +1,5 @@
 {
-    "Name": "Synthetic Multi-Scanner Clinical Dataset",
+    "Name": "Synthetic Phantom Multi-Scanner Clinical Dataset",
     "BIDSVersion": "1.8.0",
     "DatasetType": "raw"
 }

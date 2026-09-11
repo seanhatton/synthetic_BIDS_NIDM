@@ -38,7 +38,7 @@
     },
     "wais_iv_fsiq": {
         "label": "wais_iv_fsiq",
-        "description": "Wechsler abbreviated scale of intelligence",
+        "description": "Wechsler Adult Intelligence Scale – Fourth Edition",
         "source_variable": "wais_iv_fsiq",
         "isAbout": [
             {

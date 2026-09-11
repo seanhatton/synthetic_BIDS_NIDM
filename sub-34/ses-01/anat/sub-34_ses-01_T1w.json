@@ -1,10 +1,12 @@
 {
-    "Manufacturer": "GE",
-    "ManufacturersModelName": "Discovery 750",
-    "ScanningSequence": "GR/IR",
-    "MRAcquisitionType": "3D",
-    "RepetitionTime": 2.3,
-    "EchoTime": 0.0025,
-    "InversionTime": 0.9,
-    "FlipAngle": 8.0
+  "Modality": "MR",
+  "ScanningSequence": "GR",
+  "MRAcquisitionType": "3D",
+  "SequenceName": "synthetic_GRE_T1w",
+  "EchoTime": 0.004,
+  "RepetitionTime": 0.015,
+  "SyntheticImage": true,
+  "Description": "Synthetic T1w GRE, PD*(1-exp(-TR/T1))*exp(-TE/T2), with unique multi-scale anatomical deformation.",
+  "ManufacturersModelName": "Prisma",
+  "Manufacturer": "Siemens"
 }
