@@ -25,17 +25,6 @@
             }
         ]
     },
-    "scanner": {
-        "label": "scanner",
-        "description": "MRI hardware manufacturer model",
-        "source_variable": "scanner",
-        "isAbout": [
-            {
-                "@id": "http://uri.neuinfo.org/nif/nifstd/birnlex_2100",
-                "label": "Magnetic resonance imaging scanner"
-            }
-        ]
-    },
     "wais_iv_fsiq": {
         "label": "wais_iv_fsiq",
         "description": "Wechsler Adult Intelligence Scale – Fourth Edition",
