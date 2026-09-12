@@ -1,0 +1,18 @@
+create shapeModel 
+done creating shapeModel 
+create shapeModel 
+done creating shapeModel 
+0.855154 -0.0598193 -0.0489908 
+0.111664 0.867768 -0.132898 
+0.0574638 0.175483 0.816398 
+NEw done imodes transform
+done registering model
+mode  222.935
+0.855154 -0.0598193 -0.0489908 
+0.111664 0.867768 -0.132898 
+0.0574638 0.175483 0.816398 
+NEw done imodes transform
+D 
+336 3204 3204 336
+open file /mnt/c/Users/seanh/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-02/ses-01/sub-02_FIRST-R_Caud_first.vtk to save.
+succesfully opened file /mnt/c/Users/seanh/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-02/ses-01/sub-02_FIRST-R_Caud_first.vtk to save.

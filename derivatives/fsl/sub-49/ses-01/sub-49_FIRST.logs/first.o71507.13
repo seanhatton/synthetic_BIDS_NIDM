@@ -1,0 +1,11 @@
+create shapeModel 
+done creating shapeModel 
+0.854202 -0.059639 -0.0491109 
+0.111747 0.86692 -0.132192 
+0.0574899 0.175796 0.816014 
+NEw done imodes transform
+mode  217.888
+D 
+336 1926 1926 336
+open file /mnt/c/Users/seanh/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-49/ses-01/sub-49_FIRST-R_Puta_first.vtk to save.
+succesfully opened file /mnt/c/Users/seanh/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-49/ses-01/sub-49_FIRST-R_Puta_first.vtk to save.

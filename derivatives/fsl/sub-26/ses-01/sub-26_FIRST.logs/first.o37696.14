@@ -1,0 +1,11 @@
+create shapeModel 
+done creating shapeModel 
+0.854344 -0.0600617 -0.0489964 
+0.11042 0.866944 -0.132075 
+0.0568562 0.175515 0.816039 
+NEw done imodes transform
+mode  220.258
+D 
+336 1926 1926 336
+open file /mnt/c/Users/seanh/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-26/ses-01/sub-26_FIRST-R_Thal_first.vtk to save.
+succesfully opened file /mnt/c/Users/seanh/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-26/ses-01/sub-26_FIRST-R_Thal_first.vtk to save.
