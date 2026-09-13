@@ -1,0 +1,12 @@
+{
+  "Modality": "MR",
+  "ScanningSequence": "GR",
+  "MRAcquisitionType": "3D",
+  "SequenceName": "synthetic_GRE_T1w",
+  "EchoTime": 0.003,
+  "RepetitionTime": 0.008,
+  "SyntheticImage": true,
+  "Description": "Synthetic T1w GRE, PD*(1-exp(-TR/T1))*exp(-TE/T2), with unique multi-scale anatomical deformation.",
+  "ManufacturersModelName": "Discovery MR750",
+  "Manufacturer": "GE"
+}
