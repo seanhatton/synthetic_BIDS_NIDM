@@ -9,7 +9,7 @@ session = "ses-01"
 for i in range(1, 51):
     subject = f"sub-{i:02d}"
 
-    d = bidsdir / subject / session / "segstats.json"
+    d = bidsdir / "derivatives" / "fsl" / subject / session / "segstats.json"
     o = bidsdir / "derivatives" / "fsl" / subject / session / "fsl_nidm.ttl"
     n = bidsdir / "nidm" / "study_nidm.ttl"
 
