@@ -1,0 +1,118 @@
+Script started on 2026-09-15 14:42:36-07:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="146" LINES="20"]
+[?2004h(babs) ]0;sehatton@sehatton-dev: /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM[01;32msehatton@sehatton-dev[00m:[01;34m/mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM[00m$ opencode[Ksc
+sc.exe            scecli.dll        schedcli.dll      scigraph-codegen  scp               script            scrobj.dll        
+scalar            scersop.mof       schedprov.dll     scigraph-deploy   scp.exe           scriptlive        scrptadm.dll      
+scalar.exe        scesrv.dll        schedsvc.dll      scksp.dll         scrcons.exe       scripto.dll       scrrun.dll        
+scansetting.dll   schannel.dll      schtasks.exe      sclient           scrcons.mof       scriptreplay      
+scavengeui.dll    schannel.mof      scig              scm.mof           screendump        scrnsave.scr      
+(babs) ]0;sehatton@sehatton-dev: /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM[01;32msehatton@sehatton-dev[00m:[01;34m/mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM[00m$ sc[Kcripts
+[?2004lCommand 'scripts' not found, did you mean:
+  command 'script6' from deb ipv6toolkit (2.0+ds.1-2)
+  command 'script' from deb bsdutils (1:2.39.3-9ubuntu6.5)
+Try: sudo apt install <deb name>
+[?2004h(babs) ]0;sehatton@sehatton-dev: /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM[01;32msehatton@sehatton-dev[00m:[01;34m/mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM[00m$ cd scripts/
+[?2004l[?2004h(babs) ]0;sehatton@sehatton-dev: /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/scripts[01;32msehatton@sehatton-dev[00m:[01;34m/mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/scripts[00m$ ls
+[?2004l[0m[01;32mconvert_segstats_to_ttl.py[0m  [01;32mfsl2nidm.py[0m               [01;32mmake_segstats.py[0m       [01;32mtype_string_literals.py[0m
+[01;32mdedupe_string_literals.py[0m   [01;32mfslstats_to_study_ttl.py[0m  [01;32mrun_fsl_structural.py[0m
+[?2004h(babs) ]0;sehatton@sehatton-dev: /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/scripts[01;32msehatton@sehatton-dev[00m:[01;34m/mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/scripts[00m$ pythn[Kon [7mfslstats_to_study_ttl.py[27mfslstats_to_study_ttl.py
+[?2004lRunning: fslsegstats2nidm -add_de -d /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-01/ses-01/segstats.json -subjid sub-01 -o /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-01/ses-01/fsl_nidm.ttl -n /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/nidm/study_nidm.ttl
+  OK (sub-01)
+Running: fslsegstats2nidm -add_de -d /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-02/ses-01/segstats.json -subjid sub-02 -o /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-02/ses-01/fsl_nidm.ttl -n /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/nidm/study_nidm.ttl
+  OK (sub-02)
+Running: fslsegstats2nidm -add_de -d /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-03/ses-01/segstats.json -subjid sub-03 -o /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-03/ses-01/fsl_nidm.ttl -n /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/nidm/study_nidm.ttl
+  OK (sub-03)
+Running: fslsegstats2nidm -add_de -d /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-04/ses-01/segstats.json -subjid sub-04 -o /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-04/ses-01/fsl_nidm.ttl -n /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/nidm/study_nidm.ttl
+  OK (sub-04)
+Running: fslsegstats2nidm -add_de -d /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-05/ses-01/segstats.json -subjid sub-05 -o /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-05/ses-01/fsl_nidm.ttl -n /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/nidm/study_nidm.ttl
+  OK (sub-05)
+Running: fslsegstats2nidm -add_de -d /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-06/ses-01/segstats.json -subjid sub-06 -o /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-06/ses-01/fsl_nidm.ttl -n /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/nidm/study_nidm.ttl
+  OK (sub-06)
+Running: fslsegstats2nidm -add_de -d /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-07/ses-01/segstats.json -subjid sub-07 -o /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-07/ses-01/fsl_nidm.ttl -n /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/nidm/study_nidm.ttl
+  OK (sub-07)
+Running: fslsegstats2nidm -add_de -d /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-08/ses-01/segstats.json -subjid sub-08 -o /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-08/ses-01/fsl_nidm.ttl -n /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/nidm/study_nidm.ttl
+  OK (sub-08)
+Running: fslsegstats2nidm -add_de -d /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-09/ses-01/segstats.json -subjid sub-09 -o /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-09/ses-01/fsl_nidm.ttl -n /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/nidm/study_nidm.ttl
+  OK (sub-09)
+Running: fslsegstats2nidm -add_de -d /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-10/ses-01/segstats.json -subjid sub-10 -o /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-10/ses-01/fsl_nidm.ttl -n /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/nidm/study_nidm.ttl
+  OK (sub-10)
+Running: fslsegstats2nidm -add_de -d /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-11/ses-01/segstats.json -subjid sub-11 -o /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-11/ses-01/fsl_nidm.ttl -n /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/nidm/study_nidm.ttl
+  OK (sub-11)
+Running: fslsegstats2nidm -add_de -d /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-12/ses-01/segstats.json -subjid sub-12 -o /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-12/ses-01/fsl_nidm.ttl -n /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/nidm/study_nidm.ttl
+  OK (sub-12)
+Running: fslsegstats2nidm -add_de -d /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-13/ses-01/segstats.json -subjid sub-13 -o /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-13/ses-01/fsl_nidm.ttl -n /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/nidm/study_nidm.ttl
+  OK (sub-13)
+Running: fslsegstats2nidm -add_de -d /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-14/ses-01/segstats.json -subjid sub-14 -o /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-14/ses-01/fsl_nidm.ttl -n /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/nidm/study_nidm.ttl
+  OK (sub-14)
+Running: fslsegstats2nidm -add_de -d /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-15/ses-01/segstats.json -subjid sub-15 -o /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-15/ses-01/fsl_nidm.ttl -n /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/nidm/study_nidm.ttl
+  OK (sub-15)
+Running: fslsegstats2nidm -add_de -d /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-16/ses-01/segstats.json -subjid sub-16 -o /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-16/ses-01/fsl_nidm.ttl -n /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/nidm/study_nidm.ttl
+  OK (sub-16)
+Running: fslsegstats2nidm -add_de -d /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-17/ses-01/segstats.json -subjid sub-17 -o /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-17/ses-01/fsl_nidm.ttl -n /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/nidm/study_nidm.ttl
+  OK (sub-17)
+Running: fslsegstats2nidm -add_de -d /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-18/ses-01/segstats.json -subjid sub-18 -o /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-18/ses-01/fsl_nidm.ttl -n /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/nidm/study_nidm.ttl
+  OK (sub-18)
+Running: fslsegstats2nidm -add_de -d /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-19/ses-01/segstats.json -subjid sub-19 -o /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-19/ses-01/fsl_nidm.ttl -n /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/nidm/study_nidm.ttl
+  OK (sub-19)
+Running: fslsegstats2nidm -add_de -d /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-20/ses-01/segstats.json -subjid sub-20 -o /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-20/ses-01/fsl_nidm.ttl -n /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/nidm/study_nidm.ttl
+  OK (sub-20)
+Running: fslsegstats2nidm -add_de -d /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-21/ses-01/segstats.json -subjid sub-21 -o /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-21/ses-01/fsl_nidm.ttl -n /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/nidm/study_nidm.ttl
+  OK (sub-21)
+Running: fslsegstats2nidm -add_de -d /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-22/ses-01/segstats.json -subjid sub-22 -o /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-22/ses-01/fsl_nidm.ttl -n /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/nidm/study_nidm.ttl
+  OK (sub-22)
+Running: fslsegstats2nidm -add_de -d /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-23/ses-01/segstats.json -subjid sub-23 -o /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-23/ses-01/fsl_nidm.ttl -n /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/nidm/study_nidm.ttl
+  OK (sub-23)
+Running: fslsegstats2nidm -add_de -d /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-24/ses-01/segstats.json -subjid sub-24 -o /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-24/ses-01/fsl_nidm.ttl -n /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/nidm/study_nidm.ttl
+  OK (sub-24)
+Running: fslsegstats2nidm -add_de -d /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-25/ses-01/segstats.json -subjid sub-25 -o /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-25/ses-01/fsl_nidm.ttl -n /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/nidm/study_nidm.ttl
+  OK (sub-25)
+Running: fslsegstats2nidm -add_de -d /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-26/ses-01/segstats.json -subjid sub-26 -o /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-26/ses-01/fsl_nidm.ttl -n /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/nidm/study_nidm.ttl
+  OK (sub-26)
+Running: fslsegstats2nidm -add_de -d /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-27/ses-01/segstats.json -subjid sub-27 -o /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-27/ses-01/fsl_nidm.ttl -n /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/nidm/study_nidm.ttl
+  OK (sub-27)
+Running: fslsegstats2nidm -add_de -d /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-28/ses-01/segstats.json -subjid sub-28 -o /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-28/ses-01/fsl_nidm.ttl -n /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/nidm/study_nidm.ttl
+  OK (sub-28)
+Running: fslsegstats2nidm -add_de -d /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-29/ses-01/segstats.json -subjid sub-29 -o /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-29/ses-01/fsl_nidm.ttl -n /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/nidm/study_nidm.ttl
+  OK (sub-29)
+Running: fslsegstats2nidm -add_de -d /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-30/ses-01/segstats.json -subjid sub-30 -o /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-30/ses-01/fsl_nidm.ttl -n /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/nidm/study_nidm.ttl
+  OK (sub-30)
+Running: fslsegstats2nidm -add_de -d /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-31/ses-01/segstats.json -subjid sub-31 -o /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-31/ses-01/fsl_nidm.ttl -n /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/nidm/study_nidm.ttl
+  OK (sub-31)
+Running: fslsegstats2nidm -add_de -d /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-32/ses-01/segstats.json -subjid sub-32 -o /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-32/ses-01/fsl_nidm.ttl -n /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/nidm/study_nidm.ttl
+  OK (sub-32)
+Running: fslsegstats2nidm -add_de -d /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-33/ses-01/segstats.json -subjid sub-33 -o /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-33/ses-01/fsl_nidm.ttl -n /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/nidm/study_nidm.ttl
+  OK (sub-33)
+Running: fslsegstats2nidm -add_de -d /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-34/ses-01/segstats.json -subjid sub-34 -o /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-34/ses-01/fsl_nidm.ttl -n /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/nidm/study_nidm.ttl
+  OK (sub-34)
+Running: fslsegstats2nidm -add_de -d /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-35/ses-01/segstats.json -subjid sub-35 -o /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-35/ses-01/fsl_nidm.ttl -n /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/nidm/study_nidm.ttl
+  OK (sub-35)
+Running: fslsegstats2nidm -add_de -d /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-36/ses-01/segstats.json -subjid sub-36 -o /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-36/ses-01/fsl_nidm.ttl -n /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/nidm/study_nidm.ttl
+  OK (sub-36)
+Running: fslsegstats2nidm -add_de -d /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-37/ses-01/segstats.json -subjid sub-37 -o /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-37/ses-01/fsl_nidm.ttl -n /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/nidm/study_nidm.ttl
+  OK (sub-37)
+Running: fslsegstats2nidm -add_de -d /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-38/ses-01/segstats.json -subjid sub-38 -o /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-38/ses-01/fsl_nidm.ttl -n /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/nidm/study_nidm.ttl
+  OK (sub-38)
+Running: fslsegstats2nidm -add_de -d /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-39/ses-01/segstats.json -subjid sub-39 -o /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-39/ses-01/fsl_nidm.ttl -n /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/nidm/study_nidm.ttl
+  OK (sub-39)
+Running: fslsegstats2nidm -add_de -d /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-40/ses-01/segstats.json -subjid sub-40 -o /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-40/ses-01/fsl_nidm.ttl -n /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/nidm/study_nidm.ttl
+  OK (sub-40)
+Running: fslsegstats2nidm -add_de -d /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-41/ses-01/segstats.json -subjid sub-41 -o /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-41/ses-01/fsl_nidm.ttl -n /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/nidm/study_nidm.ttl
+  OK (sub-41)
+Running: fslsegstats2nidm -add_de -d /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-42/ses-01/segstats.json -subjid sub-42 -o /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-42/ses-01/fsl_nidm.ttl -n /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/nidm/study_nidm.ttl
+  OK (sub-42)
+Running: fslsegstats2nidm -add_de -d /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-43/ses-01/segstats.json -subjid sub-43 -o /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-43/ses-01/fsl_nidm.ttl -n /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/nidm/study_nidm.ttl
+  OK (sub-43)
+Running: fslsegstats2nidm -add_de -d /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-44/ses-01/segstats.json -subjid sub-44 -o /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-44/ses-01/fsl_nidm.ttl -n /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/nidm/study_nidm.ttl
+  OK (sub-44)
+Running: fslsegstats2nidm -add_de -d /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-45/ses-01/segstats.json -subjid sub-45 -o /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-45/ses-01/fsl_nidm.ttl -n /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/nidm/study_nidm.ttl
+  OK (sub-45)
+Running: fslsegstats2nidm -add_de -d /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-46/ses-01/segstats.json -subjid sub-46 -o /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-46/ses-01/fsl_nidm.ttl -n /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/nidm/study_nidm.ttl
+  OK (sub-46)
+Running: fslsegstats2nidm -add_de -d /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-47/ses-01/segstats.json -subjid sub-47 -o /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-47/ses-01/fsl_nidm.ttl -n /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/nidm/study_nidm.ttl
+  OK (sub-47)
+Running: fslsegstats2nidm -add_de -d /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-48/ses-01/segstats.json -subjid sub-48 -o /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-48/ses-01/fsl_nidm.ttl -n /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/nidm/study_nidm.ttl
+  OK (sub-48)
+Running: fslsegstats2nidm -add_de -d /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-49/ses-01/segstats.json -subjid sub-49 -o /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-49/ses-01/fsl_nidm.ttl -n /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/nidm/study_nidm.ttl
+  OK (sub-49)
+Running: fslsegstats2nidm -add_de -d /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-50/ses-01/segstats.json -subjid sub-50 -o /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/derivatives/fsl/sub-50/ses-01/fsl_nidm.ttl -n /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/nidm/study_nidm.ttl
+  OK (sub-50)
+[?2004h(babs) ]0;sehatton@sehatton-dev: /mnt/c/Users/sehatton/Documents/GitHub/synthetic_BIDS_NIDM/scripts[01;32msehatton@sehatton-dev[00m:[01

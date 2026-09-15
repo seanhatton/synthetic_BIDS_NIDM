@@ -1,8 +1,9 @@
 @prefix bids: <http://bids.neuroimaging.io/> .
 @prefix crypto: <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions#> .
+@prefix dcmitype: <http://purl.org/dc/dcmitype/> .
 @prefix dct: <http://purl.org/dc/terms/> .
-@prefix dctypes: <http://purl.org/dc/dcmitype/> .
 @prefix dicom: <http://neurolex.org/wiki/Category/DICOM_term/> .
+@prefix fsl: <http://purl.org/nidash/fsl#> .
 @prefix ndar: <https://ndar.nih.gov/api/datadictionary/v2/dataelement/> .
 @prefix nfo: <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#> .
 @prefix nidm: <http://purl.org/nidash/nidm#> .
@@ -19,6 +20,286 @@
 @prefix term_ilx_0100400: <http://uri.interlex.org/ilx_0100400> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+niiri:a22d0eae-b14e-11f1-9e59-00155d39b9a7 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 6966872 ;
+    fsl:fsl_000002 "9919628.2969"^^xsd:float ;
+    fsl:fsl_000003 353 ;
+    fsl:fsl_000004 "502.6113"^^xsd:float ;
+    fsl:fsl_000005 829 ;
+    fsl:fsl_000006 "1180.3535"^^xsd:float ;
+    fsl:fsl_000007 2564 ;
+    fsl:fsl_000008 "3650.6953"^^xsd:float ;
+    fsl:fsl_000009 1958 ;
+    fsl:fsl_000010 "2787.8555"^^xsd:float ;
+    fsl:fsl_000011 1209 ;
+    fsl:fsl_000012 "1721.4082"^^xsd:float ;
+    fsl:fsl_000013 3812 ;
+    fsl:fsl_000014 "5427.6328"^^xsd:float ;
+    fsl:fsl_000015 5423 ;
+    fsl:fsl_000016 "7721.4199"^^xsd:float ;
+    fsl:fsl_000017 200 ;
+    fsl:fsl_000018 "284.7656"^^xsd:float ;
+    fsl:fsl_000019 607 ;
+    fsl:fsl_000020 "864.2637"^^xsd:float ;
+    fsl:fsl_000021 2448 ;
+    fsl:fsl_000022 "3485.5312"^^xsd:float ;
+    fsl:fsl_000023 2305 ;
+    fsl:fsl_000024 "3281.9238"^^xsd:float ;
+    fsl:fsl_000025 1125 ;
+    fsl:fsl_000026 "1601.8066"^^xsd:float ;
+    fsl:fsl_000027 3210 ;
+    fsl:fsl_000028 "4570.4883"^^xsd:float ;
+    fsl:fsl_000029 4838 ;
+    fsl:fsl_000030 "6888.4805"^^xsd:float ;
+    fsl:fsl_000031 231293 ;
+    fsl:fsl_000032 "329321.4785"^^xsd:float ;
+    fsl:fsl_000033 382990 ;
+    fsl:fsl_000034 "545311.9336"^^xsd:float ;
+    fsl:fsl_000035 418845 ;
+    fsl:fsl_000036 "596363.291"^^xsd:float ;
+    prov:wasGeneratedBy niiri:c247f5e8-b14e-11f1-9e59-00155d39b9a7 .
+
+niiri:a6fbc412-b14e-11f1-8a67-00155d39b9a7 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 6961708 ;
+    fsl:fsl_000002 "9912275.6484"^^xsd:float ;
+    fsl:fsl_000003 286 ;
+    fsl:fsl_000004 "407.2148"^^xsd:float ;
+    fsl:fsl_000005 825 ;
+    fsl:fsl_000006 "1174.6582"^^xsd:float ;
+    fsl:fsl_000007 2527 ;
+    fsl:fsl_000008 "3598.0137"^^xsd:float ;
+    fsl:fsl_000009 1935 ;
+    fsl:fsl_000010 "2755.1074"^^xsd:float ;
+    fsl:fsl_000011 1206 ;
+    fsl:fsl_000012 "1717.1367"^^xsd:float ;
+    fsl:fsl_000013 3831 ;
+    fsl:fsl_000014 "5454.6855"^^xsd:float ;
+    fsl:fsl_000015 5451 ;
+    fsl:fsl_000016 "7761.2871"^^xsd:float ;
+    fsl:fsl_000017 198 ;
+    fsl:fsl_000018 "281.918"^^xsd:float ;
+    fsl:fsl_000019 624 ;
+    fsl:fsl_000020 "888.4688"^^xsd:float ;
+    fsl:fsl_000021 2424 ;
+    fsl:fsl_000022 "3451.3594"^^xsd:float ;
+    fsl:fsl_000023 2215 ;
+    fsl:fsl_000024 "3153.7793"^^xsd:float ;
+    fsl:fsl_000025 1004 ;
+    fsl:fsl_000026 "1429.5234"^^xsd:float ;
+    fsl:fsl_000027 3723 ;
+    fsl:fsl_000028 "5300.9121"^^xsd:float ;
+    fsl:fsl_000029 4838 ;
+    fsl:fsl_000030 "6888.4805"^^xsd:float ;
+    fsl:fsl_000031 249983 ;
+    fsl:fsl_000032 "355932.8262"^^xsd:float ;
+    fsl:fsl_000033 385841 ;
+    fsl:fsl_000034 "549371.2676"^^xsd:float ;
+    fsl:fsl_000035 402468 ;
+    fsl:fsl_000036 "573045.2578"^^xsd:float ;
+    prov:wasGeneratedBy niiri:d711f746-b14e-11f1-8a67-00155d39b9a7 .
+
+niiri:a8a43de4-b14e-11f1-9b02-00155d39b9a7 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 6965098 ;
+    fsl:fsl_000002 "9917102.4258"^^xsd:float ;
+    fsl:fsl_000003 338 ;
+    fsl:fsl_000004 "481.2539"^^xsd:float ;
+    fsl:fsl_000005 818 ;
+    fsl:fsl_000006 "1164.6914"^^xsd:float ;
+    fsl:fsl_000007 2573 ;
+    fsl:fsl_000008 "3663.5098"^^xsd:float ;
+    fsl:fsl_000009 2427 ;
+    fsl:fsl_000010 "3455.6309"^^xsd:float ;
+    fsl:fsl_000011 1203 ;
+    fsl:fsl_000012 "1712.8652"^^xsd:float ;
+    fsl:fsl_000013 3802 ;
+    fsl:fsl_000014 "5413.3945"^^xsd:float ;
+    fsl:fsl_000015 5456 ;
+    fsl:fsl_000016 "7768.4062"^^xsd:float ;
+    fsl:fsl_000017 193 ;
+    fsl:fsl_000018 "274.7988"^^xsd:float ;
+    fsl:fsl_000019 621 ;
+    fsl:fsl_000020 "884.1973"^^xsd:float ;
+    fsl:fsl_000021 2465 ;
+    fsl:fsl_000022 "3509.7363"^^xsd:float ;
+    fsl:fsl_000023 2643 ;
+    fsl:fsl_000024 "3763.1777"^^xsd:float ;
+    fsl:fsl_000025 1123 ;
+    fsl:fsl_000026 "1598.959"^^xsd:float ;
+    fsl:fsl_000027 3820 ;
+    fsl:fsl_000028 "5439.0234"^^xsd:float ;
+    fsl:fsl_000029 4869 ;
+    fsl:fsl_000030 "6932.6191"^^xsd:float ;
+    fsl:fsl_000031 248824 ;
+    fsl:fsl_000032 "354282.6094"^^xsd:float ;
+    fsl:fsl_000033 385327 ;
+    fsl:fsl_000034 "548639.4199"^^xsd:float ;
+    fsl:fsl_000035 400751 ;
+    fsl:fsl_000036 "570600.5449"^^xsd:float ;
+    prov:wasGeneratedBy niiri:c8bbf542-b14e-11f1-9b02-00155d39b9a7 .
+
+niiri:a9b9defa-b14e-11f1-b332-00155d39b9a7 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 6964250 ;
+    fsl:fsl_000002 "9915895.0195"^^xsd:float ;
+    fsl:fsl_000003 270 ;
+    fsl:fsl_000004 "384.4336"^^xsd:float ;
+    fsl:fsl_000005 822 ;
+    fsl:fsl_000006 "1170.3867"^^xsd:float ;
+    fsl:fsl_000007 2576 ;
+    fsl:fsl_000008 "3667.7812"^^xsd:float ;
+    fsl:fsl_000009 2015 ;
+    fsl:fsl_000010 "2869.0137"^^xsd:float ;
+    fsl:fsl_000011 1227 ;
+    fsl:fsl_000012 "1747.0371"^^xsd:float ;
+    fsl:fsl_000013 3814 ;
+    fsl:fsl_000014 "5430.4805"^^xsd:float ;
+    fsl:fsl_000015 5355 ;
+    fsl:fsl_000016 "7624.5996"^^xsd:float ;
+    fsl:fsl_000017 214 ;
+    fsl:fsl_000018 "304.6992"^^xsd:float ;
+    fsl:fsl_000019 620 ;
+    fsl:fsl_000020 "882.7734"^^xsd:float ;
+    fsl:fsl_000021 2367 ;
+    fsl:fsl_000022 "3370.2012"^^xsd:float ;
+    fsl:fsl_000023 2273 ;
+    fsl:fsl_000024 "3236.3613"^^xsd:float ;
+    fsl:fsl_000025 1001 ;
+    fsl:fsl_000026 "1425.252"^^xsd:float ;
+    fsl:fsl_000027 3739 ;
+    fsl:fsl_000028 "5323.6934"^^xsd:float ;
+    fsl:fsl_000029 4863 ;
+    fsl:fsl_000030 "6924.0762"^^xsd:float ;
+    fsl:fsl_000031 249036 ;
+    fsl:fsl_000032 "354584.4609"^^xsd:float ;
+    fsl:fsl_000033 385486 ;
+    fsl:fsl_000034 "548865.8086"^^xsd:float ;
+    fsl:fsl_000035 401228 ;
+    fsl:fsl_000036 "571279.7109"^^xsd:float ;
+    prov:wasGeneratedBy niiri:e9d1e5d6-b14e-11f1-b332-00155d39b9a7 .
+
+niiri:acd30994-b14e-11f1-9ae7-00155d39b9a7 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 6964916 ;
+    fsl:fsl_000002 "9916843.2891"^^xsd:float ;
+    fsl:fsl_000003 341 ;
+    fsl:fsl_000004 "485.5254"^^xsd:float ;
+    fsl:fsl_000005 829 ;
+    fsl:fsl_000006 "1180.3535"^^xsd:float ;
+    fsl:fsl_000007 2541 ;
+    fsl:fsl_000008 "3617.9473"^^xsd:float ;
+    fsl:fsl_000009 2005 ;
+    fsl:fsl_000010 "2854.7754"^^xsd:float ;
+    fsl:fsl_000011 1226 ;
+    fsl:fsl_000012 "1745.6133"^^xsd:float ;
+    fsl:fsl_000013 3835 ;
+    fsl:fsl_000014 "5460.3809"^^xsd:float ;
+    fsl:fsl_000015 5428 ;
+    fsl:fsl_000016 "7728.5391"^^xsd:float ;
+    fsl:fsl_000017 206 ;
+    fsl:fsl_000018 "293.3086"^^xsd:float ;
+    fsl:fsl_000019 589 ;
+    fsl:fsl_000020 "838.6348"^^xsd:float ;
+    fsl:fsl_000021 2369 ;
+    fsl:fsl_000022 "3373.0488"^^xsd:float ;
+    fsl:fsl_000023 2661 ;
+    fsl:fsl_000024 "3788.8066"^^xsd:float ;
+    fsl:fsl_000025 1030 ;
+    fsl:fsl_000026 "1466.543"^^xsd:float ;
+    fsl:fsl_000027 2967 ;
+    fsl:fsl_000028 "4224.498"^^xsd:float ;
+    fsl:fsl_000029 5021 ;
+    fsl:fsl_000030 "7149.041"^^xsd:float ;
+    fsl:fsl_000031 230562 ;
+    fsl:fsl_000032 "328280.6602"^^xsd:float ;
+    fsl:fsl_000033 383449 ;
+    fsl:fsl_000034 "545965.4707"^^xsd:float ;
+    fsl:fsl_000035 421073 ;
+    fsl:fsl_000036 "599535.5801"^^xsd:float ;
+    prov:wasGeneratedBy niiri:dcf3bbbc-b14e-11f1-9ae7-00155d39b9a7 .
+
+niiri:ad9a1062-b14e-11f1-8687-00155d39b9a7 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 6962984 ;
+    fsl:fsl_000002 "9914092.4531"^^xsd:float ;
+    fsl:fsl_000003 343 ;
+    fsl:fsl_000004 "488.373"^^xsd:float ;
+    fsl:fsl_000005 836 ;
+    fsl:fsl_000006 "1190.3203"^^xsd:float ;
+    fsl:fsl_000007 2562 ;
+    fsl:fsl_000008 "3647.8477"^^xsd:float ;
+    fsl:fsl_000009 1963 ;
+    fsl:fsl_000010 "2794.9746"^^xsd:float ;
+    fsl:fsl_000011 1194 ;
+    fsl:fsl_000012 "1700.0508"^^xsd:float ;
+    fsl:fsl_000013 3812 ;
+    fsl:fsl_000014 "5427.6328"^^xsd:float ;
+    fsl:fsl_000015 5370 ;
+    fsl:fsl_000016 "7645.957"^^xsd:float ;
+    fsl:fsl_000017 203 ;
+    fsl:fsl_000018 "289.0371"^^xsd:float ;
+    fsl:fsl_000019 592 ;
+    fsl:fsl_000020 "842.9062"^^xsd:float ;
+    fsl:fsl_000021 2452 ;
+    fsl:fsl_000022 "3491.2266"^^xsd:float ;
+    fsl:fsl_000023 2631 ;
+    fsl:fsl_000024 "3746.0918"^^xsd:float ;
+    fsl:fsl_000025 1107 ;
+    fsl:fsl_000026 "1576.1777"^^xsd:float ;
+    fsl:fsl_000027 3790 ;
+    fsl:fsl_000028 "5396.3086"^^xsd:float ;
+    fsl:fsl_000029 4856 ;
+    fsl:fsl_000030 "6914.1094"^^xsd:float ;
+    fsl:fsl_000031 248830 ;
+    fsl:fsl_000032 "354291.1523"^^xsd:float ;
+    fsl:fsl_000033 385745 ;
+    fsl:fsl_000034 "549234.5801"^^xsd:float ;
+    fsl:fsl_000035 402441 ;
+    fsl:fsl_000036 "573006.8145"^^xsd:float ;
+    prov:wasGeneratedBy niiri:edb386e6-b14e-11f1-8687-00155d39b9a7 .
+
+niiri:afe51466-b14e-11f1-a342-00155d39b9a7 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 6963433 ;
+    fsl:fsl_000002 "9914731.752"^^xsd:float ;
+    fsl:fsl_000003 367 ;
+    fsl:fsl_000004 "522.5449"^^xsd:float ;
+    fsl:fsl_000005 806 ;
+    fsl:fsl_000006 "1147.6055"^^xsd:float ;
+    fsl:fsl_000007 2492 ;
+    fsl:fsl_000008 "3548.1797"^^xsd:float ;
+    fsl:fsl_000009 2462 ;
+    fsl:fsl_000010 "3505.4648"^^xsd:float ;
+    fsl:fsl_000011 1129 ;
+    fsl:fsl_000012 "1607.502"^^xsd:float ;
+    fsl:fsl_000013 3752 ;
+    fsl:fsl_000014 "5342.2031"^^xsd:float ;
+    fsl:fsl_000015 5447 ;
+    fsl:fsl_000016 "7755.5918"^^xsd:float ;
+    fsl:fsl_000017 196 ;
+    fsl:fsl_000018 "279.0703"^^xsd:float ;
+    fsl:fsl_000019 610 ;
+    fsl:fsl_000020 "868.5352"^^xsd:float ;
+    fsl:fsl_000021 2368 ;
+    fsl:fsl_000022 "3371.625"^^xsd:float ;
+    fsl:fsl_000023 2632 ;
+    fsl:fsl_000024 "3747.5156"^^xsd:float ;
+    fsl:fsl_000025 1126 ;
+    fsl:fsl_000026 "1603.2305"^^xsd:float ;
+    fsl:fsl_000027 3755 ;
+    fsl:fsl_000028 "5346.4746"^^xsd:float ;
+    fsl:fsl_000029 4885 ;
+    fsl:fsl_000030 "6955.4004"^^xsd:float ;
+    fsl:fsl_000031 248748 ;
+    fsl:fsl_000032 "354174.3984"^^xsd:float ;
+    fsl:fsl_000033 385741 ;
+    fsl:fsl_000034 "549228.8848"^^xsd:float ;
+    fsl:fsl_000035 402078 ;
+    fsl:fsl_000036 "572489.9648"^^xsd:float ;
+    prov:wasGeneratedBy niiri:effea3e0-b14e-11f1-a342-00155d39b9a7 .
+
 niiri:age_1l5g3rg a nidm:PersonalDataElement,
         prov:Entity ;
     rdfs:label "age" ;
@@ -26,12 +307,1732 @@ niiri:age_1l5g3rg a nidm:PersonalDataElement,
     nidm:isAbout term_ilx_0100400: ;
     nidm:sourceVariable "age" .
 
+niiri:b19f0b5e-b14e-11f1-9a09-00155d39b9a7 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 6965018 ;
+    fsl:fsl_000002 "9916988.5195"^^xsd:float ;
+    fsl:fsl_000003 266 ;
+    fsl:fsl_000004 "378.7383"^^xsd:float ;
+    fsl:fsl_000005 830 ;
+    fsl:fsl_000006 "1181.7773"^^xsd:float ;
+    fsl:fsl_000007 2535 ;
+    fsl:fsl_000008 "3609.4043"^^xsd:float ;
+    fsl:fsl_000009 1967 ;
+    fsl:fsl_000010 "2800.6699"^^xsd:float ;
+    fsl:fsl_000011 1203 ;
+    fsl:fsl_000012 "1712.8652"^^xsd:float ;
+    fsl:fsl_000013 3804 ;
+    fsl:fsl_000014 "5416.2422"^^xsd:float ;
+    fsl:fsl_000015 5428 ;
+    fsl:fsl_000016 "7728.5391"^^xsd:float ;
+    fsl:fsl_000017 201 ;
+    fsl:fsl_000018 "286.1895"^^xsd:float ;
+    fsl:fsl_000019 613 ;
+    fsl:fsl_000020 "872.8066"^^xsd:float ;
+    fsl:fsl_000021 2505 ;
+    fsl:fsl_000022 "3566.6895"^^xsd:float ;
+    fsl:fsl_000023 2265 ;
+    fsl:fsl_000024 "3224.9707"^^xsd:float ;
+    fsl:fsl_000025 1023 ;
+    fsl:fsl_000026 "1456.5762"^^xsd:float ;
+    fsl:fsl_000027 3172 ;
+    fsl:fsl_000028 "4516.3828"^^xsd:float ;
+    fsl:fsl_000029 4826 ;
+    fsl:fsl_000030 "6871.3945"^^xsd:float ;
+    fsl:fsl_000031 231113 ;
+    fsl:fsl_000032 "329065.1895"^^xsd:float ;
+    fsl:fsl_000033 383160 ;
+    fsl:fsl_000034 "545553.9844"^^xsd:float ;
+    fsl:fsl_000035 420709 ;
+    fsl:fsl_000036 "599017.3066"^^xsd:float ;
+    prov:wasGeneratedBy niiri:c1b9f9d2-b14e-11f1-9a09-00155d39b9a7 .
+
+niiri:b7837e48-b14e-11f1-bb12-00155d39b9a7 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 6965879 ;
+    fsl:fsl_000002 "9918214.4355"^^xsd:float ;
+    fsl:fsl_000003 286 ;
+    fsl:fsl_000004 "407.2148"^^xsd:float ;
+    fsl:fsl_000005 834 ;
+    fsl:fsl_000006 "1187.4727"^^xsd:float ;
+    fsl:fsl_000007 2564 ;
+    fsl:fsl_000008 "3650.6953"^^xsd:float ;
+    fsl:fsl_000009 1936 ;
+    fsl:fsl_000010 "2756.5312"^^xsd:float ;
+    fsl:fsl_000011 1199 ;
+    fsl:fsl_000012 "1707.1699"^^xsd:float ;
+    fsl:fsl_000013 3771 ;
+    fsl:fsl_000014 "5369.2559"^^xsd:float ;
+    fsl:fsl_000015 5440 ;
+    fsl:fsl_000016 "7745.625"^^xsd:float ;
+    fsl:fsl_000017 185 ;
+    fsl:fsl_000018 "263.4082"^^xsd:float ;
+    fsl:fsl_000019 601 ;
+    fsl:fsl_000020 "855.7207"^^xsd:float ;
+    fsl:fsl_000021 2457 ;
+    fsl:fsl_000022 "3498.3457"^^xsd:float ;
+    fsl:fsl_000023 2635 ;
+    fsl:fsl_000024 "3751.7871"^^xsd:float ;
+    fsl:fsl_000025 1111 ;
+    fsl:fsl_000026 "1581.873"^^xsd:float ;
+    fsl:fsl_000027 3260 ;
+    fsl:fsl_000028 "4641.6797"^^xsd:float ;
+    fsl:fsl_000029 4840 ;
+    fsl:fsl_000030 "6891.3281"^^xsd:float ;
+    fsl:fsl_000031 249197 ;
+    fsl:fsl_000032 "354813.6973"^^xsd:float ;
+    fsl:fsl_000033 385240 ;
+    fsl:fsl_000034 "548515.5469"^^xsd:float ;
+    fsl:fsl_000035 399684 ;
+    fsl:fsl_000036 "569081.3203"^^xsd:float ;
+    prov:wasGeneratedBy niiri:a79a4a38-b14e-11f1-bb12-00155d39b9a7 .
+
+niiri:bb617d58-b14e-11f1-b185-00155d39b9a7 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 6963812 ;
+    fsl:fsl_000002 "9915271.3828"^^xsd:float ;
+    fsl:fsl_000003 265 ;
+    fsl:fsl_000004 "377.3145"^^xsd:float ;
+    fsl:fsl_000005 828 ;
+    fsl:fsl_000006 "1178.9297"^^xsd:float ;
+    fsl:fsl_000007 2561 ;
+    fsl:fsl_000008 "3646.4238"^^xsd:float ;
+    fsl:fsl_000009 2432 ;
+    fsl:fsl_000010 "3462.75"^^xsd:float ;
+    fsl:fsl_000011 1138 ;
+    fsl:fsl_000012 "1620.3164"^^xsd:float ;
+    fsl:fsl_000013 3745 ;
+    fsl:fsl_000014 "5332.2363"^^xsd:float ;
+    fsl:fsl_000015 5372 ;
+    fsl:fsl_000016 "7648.8047"^^xsd:float ;
+    fsl:fsl_000017 198 ;
+    fsl:fsl_000018 "281.918"^^xsd:float ;
+    fsl:fsl_000019 620 ;
+    fsl:fsl_000020 "882.7734"^^xsd:float ;
+    fsl:fsl_000021 2457 ;
+    fsl:fsl_000022 "3498.3457"^^xsd:float ;
+    fsl:fsl_000023 2329 ;
+    fsl:fsl_000024 "3316.0957"^^xsd:float ;
+    fsl:fsl_000025 1120 ;
+    fsl:fsl_000026 "1594.6875"^^xsd:float ;
+    fsl:fsl_000027 3707 ;
+    fsl:fsl_000028 "5278.1309"^^xsd:float ;
+    fsl:fsl_000029 4852 ;
+    fsl:fsl_000030 "6908.4141"^^xsd:float ;
+    fsl:fsl_000031 249595 ;
+    fsl:fsl_000032 "355380.3809"^^xsd:float ;
+    fsl:fsl_000033 385240 ;
+    fsl:fsl_000034 "548515.5469"^^xsd:float ;
+    fsl:fsl_000035 401353 ;
+    fsl:fsl_000036 "571457.6895"^^xsd:float ;
+    prov:wasGeneratedBy niiri:eb797d0e-b14e-11f1-b185-00155d39b9a7 .
+
+niiri:bbed5d82-b14e-11f1-81b2-00155d39b9a7 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 6965615 ;
+    fsl:fsl_000002 "9917838.5449"^^xsd:float ;
+    fsl:fsl_000003 305 ;
+    fsl:fsl_000004 "434.2676"^^xsd:float ;
+    fsl:fsl_000005 811 ;
+    fsl:fsl_000006 "1154.7246"^^xsd:float ;
+    fsl:fsl_000007 2560 ;
+    fsl:fsl_000008 "3645.0"^^xsd:float ;
+    fsl:fsl_000009 2428 ;
+    fsl:fsl_000010 "3457.0547"^^xsd:float ;
+    fsl:fsl_000011 1213 ;
+    fsl:fsl_000012 "1727.1035"^^xsd:float ;
+    fsl:fsl_000013 3735 ;
+    fsl:fsl_000014 "5317.998"^^xsd:float ;
+    fsl:fsl_000015 5463 ;
+    fsl:fsl_000016 "7778.373"^^xsd:float ;
+    fsl:fsl_000017 194 ;
+    fsl:fsl_000018 "276.2227"^^xsd:float ;
+    fsl:fsl_000019 602 ;
+    fsl:fsl_000020 "857.1445"^^xsd:float ;
+    fsl:fsl_000021 2497 ;
+    fsl:fsl_000022 "3555.2988"^^xsd:float ;
+    fsl:fsl_000023 2245 ;
+    fsl:fsl_000024 "3196.4941"^^xsd:float ;
+    fsl:fsl_000025 1117 ;
+    fsl:fsl_000026 "1590.416"^^xsd:float ;
+    fsl:fsl_000027 3202 ;
+    fsl:fsl_000028 "4559.0977"^^xsd:float ;
+    fsl:fsl_000029 4880 ;
+    fsl:fsl_000030 "6948.2812"^^xsd:float ;
+    fsl:fsl_000031 248800 ;
+    fsl:fsl_000032 "354248.4375"^^xsd:float ;
+    fsl:fsl_000033 385265 ;
+    fsl:fsl_000034 "548551.1426"^^xsd:float ;
+    fsl:fsl_000035 400320 ;
+    fsl:fsl_000036 "569986.875"^^xsd:float ;
+    prov:wasGeneratedBy niiri:dc054776-b14e-11f1-81b2-00155d39b9a7 .
+
+niiri:bc7a4468-b14e-11f1-8860-00155d39b9a7 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 6963180 ;
+    fsl:fsl_000002 "9914371.5234"^^xsd:float ;
+    fsl:fsl_000003 318 ;
+    fsl:fsl_000004 "452.7773"^^xsd:float ;
+    fsl:fsl_000005 828 ;
+    fsl:fsl_000006 "1178.9297"^^xsd:float ;
+    fsl:fsl_000007 2573 ;
+    fsl:fsl_000008 "3663.5098"^^xsd:float ;
+    fsl:fsl_000009 1956 ;
+    fsl:fsl_000010 "2785.0078"^^xsd:float ;
+    fsl:fsl_000011 1195 ;
+    fsl:fsl_000012 "1701.4746"^^xsd:float ;
+    fsl:fsl_000013 3791 ;
+    fsl:fsl_000014 "5397.7324"^^xsd:float ;
+    fsl:fsl_000015 5439 ;
+    fsl:fsl_000016 "7744.2012"^^xsd:float ;
+    fsl:fsl_000017 185 ;
+    fsl:fsl_000018 "263.4082"^^xsd:float ;
+    fsl:fsl_000019 630 ;
+    fsl:fsl_000020 "897.0117"^^xsd:float ;
+    fsl:fsl_000021 2508 ;
+    fsl:fsl_000022 "3570.9609"^^xsd:float ;
+    fsl:fsl_000023 2244 ;
+    fsl:fsl_000024 "3195.0703"^^xsd:float ;
+    fsl:fsl_000025 1020 ;
+    fsl:fsl_000026 "1452.3047"^^xsd:float ;
+    fsl:fsl_000027 3715 ;
+    fsl:fsl_000028 "5289.5215"^^xsd:float ;
+    fsl:fsl_000029 4877 ;
+    fsl:fsl_000030 "6944.0098"^^xsd:float ;
+    fsl:fsl_000031 249323 ;
+    fsl:fsl_000032 "354993.0996"^^xsd:float ;
+    fsl:fsl_000033 385643 ;
+    fsl:fsl_000034 "549089.3496"^^xsd:float ;
+    fsl:fsl_000035 401854 ;
+    fsl:fsl_000036 "572171.0273"^^xsd:float ;
+    prov:wasGeneratedBy niiri:bc94af6a-b14e-11f1-8860-00155d39b9a7 .
+
+niiri:be021b0c-b14e-11f1-9dcf-00155d39b9a7 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 6965768 ;
+    fsl:fsl_000002 "9918056.3906"^^xsd:float ;
+    fsl:fsl_000003 343 ;
+    fsl:fsl_000004 "488.373"^^xsd:float ;
+    fsl:fsl_000005 816 ;
+    fsl:fsl_000006 "1161.8438"^^xsd:float ;
+    fsl:fsl_000007 2519 ;
+    fsl:fsl_000008 "3586.623"^^xsd:float ;
+    fsl:fsl_000009 1975 ;
+    fsl:fsl_000010 "2812.0605"^^xsd:float ;
+    fsl:fsl_000011 1204 ;
+    fsl:fsl_000012 "1714.2891"^^xsd:float ;
+    fsl:fsl_000013 3826 ;
+    fsl:fsl_000014 "5447.5664"^^xsd:float ;
+    fsl:fsl_000015 5424 ;
+    fsl:fsl_000016 "7722.8438"^^xsd:float ;
+    fsl:fsl_000017 193 ;
+    fsl:fsl_000018 "274.7988"^^xsd:float ;
+    fsl:fsl_000019 616 ;
+    fsl:fsl_000020 "877.0781"^^xsd:float ;
+    fsl:fsl_000021 2462 ;
+    fsl:fsl_000022 "3505.4648"^^xsd:float ;
+    fsl:fsl_000023 2238 ;
+    fsl:fsl_000024 "3186.5273"^^xsd:float ;
+    fsl:fsl_000025 1037 ;
+    fsl:fsl_000026 "1476.5098"^^xsd:float ;
+    fsl:fsl_000027 3168 ;
+    fsl:fsl_000028 "4510.6875"^^xsd:float ;
+    fsl:fsl_000029 4997 ;
+    fsl:fsl_000030 "7114.8691"^^xsd:float ;
+    fsl:fsl_000031 230722 ;
+    fsl:fsl_000032 "328508.4727"^^xsd:float ;
+    fsl:fsl_000033 383218 ;
+    fsl:fsl_000034 "545636.5664"^^xsd:float ;
+    fsl:fsl_000035 420292 ;
+    fsl:fsl_000036 "598423.5703"^^xsd:float ;
+    prov:wasGeneratedBy niiri:ce2254f8-b14e-11f1-9dcf-00155d39b9a7 .
+
+niiri:be29417e-b14e-11f1-8a9d-00155d39b9a7 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 6962565 ;
+    fsl:fsl_000002 "9913495.8691"^^xsd:float ;
+    fsl:fsl_000003 289 ;
+    fsl:fsl_000004 "411.4863"^^xsd:float ;
+    fsl:fsl_000005 819 ;
+    fsl:fsl_000006 "1166.1152"^^xsd:float ;
+    fsl:fsl_000007 2580 ;
+    fsl:fsl_000008 "3673.4766"^^xsd:float ;
+    fsl:fsl_000009 1967 ;
+    fsl:fsl_000010 "2800.6699"^^xsd:float ;
+    fsl:fsl_000011 1215 ;
+    fsl:fsl_000012 "1729.9512"^^xsd:float ;
+    fsl:fsl_000013 3791 ;
+    fsl:fsl_000014 "5397.7324"^^xsd:float ;
+    fsl:fsl_000015 5383 ;
+    fsl:fsl_000016 "7664.4668"^^xsd:float ;
+    fsl:fsl_000017 190 ;
+    fsl:fsl_000018 "270.5273"^^xsd:float ;
+    fsl:fsl_000019 606 ;
+    fsl:fsl_000020 "862.8398"^^xsd:float ;
+    fsl:fsl_000021 2456 ;
+    fsl:fsl_000022 "3496.9219"^^xsd:float ;
+    fsl:fsl_000023 2630 ;
+    fsl:fsl_000024 "3744.668"^^xsd:float ;
+    fsl:fsl_000025 1021 ;
+    fsl:fsl_000026 "1453.7285"^^xsd:float ;
+    fsl:fsl_000027 3777 ;
+    fsl:fsl_000028 "5377.7988"^^xsd:float ;
+    fsl:fsl_000029 4857 ;
+    fsl:fsl_000030 "6915.5332"^^xsd:float ;
+    fsl:fsl_000031 249769 ;
+    fsl:fsl_000032 "355628.127"^^xsd:float ;
+    fsl:fsl_000033 385670 ;
+    fsl:fsl_000034 "549127.793"^^xsd:float ;
+    fsl:fsl_000035 401996 ;
+    fsl:fsl_000036 "572373.2109"^^xsd:float ;
+    prov:wasGeneratedBy niiri:ae439128-b14e-11f1-8a9d-00155d39b9a7 .
+
 niiri:c0ed4e7c-af97-11f1-8357-00155d407b6d a prov:Entity ;
     rdfs:label "NIDM RDF document" ;
     dct:format "turtle" ;
     nidm:outputFormat "turtle" ;
     nfo:filename "bids_nidm.ttl" ;
     prov:wasGeneratedBy niiri:e0ed4a44-af97-11f1-8357-00155d407b6d .
+
+niiri:c3135d7e-b14e-11f1-a825-00155d39b9a7 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 6965442 ;
+    fsl:fsl_000002 "9917592.2227"^^xsd:float ;
+    fsl:fsl_000003 303 ;
+    fsl:fsl_000004 "431.4199"^^xsd:float ;
+    fsl:fsl_000005 820 ;
+    fsl:fsl_000006 "1167.5391"^^xsd:float ;
+    fsl:fsl_000007 2561 ;
+    fsl:fsl_000008 "3646.4238"^^xsd:float ;
+    fsl:fsl_000009 2452 ;
+    fsl:fsl_000010 "3491.2266"^^xsd:float ;
+    fsl:fsl_000011 1129 ;
+    fsl:fsl_000012 "1607.502"^^xsd:float ;
+    fsl:fsl_000013 3772 ;
+    fsl:fsl_000014 "5370.6797"^^xsd:float ;
+    fsl:fsl_000015 5454 ;
+    fsl:fsl_000016 "7765.5586"^^xsd:float ;
+    fsl:fsl_000017 197 ;
+    fsl:fsl_000018 "280.4941"^^xsd:float ;
+    fsl:fsl_000019 605 ;
+    fsl:fsl_000020 "861.416"^^xsd:float ;
+    fsl:fsl_000021 2452 ;
+    fsl:fsl_000022 "3491.2266"^^xsd:float ;
+    fsl:fsl_000023 2629 ;
+    fsl:fsl_000024 "3743.2441"^^xsd:float ;
+    fsl:fsl_000025 987 ;
+    fsl:fsl_000026 "1405.3184"^^xsd:float ;
+    fsl:fsl_000027 3110 ;
+    fsl:fsl_000028 "4428.1055"^^xsd:float ;
+    fsl:fsl_000029 4887 ;
+    fsl:fsl_000030 "6958.248"^^xsd:float ;
+    fsl:fsl_000031 248766 ;
+    fsl:fsl_000032 "354200.0273"^^xsd:float ;
+    fsl:fsl_000033 385277 ;
+    fsl:fsl_000034 "548568.2285"^^xsd:float ;
+    fsl:fsl_000035 400515 ;
+    fsl:fsl_000036 "570264.5215"^^xsd:float ;
+    prov:wasGeneratedBy niiri:a3283f6e-b14e-11f1-a825-00155d39b9a7 .
+
+niiri:c350a228-b14e-11f1-8fb1-00155d39b9a7 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 6966822 ;
+    fsl:fsl_000002 "9919557.1055"^^xsd:float ;
+    fsl:fsl_000003 314 ;
+    fsl:fsl_000004 "447.082"^^xsd:float ;
+    fsl:fsl_000005 827 ;
+    fsl:fsl_000006 "1177.5059"^^xsd:float ;
+    fsl:fsl_000007 2517 ;
+    fsl:fsl_000008 "3583.7754"^^xsd:float ;
+    fsl:fsl_000009 1945 ;
+    fsl:fsl_000010 "2769.3457"^^xsd:float ;
+    fsl:fsl_000011 1224 ;
+    fsl:fsl_000012 "1742.7656"^^xsd:float ;
+    fsl:fsl_000013 3825 ;
+    fsl:fsl_000014 "5446.1426"^^xsd:float ;
+    fsl:fsl_000015 5415 ;
+    fsl:fsl_000016 "7710.0293"^^xsd:float ;
+    fsl:fsl_000017 194 ;
+    fsl:fsl_000018 "276.2227"^^xsd:float ;
+    fsl:fsl_000019 595 ;
+    fsl:fsl_000020 "847.1777"^^xsd:float ;
+    fsl:fsl_000021 2458 ;
+    fsl:fsl_000022 "3499.7695"^^xsd:float ;
+    fsl:fsl_000023 2668 ;
+    fsl:fsl_000024 "3798.7734"^^xsd:float ;
+    fsl:fsl_000025 1068 ;
+    fsl:fsl_000026 "1520.6484"^^xsd:float ;
+    fsl:fsl_000027 3025 ;
+    fsl:fsl_000028 "4307.0801"^^xsd:float ;
+    fsl:fsl_000029 4910 ;
+    fsl:fsl_000030 "6990.9961"^^xsd:float ;
+    fsl:fsl_000031 231150 ;
+    fsl:fsl_000032 "329117.8711"^^xsd:float ;
+    fsl:fsl_000033 382930 ;
+    fsl:fsl_000034 "545226.5039"^^xsd:float ;
+    fsl:fsl_000035 419098 ;
+    fsl:fsl_000036 "596723.5195"^^xsd:float ;
+    prov:wasGeneratedBy niiri:d36d68ae-b14e-11f1-8fb1-00155d39b9a7 .
+
+niiri:c4859536-b14e-11f1-97b2-00155d39b9a7 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 6966012 ;
+    fsl:fsl_000002 "9918403.8047"^^xsd:float ;
+    fsl:fsl_000003 352 ;
+    fsl:fsl_000004 "501.1875"^^xsd:float ;
+    fsl:fsl_000005 826 ;
+    fsl:fsl_000006 "1176.082"^^xsd:float ;
+    fsl:fsl_000007 2543 ;
+    fsl:fsl_000008 "3620.7949"^^xsd:float ;
+    fsl:fsl_000009 1946 ;
+    fsl:fsl_000010 "2770.7695"^^xsd:float ;
+    fsl:fsl_000011 1145 ;
+    fsl:fsl_000012 "1630.2832"^^xsd:float ;
+    fsl:fsl_000013 3774 ;
+    fsl:fsl_000014 "5373.5273"^^xsd:float ;
+    fsl:fsl_000015 5363 ;
+    fsl:fsl_000016 "7635.9902"^^xsd:float ;
+    fsl:fsl_000017 200 ;
+    fsl:fsl_000018 "284.7656"^^xsd:float ;
+    fsl:fsl_000019 615 ;
+    fsl:fsl_000020 "875.6543"^^xsd:float ;
+    fsl:fsl_000021 2456 ;
+    fsl:fsl_000022 "3496.9219"^^xsd:float ;
+    fsl:fsl_000023 2287 ;
+    fsl:fsl_000024 "3256.2949"^^xsd:float ;
+    fsl:fsl_000025 1021 ;
+    fsl:fsl_000026 "1453.7285"^^xsd:float ;
+    fsl:fsl_000027 3172 ;
+    fsl:fsl_000028 "4516.3828"^^xsd:float ;
+    fsl:fsl_000029 4935 ;
+    fsl:fsl_000030 "7026.5918"^^xsd:float ;
+    fsl:fsl_000031 231064 ;
+    fsl:fsl_000032 "328995.4219"^^xsd:float ;
+    fsl:fsl_000033 383042 ;
+    fsl:fsl_000034 "545385.9727"^^xsd:float ;
+    fsl:fsl_000035 419882 ;
+    fsl:fsl_000036 "597839.8008"^^xsd:float ;
+    prov:wasGeneratedBy niiri:b4a45638-b14e-11f1-97b2-00155d39b9a7 .
+
+niiri:c4b38f96-b14e-11f1-a8e7-00155d39b9a7 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 6961617 ;
+    fsl:fsl_000002 "9912146.0801"^^xsd:float ;
+    fsl:fsl_000003 368 ;
+    fsl:fsl_000004 "523.9688"^^xsd:float ;
+    fsl:fsl_000005 831 ;
+    fsl:fsl_000006 "1183.2012"^^xsd:float ;
+    fsl:fsl_000007 2544 ;
+    fsl:fsl_000008 "3622.2188"^^xsd:float ;
+    fsl:fsl_000009 2457 ;
+    fsl:fsl_000010 "3498.3457"^^xsd:float ;
+    fsl:fsl_000011 1229 ;
+    fsl:fsl_000012 "1749.8848"^^xsd:float ;
+    fsl:fsl_000013 3809 ;
+    fsl:fsl_000014 "5423.3613"^^xsd:float ;
+    fsl:fsl_000015 5450 ;
+    fsl:fsl_000016 "7759.8633"^^xsd:float ;
+    fsl:fsl_000017 198 ;
+    fsl:fsl_000018 "281.918"^^xsd:float ;
+    fsl:fsl_000019 596 ;
+    fsl:fsl_000020 "848.6016"^^xsd:float ;
+    fsl:fsl_000021 2453 ;
+    fsl:fsl_000022 "3492.6504"^^xsd:float ;
+    fsl:fsl_000023 2655 ;
+    fsl:fsl_000024 "3780.2637"^^xsd:float ;
+    fsl:fsl_000025 964 ;
+    fsl:fsl_000026 "1372.5703"^^xsd:float ;
+    fsl:fsl_000027 3718 ;
+    fsl:fsl_000028 "5293.793"^^xsd:float ;
+    fsl:fsl_000029 4821 ;
+    fsl:fsl_000030 "6864.2754"^^xsd:float ;
+    fsl:fsl_000031 248985 ;
+    fsl:fsl_000032 "354511.8457"^^xsd:float ;
+    fsl:fsl_000033 385865 ;
+    fsl:fsl_000034 "549405.4395"^^xsd:float ;
+    fsl:fsl_000035 403533 ;
+    fsl:fsl_000036 "574561.6348"^^xsd:float ;
+    prov:wasGeneratedBy niiri:a4c9ceaa-b14e-11f1-a8e7-00155d39b9a7 .
+
+niiri:c53056ce-b14e-11f1-82bb-00155d39b9a7 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 6967875 ;
+    fsl:fsl_000002 "9921056.3965"^^xsd:float ;
+    fsl:fsl_000003 314 ;
+    fsl:fsl_000004 "447.082"^^xsd:float ;
+    fsl:fsl_000005 832 ;
+    fsl:fsl_000006 "1184.625"^^xsd:float ;
+    fsl:fsl_000007 2602 ;
+    fsl:fsl_000008 "3704.8008"^^xsd:float ;
+    fsl:fsl_000009 1979 ;
+    fsl:fsl_000010 "2817.7559"^^xsd:float ;
+    fsl:fsl_000011 1205 ;
+    fsl:fsl_000012 "1715.7129"^^xsd:float ;
+    fsl:fsl_000013 3789 ;
+    fsl:fsl_000014 "5394.8848"^^xsd:float ;
+    fsl:fsl_000015 5421 ;
+    fsl:fsl_000016 "7718.5723"^^xsd:float ;
+    fsl:fsl_000017 197 ;
+    fsl:fsl_000018 "280.4941"^^xsd:float ;
+    fsl:fsl_000019 618 ;
+    fsl:fsl_000020 "879.9258"^^xsd:float ;
+    fsl:fsl_000021 2454 ;
+    fsl:fsl_000022 "3494.0742"^^xsd:float ;
+    fsl:fsl_000023 2320 ;
+    fsl:fsl_000024 "3303.2812"^^xsd:float ;
+    fsl:fsl_000025 997 ;
+    fsl:fsl_000026 "1419.5566"^^xsd:float ;
+    fsl:fsl_000027 3206 ;
+    fsl:fsl_000028 "4564.793"^^xsd:float ;
+    fsl:fsl_000029 4906 ;
+    fsl:fsl_000030 "6985.3008"^^xsd:float ;
+    fsl:fsl_000031 231847 ;
+    fsl:fsl_000032 "330110.2793"^^xsd:float ;
+    fsl:fsl_000033 382846 ;
+    fsl:fsl_000034 "545106.9023"^^xsd:float ;
+    fsl:fsl_000035 417432 ;
+    fsl:fsl_000036 "594351.4219"^^xsd:float ;
+    prov:wasGeneratedBy niiri:a54da1b6-b14e-11f1-82bb-00155d39b9a7 .
+
+niiri:cb12e7c8-b14e-11f1-a5cb-00155d39b9a7 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 6963333 ;
+    fsl:fsl_000002 "9914589.3691"^^xsd:float ;
+    fsl:fsl_000003 292 ;
+    fsl:fsl_000004 "415.7578"^^xsd:float ;
+    fsl:fsl_000005 833 ;
+    fsl:fsl_000006 "1186.0488"^^xsd:float ;
+    fsl:fsl_000007 2557 ;
+    fsl:fsl_000008 "3640.7285"^^xsd:float ;
+    fsl:fsl_000009 1963 ;
+    fsl:fsl_000010 "2794.9746"^^xsd:float ;
+    fsl:fsl_000011 1201 ;
+    fsl:fsl_000012 "1710.0176"^^xsd:float ;
+    fsl:fsl_000013 3815 ;
+    fsl:fsl_000014 "5431.9043"^^xsd:float ;
+    fsl:fsl_000015 5344 ;
+    fsl:fsl_000016 "7608.9375"^^xsd:float ;
+    fsl:fsl_000017 213 ;
+    fsl:fsl_000018 "303.2754"^^xsd:float ;
+    fsl:fsl_000019 584 ;
+    fsl:fsl_000020 "831.5156"^^xsd:float ;
+    fsl:fsl_000021 2441 ;
+    fsl:fsl_000022 "3475.5645"^^xsd:float ;
+    fsl:fsl_000023 2620 ;
+    fsl:fsl_000024 "3730.4297"^^xsd:float ;
+    fsl:fsl_000025 1020 ;
+    fsl:fsl_000026 "1452.3047"^^xsd:float ;
+    fsl:fsl_000027 3725 ;
+    fsl:fsl_000028 "5303.7598"^^xsd:float ;
+    fsl:fsl_000029 4898 ;
+    fsl:fsl_000030 "6973.9102"^^xsd:float ;
+    fsl:fsl_000031 229961 ;
+    fsl:fsl_000032 "327424.9395"^^xsd:float ;
+    fsl:fsl_000033 383533 ;
+    fsl:fsl_000034 "546085.0723"^^xsd:float ;
+    fsl:fsl_000035 423173 ;
+    fsl:fsl_000036 "602525.6191"^^xsd:float ;
+    prov:wasGeneratedBy niiri:cb30c66c-b14e-11f1-a5cb-00155d39b9a7 .
+
+niiri:cbaabcd8-b14e-11f1-ade8-00155d39b9a7 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 6965005 ;
+    fsl:fsl_000002 "9916970.0098"^^xsd:float ;
+    fsl:fsl_000003 276 ;
+    fsl:fsl_000004 "392.9766"^^xsd:float ;
+    fsl:fsl_000005 824 ;
+    fsl:fsl_000006 "1173.2344"^^xsd:float ;
+    fsl:fsl_000007 2528 ;
+    fsl:fsl_000008 "3599.4375"^^xsd:float ;
+    fsl:fsl_000009 1987 ;
+    fsl:fsl_000010 "2829.1465"^^xsd:float ;
+    fsl:fsl_000011 1211 ;
+    fsl:fsl_000012 "1724.2559"^^xsd:float ;
+    fsl:fsl_000013 3850 ;
+    fsl:fsl_000014 "5481.7383"^^xsd:float ;
+    fsl:fsl_000015 5420 ;
+    fsl:fsl_000016 "7717.1484"^^xsd:float ;
+    fsl:fsl_000017 191 ;
+    fsl:fsl_000018 "271.9512"^^xsd:float ;
+    fsl:fsl_000019 596 ;
+    fsl:fsl_000020 "848.6016"^^xsd:float ;
+    fsl:fsl_000021 2483 ;
+    fsl:fsl_000022 "3535.3652"^^xsd:float ;
+    fsl:fsl_000023 2636 ;
+    fsl:fsl_000024 "3753.2109"^^xsd:float ;
+    fsl:fsl_000025 1016 ;
+    fsl:fsl_000026 "1446.6094"^^xsd:float ;
+    fsl:fsl_000027 3201 ;
+    fsl:fsl_000028 "4557.6738"^^xsd:float ;
+    fsl:fsl_000029 4931 ;
+    fsl:fsl_000030 "7020.8965"^^xsd:float ;
+    fsl:fsl_000031 231395 ;
+    fsl:fsl_000032 "329466.709"^^xsd:float ;
+    fsl:fsl_000033 383209 ;
+    fsl:fsl_000034 "545623.752"^^xsd:float ;
+    fsl:fsl_000035 420391 ;
+    fsl:fsl_000036 "598564.5293"^^xsd:float ;
+    prov:wasGeneratedBy niiri:dbc9515c-b14e-11f1-ade8-00155d39b9a7 .
+
+niiri:ce9da87e-b14e-11f1-9aa7-00155d39b9a7 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 6964523 ;
+    fsl:fsl_000002 "9916283.7246"^^xsd:float ;
+    fsl:fsl_000003 271 ;
+    fsl:fsl_000004 "385.8574"^^xsd:float ;
+    fsl:fsl_000005 828 ;
+    fsl:fsl_000006 "1178.9297"^^xsd:float ;
+    fsl:fsl_000007 2533 ;
+    fsl:fsl_000008 "3606.5566"^^xsd:float ;
+    fsl:fsl_000009 1946 ;
+    fsl:fsl_000010 "2770.7695"^^xsd:float ;
+    fsl:fsl_000011 1201 ;
+    fsl:fsl_000012 "1710.0176"^^xsd:float ;
+    fsl:fsl_000013 3791 ;
+    fsl:fsl_000014 "5397.7324"^^xsd:float ;
+    fsl:fsl_000015 5345 ;
+    fsl:fsl_000016 "7610.3613"^^xsd:float ;
+    fsl:fsl_000017 211 ;
+    fsl:fsl_000018 "300.4277"^^xsd:float ;
+    fsl:fsl_000019 578 ;
+    fsl:fsl_000020 "822.9727"^^xsd:float ;
+    fsl:fsl_000021 2438 ;
+    fsl:fsl_000022 "3471.293"^^xsd:float ;
+    fsl:fsl_000023 2663 ;
+    fsl:fsl_000024 "3791.6543"^^xsd:float ;
+    fsl:fsl_000025 1048 ;
+    fsl:fsl_000026 "1492.1719"^^xsd:float ;
+    fsl:fsl_000027 3030 ;
+    fsl:fsl_000028 "4314.1992"^^xsd:float ;
+    fsl:fsl_000029 4963 ;
+    fsl:fsl_000030 "7066.459"^^xsd:float ;
+    fsl:fsl_000031 230640 ;
+    fsl:fsl_000032 "328391.7188"^^xsd:float ;
+    fsl:fsl_000033 383402 ;
+    fsl:fsl_000034 "545898.5508"^^xsd:float ;
+    fsl:fsl_000035 421435 ;
+    fsl:fsl_000036 "600051.0059"^^xsd:float ;
+    prov:wasGeneratedBy niiri:cebcdf14-b14e-11f1-9aa7-00155d39b9a7 .
+
+niiri:d2bdf0b8-b14e-11f1-a306-00155d39b9a7 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 6968207 ;
+    fsl:fsl_000002 "9921529.1074"^^xsd:float ;
+    fsl:fsl_000003 274 ;
+    fsl:fsl_000004 "390.1289"^^xsd:float ;
+    fsl:fsl_000005 823 ;
+    fsl:fsl_000006 "1171.8105"^^xsd:float ;
+    fsl:fsl_000007 2574 ;
+    fsl:fsl_000008 "3664.9336"^^xsd:float ;
+    fsl:fsl_000009 1975 ;
+    fsl:fsl_000010 "2812.0605"^^xsd:float ;
+    fsl:fsl_000011 1219 ;
+    fsl:fsl_000012 "1735.6465"^^xsd:float ;
+    fsl:fsl_000013 3841 ;
+    fsl:fsl_000014 "5468.9238"^^xsd:float ;
+    fsl:fsl_000015 5430 ;
+    fsl:fsl_000016 "7731.3867"^^xsd:float ;
+    fsl:fsl_000017 195 ;
+    fsl:fsl_000018 "277.6465"^^xsd:float ;
+    fsl:fsl_000019 603 ;
+    fsl:fsl_000020 "858.5684"^^xsd:float ;
+    fsl:fsl_000021 2450 ;
+    fsl:fsl_000022 "3488.3789"^^xsd:float ;
+    fsl:fsl_000023 2217 ;
+    fsl:fsl_000024 "3156.627"^^xsd:float ;
+    fsl:fsl_000025 1015 ;
+    fsl:fsl_000026 "1445.1855"^^xsd:float ;
+    fsl:fsl_000027 3231 ;
+    fsl:fsl_000028 "4600.3887"^^xsd:float ;
+    fsl:fsl_000029 4913 ;
+    fsl:fsl_000030 "6995.2676"^^xsd:float ;
+    fsl:fsl_000031 232035 ;
+    fsl:fsl_000032 "330377.959"^^xsd:float ;
+    fsl:fsl_000033 382742 ;
+    fsl:fsl_000034 "544958.8242"^^xsd:float ;
+    fsl:fsl_000035 417016 ;
+    fsl:fsl_000036 "593759.1094"^^xsd:float ;
+    prov:wasGeneratedBy niiri:e2db18b4-b14e-11f1-a306-00155d39b9a7 .
+
+niiri:d3edb798-b14e-11f1-9b18-00155d39b9a7 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 6961347 ;
+    fsl:fsl_000002 "9911761.6465"^^xsd:float ;
+    fsl:fsl_000003 307 ;
+    fsl:fsl_000004 "437.1152"^^xsd:float ;
+    fsl:fsl_000005 832 ;
+    fsl:fsl_000006 "1184.625"^^xsd:float ;
+    fsl:fsl_000007 2580 ;
+    fsl:fsl_000008 "3673.4766"^^xsd:float ;
+    fsl:fsl_000009 1940 ;
+    fsl:fsl_000010 "2762.2266"^^xsd:float ;
+    fsl:fsl_000011 1187 ;
+    fsl:fsl_000012 "1690.084"^^xsd:float ;
+    fsl:fsl_000013 3800 ;
+    fsl:fsl_000014 "5410.5469"^^xsd:float ;
+    fsl:fsl_000015 5426 ;
+    fsl:fsl_000016 "7725.6914"^^xsd:float ;
+    fsl:fsl_000017 190 ;
+    fsl:fsl_000018 "270.5273"^^xsd:float ;
+    fsl:fsl_000019 585 ;
+    fsl:fsl_000020 "832.9395"^^xsd:float ;
+    fsl:fsl_000021 2454 ;
+    fsl:fsl_000022 "3494.0742"^^xsd:float ;
+    fsl:fsl_000023 2678 ;
+    fsl:fsl_000024 "3813.0117"^^xsd:float ;
+    fsl:fsl_000025 1028 ;
+    fsl:fsl_000026 "1463.6953"^^xsd:float ;
+    fsl:fsl_000027 3227 ;
+    fsl:fsl_000028 "4594.6934"^^xsd:float ;
+    fsl:fsl_000029 4882 ;
+    fsl:fsl_000030 "6951.1289"^^xsd:float ;
+    fsl:fsl_000031 230118 ;
+    fsl:fsl_000032 "327648.4805"^^xsd:float ;
+    fsl:fsl_000033 383560 ;
+    fsl:fsl_000034 "546123.5156"^^xsd:float ;
+    fsl:fsl_000035 424975 ;
+    fsl:fsl_000036 "605091.3574"^^xsd:float ;
+    prov:wasGeneratedBy niiri:b40d2592-b14e-11f1-9b18-00155d39b9a7 .
+
+niiri:d423463e-b14e-11f1-84e5-00155d39b9a7 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 6961393 ;
+    fsl:fsl_000002 "9911827.1426"^^xsd:float ;
+    fsl:fsl_000003 346 ;
+    fsl:fsl_000004 "492.6445"^^xsd:float ;
+    fsl:fsl_000005 818 ;
+    fsl:fsl_000006 "1164.6914"^^xsd:float ;
+    fsl:fsl_000007 2582 ;
+    fsl:fsl_000008 "3676.3242"^^xsd:float ;
+    fsl:fsl_000009 2455 ;
+    fsl:fsl_000010 "3495.498"^^xsd:float ;
+    fsl:fsl_000011 1196 ;
+    fsl:fsl_000012 "1702.8984"^^xsd:float ;
+    fsl:fsl_000013 3771 ;
+    fsl:fsl_000014 "5369.2559"^^xsd:float ;
+    fsl:fsl_000015 5457 ;
+    fsl:fsl_000016 "7769.8301"^^xsd:float ;
+    fsl:fsl_000017 203 ;
+    fsl:fsl_000018 "289.0371"^^xsd:float ;
+    fsl:fsl_000019 633 ;
+    fsl:fsl_000020 "901.2832"^^xsd:float ;
+    fsl:fsl_000021 2474 ;
+    fsl:fsl_000022 "3522.5508"^^xsd:float ;
+    fsl:fsl_000023 2126 ;
+    fsl:fsl_000024 "3027.0586"^^xsd:float ;
+    fsl:fsl_000025 1122 ;
+    fsl:fsl_000026 "1597.5352"^^xsd:float ;
+    fsl:fsl_000027 3081 ;
+    fsl:fsl_000028 "4386.8145"^^xsd:float ;
+    fsl:fsl_000029 4885 ;
+    fsl:fsl_000030 "6955.4004"^^xsd:float ;
+    fsl:fsl_000031 249570 ;
+    fsl:fsl_000032 "355344.7852"^^xsd:float ;
+    fsl:fsl_000033 385945 ;
+    fsl:fsl_000034 "549519.3457"^^xsd:float ;
+    fsl:fsl_000035 403092 ;
+    fsl:fsl_000036 "573933.7266"^^xsd:float ;
+    prov:wasGeneratedBy niiri:e439eda8-b14e-11f1-84e5-00155d39b9a7 .
+
+niiri:d53cc676-b14e-11f1-9ccb-00155d39b9a7 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 6964185 ;
+    fsl:fsl_000002 "9915802.4707"^^xsd:float ;
+    fsl:fsl_000003 330 ;
+    fsl:fsl_000004 "469.8633"^^xsd:float ;
+    fsl:fsl_000005 832 ;
+    fsl:fsl_000006 "1184.625"^^xsd:float ;
+    fsl:fsl_000007 2567 ;
+    fsl:fsl_000008 "3654.9668"^^xsd:float ;
+    fsl:fsl_000009 2414 ;
+    fsl:fsl_000010 "3437.1211"^^xsd:float ;
+    fsl:fsl_000011 1126 ;
+    fsl:fsl_000012 "1603.2305"^^xsd:float ;
+    fsl:fsl_000013 3751 ;
+    fsl:fsl_000014 "5340.7793"^^xsd:float ;
+    fsl:fsl_000015 5451 ;
+    fsl:fsl_000016 "7761.2871"^^xsd:float ;
+    fsl:fsl_000017 196 ;
+    fsl:fsl_000018 "279.0703"^^xsd:float ;
+    fsl:fsl_000019 602 ;
+    fsl:fsl_000020 "857.1445"^^xsd:float ;
+    fsl:fsl_000021 2491 ;
+    fsl:fsl_000022 "3546.7559"^^xsd:float ;
+    fsl:fsl_000023 2329 ;
+    fsl:fsl_000024 "3316.0957"^^xsd:float ;
+    fsl:fsl_000025 1117 ;
+    fsl:fsl_000026 "1590.416"^^xsd:float ;
+    fsl:fsl_000027 3708 ;
+    fsl:fsl_000028 "5279.5547"^^xsd:float ;
+    fsl:fsl_000029 4872 ;
+    fsl:fsl_000030 "6936.8906"^^xsd:float ;
+    fsl:fsl_000031 248714 ;
+    fsl:fsl_000032 "354125.9883"^^xsd:float ;
+    fsl:fsl_000033 385495 ;
+    fsl:fsl_000034 "548878.623"^^xsd:float ;
+    fsl:fsl_000035 401606 ;
+    fsl:fsl_000036 "571817.918"^^xsd:float ;
+    prov:wasGeneratedBy niiri:f55465c4-b14e-11f1-9ccb-00155d39b9a7 .
+
+niiri:d6e36060-b14e-11f1-87c2-00155d39b9a7 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 6967129 ;
+    fsl:fsl_000002 "9919994.2207"^^xsd:float ;
+    fsl:fsl_000003 302 ;
+    fsl:fsl_000004 "429.9961"^^xsd:float ;
+    fsl:fsl_000005 826 ;
+    fsl:fsl_000006 "1176.082"^^xsd:float ;
+    fsl:fsl_000007 2596 ;
+    fsl:fsl_000008 "3696.2578"^^xsd:float ;
+    fsl:fsl_000009 1971 ;
+    fsl:fsl_000010 "2806.3652"^^xsd:float ;
+    fsl:fsl_000011 1200 ;
+    fsl:fsl_000012 "1708.5938"^^xsd:float ;
+    fsl:fsl_000013 3824 ;
+    fsl:fsl_000014 "5444.7188"^^xsd:float ;
+    fsl:fsl_000015 5426 ;
+    fsl:fsl_000016 "7725.6914"^^xsd:float ;
+    fsl:fsl_000017 196 ;
+    fsl:fsl_000018 "279.0703"^^xsd:float ;
+    fsl:fsl_000019 596 ;
+    fsl:fsl_000020 "848.6016"^^xsd:float ;
+    fsl:fsl_000021 2455 ;
+    fsl:fsl_000022 "3495.498"^^xsd:float ;
+    fsl:fsl_000023 2653 ;
+    fsl:fsl_000024 "3777.416"^^xsd:float ;
+    fsl:fsl_000025 1018 ;
+    fsl:fsl_000026 "1449.457"^^xsd:float ;
+    fsl:fsl_000027 2953 ;
+    fsl:fsl_000028 "4204.5645"^^xsd:float ;
+    fsl:fsl_000029 4829 ;
+    fsl:fsl_000030 "6875.666"^^xsd:float ;
+    fsl:fsl_000031 231076 ;
+    fsl:fsl_000032 "329012.5078"^^xsd:float ;
+    fsl:fsl_000033 382888 ;
+    fsl:fsl_000034 "545166.7031"^^xsd:float ;
+    fsl:fsl_000035 418907 ;
+    fsl:fsl_000036 "596451.5684"^^xsd:float ;
+    prov:wasGeneratedBy niiri:b6ffa4aa-b14e-11f1-87c2-00155d39b9a7 .
+
+niiri:d77803aa-b14e-11f1-a01a-00155d39b9a7 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 6964892 ;
+    fsl:fsl_000002 "9916809.1172"^^xsd:float ;
+    fsl:fsl_000003 352 ;
+    fsl:fsl_000004 "501.1875"^^xsd:float ;
+    fsl:fsl_000005 819 ;
+    fsl:fsl_000006 "1166.1152"^^xsd:float ;
+    fsl:fsl_000007 2576 ;
+    fsl:fsl_000008 "3667.7812"^^xsd:float ;
+    fsl:fsl_000009 1942 ;
+    fsl:fsl_000010 "2765.0742"^^xsd:float ;
+    fsl:fsl_000011 1204 ;
+    fsl:fsl_000012 "1714.2891"^^xsd:float ;
+    fsl:fsl_000013 3823 ;
+    fsl:fsl_000014 "5443.2949"^^xsd:float ;
+    fsl:fsl_000015 5428 ;
+    fsl:fsl_000016 "7728.5391"^^xsd:float ;
+    fsl:fsl_000017 196 ;
+    fsl:fsl_000018 "279.0703"^^xsd:float ;
+    fsl:fsl_000019 589 ;
+    fsl:fsl_000020 "838.6348"^^xsd:float ;
+    fsl:fsl_000021 2458 ;
+    fsl:fsl_000022 "3499.7695"^^xsd:float ;
+    fsl:fsl_000023 2642 ;
+    fsl:fsl_000024 "3761.7539"^^xsd:float ;
+    fsl:fsl_000025 1019 ;
+    fsl:fsl_000026 "1450.8809"^^xsd:float ;
+    fsl:fsl_000027 3215 ;
+    fsl:fsl_000028 "4577.6074"^^xsd:float ;
+    fsl:fsl_000029 4931 ;
+    fsl:fsl_000030 "7020.8965"^^xsd:float ;
+    fsl:fsl_000031 230736 ;
+    fsl:fsl_000032 "328528.4062"^^xsd:float ;
+    fsl:fsl_000033 383327 ;
+    fsl:fsl_000034 "545791.7637"^^xsd:float ;
+    fsl:fsl_000035 421045 ;
+    fsl:fsl_000036 "599495.7129"^^xsd:float ;
+    prov:wasGeneratedBy niiri:d79823ba-b14e-11f1-a01a-00155d39b9a7 .
+
+niiri:dd6d13f4-b14e-11f1-99e7-00155d39b9a7 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 6962942 ;
+    fsl:fsl_000002 "9914032.6523"^^xsd:float ;
+    fsl:fsl_000003 307 ;
+    fsl:fsl_000004 "437.1152"^^xsd:float ;
+    fsl:fsl_000005 825 ;
+    fsl:fsl_000006 "1174.6582"^^xsd:float ;
+    fsl:fsl_000007 2546 ;
+    fsl:fsl_000008 "3625.0664"^^xsd:float ;
+    fsl:fsl_000009 1977 ;
+    fsl:fsl_000010 "2814.9082"^^xsd:float ;
+    fsl:fsl_000011 1220 ;
+    fsl:fsl_000012 "1737.0703"^^xsd:float ;
+    fsl:fsl_000013 3776 ;
+    fsl:fsl_000014 "5376.375"^^xsd:float ;
+    fsl:fsl_000015 5410 ;
+    fsl:fsl_000016 "7702.9102"^^xsd:float ;
+    fsl:fsl_000017 204 ;
+    fsl:fsl_000018 "290.4609"^^xsd:float ;
+    fsl:fsl_000019 574 ;
+    fsl:fsl_000020 "817.2773"^^xsd:float ;
+    fsl:fsl_000021 2368 ;
+    fsl:fsl_000022 "3371.625"^^xsd:float ;
+    fsl:fsl_000023 2676 ;
+    fsl:fsl_000024 "3810.1641"^^xsd:float ;
+    fsl:fsl_000025 1048 ;
+    fsl:fsl_000026 "1492.1719"^^xsd:float ;
+    fsl:fsl_000027 2947 ;
+    fsl:fsl_000028 "4196.0215"^^xsd:float ;
+    fsl:fsl_000029 4847 ;
+    fsl:fsl_000030 "6901.2949"^^xsd:float ;
+    fsl:fsl_000031 230336 ;
+    fsl:fsl_000032 "327958.875"^^xsd:float ;
+    fsl:fsl_000033 383648 ;
+    fsl:fsl_000034 "546248.8125"^^xsd:float ;
+    fsl:fsl_000035 423074 ;
+    fsl:fsl_000036 "602384.6602"^^xsd:float ;
+    prov:wasGeneratedBy niiri:cd8d24b4-b14e-11f1-99e7-00155d39b9a7 .
+
+niiri:e072d5c6-b14e-11f1-90cc-00155d39b9a7 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 6967359 ;
+    fsl:fsl_000002 "9920321.7012"^^xsd:float ;
+    fsl:fsl_000003 345 ;
+    fsl:fsl_000004 "491.2207"^^xsd:float ;
+    fsl:fsl_000005 823 ;
+    fsl:fsl_000006 "1171.8105"^^xsd:float ;
+    fsl:fsl_000007 2589 ;
+    fsl:fsl_000008 "3686.291"^^xsd:float ;
+    fsl:fsl_000009 1945 ;
+    fsl:fsl_000010 "2769.3457"^^xsd:float ;
+    fsl:fsl_000011 1214 ;
+    fsl:fsl_000012 "1728.5273"^^xsd:float ;
+    fsl:fsl_000013 3791 ;
+    fsl:fsl_000014 "5397.7324"^^xsd:float ;
+    fsl:fsl_000015 5426 ;
+    fsl:fsl_000016 "7725.6914"^^xsd:float ;
+    fsl:fsl_000017 212 ;
+    fsl:fsl_000018 "301.8516"^^xsd:float ;
+    fsl:fsl_000019 584 ;
+    fsl:fsl_000020 "831.5156"^^xsd:float ;
+    fsl:fsl_000021 2375 ;
+    fsl:fsl_000022 "3381.5918"^^xsd:float ;
+    fsl:fsl_000023 2647 ;
+    fsl:fsl_000024 "3768.873"^^xsd:float ;
+    fsl:fsl_000025 948 ;
+    fsl:fsl_000026 "1349.7891"^^xsd:float ;
+    fsl:fsl_000027 3837 ;
+    fsl:fsl_000028 "5463.2285"^^xsd:float ;
+    fsl:fsl_000029 4918 ;
+    fsl:fsl_000030 "7002.3867"^^xsd:float ;
+    fsl:fsl_000031 231584 ;
+    fsl:fsl_000032 "329735.8125"^^xsd:float ;
+    fsl:fsl_000033 382838 ;
+    fsl:fsl_000034 "545095.5117"^^xsd:float ;
+    fsl:fsl_000035 418219 ;
+    fsl:fsl_000036 "595471.9746"^^xsd:float ;
+    prov:wasGeneratedBy niiri:a08dabee-b14e-11f1-90cc-00155d39b9a7 .
+
+niiri:e10dd288-b14e-11f1-b33d-00155d39b9a7 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 6964977 ;
+    fsl:fsl_000002 "9916930.1426"^^xsd:float ;
+    fsl:fsl_000003 286 ;
+    fsl:fsl_000004 "407.2148"^^xsd:float ;
+    fsl:fsl_000005 821 ;
+    fsl:fsl_000006 "1168.9629"^^xsd:float ;
+    fsl:fsl_000007 2568 ;
+    fsl:fsl_000008 "3656.3906"^^xsd:float ;
+    fsl:fsl_000009 1965 ;
+    fsl:fsl_000010 "2797.8223"^^xsd:float ;
+    fsl:fsl_000011 1210 ;
+    fsl:fsl_000012 "1722.832"^^xsd:float ;
+    fsl:fsl_000013 3799 ;
+    fsl:fsl_000014 "5409.123"^^xsd:float ;
+    fsl:fsl_000015 5431 ;
+    fsl:fsl_000016 "7732.8105"^^xsd:float ;
+    fsl:fsl_000017 193 ;
+    fsl:fsl_000018 "274.7988"^^xsd:float ;
+    fsl:fsl_000019 611 ;
+    fsl:fsl_000020 "869.959"^^xsd:float ;
+    fsl:fsl_000021 2441 ;
+    fsl:fsl_000022 "3475.5645"^^xsd:float ;
+    fsl:fsl_000023 2659 ;
+    fsl:fsl_000024 "3785.959"^^xsd:float ;
+    fsl:fsl_000025 1009 ;
+    fsl:fsl_000026 "1436.6426"^^xsd:float ;
+    fsl:fsl_000027 3228 ;
+    fsl:fsl_000028 "4596.1172"^^xsd:float ;
+    fsl:fsl_000029 4829 ;
+    fsl:fsl_000030 "6875.666"^^xsd:float ;
+    fsl:fsl_000031 230516 ;
+    fsl:fsl_000032 "328215.1641"^^xsd:float ;
+    fsl:fsl_000033 383246 ;
+    fsl:fsl_000034 "545676.4336"^^xsd:float ;
+    fsl:fsl_000035 421261 ;
+    fsl:fsl_000036 "599803.2598"^^xsd:float ;
+    prov:wasGeneratedBy niiri:d12a34a0-b14e-11f1-b33d-00155d39b9a7 .
+
+niiri:e39a56ee-b14e-11f1-9949-00155d39b9a7 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 6964977 ;
+    fsl:fsl_000002 "9916930.1426"^^xsd:float ;
+    fsl:fsl_000003 355 ;
+    fsl:fsl_000004 "505.459"^^xsd:float ;
+    fsl:fsl_000005 830 ;
+    fsl:fsl_000006 "1181.7773"^^xsd:float ;
+    fsl:fsl_000007 2550 ;
+    fsl:fsl_000008 "3630.7617"^^xsd:float ;
+    fsl:fsl_000009 2430 ;
+    fsl:fsl_000010 "3459.9023"^^xsd:float ;
+    fsl:fsl_000011 1220 ;
+    fsl:fsl_000012 "1737.0703"^^xsd:float ;
+    fsl:fsl_000013 3793 ;
+    fsl:fsl_000014 "5400.5801"^^xsd:float ;
+    fsl:fsl_000015 5358 ;
+    fsl:fsl_000016 "7628.8711"^^xsd:float ;
+    fsl:fsl_000017 199 ;
+    fsl:fsl_000018 "283.3418"^^xsd:float ;
+    fsl:fsl_000019 622 ;
+    fsl:fsl_000020 "885.6211"^^xsd:float ;
+    fsl:fsl_000021 2474 ;
+    fsl:fsl_000022 "3522.5508"^^xsd:float ;
+    fsl:fsl_000023 2226 ;
+    fsl:fsl_000024 "3169.4414"^^xsd:float ;
+    fsl:fsl_000025 1040 ;
+    fsl:fsl_000026 "1480.7812"^^xsd:float ;
+    fsl:fsl_000027 3096 ;
+    fsl:fsl_000028 "4408.1719"^^xsd:float ;
+    fsl:fsl_000029 4843 ;
+    fsl:fsl_000030 "6895.5996"^^xsd:float ;
+    fsl:fsl_000031 248717 ;
+    fsl:fsl_000032 "354130.2598"^^xsd:float ;
+    fsl:fsl_000033 385257 ;
+    fsl:fsl_000034 "548539.752"^^xsd:float ;
+    fsl:fsl_000035 401049 ;
+    fsl:fsl_000036 "571024.8457"^^xsd:float ;
+    prov:wasGeneratedBy niiri:f3af9c5c-b14e-11f1-9949-00155d39b9a7 .
+
+niiri:e5c108cc-b14e-11f1-8afc-00155d39b9a7 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 6964251 ;
+    fsl:fsl_000002 "9915896.4434"^^xsd:float ;
+    fsl:fsl_000003 292 ;
+    fsl:fsl_000004 "415.7578"^^xsd:float ;
+    fsl:fsl_000005 819 ;
+    fsl:fsl_000006 "1166.1152"^^xsd:float ;
+    fsl:fsl_000007 2606 ;
+    fsl:fsl_000008 "3710.4961"^^xsd:float ;
+    fsl:fsl_000009 1972 ;
+    fsl:fsl_000010 "2807.7891"^^xsd:float ;
+    fsl:fsl_000011 1197 ;
+    fsl:fsl_000012 "1704.3223"^^xsd:float ;
+    fsl:fsl_000013 3785 ;
+    fsl:fsl_000014 "5389.1895"^^xsd:float ;
+    fsl:fsl_000015 5388 ;
+    fsl:fsl_000016 "7671.5859"^^xsd:float ;
+    fsl:fsl_000017 195 ;
+    fsl:fsl_000018 "277.6465"^^xsd:float ;
+    fsl:fsl_000019 589 ;
+    fsl:fsl_000020 "838.6348"^^xsd:float ;
+    fsl:fsl_000021 2467 ;
+    fsl:fsl_000022 "3512.584"^^xsd:float ;
+    fsl:fsl_000023 2645 ;
+    fsl:fsl_000024 "3766.0254"^^xsd:float ;
+    fsl:fsl_000025 1026 ;
+    fsl:fsl_000026 "1460.8477"^^xsd:float ;
+    fsl:fsl_000027 3659 ;
+    fsl:fsl_000028 "5209.7871"^^xsd:float ;
+    fsl:fsl_000029 4828 ;
+    fsl:fsl_000030 "6874.2422"^^xsd:float ;
+    fsl:fsl_000031 230784 ;
+    fsl:fsl_000032 "328596.75"^^xsd:float ;
+    fsl:fsl_000033 383429 ;
+    fsl:fsl_000034 "545936.9941"^^xsd:float ;
+    fsl:fsl_000035 421536 ;
+    fsl:fsl_000036 "600194.8125"^^xsd:float ;
+    prov:wasGeneratedBy niiri:f5dd9d84-b14e-11f1-8afc-00155d39b9a7 .
+
+niiri:e5c7e4b8-b14e-11f1-b8aa-00155d39b9a7 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 6963891 ;
+    fsl:fsl_000002 "9915383.8652"^^xsd:float ;
+    fsl:fsl_000003 299 ;
+    fsl:fsl_000004 "425.7246"^^xsd:float ;
+    fsl:fsl_000005 837 ;
+    fsl:fsl_000006 "1191.7441"^^xsd:float ;
+    fsl:fsl_000007 2564 ;
+    fsl:fsl_000008 "3650.6953"^^xsd:float ;
+    fsl:fsl_000009 1948 ;
+    fsl:fsl_000010 "2773.6172"^^xsd:float ;
+    fsl:fsl_000011 1248 ;
+    fsl:fsl_000012 "1776.9375"^^xsd:float ;
+    fsl:fsl_000013 3752 ;
+    fsl:fsl_000014 "5342.2031"^^xsd:float ;
+    fsl:fsl_000015 5441 ;
+    fsl:fsl_000016 "7747.0488"^^xsd:float ;
+    fsl:fsl_000017 196 ;
+    fsl:fsl_000018 "279.0703"^^xsd:float ;
+    fsl:fsl_000019 614 ;
+    fsl:fsl_000020 "874.2305"^^xsd:float ;
+    fsl:fsl_000021 2447 ;
+    fsl:fsl_000022 "3484.1074"^^xsd:float ;
+    fsl:fsl_000023 2647 ;
+    fsl:fsl_000024 "3768.873"^^xsd:float ;
+    fsl:fsl_000025 1016 ;
+    fsl:fsl_000026 "1446.6094"^^xsd:float ;
+    fsl:fsl_000027 3817 ;
+    fsl:fsl_000028 "5434.752"^^xsd:float ;
+    fsl:fsl_000029 4865 ;
+    fsl:fsl_000030 "6926.9238"^^xsd:float ;
+    fsl:fsl_000031 249564 ;
+    fsl:fsl_000032 "355336.2422"^^xsd:float ;
+    fsl:fsl_000033 385288 ;
+    fsl:fsl_000034 "548583.8906"^^xsd:float ;
+    fsl:fsl_000035 401257 ;
+    fsl:fsl_000036 "571321.002"^^xsd:float ;
+    prov:wasGeneratedBy niiri:b5ddca94-b14e-11f1-b8aa-00155d39b9a7 .
+
+niiri:e6500528-b14e-11f1-a28f-00155d39b9a7 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 6966656 ;
+    fsl:fsl_000002 "9919320.75"^^xsd:float ;
+    fsl:fsl_000003 343 ;
+    fsl:fsl_000004 "488.373"^^xsd:float ;
+    fsl:fsl_000005 833 ;
+    fsl:fsl_000006 "1186.0488"^^xsd:float ;
+    fsl:fsl_000007 2546 ;
+    fsl:fsl_000008 "3625.0664"^^xsd:float ;
+    fsl:fsl_000009 1989 ;
+    fsl:fsl_000010 "2831.9941"^^xsd:float ;
+    fsl:fsl_000011 1218 ;
+    fsl:fsl_000012 "1734.2227"^^xsd:float ;
+    fsl:fsl_000013 3853 ;
+    fsl:fsl_000014 "5486.0098"^^xsd:float ;
+    fsl:fsl_000015 5354 ;
+    fsl:fsl_000016 "7623.1758"^^xsd:float ;
+    fsl:fsl_000017 195 ;
+    fsl:fsl_000018 "277.6465"^^xsd:float ;
+    fsl:fsl_000019 613 ;
+    fsl:fsl_000020 "872.8066"^^xsd:float ;
+    fsl:fsl_000021 2471 ;
+    fsl:fsl_000022 "3518.2793"^^xsd:float ;
+    fsl:fsl_000023 2654 ;
+    fsl:fsl_000024 "3778.8398"^^xsd:float ;
+    fsl:fsl_000025 965 ;
+    fsl:fsl_000026 "1373.9941"^^xsd:float ;
+    fsl:fsl_000027 3701 ;
+    fsl:fsl_000028 "5269.5879"^^xsd:float ;
+    fsl:fsl_000029 4901 ;
+    fsl:fsl_000030 "6978.1816"^^xsd:float ;
+    fsl:fsl_000031 249147 ;
+    fsl:fsl_000032 "354742.5059"^^xsd:float ;
+    fsl:fsl_000033 384871 ;
+    fsl:fsl_000034 "547990.1543"^^xsd:float ;
+    fsl:fsl_000035 399326 ;
+    fsl:fsl_000036 "568571.5898"^^xsd:float ;
+    prov:wasGeneratedBy niiri:f667e116-b14e-11f1-a28f-00155d39b9a7 .
+
+niiri:e80df03c-b14e-11f1-96c7-00155d39b9a7 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 6963228 ;
+    fsl:fsl_000002 "9914439.8672"^^xsd:float ;
+    fsl:fsl_000003 352 ;
+    fsl:fsl_000004 "501.1875"^^xsd:float ;
+    fsl:fsl_000005 832 ;
+    fsl:fsl_000006 "1184.625"^^xsd:float ;
+    fsl:fsl_000007 2559 ;
+    fsl:fsl_000008 "3643.5762"^^xsd:float ;
+    fsl:fsl_000009 2447 ;
+    fsl:fsl_000010 "3484.1074"^^xsd:float ;
+    fsl:fsl_000011 1222 ;
+    fsl:fsl_000012 "1739.918"^^xsd:float ;
+    fsl:fsl_000013 3795 ;
+    fsl:fsl_000014 "5403.4277"^^xsd:float ;
+    fsl:fsl_000015 5360 ;
+    fsl:fsl_000016 "7631.7188"^^xsd:float ;
+    fsl:fsl_000017 190 ;
+    fsl:fsl_000018 "270.5273"^^xsd:float ;
+    fsl:fsl_000019 591 ;
+    fsl:fsl_000020 "841.4824"^^xsd:float ;
+    fsl:fsl_000021 2466 ;
+    fsl:fsl_000022 "3511.1602"^^xsd:float ;
+    fsl:fsl_000023 2669 ;
+    fsl:fsl_000024 "3800.1973"^^xsd:float ;
+    fsl:fsl_000025 970 ;
+    fsl:fsl_000026 "1381.1133"^^xsd:float ;
+    fsl:fsl_000027 3075 ;
+    fsl:fsl_000028 "4378.2715"^^xsd:float ;
+    fsl:fsl_000029 4865 ;
+    fsl:fsl_000030 "6926.9238"^^xsd:float ;
+    fsl:fsl_000031 248980 ;
+    fsl:fsl_000032 "354504.7266"^^xsd:float ;
+    fsl:fsl_000033 385659 ;
+    fsl:fsl_000034 "549112.1309"^^xsd:float ;
+    fsl:fsl_000035 402133 ;
+    fsl:fsl_000036 "572568.2754"^^xsd:float ;
+    prov:wasGeneratedBy niiri:c824a94e-b14e-11f1-96c7-00155d39b9a7 .
+
+niiri:e813201a-b14e-11f1-8197-00155d39b9a7 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 6965806 ;
+    fsl:fsl_000002 "9918110.4961"^^xsd:float ;
+    fsl:fsl_000003 276 ;
+    fsl:fsl_000004 "392.9766"^^xsd:float ;
+    fsl:fsl_000005 825 ;
+    fsl:fsl_000006 "1174.6582"^^xsd:float ;
+    fsl:fsl_000007 2538 ;
+    fsl:fsl_000008 "3613.6758"^^xsd:float ;
+    fsl:fsl_000009 1942 ;
+    fsl:fsl_000010 "2765.0742"^^xsd:float ;
+    fsl:fsl_000011 1207 ;
+    fsl:fsl_000012 "1718.5605"^^xsd:float ;
+    fsl:fsl_000013 3733 ;
+    fsl:fsl_000014 "5315.1504"^^xsd:float ;
+    fsl:fsl_000015 5402 ;
+    fsl:fsl_000016 "7691.5195"^^xsd:float ;
+    fsl:fsl_000017 195 ;
+    fsl:fsl_000018 "277.6465"^^xsd:float ;
+    fsl:fsl_000019 604 ;
+    fsl:fsl_000020 "859.9922"^^xsd:float ;
+    fsl:fsl_000021 2528 ;
+    fsl:fsl_000022 "3599.4375"^^xsd:float ;
+    fsl:fsl_000023 2355 ;
+    fsl:fsl_000024 "3353.1152"^^xsd:float ;
+    fsl:fsl_000025 1035 ;
+    fsl:fsl_000026 "1473.6621"^^xsd:float ;
+    fsl:fsl_000027 3036 ;
+    fsl:fsl_000028 "4322.7422"^^xsd:float ;
+    fsl:fsl_000029 4830 ;
+    fsl:fsl_000030 "6877.0898"^^xsd:float ;
+    fsl:fsl_000031 231300 ;
+    fsl:fsl_000032 "329331.4453"^^xsd:float ;
+    fsl:fsl_000033 382991 ;
+    fsl:fsl_000034 "545313.3574"^^xsd:float ;
+    fsl:fsl_000035 419903 ;
+    fsl:fsl_000036 "597869.7012"^^xsd:float ;
+    prov:wasGeneratedBy niiri:c8300f18-b14e-11f1-8197-00155d39b9a7 .
+
+niiri:e8a98ea6-b14e-11f1-9d14-00155d39b9a7 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 6964091 ;
+    fsl:fsl_000002 "9915668.6309"^^xsd:float ;
+    fsl:fsl_000003 307 ;
+    fsl:fsl_000004 "437.1152"^^xsd:float ;
+    fsl:fsl_000005 820 ;
+    fsl:fsl_000006 "1167.5391"^^xsd:float ;
+    fsl:fsl_000007 2551 ;
+    fsl:fsl_000008 "3632.1855"^^xsd:float ;
+    fsl:fsl_000009 1925 ;
+    fsl:fsl_000010 "2740.8691"^^xsd:float ;
+    fsl:fsl_000011 1208 ;
+    fsl:fsl_000012 "1719.9844"^^xsd:float ;
+    fsl:fsl_000013 3792 ;
+    fsl:fsl_000014 "5399.1562"^^xsd:float ;
+    fsl:fsl_000015 5430 ;
+    fsl:fsl_000016 "7731.3867"^^xsd:float ;
+    fsl:fsl_000017 201 ;
+    fsl:fsl_000018 "286.1895"^^xsd:float ;
+    fsl:fsl_000019 608 ;
+    fsl:fsl_000020 "865.6875"^^xsd:float ;
+    fsl:fsl_000021 2466 ;
+    fsl:fsl_000022 "3511.1602"^^xsd:float ;
+    fsl:fsl_000023 2660 ;
+    fsl:fsl_000024 "3787.3828"^^xsd:float ;
+    fsl:fsl_000025 1083 ;
+    fsl:fsl_000026 "1542.0059"^^xsd:float ;
+    fsl:fsl_000027 2979 ;
+    fsl:fsl_000028 "4241.584"^^xsd:float ;
+    fsl:fsl_000029 4990 ;
+    fsl:fsl_000030 "7104.9023"^^xsd:float ;
+    fsl:fsl_000031 230920 ;
+    fsl:fsl_000032 "328790.3906"^^xsd:float ;
+    fsl:fsl_000033 383344 ;
+    fsl:fsl_000034 "545815.9688"^^xsd:float ;
+    fsl:fsl_000035 421645 ;
+    fsl:fsl_000036 "600350.0098"^^xsd:float ;
+    prov:wasGeneratedBy niiri:c8c6987a-b14e-11f1-9d14-00155d39b9a7 .
+
+niiri:e92fe75e-b14e-11f1-a531-00155d39b9a7 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 6966973 ;
+    fsl:fsl_000002 "9919772.1035"^^xsd:float ;
+    fsl:fsl_000003 292 ;
+    fsl:fsl_000004 "415.7578"^^xsd:float ;
+    fsl:fsl_000005 822 ;
+    fsl:fsl_000006 "1170.3867"^^xsd:float ;
+    fsl:fsl_000007 2556 ;
+    fsl:fsl_000008 "3639.3047"^^xsd:float ;
+    fsl:fsl_000009 1977 ;
+    fsl:fsl_000010 "2814.9082"^^xsd:float ;
+    fsl:fsl_000011 1212 ;
+    fsl:fsl_000012 "1725.6797"^^xsd:float ;
+    fsl:fsl_000013 3824 ;
+    fsl:fsl_000014 "5444.7188"^^xsd:float ;
+    fsl:fsl_000015 5447 ;
+    fsl:fsl_000016 "7755.5918"^^xsd:float ;
+    fsl:fsl_000017 204 ;
+    fsl:fsl_000018 "290.4609"^^xsd:float ;
+    fsl:fsl_000019 608 ;
+    fsl:fsl_000020 "865.6875"^^xsd:float ;
+    fsl:fsl_000021 2457 ;
+    fsl:fsl_000022 "3498.3457"^^xsd:float ;
+    fsl:fsl_000023 2322 ;
+    fsl:fsl_000024 "3306.1289"^^xsd:float ;
+    fsl:fsl_000025 1137 ;
+    fsl:fsl_000026 "1618.8926"^^xsd:float ;
+    fsl:fsl_000027 3150 ;
+    fsl:fsl_000028 "4485.0586"^^xsd:float ;
+    fsl:fsl_000029 4874 ;
+    fsl:fsl_000030 "6939.7383"^^xsd:float ;
+    fsl:fsl_000031 249563 ;
+    fsl:fsl_000032 "355334.8184"^^xsd:float ;
+    fsl:fsl_000033 384885 ;
+    fsl:fsl_000034 "548010.0879"^^xsd:float ;
+    fsl:fsl_000035 398579 ;
+    fsl:fsl_000036 "567507.9902"^^xsd:float ;
+    prov:wasGeneratedBy niiri:a948ed1c-b14e-11f1-a531-00155d39b9a7 .
+
+niiri:e94b595c-b14e-11f1-870f-00155d39b9a7 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 6964261 ;
+    fsl:fsl_000002 "9915910.6816"^^xsd:float ;
+    fsl:fsl_000003 353 ;
+    fsl:fsl_000004 "502.6113"^^xsd:float ;
+    fsl:fsl_000005 825 ;
+    fsl:fsl_000006 "1174.6582"^^xsd:float ;
+    fsl:fsl_000007 2546 ;
+    fsl:fsl_000008 "3625.0664"^^xsd:float ;
+    fsl:fsl_000009 1957 ;
+    fsl:fsl_000010 "2786.4316"^^xsd:float ;
+    fsl:fsl_000011 1140 ;
+    fsl:fsl_000012 "1623.1641"^^xsd:float ;
+    fsl:fsl_000013 3760 ;
+    fsl:fsl_000014 "5353.5938"^^xsd:float ;
+    fsl:fsl_000015 5424 ;
+    fsl:fsl_000016 "7722.8438"^^xsd:float ;
+    fsl:fsl_000017 213 ;
+    fsl:fsl_000018 "303.2754"^^xsd:float ;
+    fsl:fsl_000019 586 ;
+    fsl:fsl_000020 "834.3633"^^xsd:float ;
+    fsl:fsl_000021 2400 ;
+    fsl:fsl_000022 "3417.1875"^^xsd:float ;
+    fsl:fsl_000023 2655 ;
+    fsl:fsl_000024 "3780.2637"^^xsd:float ;
+    fsl:fsl_000025 1022 ;
+    fsl:fsl_000026 "1455.1523"^^xsd:float ;
+    fsl:fsl_000027 3207 ;
+    fsl:fsl_000028 "4566.2168"^^xsd:float ;
+    fsl:fsl_000029 4953 ;
+    fsl:fsl_000030 "7052.2207"^^xsd:float ;
+    fsl:fsl_000031 230598 ;
+    fsl:fsl_000032 "328331.918"^^xsd:float ;
+    fsl:fsl_000033 383313 ;
+    fsl:fsl_000034 "545771.8301"^^xsd:float ;
+    fsl:fsl_000035 421828 ;
+    fsl:fsl_000036 "600610.5703"^^xsd:float ;
+    prov:wasGeneratedBy niiri:a969fdd0-b14e-11f1-870f-00155d39b9a7 .
+
+niiri:ea6fdf1a-b14e-11f1-a65e-00155d39b9a7 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 6967048 ;
+    fsl:fsl_000002 "9919878.8906"^^xsd:float ;
+    fsl:fsl_000003 334 ;
+    fsl:fsl_000004 "475.5586"^^xsd:float ;
+    fsl:fsl_000005 816 ;
+    fsl:fsl_000006 "1161.8438"^^xsd:float ;
+    fsl:fsl_000007 2518 ;
+    fsl:fsl_000008 "3585.1992"^^xsd:float ;
+    fsl:fsl_000009 1987 ;
+    fsl:fsl_000010 "2829.1465"^^xsd:float ;
+    fsl:fsl_000011 1205 ;
+    fsl:fsl_000012 "1715.7129"^^xsd:float ;
+    fsl:fsl_000013 3789 ;
+    fsl:fsl_000014 "5394.8848"^^xsd:float ;
+    fsl:fsl_000015 5411 ;
+    fsl:fsl_000016 "7704.334"^^xsd:float ;
+    fsl:fsl_000017 193 ;
+    fsl:fsl_000018 "274.7988"^^xsd:float ;
+    fsl:fsl_000019 595 ;
+    fsl:fsl_000020 "847.1777"^^xsd:float ;
+    fsl:fsl_000021 2471 ;
+    fsl:fsl_000022 "3518.2793"^^xsd:float ;
+    fsl:fsl_000023 2206 ;
+    fsl:fsl_000024 "3140.9648"^^xsd:float ;
+    fsl:fsl_000025 1000 ;
+    fsl:fsl_000026 "1423.8281"^^xsd:float ;
+    fsl:fsl_000027 3098 ;
+    fsl:fsl_000028 "4411.0195"^^xsd:float ;
+    fsl:fsl_000029 4844 ;
+    fsl:fsl_000030 "6897.0234"^^xsd:float ;
+    fsl:fsl_000031 231589 ;
+    fsl:fsl_000032 "329742.9316"^^xsd:float ;
+    fsl:fsl_000033 382852 ;
+    fsl:fsl_000034 "545115.4453"^^xsd:float ;
+    fsl:fsl_000035 418511 ;
+    fsl:fsl_000036 "595887.7324"^^xsd:float ;
+    prov:wasGeneratedBy niiri:fa8e017a-b14e-11f1-a65e-00155d39b9a7 .
+
+niiri:eacd8616-b14e-11f1-b39b-00155d39b9a7 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 6964029 ;
+    fsl:fsl_000002 "9915580.3535"^^xsd:float ;
+    fsl:fsl_000003 326 ;
+    fsl:fsl_000004 "464.168"^^xsd:float ;
+    fsl:fsl_000005 823 ;
+    fsl:fsl_000006 "1171.8105"^^xsd:float ;
+    fsl:fsl_000007 2557 ;
+    fsl:fsl_000008 "3640.7285"^^xsd:float ;
+    fsl:fsl_000009 2453 ;
+    fsl:fsl_000010 "3492.6504"^^xsd:float ;
+    fsl:fsl_000011 1204 ;
+    fsl:fsl_000012 "1714.2891"^^xsd:float ;
+    fsl:fsl_000013 3770 ;
+    fsl:fsl_000014 "5367.832"^^xsd:float ;
+    fsl:fsl_000015 5452 ;
+    fsl:fsl_000016 "7762.7109"^^xsd:float ;
+    fsl:fsl_000017 204 ;
+    fsl:fsl_000018 "290.4609"^^xsd:float ;
+    fsl:fsl_000019 617 ;
+    fsl:fsl_000020 "878.502"^^xsd:float ;
+    fsl:fsl_000021 2394 ;
+    fsl:fsl_000022 "3408.6445"^^xsd:float ;
+    fsl:fsl_000023 2316 ;
+    fsl:fsl_000024 "3297.5859"^^xsd:float ;
+    fsl:fsl_000025 1123 ;
+    fsl:fsl_000026 "1598.959"^^xsd:float ;
+    fsl:fsl_000027 3105 ;
+    fsl:fsl_000028 "4420.9863"^^xsd:float ;
+    fsl:fsl_000029 4862 ;
+    fsl:fsl_000030 "6922.6523"^^xsd:float ;
+    fsl:fsl_000031 248951 ;
+    fsl:fsl_000032 "354463.4355"^^xsd:float ;
+    fsl:fsl_000033 385384 ;
+    fsl:fsl_000034 "548720.5781"^^xsd:float ;
+    fsl:fsl_000035 401636 ;
+    fsl:fsl_000036 "571860.6328"^^xsd:float ;
+    prov:wasGeneratedBy niiri:cae7140a-b14e-11f1-b39b-00155d39b9a7 .
+
+niiri:ec3e5a1a-b14e-11f1-8449-00155d39b9a7 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 6966890 ;
+    fsl:fsl_000002 "9919653.9258"^^xsd:float ;
+    fsl:fsl_000003 351 ;
+    fsl:fsl_000004 "499.7637"^^xsd:float ;
+    fsl:fsl_000005 820 ;
+    fsl:fsl_000006 "1167.5391"^^xsd:float ;
+    fsl:fsl_000007 2563 ;
+    fsl:fsl_000008 "3649.2715"^^xsd:float ;
+    fsl:fsl_000009 1972 ;
+    fsl:fsl_000010 "2807.7891"^^xsd:float ;
+    fsl:fsl_000011 1214 ;
+    fsl:fsl_000012 "1728.5273"^^xsd:float ;
+    fsl:fsl_000013 3869 ;
+    fsl:fsl_000014 "5508.791"^^xsd:float ;
+    fsl:fsl_000015 5433 ;
+    fsl:fsl_000016 "7735.6582"^^xsd:float ;
+    fsl:fsl_000017 201 ;
+    fsl:fsl_000018 "286.1895"^^xsd:float ;
+    fsl:fsl_000019 598 ;
+    fsl:fsl_000020 "851.4492"^^xsd:float ;
+    fsl:fsl_000021 2443 ;
+    fsl:fsl_000022 "3478.4121"^^xsd:float ;
+    fsl:fsl_000023 2344 ;
+    fsl:fsl_000024 "3337.4531"^^xsd:float ;
+    fsl:fsl_000025 1027 ;
+    fsl:fsl_000026 "1462.2715"^^xsd:float ;
+    fsl:fsl_000027 3125 ;
+    fsl:fsl_000028 "4449.4629"^^xsd:float ;
+    fsl:fsl_000029 4888 ;
+    fsl:fsl_000030 "6959.6719"^^xsd:float ;
+    fsl:fsl_000031 231250 ;
+    fsl:fsl_000032 "329260.2539"^^xsd:float ;
+    fsl:fsl_000033 383004 ;
+    fsl:fsl_000034 "545331.8672"^^xsd:float ;
+    fsl:fsl_000035 418856 ;
+    fsl:fsl_000036 "596378.9531"^^xsd:float ;
+    prov:wasGeneratedBy niiri:fc5e0e0a-b14e-11f1-8449-00155d39b9a7 .
+
+niiri:ed091742-b14e-11f1-ac64-00155d39b9a7 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 6964170 ;
+    fsl:fsl_000002 "9915781.1133"^^xsd:float ;
+    fsl:fsl_000003 335 ;
+    fsl:fsl_000004 "476.9824"^^xsd:float ;
+    fsl:fsl_000005 817 ;
+    fsl:fsl_000006 "1163.2676"^^xsd:float ;
+    fsl:fsl_000007 2558 ;
+    fsl:fsl_000008 "3642.1523"^^xsd:float ;
+    fsl:fsl_000009 2433 ;
+    fsl:fsl_000010 "3464.1738"^^xsd:float ;
+    fsl:fsl_000011 1215 ;
+    fsl:fsl_000012 "1729.9512"^^xsd:float ;
+    fsl:fsl_000013 3769 ;
+    fsl:fsl_000014 "5366.4082"^^xsd:float ;
+    fsl:fsl_000015 5366 ;
+    fsl:fsl_000016 "7640.2617"^^xsd:float ;
+    fsl:fsl_000017 176 ;
+    fsl:fsl_000018 "250.5938"^^xsd:float ;
+    fsl:fsl_000019 608 ;
+    fsl:fsl_000020 "865.6875"^^xsd:float ;
+    fsl:fsl_000021 2461 ;
+    fsl:fsl_000022 "3504.041"^^xsd:float ;
+    fsl:fsl_000023 2644 ;
+    fsl:fsl_000024 "3764.6016"^^xsd:float ;
+    fsl:fsl_000025 1116 ;
+    fsl:fsl_000026 "1588.9922"^^xsd:float ;
+    fsl:fsl_000027 3237 ;
+    fsl:fsl_000028 "4608.9316"^^xsd:float ;
+    fsl:fsl_000029 4897 ;
+    fsl:fsl_000030 "6972.4863"^^xsd:float ;
+    fsl:fsl_000031 249273 ;
+    fsl:fsl_000032 "354921.9082"^^xsd:float ;
+    fsl:fsl_000033 385383 ;
+    fsl:fsl_000034 "548719.1543"^^xsd:float ;
+    fsl:fsl_000035 401174 ;
+    fsl:fsl_000036 "571202.8242"^^xsd:float ;
+    prov:wasGeneratedBy niiri:fd2222f0-b14e-11f1-ac64-00155d39b9a7 .
+
+niiri:ef57796c-b14e-11f1-87fc-00155d39b9a7 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 6964918 ;
+    fsl:fsl_000002 "9916846.1367"^^xsd:float ;
+    fsl:fsl_000003 276 ;
+    fsl:fsl_000004 "392.9766"^^xsd:float ;
+    fsl:fsl_000005 802 ;
+    fsl:fsl_000006 "1141.9102"^^xsd:float ;
+    fsl:fsl_000007 2594 ;
+    fsl:fsl_000008 "3693.4102"^^xsd:float ;
+    fsl:fsl_000009 2464 ;
+    fsl:fsl_000010 "3508.3125"^^xsd:float ;
+    fsl:fsl_000011 1237 ;
+    fsl:fsl_000012 "1761.2754"^^xsd:float ;
+    fsl:fsl_000013 3808 ;
+    fsl:fsl_000014 "5421.9375"^^xsd:float ;
+    fsl:fsl_000015 5444 ;
+    fsl:fsl_000016 "7751.3203"^^xsd:float ;
+    fsl:fsl_000017 198 ;
+    fsl:fsl_000018 "281.918"^^xsd:float ;
+    fsl:fsl_000019 624 ;
+    fsl:fsl_000020 "888.4688"^^xsd:float ;
+    fsl:fsl_000021 2515 ;
+    fsl:fsl_000022 "3580.9277"^^xsd:float ;
+    fsl:fsl_000023 2226 ;
+    fsl:fsl_000024 "3169.4414"^^xsd:float ;
+    fsl:fsl_000025 1121 ;
+    fsl:fsl_000026 "1596.1113"^^xsd:float ;
+    fsl:fsl_000027 3713 ;
+    fsl:fsl_000028 "5286.6738"^^xsd:float ;
+    fsl:fsl_000029 4820 ;
+    fsl:fsl_000030 "6862.8516"^^xsd:float ;
+    fsl:fsl_000031 248621 ;
+    fsl:fsl_000032 "353993.5723"^^xsd:float ;
+    fsl:fsl_000033 385313 ;
+    fsl:fsl_000034 "548619.4863"^^xsd:float ;
+    fsl:fsl_000035 401148 ;
+    fsl:fsl_000036 "571165.8047"^^xsd:float ;
+    prov:wasGeneratedBy niiri:bf70edd4-b14e-11f1-87fc-00155d39b9a7 .
+
+niiri:f28f943a-b14e-11f1-9ed6-00155d39b9a7 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 6964149 ;
+    fsl:fsl_000002 "9915751.2129"^^xsd:float ;
+    fsl:fsl_000003 348 ;
+    fsl:fsl_000004 "495.4922"^^xsd:float ;
+    fsl:fsl_000005 812 ;
+    fsl:fsl_000006 "1156.1484"^^xsd:float ;
+    fsl:fsl_000007 2567 ;
+    fsl:fsl_000008 "3654.9668"^^xsd:float ;
+    fsl:fsl_000009 2450 ;
+    fsl:fsl_000010 "3488.3789"^^xsd:float ;
+    fsl:fsl_000011 1215 ;
+    fsl:fsl_000012 "1729.9512"^^xsd:float ;
+    fsl:fsl_000013 3802 ;
+    fsl:fsl_000014 "5413.3945"^^xsd:float ;
+    fsl:fsl_000015 5455 ;
+    fsl:fsl_000016 "7766.9824"^^xsd:float ;
+    fsl:fsl_000017 189 ;
+    fsl:fsl_000018 "269.1035"^^xsd:float ;
+    fsl:fsl_000019 622 ;
+    fsl:fsl_000020 "885.6211"^^xsd:float ;
+    fsl:fsl_000021 2471 ;
+    fsl:fsl_000022 "3518.2793"^^xsd:float ;
+    fsl:fsl_000023 2177 ;
+    fsl:fsl_000024 "3099.6738"^^xsd:float ;
+    fsl:fsl_000025 994 ;
+    fsl:fsl_000026 "1415.2852"^^xsd:float ;
+    fsl:fsl_000027 3056 ;
+    fsl:fsl_000028 "4351.2188"^^xsd:float ;
+    fsl:fsl_000029 4889 ;
+    fsl:fsl_000030 "6961.0957"^^xsd:float ;
+    fsl:fsl_000031 248665 ;
+    fsl:fsl_000032 "354056.2207"^^xsd:float ;
+    fsl:fsl_000033 385554 ;
+    fsl:fsl_000034 "548962.6289"^^xsd:float ;
+    fsl:fsl_000035 401632 ;
+    fsl:fsl_000036 "571854.9375"^^xsd:float ;
+    prov:wasGeneratedBy niiri:d2a78a7c-b14e-11f1-9ed6-00155d39b9a7 .
+
+niiri:f6532284-b14e-11f1-83f5-00155d39b9a7 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 6967579 ;
+    fsl:fsl_000002 "9920634.9434"^^xsd:float ;
+    fsl:fsl_000003 356 ;
+    fsl:fsl_000004 "506.8828"^^xsd:float ;
+    fsl:fsl_000005 831 ;
+    fsl:fsl_000006 "1183.2012"^^xsd:float ;
+    fsl:fsl_000007 2529 ;
+    fsl:fsl_000008 "3600.8613"^^xsd:float ;
+    fsl:fsl_000009 1951 ;
+    fsl:fsl_000010 "2777.8887"^^xsd:float ;
+    fsl:fsl_000011 1242 ;
+    fsl:fsl_000012 "1768.3945"^^xsd:float ;
+    fsl:fsl_000013 3773 ;
+    fsl:fsl_000014 "5372.1035"^^xsd:float ;
+    fsl:fsl_000015 5429 ;
+    fsl:fsl_000016 "7729.9629"^^xsd:float ;
+    fsl:fsl_000017 196 ;
+    fsl:fsl_000018 "279.0703"^^xsd:float ;
+    fsl:fsl_000019 600 ;
+    fsl:fsl_000020 "854.2969"^^xsd:float ;
+    fsl:fsl_000021 2449 ;
+    fsl:fsl_000022 "3486.9551"^^xsd:float ;
+    fsl:fsl_000023 2675 ;
+    fsl:fsl_000024 "3808.7402"^^xsd:float ;
+    fsl:fsl_000025 1023 ;
+    fsl:fsl_000026 "1456.5762"^^xsd:float ;
+    fsl:fsl_000027 3172 ;
+    fsl:fsl_000028 "4516.3828"^^xsd:float ;
+    fsl:fsl_000029 4833 ;
+    fsl:fsl_000030 "6881.3613"^^xsd:float ;
+    fsl:fsl_000031 231449 ;
+    fsl:fsl_000032 "329543.5957"^^xsd:float ;
+    fsl:fsl_000033 382868 ;
+    fsl:fsl_000034 "545138.2266"^^xsd:float ;
+    fsl:fsl_000035 418104 ;
+    fsl:fsl_000036 "595308.2344"^^xsd:float ;
+    prov:wasGeneratedBy niiri:b66fe43c-b14e-11f1-83f5-00155d39b9a7 .
+
+niiri:f9dd1a54-b14e-11f1-8b7a-00155d39b9a7 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 6966266 ;
+    fsl:fsl_000002 "9918765.457"^^xsd:float ;
+    fsl:fsl_000003 357 ;
+    fsl:fsl_000004 "508.3066"^^xsd:float ;
+    fsl:fsl_000005 821 ;
+    fsl:fsl_000006 "1168.9629"^^xsd:float ;
+    fsl:fsl_000007 2557 ;
+    fsl:fsl_000008 "3640.7285"^^xsd:float ;
+    fsl:fsl_000009 1939 ;
+    fsl:fsl_000010 "2760.8027"^^xsd:float ;
+    fsl:fsl_000011 1200 ;
+    fsl:fsl_000012 "1708.5938"^^xsd:float ;
+    fsl:fsl_000013 3828 ;
+    fsl:fsl_000014 "5450.4141"^^xsd:float ;
+    fsl:fsl_000015 5422 ;
+    fsl:fsl_000016 "7719.9961"^^xsd:float ;
+    fsl:fsl_000017 200 ;
+    fsl:fsl_000018 "284.7656"^^xsd:float ;
+    fsl:fsl_000019 592 ;
+    fsl:fsl_000020 "842.9062"^^xsd:float ;
+    fsl:fsl_000021 2450 ;
+    fsl:fsl_000022 "3488.3789"^^xsd:float ;
+    fsl:fsl_000023 2645 ;
+    fsl:fsl_000024 "3766.0254"^^xsd:float ;
+    fsl:fsl_000025 1053 ;
+    fsl:fsl_000026 "1499.291"^^xsd:float ;
+    fsl:fsl_000027 2958 ;
+    fsl:fsl_000028 "4211.6836"^^xsd:float ;
+    fsl:fsl_000029 4833 ;
+    fsl:fsl_000030 "6881.3613"^^xsd:float ;
+    fsl:fsl_000031 231112 ;
+    fsl:fsl_000032 "329063.7656"^^xsd:float ;
+    fsl:fsl_000033 383162 ;
+    fsl:fsl_000034 "545556.832"^^xsd:float ;
+    fsl:fsl_000035 419460 ;
+    fsl:fsl_000036 "597238.9453"^^xsd:float ;
+    prov:wasGeneratedBy niiri:f9fa9192-b14e-11f1-8b7a-00155d39b9a7 .
+
+niiri:fa462036-b14e-11f1-b3dc-00155d39b9a7 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 6966515 ;
+    fsl:fsl_000002 "9919119.9902"^^xsd:float ;
+    fsl:fsl_000003 274 ;
+    fsl:fsl_000004 "390.1289"^^xsd:float ;
+    fsl:fsl_000005 816 ;
+    fsl:fsl_000006 "1161.8438"^^xsd:float ;
+    fsl:fsl_000007 2486 ;
+    fsl:fsl_000008 "3539.6367"^^xsd:float ;
+    fsl:fsl_000009 1934 ;
+    fsl:fsl_000010 "2753.6836"^^xsd:float ;
+    fsl:fsl_000011 1201 ;
+    fsl:fsl_000012 "1710.0176"^^xsd:float ;
+    fsl:fsl_000013 3808 ;
+    fsl:fsl_000014 "5421.9375"^^xsd:float ;
+    fsl:fsl_000015 5445 ;
+    fsl:fsl_000016 "7752.7441"^^xsd:float ;
+    fsl:fsl_000017 188 ;
+    fsl:fsl_000018 "267.6797"^^xsd:float ;
+    fsl:fsl_000019 612 ;
+    fsl:fsl_000020 "871.3828"^^xsd:float ;
+    fsl:fsl_000021 2502 ;
+    fsl:fsl_000022 "3562.418"^^xsd:float ;
+    fsl:fsl_000023 2620 ;
+    fsl:fsl_000024 "3730.4297"^^xsd:float ;
+    fsl:fsl_000025 1156 ;
+    fsl:fsl_000026 "1645.9453"^^xsd:float ;
+    fsl:fsl_000027 3124 ;
+    fsl:fsl_000028 "4448.0391"^^xsd:float ;
+    fsl:fsl_000029 4838 ;
+    fsl:fsl_000030 "6888.4805"^^xsd:float ;
+    fsl:fsl_000031 248689 ;
+    fsl:fsl_000032 "354090.3926"^^xsd:float ;
+    fsl:fsl_000033 384986 ;
+    fsl:fsl_000034 "548153.8945"^^xsd:float ;
+    fsl:fsl_000035 399810 ;
+    fsl:fsl_000036 "569260.7227"^^xsd:float ;
+    prov:wasGeneratedBy niiri:ba5e503e-b14e-11f1-b3dc-00155d39b9a7 .
+
+niiri:fec08a34-b14e-11f1-9ea1-00155d39b9a7 a nidm:FSLStatsCollection,
+        prov:Entity ;
+    fsl:fsl_000001 6964049 ;
+    fsl:fsl_000002 "9915608.8301"^^xsd:float ;
+    fsl:fsl_000003 290 ;
+    fsl:fsl_000004 "412.9102"^^xsd:float ;
+    fsl:fsl_000005 851 ;
+    fsl:fsl_000006 "1211.6777"^^xsd:float ;
+    fsl:fsl_000007 2567 ;
+    fsl:fsl_000008 "3654.9668"^^xsd:float ;
+    fsl:fsl_000009 2423 ;
+    fsl:fsl_000010 "3449.9355"^^xsd:float ;
+    fsl:fsl_000011 1219 ;
+    fsl:fsl_000012 "1735.6465"^^xsd:float ;
+    fsl:fsl_000013 3803 ;
+    fsl:fsl_000014 "5414.8184"^^xsd:float ;
+    fsl:fsl_000015 5446 ;
+    fsl:fsl_000016 "7754.168"^^xsd:float ;
+    fsl:fsl_000017 194 ;
+    fsl:fsl_000018 "276.2227"^^xsd:float ;
+    fsl:fsl_000019 599 ;
+    fsl:fsl_000020 "852.873"^^xsd:float ;
+    fsl:fsl_000021 2496 ;
+    fsl:fsl_000022 "3553.875"^^xsd:float ;
+    fsl:fsl_000023 2659 ;
+    fsl:fsl_000024 "3785.959"^^xsd:float ;
+    fsl:fsl_000025 1119 ;
+    fsl:fsl_000026 "1593.2637"^^xsd:float ;
+    fsl:fsl_000027 3076 ;
+    fsl:fsl_000028 "4379.6953"^^xsd:float ;
+    fsl:fsl_000029 4892 ;
+    fsl:fsl_000030 "6965.3672"^^xsd:float ;
+    fsl:fsl_000031 248393 ;
+    fsl:fsl_000032 "353668.9395"^^xsd:float ;
+    fsl:fsl_000033 385755 ;
+    fsl:fsl_000034 "549248.8184"^^xsd:float ;
+    fsl:fsl_000035 401803 ;
+    fsl:fsl_000036 "572098.4121"^^xsd:float ;
+    prov:wasGeneratedBy niiri:aeda0e28-b14e-11f1-9ea1-00155d39b9a7 .
 
 niiri:hamd_17_3et8dvi a nidm:PersonalDataElement,
         prov:Entity ;
@@ -57,6 +2058,392 @@ niiri:wais_iv_fsiq_1hqi7tu a nidm:PersonalDataElement,
     dct:description "Wechsler Adult Intelligence Scale – Fourth Edition" ;
     nidm:isAbout term_CAO_00718: ;
     nidm:sourceVariable "wais_iv_fsiq" .
+
+fsl:fsl_000001 a fsl:DataElement ;
+    rdfs:label "Background (voxels)" ;
+    fsl:measure "NVoxels" ;
+    fsl:structure "Background" ;
+    fsl:unit "voxel" ;
+    nidm:datumType <http://uri.interlex.org/base/ilx_0102597> ;
+    nidm:hasUnit "voxel" ;
+    nidm:measureOf <http://uri.interlex.org/base/ilx_0112559> .
+
+fsl:fsl_000002 a fsl:DataElement ;
+    rdfs:label "Background (mm^3)" ;
+    fsl:measure "Volume" ;
+    fsl:structure "Background" ;
+    fsl:unit "mm^3" ;
+    nidm:datumType <http://uri.interlex.org/base/ilx_0738276> ;
+    nidm:hasUnit "mm^3" ;
+    nidm:measureOf <http://uri.interlex.org/base/ilx_0112559> .
+
+fsl:fsl_000003 a fsl:DataElement ;
+    rdfs:label "Left-Accumbens-area (voxels)" ;
+    fsl:measure "NVoxels" ;
+    fsl:structure "Left-Accumbens-area" ;
+    fsl:unit "voxel" ;
+    nidm:datumType <http://uri.interlex.org/base/ilx_0102597> ;
+    nidm:hasLaterality "Left" ;
+    nidm:hasUnit "voxel" ;
+    nidm:isAbout <http://purl.obolibrary.org/obo/UBERON_0001882> ;
+    nidm:measureOf <http://uri.interlex.org/base/ilx_0112559> .
+
+fsl:fsl_000004 a fsl:DataElement ;
+    rdfs:label "Left-Accumbens-area (mm^3)" ;
+    fsl:measure "Volume" ;
+    fsl:structure "Left-Accumbens-area" ;
+    fsl:unit "mm^3" ;
+    nidm:datumType <http://uri.interlex.org/base/ilx_0738276> ;
+    nidm:hasLaterality "Left" ;
+    nidm:hasUnit "mm^3" ;
+    nidm:isAbout <http://purl.obolibrary.org/obo/UBERON_0001882> ;
+    nidm:measureOf <http://uri.interlex.org/base/ilx_0112559> .
+
+fsl:fsl_000005 a fsl:DataElement ;
+    rdfs:label "Left-Amygdala (voxels)" ;
+    fsl:measure "NVoxels" ;
+    fsl:structure "Left-Amygdala" ;
+    fsl:unit "voxel" ;
+    nidm:datumType <http://uri.interlex.org/base/ilx_0102597> ;
+    nidm:hasLaterality "Left" ;
+    nidm:hasUnit "voxel" ;
+    nidm:isAbout <http://purl.obolibrary.org/obo/UBERON_0001876> ;
+    nidm:measureOf <http://uri.interlex.org/base/ilx_0112559> .
+
+fsl:fsl_000006 a fsl:DataElement ;
+    rdfs:label "Left-Amygdala (mm^3)" ;
+    fsl:measure "Volume" ;
+    fsl:structure "Left-Amygdala" ;
+    fsl:unit "mm^3" ;
+    nidm:datumType <http://uri.interlex.org/base/ilx_0738276> ;
+    nidm:hasLaterality "Left" ;
+    nidm:hasUnit "mm^3" ;
+    nidm:isAbout <http://purl.obolibrary.org/obo/UBERON_0001876> ;
+    nidm:measureOf <http://uri.interlex.org/base/ilx_0112559> .
+
+fsl:fsl_000007 a fsl:DataElement ;
+    rdfs:label "Left-Caudate (voxels)" ;
+    fsl:measure "NVoxels" ;
+    fsl:structure "Left-Caudate" ;
+    fsl:unit "voxel" ;
+    nidm:datumType <http://uri.interlex.org/base/ilx_0102597> ;
+    nidm:hasLaterality "Left" ;
+    nidm:hasUnit "voxel" ;
+    nidm:isAbout <http://purl.obolibrary.org/obo/UBERON_0001873> ;
+    nidm:measureOf <http://uri.interlex.org/base/ilx_0112559> .
+
+fsl:fsl_000008 a fsl:DataElement ;
+    rdfs:label "Left-Caudate (mm^3)" ;
+    fsl:measure "Volume" ;
+    fsl:structure "Left-Caudate" ;
+    fsl:unit "mm^3" ;
+    nidm:datumType <http://uri.interlex.org/base/ilx_0738276> ;
+    nidm:hasLaterality "Left" ;
+    nidm:hasUnit "mm^3" ;
+    nidm:isAbout <http://purl.obolibrary.org/obo/UBERON_0001873> ;
+    nidm:measureOf <http://uri.interlex.org/base/ilx_0112559> .
+
+fsl:fsl_000009 a fsl:DataElement ;
+    rdfs:label "Left-Hippocampus (voxels)" ;
+    fsl:measure "NVoxels" ;
+    fsl:structure "Left-Hippocampus" ;
+    fsl:unit "voxel" ;
+    nidm:datumType <http://uri.interlex.org/base/ilx_0102597> ;
+    nidm:hasLaterality "Left" ;
+    nidm:hasUnit "voxel" ;
+    nidm:isAbout <http://purl.obolibrary.org/obo/UBERON_0001954> ;
+    nidm:measureOf <http://uri.interlex.org/base/ilx_0112559> .
+
+fsl:fsl_000010 a fsl:DataElement ;
+    rdfs:label "Left-Hippocampus (mm^3)" ;
+    fsl:measure "Volume" ;
+    fsl:structure "Left-Hippocampus" ;
+    fsl:unit "mm^3" ;
+    nidm:datumType <http://uri.interlex.org/base/ilx_0738276> ;
+    nidm:hasLaterality "Left" ;
+    nidm:hasUnit "mm^3" ;
+    nidm:isAbout <http://purl.obolibrary.org/obo/UBERON_0001954> ;
+    nidm:measureOf <http://uri.interlex.org/base/ilx_0112559> .
+
+fsl:fsl_000011 a fsl:DataElement ;
+    rdfs:label "Left-Pallidum (voxels)" ;
+    fsl:measure "NVoxels" ;
+    fsl:structure "Left-Pallidum" ;
+    fsl:unit "voxel" ;
+    nidm:datumType <http://uri.interlex.org/base/ilx_0102597> ;
+    nidm:hasLaterality "Left" ;
+    nidm:hasUnit "voxel" ;
+    nidm:isAbout <http://purl.obolibrary.org/obo/UBERON_0006514> ;
+    nidm:measureOf <http://uri.interlex.org/base/ilx_0112559> .
+
+fsl:fsl_000012 a fsl:DataElement ;
+    rdfs:label "Left-Pallidum (mm^3)" ;
+    fsl:measure "Volume" ;
+    fsl:structure "Left-Pallidum" ;
+    fsl:unit "mm^3" ;
+    nidm:datumType <http://uri.interlex.org/base/ilx_0738276> ;
+    nidm:hasLaterality "Left" ;
+    nidm:hasUnit "mm^3" ;
+    nidm:isAbout <http://purl.obolibrary.org/obo/UBERON_0006514> ;
+    nidm:measureOf <http://uri.interlex.org/base/ilx_0112559> .
+
+fsl:fsl_000013 a fsl:DataElement ;
+    rdfs:label "Left-Putamen (voxels)" ;
+    fsl:measure "NVoxels" ;
+    fsl:structure "Left-Putamen" ;
+    fsl:unit "voxel" ;
+    nidm:datumType <http://uri.interlex.org/base/ilx_0102597> ;
+    nidm:hasLaterality "Left" ;
+    nidm:hasUnit "voxel" ;
+    nidm:isAbout <http://purl.obolibrary.org/obo/UBERON_0001874> ;
+    nidm:measureOf <http://uri.interlex.org/base/ilx_0112559> .
+
+fsl:fsl_000014 a fsl:DataElement ;
+    rdfs:label "Left-Putamen (mm^3)" ;
+    fsl:measure "Volume" ;
+    fsl:structure "Left-Putamen" ;
+    fsl:unit "mm^3" ;
+    nidm:datumType <http://uri.interlex.org/base/ilx_0738276> ;
+    nidm:hasLaterality "Left" ;
+    nidm:hasUnit "mm^3" ;
+    nidm:isAbout <http://purl.obolibrary.org/obo/UBERON_0001874> ;
+    nidm:measureOf <http://uri.interlex.org/base/ilx_0112559> .
+
+fsl:fsl_000015 a fsl:DataElement ;
+    rdfs:label "Left-Thalamus-Proper (voxels)" ;
+    fsl:measure "NVoxels" ;
+    fsl:structure "Left-Thalamus-Proper" ;
+    fsl:unit "voxel" ;
+    nidm:datumType <http://uri.interlex.org/base/ilx_0102597> ;
+    nidm:hasLaterality "Left" ;
+    nidm:hasUnit "voxel" ;
+    nidm:isAbout <http://purl.obolibrary.org/obo/UBERON_0001897> ;
+    nidm:measureOf <http://uri.interlex.org/base/ilx_0112559> .
+
+fsl:fsl_000016 a fsl:DataElement ;
+    rdfs:label "Left-Thalamus-Proper (mm^3)" ;
+    fsl:measure "Volume" ;
+    fsl:structure "Left-Thalamus-Proper" ;
+    fsl:unit "mm^3" ;
+    nidm:datumType <http://uri.interlex.org/base/ilx_0738276> ;
+    nidm:hasLaterality "Left" ;
+    nidm:hasUnit "mm^3" ;
+    nidm:isAbout <http://purl.obolibrary.org/obo/UBERON_0001897> ;
+    nidm:measureOf <http://uri.interlex.org/base/ilx_0112559> .
+
+fsl:fsl_000017 a fsl:DataElement ;
+    rdfs:label "Right-Accumbens-area (voxels)" ;
+    fsl:measure "NVoxels" ;
+    fsl:structure "Right-Accumbens-area" ;
+    fsl:unit "voxel" ;
+    nidm:datumType <http://uri.interlex.org/base/ilx_0102597> ;
+    nidm:hasLaterality "Right" ;
+    nidm:hasUnit "voxel" ;
+    nidm:isAbout <http://purl.obolibrary.org/obo/UBERON_0001882> ;
+    nidm:measureOf <http://uri.interlex.org/base/ilx_0112559> .
+
+fsl:fsl_000018 a fsl:DataElement ;
+    rdfs:label "Right-Accumbens-area (mm^3)" ;
+    fsl:measure "Volume" ;
+    fsl:structure "Right-Accumbens-area" ;
+    fsl:unit "mm^3" ;
+    nidm:datumType <http://uri.interlex.org/base/ilx_0738276> ;
+    nidm:hasLaterality "Right" ;
+    nidm:hasUnit "mm^3" ;
+    nidm:isAbout <http://purl.obolibrary.org/obo/UBERON_0001882> ;
+    nidm:measureOf <http://uri.interlex.org/base/ilx_0112559> .
+
+fsl:fsl_000019 a fsl:DataElement ;
+    rdfs:label "Right-Amygdala (voxels)" ;
+    fsl:measure "NVoxels" ;
+    fsl:structure "Right-Amygdala" ;
+    fsl:unit "voxel" ;
+    nidm:datumType <http://uri.interlex.org/base/ilx_0102597> ;
+    nidm:hasLaterality "Right" ;
+    nidm:hasUnit "voxel" ;
+    nidm:isAbout <http://purl.obolibrary.org/obo/UBERON_0001876> ;
+    nidm:measureOf <http://uri.interlex.org/base/ilx_0112559> .
+
+fsl:fsl_000020 a fsl:DataElement ;
+    rdfs:label "Right-Amygdala (mm^3)" ;
+    fsl:measure "Volume" ;
+    fsl:structure "Right-Amygdala" ;
+    fsl:unit "mm^3" ;
+    nidm:datumType <http://uri.interlex.org/base/ilx_0738276> ;
+    nidm:hasLaterality "Right" ;
+    nidm:hasUnit "mm^3" ;
+    nidm:isAbout <http://purl.obolibrary.org/obo/UBERON_0001876> ;
+    nidm:measureOf <http://uri.interlex.org/base/ilx_0112559> .
+
+fsl:fsl_000021 a fsl:DataElement ;
+    rdfs:label "Right-Caudate (voxels)" ;
+    fsl:measure "NVoxels" ;
+    fsl:structure "Right-Caudate" ;
+    fsl:unit "voxel" ;
+    nidm:datumType <http://uri.interlex.org/base/ilx_0102597> ;
+    nidm:hasLaterality "Right" ;
+    nidm:hasUnit "voxel" ;
+    nidm:isAbout <http://purl.obolibrary.org/obo/UBERON_0001873> ;
+    nidm:measureOf <http://uri.interlex.org/base/ilx_0112559> .
+
+fsl:fsl_000022 a fsl:DataElement ;
+    rdfs:label "Right-Caudate (mm^3)" ;
+    fsl:measure "Volume" ;
+    fsl:structure "Right-Caudate" ;
+    fsl:unit "mm^3" ;
+    nidm:datumType <http://uri.interlex.org/base/ilx_0738276> ;
+    nidm:hasLaterality "Right" ;
+    nidm:hasUnit "mm^3" ;
+    nidm:isAbout <http://purl.obolibrary.org/obo/UBERON_0001873> ;
+    nidm:measureOf <http://uri.interlex.org/base/ilx_0112559> .
+
+fsl:fsl_000023 a fsl:DataElement ;
+    rdfs:label "Right-Hippocampus (voxels)" ;
+    fsl:measure "NVoxels" ;
+    fsl:structure "Right-Hippocampus" ;
+    fsl:unit "voxel" ;
+    nidm:datumType <http://uri.interlex.org/base/ilx_0102597> ;
+    nidm:hasLaterality "Right" ;
+    nidm:hasUnit "voxel" ;
+    nidm:isAbout <http://purl.obolibrary.org/obo/UBERON_0001954> ;
+    nidm:measureOf <http://uri.interlex.org/base/ilx_0112559> .
+
+fsl:fsl_000024 a fsl:DataElement ;
+    rdfs:label "Right-Hippocampus (mm^3)" ;
+    fsl:measure "Volume" ;
+    fsl:structure "Right-Hippocampus" ;
+    fsl:unit "mm^3" ;
+    nidm:datumType <http://uri.interlex.org/base/ilx_0738276> ;
+    nidm:hasLaterality "Right" ;
+    nidm:hasUnit "mm^3" ;
+    nidm:isAbout <http://purl.obolibrary.org/obo/UBERON_0001954> ;
+    nidm:measureOf <http://uri.interlex.org/base/ilx_0112559> .
+
+fsl:fsl_000025 a fsl:DataElement ;
+    rdfs:label "Right-Pallidum (voxels)" ;
+    fsl:measure "NVoxels" ;
+    fsl:structure "Right-Pallidum" ;
+    fsl:unit "voxel" ;
+    nidm:datumType <http://uri.interlex.org/base/ilx_0102597> ;
+    nidm:hasLaterality "Right" ;
+    nidm:hasUnit "voxel" ;
+    nidm:isAbout <http://purl.obolibrary.org/obo/UBERON_0006514> ;
+    nidm:measureOf <http://uri.interlex.org/base/ilx_0112559> .
+
+fsl:fsl_000026 a fsl:DataElement ;
+    rdfs:label "Right-Pallidum (mm^3)" ;
+    fsl:measure "Volume" ;
+    fsl:structure "Right-Pallidum" ;
+    fsl:unit "mm^3" ;
+    nidm:datumType <http://uri.interlex.org/base/ilx_0738276> ;
+    nidm:hasLaterality "Right" ;
+    nidm:hasUnit "mm^3" ;
+    nidm:isAbout <http://purl.obolibrary.org/obo/UBERON_0006514> ;
+    nidm:measureOf <http://uri.interlex.org/base/ilx_0112559> .
+
+fsl:fsl_000027 a fsl:DataElement ;
+    rdfs:label "Right-Putamen (voxels)" ;
+    fsl:measure "NVoxels" ;
+    fsl:structure "Right-Putamen" ;
+    fsl:unit "voxel" ;
+    nidm:datumType <http://uri.interlex.org/base/ilx_0102597> ;
+    nidm:hasLaterality "Right" ;
+    nidm:hasUnit "voxel" ;
+    nidm:isAbout <http://purl.obolibrary.org/obo/UBERON_0001874> ;
+    nidm:measureOf <http://uri.interlex.org/base/ilx_0112559> .
+
+fsl:fsl_000028 a fsl:DataElement ;
+    rdfs:label "Right-Putamen (mm^3)" ;
+    fsl:measure "Volume" ;
+    fsl:structure "Right-Putamen" ;
+    fsl:unit "mm^3" ;
+    nidm:datumType <http://uri.interlex.org/base/ilx_0738276> ;
+    nidm:hasLaterality "Right" ;
+    nidm:hasUnit "mm^3" ;
+    nidm:isAbout <http://purl.obolibrary.org/obo/UBERON_0001874> ;
+    nidm:measureOf <http://uri.interlex.org/base/ilx_0112559> .
+
+fsl:fsl_000029 a fsl:DataElement ;
+    rdfs:label "Right-Thalamus-Proper (voxels)" ;
+    fsl:measure "NVoxels" ;
+    fsl:structure "Right-Thalamus-Proper" ;
+    fsl:unit "voxel" ;
+    nidm:datumType <http://uri.interlex.org/base/ilx_0102597> ;
+    nidm:hasLaterality "Right" ;
+    nidm:hasUnit "voxel" ;
+    nidm:isAbout <http://purl.obolibrary.org/obo/UBERON_0001897> ;
+    nidm:measureOf <http://uri.interlex.org/base/ilx_0112559> .
+
+fsl:fsl_000030 a fsl:DataElement ;
+    rdfs:label "Right-Thalamus-Proper (mm^3)" ;
+    fsl:measure "Volume" ;
+    fsl:structure "Right-Thalamus-Proper" ;
+    fsl:unit "mm^3" ;
+    nidm:datumType <http://uri.interlex.org/base/ilx_0738276> ;
+    nidm:hasLaterality "Right" ;
+    nidm:hasUnit "mm^3" ;
+    nidm:isAbout <http://purl.obolibrary.org/obo/UBERON_0001897> ;
+    nidm:measureOf <http://uri.interlex.org/base/ilx_0112559> .
+
+fsl:fsl_000031 a fsl:DataElement ;
+    rdfs:label "csf (voxels)" ;
+    fsl:measure "NVoxels" ;
+    fsl:structure "csf" ;
+    fsl:unit "voxel" ;
+    nidm:datumType <http://uri.interlex.org/base/ilx_0102597> ;
+    nidm:hasUnit "voxel" ;
+    nidm:isAbout <http://purl.obolibrary.org/obo/UBERON_0001359> ;
+    nidm:measureOf <http://uri.interlex.org/base/ilx_0112559> .
+
+fsl:fsl_000032 a fsl:DataElement ;
+    rdfs:label "csf (mm^3)" ;
+    fsl:measure "Volume" ;
+    fsl:structure "csf" ;
+    fsl:unit "mm^3" ;
+    nidm:datumType <http://uri.interlex.org/base/ilx_0738276> ;
+    nidm:hasUnit "mm^3" ;
+    nidm:isAbout <http://purl.obolibrary.org/obo/UBERON_0001359> ;
+    nidm:measureOf <http://uri.interlex.org/base/ilx_0112559> .
+
+fsl:fsl_000033 a fsl:DataElement ;
+    rdfs:label "gray (voxels)" ;
+    fsl:measure "NVoxels" ;
+    fsl:structure "gray" ;
+    fsl:unit "voxel" ;
+    nidm:datumType <http://uri.interlex.org/base/ilx_0102597> ;
+    nidm:hasUnit "voxel" ;
+    nidm:isAbout <http://purl.obolibrary.org/obo/UBERON_0000956> ;
+    nidm:measureOf <http://uri.interlex.org/base/ilx_0112559> .
+
+fsl:fsl_000034 a fsl:DataElement ;
+    rdfs:label "gray (mm^3)" ;
+    fsl:measure "Volume" ;
+    fsl:structure "gray" ;
+    fsl:unit "mm^3" ;
+    nidm:datumType <http://uri.interlex.org/base/ilx_0738276> ;
+    nidm:hasUnit "mm^3" ;
+    nidm:isAbout <http://purl.obolibrary.org/obo/UBERON_0000956> ;
+    nidm:measureOf <http://uri.interlex.org/base/ilx_0112559> .
+
+fsl:fsl_000035 a fsl:DataElement ;
+    rdfs:label "white (voxels)" ;
+    fsl:measure "NVoxels" ;
+    fsl:structure "white" ;
+    fsl:unit "voxel" ;
+    nidm:datumType <http://uri.interlex.org/base/ilx_0102597> ;
+    nidm:hasUnit "voxel" ;
+    nidm:isAbout <http://purl.obolibrary.org/obo/UBERON_0002437> ;
+    nidm:measureOf <http://uri.interlex.org/base/ilx_0112559> .
+
+fsl:fsl_000036 a fsl:DataElement ;
+    rdfs:label "white (mm^3)" ;
+    fsl:measure "Volume" ;
+    fsl:structure "white" ;
+    fsl:unit "mm^3" ;
+    nidm:datumType <http://uri.interlex.org/base/ilx_0738276> ;
+    nidm:hasUnit "mm^3" ;
+    nidm:isAbout <http://purl.obolibrary.org/obo/UBERON_0002437> ;
+    nidm:measureOf <http://uri.interlex.org/base/ilx_0112559> .
 
 term_M0446358: a prov:Entity ;
     rdfs:label "Genotypic Sex" .
@@ -89,6 +2476,16 @@ niiri:a07bdf68-af97-11f1-8357-00155d407b6d a nidm:AcquisitionObject,
     nidm:hadImageUsageType nidm:Anatomical ;
     nfo:filename "bids::sub-15/ses-01/anat/sub-15_ses-01_T1w_to_std_sub.nii.gz" ;
     prov:wasGeneratedBy niiri:d07bd39c-af97-11f1-8357-00155d407b6d .
+
+niiri:a08dabee-b14e-11f1-90cc-00155d39b9a7 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:c8259ce6-af97-11f1-8357-00155d407b6d ;
+            prov:hadRole sio:Subject ],
+        [ a prov:Association ;
+            prov:agent niiri:b2a78da6-b14e-11f1-9ed6-00155d39b9a7 ;
+            prov:hadRole nidm:NIDM_0000164 ] .
 
 niiri:a0c02cfe-af97-11f1-8357-00155d407b6d a nidm:Acquisition,
         prov:Activity ;
@@ -133,6 +2530,16 @@ niiri:a2ba4364-af97-11f1-8357-00155d407b6d a nidm:Acquisition,
             prov:agent niiri:e746845c-af97-11f1-8357-00155d407b6d ;
             prov:hadRole sio:Subject ] .
 
+niiri:a3283f6e-b14e-11f1-a825-00155d39b9a7 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:b2a78da6-b14e-11f1-9ed6-00155d39b9a7 ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:c4181192-af97-11f1-8357-00155d407b6d ;
+            prov:hadRole sio:Subject ] .
+
 niiri:a41809e0-af97-11f1-8357-00155d407b6d a nidm:Session,
         prov:Activity ;
     dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d .
@@ -158,6 +2565,26 @@ niiri:a4b4742e-af97-11f1-8357-00155d407b6d a onli:assessment-instrument,
     nfo:filename "bids::participants.tsv" ;
     prov:wasGeneratedBy niiri:a4b4728a-af97-11f1-8357-00155d407b6d ;
     prov:wasInfluencedBy niiri:d4c9057e-af97-11f1-8357-00155d407b6d .
+
+niiri:a4c9ceaa-b14e-11f1-a8e7-00155d39b9a7 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:b2a78da6-b14e-11f1-9ed6-00155d39b9a7 ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:c4b475f0-af97-11f1-8357-00155d407b6d ;
+            prov:hadRole sio:Subject ] .
+
+niiri:a54da1b6-b14e-11f1-82bb-00155d39b9a7 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:f93f836c-af97-11f1-8357-00155d407b6d ;
+            prov:hadRole sio:Subject ],
+        [ a prov:Association ;
+            prov:agent niiri:b2a78da6-b14e-11f1-9ed6-00155d39b9a7 ;
+            prov:hadRole nidm:NIDM_0000164 ] .
 
 niiri:a5cb5886-af97-11f1-8357-00155d407b6d a nidm:Acquisition,
         prov:Activity ;
@@ -199,6 +2626,16 @@ niiri:a7580d9e-af97-11f1-8357-00155d407b6d a onli:assessment-instrument,
     prov:wasGeneratedBy niiri:a7580c4a-af97-11f1-8357-00155d407b6d ;
     prov:wasInfluencedBy niiri:e75e5078-af97-11f1-8357-00155d407b6d .
 
+niiri:a79a4a38-b14e-11f1-bb12-00155d39b9a7 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:b5d0cab0-af97-11f1-8357-00155d407b6d ;
+            prov:hadRole sio:Subject ],
+        [ a prov:Association ;
+            prov:agent niiri:b2a78da6-b14e-11f1-9ed6-00155d39b9a7 ;
+            prov:hadRole nidm:NIDM_0000164 ] .
+
 niiri:a7e59a38-af97-11f1-8357-00155d407b6d a onli:assessment-instrument,
         nidm:AcquisitionObject,
         prov:Entity ;
@@ -220,6 +2657,26 @@ niiri:a8a8e5ce-af97-11f1-8357-00155d407b6d a onli:assessment-instrument,
     nfo:filename "bids::participants.tsv" ;
     prov:wasGeneratedBy niiri:e8a8e434-af97-11f1-8357-00155d407b6d ;
     prov:wasInfluencedBy niiri:e8b14b60-af97-11f1-8357-00155d407b6d .
+
+niiri:a948ed1c-b14e-11f1-a531-00155d39b9a7 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:b6922a34-af97-11f1-8357-00155d407b6d ;
+            prov:hadRole sio:Subject ],
+        [ a prov:Association ;
+            prov:agent niiri:b2a78da6-b14e-11f1-9ed6-00155d39b9a7 ;
+            prov:hadRole nidm:NIDM_0000164 ] .
+
+niiri:a969fdd0-b14e-11f1-870f-00155d39b9a7 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:f9da4550-af97-11f1-8357-00155d407b6d ;
+            prov:hadRole sio:Subject ],
+        [ a prov:Association ;
+            prov:agent niiri:b2a78da6-b14e-11f1-9ed6-00155d39b9a7 ;
+            prov:hadRole nidm:NIDM_0000164 ] .
 
 niiri:a9b0e232-af97-11f1-8357-00155d407b6d a nidm:Session,
         prov:Activity ;
@@ -304,6 +2761,16 @@ niiri:add1c0a2-af97-11f1-8357-00155d407b6d a nidm:Acquisition,
             prov:agent niiri:b55ae66a-af97-11f1-8357-00155d407b6d ;
             prov:hadRole sio:Subject ] .
 
+niiri:ae439128-b14e-11f1-8a9d-00155d39b9a7 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:b764435c-af97-11f1-8357-00155d407b6d ;
+            prov:hadRole sio:Subject ],
+        [ a prov:Association ;
+            prov:agent niiri:b2a78da6-b14e-11f1-9ed6-00155d39b9a7 ;
+            prov:hadRole nidm:NIDM_0000164 ] .
+
 niiri:ae59cf0a-af97-11f1-8357-00155d407b6d a nidm:AcquisitionObject,
         prov:Entity ;
     bids:EchoTime 4e-03 ;
@@ -332,6 +2799,16 @@ niiri:ae84cd78-af97-11f1-8357-00155d407b6d a nidm:AcquisitionObject,
     nidm:hadImageUsageType nidm:Anatomical ;
     nfo:filename "bids::sub-09/ses-01/anat/sub-09_ses-01_T1w_to_std_sub.nii.gz" ;
     prov:wasGeneratedBy niiri:de84c54e-af97-11f1-8357-00155d407b6d .
+
+niiri:aeda0e28-b14e-11f1-9ea1-00155d39b9a7 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:f771bba4-af97-11f1-8357-00155d407b6d ;
+            prov:hadRole sio:Subject ],
+        [ a prov:Association ;
+            prov:agent niiri:b2a78da6-b14e-11f1-9ed6-00155d39b9a7 ;
+            prov:hadRole nidm:NIDM_0000164 ] .
 
 niiri:af6211b4-af97-11f1-8357-00155d407b6d a nidm:AcquisitionObject,
         prov:Entity ;
@@ -487,6 +2964,16 @@ niiri:b3c6231e-af97-11f1-8357-00155d407b6d a nidm:Session,
         prov:Activity ;
     dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d .
 
+niiri:b40d2592-b14e-11f1-9b18-00155d39b9a7 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:b2a78da6-b14e-11f1-9ed6-00155d39b9a7 ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:c8f77ea0-af97-11f1-8357-00155d407b6d ;
+            prov:hadRole sio:Subject ] .
+
 niiri:b4177650-af97-11f1-8357-00155d407b6d a nidm:AcquisitionObject,
         prov:Entity ;
     bids:EchoTime 3e-03 ;
@@ -515,6 +3002,16 @@ niiri:b49c9f74-af97-11f1-8357-00155d407b6d a nidm:AcquisitionObject,
     nidm:hadImageUsageType nidm:Anatomical ;
     nfo:filename "bids::sub-24/ses-01/anat/sub-24_ses-01_T1w_to_std_sub.nii.gz" ;
     prov:wasGeneratedBy niiri:e49c8ff2-af97-11f1-8357-00155d407b6d .
+
+niiri:b4a45638-b14e-11f1-97b2-00155d39b9a7 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:b2a78da6-b14e-11f1-9ed6-00155d39b9a7 ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:b9219122-af97-11f1-8357-00155d407b6d ;
+            prov:hadRole sio:Subject ] .
 
 niiri:b4ea2118-af97-11f1-8357-00155d407b6d a nidm:Acquisition,
         prov:Activity ;
@@ -592,6 +3089,16 @@ niiri:b5cb5fd4-af97-11f1-8357-00155d407b6d a nidm:AcquisitionObject,
     nfo:filename "bids::sub-26/ses-01/anat/sub-26_ses-01_T1w_to_std_sub.nii.gz" ;
     prov:wasGeneratedBy niiri:a5cb5886-af97-11f1-8357-00155d407b6d .
 
+niiri:b5ddca94-b14e-11f1-b8aa-00155d39b9a7 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:b2a78da6-b14e-11f1-9ed6-00155d39b9a7 ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:a534f7b6-af97-11f1-8357-00155d407b6d ;
+            prov:hadRole sio:Subject ] .
+
 niiri:b6115742-af97-11f1-8357-00155d407b6d a onli:assessment-instrument,
         nidm:AcquisitionObject,
         prov:Entity ;
@@ -602,6 +3109,16 @@ niiri:b6115742-af97-11f1-8357-00155d407b6d a onli:assessment-instrument,
     nfo:filename "bids::participants.tsv" ;
     prov:wasGeneratedBy niiri:f61154d6-af97-11f1-8357-00155d407b6d ;
     prov:wasInfluencedBy niiri:f6325d70-af97-11f1-8357-00155d407b6d .
+
+niiri:b66fe43c-b14e-11f1-83f5-00155d39b9a7 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:b2a78da6-b14e-11f1-9ed6-00155d39b9a7 ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:d95a83a6-af97-11f1-8357-00155d407b6d ;
+            prov:hadRole sio:Subject ] .
 
 niiri:b6e11b62-af97-11f1-8357-00155d407b6d a onli:assessment-instrument,
         nidm:AcquisitionObject,
@@ -620,6 +3137,16 @@ niiri:b6f10e90-af97-11f1-8357-00155d407b6d a nidm:Acquisition,
     prov:qualifiedAssociation [ a prov:Association ;
             prov:agent niiri:f8a8e790-af97-11f1-8357-00155d407b6d ;
             prov:hadRole sio:Subject ] .
+
+niiri:b6ffa4aa-b14e-11f1-87c2-00155d39b9a7 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:b96bca08-af97-11f1-8357-00155d407b6d ;
+            prov:hadRole sio:Subject ],
+        [ a prov:Association ;
+            prov:agent niiri:b2a78da6-b14e-11f1-9ed6-00155d39b9a7 ;
+            prov:hadRole nidm:NIDM_0000164 ] .
 
 niiri:b746b3a4-af97-11f1-8357-00155d407b6d a nidm:AcquisitionObject,
         prov:Entity ;
@@ -805,6 +3332,16 @@ niiri:b9c23406-af97-11f1-8357-00155d407b6d a onli:assessment-instrument,
     prov:wasGeneratedBy niiri:b9c232b2-af97-11f1-8357-00155d407b6d ;
     prov:wasInfluencedBy niiri:a9c8210e-af97-11f1-8357-00155d407b6d .
 
+niiri:ba5e503e-b14e-11f1-b3dc-00155d39b9a7 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:b6e11d2e-af97-11f1-8357-00155d407b6d ;
+            prov:hadRole sio:Subject ],
+        [ a prov:Association ;
+            prov:agent niiri:b2a78da6-b14e-11f1-9ed6-00155d39b9a7 ;
+            prov:hadRole nidm:NIDM_0000164 ] .
+
 niiri:ba813d4c-af97-11f1-8357-00155d407b6d a nidm:Session,
         prov:Activity ;
     dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d .
@@ -941,6 +3478,16 @@ niiri:bc8a745e-af97-11f1-8357-00155d407b6d a nidm:AcquisitionObject,
     nfo:filename "bids::sub-41/ses-01/anat/sub-41_ses-01_T1w.nii.gz" ;
     prov:wasGeneratedBy niiri:ac8a6f86-af97-11f1-8357-00155d407b6d .
 
+niiri:bc94af6a-b14e-11f1-8860-00155d39b9a7 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:b2a78da6-b14e-11f1-9ed6-00155d39b9a7 ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:c729e84c-af97-11f1-8357-00155d407b6d ;
+            prov:hadRole sio:Subject ] .
+
 niiri:bd11de80-af97-11f1-8357-00155d407b6d a nidm:AcquisitionObject,
         prov:Entity ;
     bids:EchoTime 4e-03 ;
@@ -991,6 +3538,16 @@ niiri:beb71b70-af97-11f1-8357-00155d407b6d a nidm:AcquisitionObject,
     nidm:hadImageUsageType nidm:Anatomical ;
     nfo:filename "bids::sub-10/ses-01/anat/sub-10_ses-01_T1w.nii.gz" ;
     prov:wasGeneratedBy niiri:feb71620-af97-11f1-8357-00155d407b6d .
+
+niiri:bf70edd4-b14e-11f1-87fc-00155d39b9a7 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:f7a0ee9c-af97-11f1-8357-00155d407b6d ;
+            prov:hadRole sio:Subject ],
+        [ a prov:Association ;
+            prov:agent niiri:b2a78da6-b14e-11f1-9ed6-00155d39b9a7 ;
+            prov:hadRole nidm:NIDM_0000164 ] .
 
 niiri:bfb799d6-af97-11f1-8357-00155d407b6d a nidm:Acquisition,
         prov:Activity ;
@@ -1064,6 +3621,16 @@ niiri:c17e198a-af97-11f1-8357-00155d407b6d a nidm:Acquisition,
             prov:agent niiri:e6fcc650-af97-11f1-8357-00155d407b6d ;
             prov:hadRole sio:Subject ] .
 
+niiri:c1b9f9d2-b14e-11f1-9a09-00155d39b9a7 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:b2a78da6-b14e-11f1-9ed6-00155d39b9a7 ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:c8964360-af97-11f1-8357-00155d407b6d ;
+            prov:hadRole sio:Subject ] .
+
 niiri:c1ee4912-af97-11f1-8357-00155d407b6d a nidm:AcquisitionObject,
         prov:Entity ;
     bids:EchoTime 3e-03 ;
@@ -1092,6 +3659,16 @@ niiri:c22d8230-af97-11f1-8357-00155d407b6d a nidm:AcquisitionObject,
     nidm:hadImageUsageType nidm:Anatomical ;
     nfo:filename "bids::sub-19/ses-01/anat/sub-19_ses-01_T1w.nii.gz" ;
     prov:wasGeneratedBy niiri:a22d725e-af97-11f1-8357-00155d407b6d .
+
+niiri:c247f5e8-b14e-11f1-9e59-00155d39b9a7 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:b2a78da6-b14e-11f1-9ed6-00155d39b9a7 ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:f8a8e790-af97-11f1-8357-00155d407b6d ;
+            prov:hadRole sio:Subject ] .
 
 niiri:c34e3376-af97-11f1-8357-00155d407b6d a nidm:AcquisitionObject,
         prov:Entity ;
@@ -1273,9 +3850,39 @@ niiri:c7ce6358-af97-11f1-8357-00155d407b6d a nidm:AcquisitionObject,
     nfo:filename "bids::sub-31/ses-01/anat/sub-31_ses-01_T1w.nii.gz" ;
     prov:wasGeneratedBy niiri:e7ce5e3a-af97-11f1-8357-00155d407b6d .
 
+niiri:c824a94e-b14e-11f1-96c7-00155d39b9a7 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:c6115bca-af97-11f1-8357-00155d407b6d ;
+            prov:hadRole sio:Subject ],
+        [ a prov:Association ;
+            prov:agent niiri:b2a78da6-b14e-11f1-9ed6-00155d39b9a7 ;
+            prov:hadRole nidm:NIDM_0000164 ] .
+
+niiri:c8300f18-b14e-11f1-8197-00155d39b9a7 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:b9c235c8-af97-11f1-8357-00155d407b6d ;
+            prov:hadRole sio:Subject ],
+        [ a prov:Association ;
+            prov:agent niiri:b2a78da6-b14e-11f1-9ed6-00155d39b9a7 ;
+            prov:hadRole nidm:NIDM_0000164 ] .
+
 niiri:c8963c80-af97-11f1-8357-00155d407b6d a nidm:Session,
         prov:Activity ;
     dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d .
+
+niiri:c8bbf542-b14e-11f1-9b02-00155d39b9a7 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:b2a78da6-b14e-11f1-9ed6-00155d39b9a7 ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:c6604582-af97-11f1-8357-00155d407b6d ;
+            prov:hadRole sio:Subject ] .
 
 niiri:c8c5835a-af97-11f1-8357-00155d407b6d a nidm:Session,
         prov:Activity ;
@@ -1291,6 +3898,16 @@ niiri:c8c588a0-af97-11f1-8357-00155d407b6d a onli:assessment-instrument,
     nfo:filename "bids::participants.tsv" ;
     prov:wasGeneratedBy niiri:e8c5872e-af97-11f1-8357-00155d407b6d ;
     prov:wasInfluencedBy niiri:e8d7f378-af97-11f1-8357-00155d407b6d .
+
+niiri:c8c6987a-b14e-11f1-9d14-00155d39b9a7 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:b2a78da6-b14e-11f1-9ed6-00155d39b9a7 ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:f9cea39e-af97-11f1-8357-00155d407b6d ;
+            prov:hadRole sio:Subject ] .
 
 niiri:c8f77540-af97-11f1-8357-00155d407b6d a nidm:Session,
         prov:Activity ;
@@ -1336,6 +3953,26 @@ niiri:cabab0e0-af97-11f1-8357-00155d407b6d a onli:assessment-instrument,
     nfo:filename "bids::participants.tsv" ;
     prov:wasGeneratedBy niiri:dabaaf46-af97-11f1-8357-00155d407b6d ;
     prov:wasInfluencedBy niiri:cac1c3da-af97-11f1-8357-00155d407b6d .
+
+niiri:cae7140a-b14e-11f1-b39b-00155d39b9a7 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:b2a78da6-b14e-11f1-9ed6-00155d39b9a7 ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:d6ee50ca-af97-11f1-8357-00155d407b6d ;
+            prov:hadRole sio:Subject ] .
+
+niiri:cb30c66c-b14e-11f1-a5cb-00155d39b9a7 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:aa02d286-af97-11f1-8357-00155d407b6d ;
+            prov:hadRole sio:Subject ],
+        [ a prov:Association ;
+            prov:agent niiri:b2a78da6-b14e-11f1-9ed6-00155d39b9a7 ;
+            prov:hadRole nidm:NIDM_0000164 ] .
 
 niiri:cb76b538-af97-11f1-8357-00155d407b6d a nidm:AcquisitionObject,
         prov:Entity ;
@@ -1410,6 +4047,16 @@ niiri:cd32eabc-af97-11f1-8357-00155d407b6d a nidm:Acquisition,
             prov:agent niiri:b9e7eb92-af97-11f1-8357-00155d407b6d ;
             prov:hadRole sio:Subject ] .
 
+niiri:cd8d24b4-b14e-11f1-99e7-00155d39b9a7 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ca9ec484-af97-11f1-8357-00155d407b6d ;
+            prov:hadRole sio:Subject ],
+        [ a prov:Association ;
+            prov:agent niiri:b2a78da6-b14e-11f1-9ed6-00155d39b9a7 ;
+            prov:hadRole nidm:NIDM_0000164 ] .
+
 niiri:ce0210bc-af97-11f1-8357-00155d407b6d a nidm:Acquisition,
         prov:Activity ;
     dct:isPartOf niiri:ae011a7c-af97-11f1-8357-00155d407b6d ;
@@ -1432,6 +4079,16 @@ niiri:ce02177e-af97-11f1-8357-00155d407b6d a nidm:AcquisitionObject,
     nfo:filename "bids::sub-45/ses-01/anat/sub-45_ses-01_T1w.nii.gz" ;
     prov:wasGeneratedBy niiri:ce0210bc-af97-11f1-8357-00155d407b6d .
 
+niiri:ce2254f8-b14e-11f1-9dcf-00155d39b9a7 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:b2a78da6-b14e-11f1-9ed6-00155d39b9a7 ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:dabab7ac-af97-11f1-8357-00155d407b6d ;
+            prov:hadRole sio:Subject ] .
+
 niiri:ce48a0f0-af97-11f1-8357-00155d407b6d a nidm:AcquisitionObject,
         prov:Entity ;
     bids:EchoTime 3e-03 ;
@@ -1453,6 +4110,16 @@ niiri:ce9a3b12-af97-11f1-8357-00155d407b6d a nidm:Acquisition,
     prov:qualifiedAssociation [ a prov:Association ;
             prov:agent niiri:aa814760-af97-11f1-8357-00155d407b6d ;
             prov:hadRole sio:Subject ] .
+
+niiri:cebcdf14-b14e-11f1-9aa7-00155d39b9a7 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:bac86974-af97-11f1-8357-00155d407b6d ;
+            prov:hadRole sio:Subject ],
+        [ a prov:Association ;
+            prov:agent niiri:b2a78da6-b14e-11f1-9ed6-00155d39b9a7 ;
+            prov:hadRole nidm:NIDM_0000164 ] .
 
 niiri:ced5e5dc-af97-11f1-8357-00155d407b6d a nidm:AcquisitionObject,
         prov:Entity ;
@@ -1503,6 +4170,16 @@ niiri:d07bd39c-af97-11f1-8357-00155d407b6d a nidm:Acquisition,
             prov:agent niiri:b6e11d2e-af97-11f1-8357-00155d407b6d ;
             prov:hadRole sio:Subject ] .
 
+niiri:d12a34a0-b14e-11f1-b33d-00155d39b9a7 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:b2a78da6-b14e-11f1-9ed6-00155d39b9a7 ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:d8624ed4-af97-11f1-8357-00155d407b6d ;
+            prov:hadRole sio:Subject ] .
+
 niiri:d26efa44-af97-11f1-8357-00155d407b6d a nidm:AcquisitionObject,
         prov:Entity ;
     bids:EchoTime 3e-03 ;
@@ -1516,6 +4193,16 @@ niiri:d26efa44-af97-11f1-8357-00155d407b6d a nidm:AcquisitionObject,
     nidm:hadImageUsageType nidm:Anatomical ;
     nfo:filename "bids::sub-19/ses-01/anat/sub-19_ses-01_T1w_to_std_sub.nii.gz" ;
     prov:wasGeneratedBy niiri:a26ef1b6-af97-11f1-8357-00155d407b6d .
+
+niiri:d2a78a7c-b14e-11f1-9ed6-00155d39b9a7 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:b2a78da6-b14e-11f1-9ed6-00155d39b9a7 ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:e3c6334a-af97-11f1-8357-00155d407b6d ;
+            prov:hadRole sio:Subject ] .
 
 niiri:d31269ea-af97-11f1-8357-00155d407b6d a nidm:AcquisitionObject,
         prov:Entity ;
@@ -1537,6 +4224,16 @@ niiri:d34e2cb4-af97-11f1-8357-00155d407b6d a nidm:Acquisition,
     dct:isPartOf niiri:a3118ffc-af97-11f1-8357-00155d407b6d ;
     prov:qualifiedAssociation [ a prov:Association ;
             prov:agent niiri:b7580f60-af97-11f1-8357-00155d407b6d ;
+            prov:hadRole sio:Subject ] .
+
+niiri:d36d68ae-b14e-11f1-8fb1-00155d39b9a7 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:b2a78da6-b14e-11f1-9ed6-00155d39b9a7 ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:b8c58a76-af97-11f1-8357-00155d407b6d ;
             prov:hadRole sio:Subject ] .
 
 niiri:d3d2aaa2-af97-11f1-8357-00155d407b6d a nidm:AcquisitionObject,
@@ -1632,6 +4329,16 @@ niiri:d6fcbfc0-af97-11f1-8357-00155d407b6d a nidm:Session,
         prov:Activity ;
     dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d .
 
+niiri:d711f746-b14e-11f1-8a67-00155d39b9a7 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:c5a88960-af97-11f1-8357-00155d407b6d ;
+            prov:hadRole sio:Subject ],
+        [ a prov:Association ;
+            prov:agent niiri:b2a78da6-b14e-11f1-9ed6-00155d39b9a7 ;
+            prov:hadRole nidm:NIDM_0000164 ] .
+
 niiri:d729e194-af97-11f1-8357-00155d407b6d a nidm:Session,
         prov:Activity ;
     dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d .
@@ -1653,6 +4360,16 @@ niiri:d771b9d8-af97-11f1-8357-00155d407b6d a onli:assessment-instrument,
     nfo:filename "bids::participants.tsv" ;
     prov:wasGeneratedBy niiri:a771b88e-af97-11f1-8357-00155d407b6d ;
     prov:wasInfluencedBy niiri:e77d595a-af97-11f1-8357-00155d407b6d .
+
+niiri:d79823ba-b14e-11f1-a01a-00155d39b9a7 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:b2a78da6-b14e-11f1-9ed6-00155d39b9a7 ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:a9b0e912-af97-11f1-8357-00155d407b6d ;
+            prov:hadRole sio:Subject ] .
 
 niiri:d7e081be-af97-11f1-8357-00155d407b6d a nidm:AcquisitionObject,
         prov:Entity ;
@@ -1877,11 +4594,31 @@ niiri:dbc66f00-af97-11f1-8357-00155d407b6d a nidm:AcquisitionObject,
     nfo:filename "bids::sub-39/ses-01/anat/sub-39_ses-01_T1w.nii.gz" ;
     prov:wasGeneratedBy niiri:abc66960-af97-11f1-8357-00155d407b6d .
 
+niiri:dbc9515c-b14e-11f1-ade8-00155d39b9a7 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:b2a78da6-b14e-11f1-9ed6-00155d39b9a7 ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:da54241a-af97-11f1-8357-00155d407b6d ;
+            prov:hadRole sio:Subject ] .
+
 niiri:dbcb0534-af97-11f1-8357-00155d407b6d a nidm:Acquisition,
         prov:Activity ;
     dct:isPartOf niiri:abca7ca4-af97-11f1-8357-00155d407b6d ;
     prov:qualifiedAssociation [ a prov:Association ;
             prov:agent niiri:b47eef20-af97-11f1-8357-00155d407b6d ;
+            prov:hadRole sio:Subject ] .
+
+niiri:dc054776-b14e-11f1-81b2-00155d39b9a7 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:b2a78da6-b14e-11f1-9ed6-00155d39b9a7 ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:d71bd928-af97-11f1-8357-00155d407b6d ;
             prov:hadRole sio:Subject ] .
 
 niiri:dc3ca648-af97-11f1-8357-00155d407b6d a nidm:AcquisitionObject,
@@ -1941,6 +4678,16 @@ niiri:dcdb749a-af97-11f1-8357-00155d407b6d a nidm:AcquisitionObject,
     nidm:hadImageUsageType nidm:Anatomical ;
     nfo:filename "bids::sub-06/ses-01/anat/sub-06_ses-01_T1w.nii.gz" ;
     prov:wasGeneratedBy niiri:dcdb6fea-af97-11f1-8357-00155d407b6d .
+
+niiri:dcf3bbbc-b14e-11f1-9ae7-00155d39b9a7 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:b2a78da6-b14e-11f1-9ed6-00155d39b9a7 ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:ea9185da-af97-11f1-8357-00155d407b6d ;
+            prov:hadRole sio:Subject ] .
 
 niiri:dd32f0c0-af97-11f1-8357-00155d407b6d a nidm:AcquisitionObject,
         prov:Entity ;
@@ -2150,6 +4897,16 @@ niiri:e1ee40ac-af97-11f1-8357-00155d407b6d a nidm:Acquisition,
             prov:agent niiri:d71bd928-af97-11f1-8357-00155d407b6d ;
             prov:hadRole sio:Subject ] .
 
+niiri:e2db18b4-b14e-11f1-a306-00155d39b9a7 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:b2a78da6-b14e-11f1-9ed6-00155d39b9a7 ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:e8b76504-af97-11f1-8357-00155d407b6d ;
+            prov:hadRole sio:Subject ] .
+
 niiri:e3c62c6a-af97-11f1-8357-00155d407b6d a onli:assessment-instrument,
         nidm:AcquisitionObject,
         prov:Entity ;
@@ -2178,6 +4935,16 @@ niiri:e4180f4e-af97-11f1-8357-00155d407b6d a onli:assessment-instrument,
     nfo:filename "bids::participants.tsv" ;
     prov:wasGeneratedBy niiri:c4180d64-af97-11f1-8357-00155d407b6d ;
     prov:wasInfluencedBy niiri:e43595dc-af97-11f1-8357-00155d407b6d .
+
+niiri:e439eda8-b14e-11f1-84e5-00155d39b9a7 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:b2a78da6-b14e-11f1-9ed6-00155d39b9a7 ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:b47eef20-af97-11f1-8357-00155d407b6d ;
+            prov:hadRole sio:Subject ] .
 
 niiri:e4492a34-af97-11f1-8357-00155d407b6d a onli:assessment-instrument,
         nidm:AcquisitionObject,
@@ -2305,6 +5072,16 @@ niiri:e96bc2a6-af97-11f1-8357-00155d407b6d a nidm:Session,
         prov:Activity ;
     dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d .
 
+niiri:e9d1e5d6-b14e-11f1-b332-00155d39b9a7 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:b2a78da6-b14e-11f1-9ed6-00155d39b9a7 ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:d6d0abc4-af97-11f1-8357-00155d407b6d ;
+            prov:hadRole sio:Subject ] .
+
 niiri:e9f43b80-af97-11f1-8357-00155d407b6d a nidm:AcquisitionObject,
         prov:Entity ;
     bids:EchoTime 4e-03 ;
@@ -2364,6 +5141,16 @@ niiri:eb55cf1c-af97-11f1-8357-00155d407b6d a nidm:Acquisition,
     dct:isPartOf niiri:db44bd80-af97-11f1-8357-00155d407b6d ;
     prov:qualifiedAssociation [ a prov:Association ;
             prov:agent niiri:c4181192-af97-11f1-8357-00155d407b6d ;
+            prov:hadRole sio:Subject ] .
+
+niiri:eb797d0e-b14e-11f1-b185-00155d39b9a7 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:b2a78da6-b14e-11f1-9ed6-00155d39b9a7 ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:e6fcc650-af97-11f1-8357-00155d407b6d ;
             prov:hadRole sio:Subject ] .
 
 niiri:eb948a3c-af97-11f1-8357-00155d407b6d a bids:Dataset,
@@ -2642,6 +5429,16 @@ niiri:ed8730cc-af97-11f1-8357-00155d407b6d a nidm:Acquisition,
             prov:agent niiri:c9f67c16-af97-11f1-8357-00155d407b6d ;
             prov:hadRole sio:Subject ] .
 
+niiri:edb386e6-b14e-11f1-8687-00155d39b9a7 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:b7580f60-af97-11f1-8357-00155d407b6d ;
+            prov:hadRole sio:Subject ],
+        [ a prov:Association ;
+            prov:agent niiri:b2a78da6-b14e-11f1-9ed6-00155d39b9a7 ;
+            prov:hadRole nidm:NIDM_0000164 ] .
+
 niiri:edb8edc0-af97-11f1-8357-00155d407b6d a nidm:Acquisition,
         prov:Activity ;
     dct:isPartOf niiri:ed812520-af97-11f1-8357-00155d407b6d ;
@@ -2711,6 +5508,16 @@ niiri:eff39468-af97-11f1-8357-00155d407b6d a nidm:Acquisition,
     dct:isPartOf niiri:bfb6e86a-af97-11f1-8357-00155d407b6d ;
     prov:qualifiedAssociation [ a prov:Association ;
             prov:agent niiri:ca9ec484-af97-11f1-8357-00155d407b6d ;
+            prov:hadRole sio:Subject ] .
+
+niiri:effea3e0-b14e-11f1-a342-00155d39b9a7 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:b2a78da6-b14e-11f1-9ed6-00155d39b9a7 ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:d7e59c5e-af97-11f1-8357-00155d407b6d ;
             prov:hadRole sio:Subject ] .
 
 niiri:f02306ee-af97-11f1-8357-00155d407b6d a nidm:Acquisition,
@@ -2840,6 +5647,16 @@ niiri:f38a9a6e-af97-11f1-8357-00155d407b6d a nidm:AcquisitionObject,
     nfo:filename "bids::sub-22/ses-01/anat/sub-22_ses-01_T1w.nii.gz" ;
     prov:wasGeneratedBy niiri:c38a93f2-af97-11f1-8357-00155d407b6d .
 
+niiri:f3af9c5c-b14e-11f1-9949-00155d39b9a7 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:b2a78da6-b14e-11f1-9ed6-00155d39b9a7 ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:b4492cf0-af97-11f1-8357-00155d407b6d ;
+            prov:hadRole sio:Subject ] .
+
 niiri:f4782e78-af97-11f1-8357-00155d407b6d a nidm:Acquisition,
         prov:Activity ;
     dct:isPartOf niiri:c4779d50-af97-11f1-8357-00155d407b6d ;
@@ -2870,6 +5687,26 @@ niiri:f4e76424-af97-11f1-8357-00155d407b6d a nidm:Session,
         prov:Activity ;
     dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d .
 
+niiri:f55465c4-b14e-11f1-9ccb-00155d39b9a7 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:e4e7704a-af97-11f1-8357-00155d407b6d ;
+            prov:hadRole sio:Subject ],
+        [ a prov:Association ;
+            prov:agent niiri:b2a78da6-b14e-11f1-9ed6-00155d39b9a7 ;
+            prov:hadRole nidm:NIDM_0000164 ] .
+
+niiri:f5dd9d84-b14e-11f1-8afc-00155d39b9a7 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:b2a78da6-b14e-11f1-9ed6-00155d39b9a7 ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:d94ce05c-af97-11f1-8357-00155d407b6d ;
+            prov:hadRole sio:Subject ] .
+
 niiri:f6392528-af97-11f1-8357-00155d407b6d a nidm:AcquisitionObject,
         prov:Entity ;
     bids:EchoTime 4e-03 ;
@@ -2887,6 +5724,16 @@ niiri:f6392528-af97-11f1-8357-00155d407b6d a nidm:AcquisitionObject,
 niiri:f66036d2-af97-11f1-8357-00155d407b6d a nidm:Session,
         prov:Activity ;
     dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d .
+
+niiri:f667e116-b14e-11f1-a28f-00155d39b9a7 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:b2a78da6-b14e-11f1-9ed6-00155d39b9a7 ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:b55ae66a-af97-11f1-8357-00155d407b6d ;
+            prov:hadRole sio:Subject ] .
 
 niiri:f6922688-af97-11f1-8357-00155d407b6d a onli:assessment-instrument,
         nidm:AcquisitionObject,
@@ -2991,6 +5838,16 @@ niiri:f9cea1c8-af97-11f1-8357-00155d407b6d a onli:assessment-instrument,
     prov:wasGeneratedBy niiri:e9cea038-af97-11f1-8357-00155d407b6d ;
     prov:wasInfluencedBy niiri:a9d4a988-af97-11f1-8357-00155d407b6d .
 
+niiri:f9fa9192-b14e-11f1-8b7a-00155d39b9a7 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:b2a78da6-b14e-11f1-9ed6-00155d39b9a7 ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:b9e7eb92-af97-11f1-8357-00155d407b6d ;
+            prov:hadRole sio:Subject ] .
+
 niiri:fa54217c-af97-11f1-8357-00155d407b6d a onli:assessment-instrument,
         nidm:AcquisitionObject,
         prov:Entity ;
@@ -3001,6 +5858,16 @@ niiri:fa54217c-af97-11f1-8357-00155d407b6d a onli:assessment-instrument,
     nfo:filename "bids::participants.tsv" ;
     prov:wasGeneratedBy niiri:da541f88-af97-11f1-8357-00155d407b6d ;
     prov:wasInfluencedBy niiri:da6ac6fc-af97-11f1-8357-00155d407b6d .
+
+niiri:fa8e017a-b14e-11f1-a65e-00155d39b9a7 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:b2a78da6-b14e-11f1-9ed6-00155d39b9a7 ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:c9f67c16-af97-11f1-8357-00155d407b6d ;
+            prov:hadRole sio:Subject ] .
 
 niiri:fa9174dc-af97-11f1-8357-00155d407b6d a onli:assessment-instrument,
         nidm:AcquisitionObject,
@@ -3093,6 +5960,16 @@ niiri:fb76b0ba-af97-11f1-8357-00155d407b6d a nidm:Acquisition,
             prov:agent niiri:b4492cf0-af97-11f1-8357-00155d407b6d ;
             prov:hadRole sio:Subject ] .
 
+niiri:fc5e0e0a-b14e-11f1-8449-00155d39b9a7 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:aa814760-af97-11f1-8357-00155d407b6d ;
+            prov:hadRole sio:Subject ],
+        [ a prov:Association ;
+            prov:agent niiri:b2a78da6-b14e-11f1-9ed6-00155d39b9a7 ;
+            prov:hadRole nidm:NIDM_0000164 ] .
+
 niiri:fc66615e-af97-11f1-8357-00155d407b6d a nidm:Acquisition,
         prov:Activity ;
     dct:isPartOf niiri:cc3c042c-af97-11f1-8357-00155d407b6d ;
@@ -3119,6 +5996,16 @@ niiri:fd2070b8-af97-11f1-8357-00155d407b6d a nidm:Acquisition,
     dct:isPartOf niiri:fcdaeaf2-af97-11f1-8357-00155d407b6d ;
     prov:qualifiedAssociation [ a prov:Association ;
             prov:agent niiri:e4e7704a-af97-11f1-8357-00155d407b6d ;
+            prov:hadRole sio:Subject ] .
+
+niiri:fd2222f0-b14e-11f1-ac64-00155d39b9a7 a prov:Activity ;
+    dct:description "FSL FAST/FIRST segmentation statistics" ;
+    dct:isPartOf niiri:cb947db2-af97-11f1-8357-00155d407b6d ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:b2a78da6-b14e-11f1-9ed6-00155d39b9a7 ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:e746845c-af97-11f1-8357-00155d407b6d ;
             prov:hadRole sio:Subject ] .
 
 niiri:fda97434-af97-11f1-8357-00155d407b6d a nidm:AcquisitionObject,
@@ -4096,207 +6983,213 @@ niiri:fe47d1f2-af97-11f1-8357-00155d407b6d a nidm:Session,
 
 niiri:a534f7b6-af97-11f1-8357-00155d407b6d a prov:Agent,
         prov:Person ;
-    ndar:src_subject_id "sub-07" .
+    ndar:src_subject_id "sub-07"^^xsd:string .
 
 niiri:a9b0e912-af97-11f1-8357-00155d407b6d a prov:Agent,
         prov:Person ;
-    ndar:src_subject_id "sub-38" .
+    ndar:src_subject_id "sub-38"^^xsd:string .
 
 niiri:aa02d286-af97-11f1-8357-00155d407b6d a prov:Agent,
         prov:Person ;
-    ndar:src_subject_id "sub-44" .
+    ndar:src_subject_id "sub-44"^^xsd:string .
 
 niiri:aa814760-af97-11f1-8357-00155d407b6d a prov:Agent,
         prov:Person ;
-    ndar:src_subject_id "sub-46" .
+    ndar:src_subject_id "sub-46"^^xsd:string .
 
 niiri:b4492cf0-af97-11f1-8357-00155d407b6d a prov:Agent,
         prov:Person ;
-    ndar:src_subject_id "sub-03" .
+    ndar:src_subject_id "sub-03"^^xsd:string .
 
 niiri:b47eef20-af97-11f1-8357-00155d407b6d a prov:Agent,
         prov:Person ;
-    ndar:src_subject_id "sub-04" .
+    ndar:src_subject_id "sub-04"^^xsd:string .
 
 niiri:b55ae66a-af97-11f1-8357-00155d407b6d a prov:Agent,
         prov:Person ;
-    ndar:src_subject_id "sub-08" .
+    ndar:src_subject_id "sub-08"^^xsd:string .
 
 niiri:b5d0cab0-af97-11f1-8357-00155d407b6d a prov:Agent,
         prov:Person ;
-    ndar:src_subject_id "sub-10" .
+    ndar:src_subject_id "sub-10"^^xsd:string .
 
 niiri:b6922a34-af97-11f1-8357-00155d407b6d a prov:Agent,
         prov:Person ;
-    ndar:src_subject_id "sub-13" .
+    ndar:src_subject_id "sub-13"^^xsd:string .
 
 niiri:b6e11d2e-af97-11f1-8357-00155d407b6d a prov:Agent,
         prov:Person ;
-    ndar:src_subject_id "sub-15" .
+    ndar:src_subject_id "sub-15"^^xsd:string .
 
 niiri:b7580f60-af97-11f1-8357-00155d407b6d a prov:Agent,
         prov:Person ;
-    ndar:src_subject_id "sub-21" .
+    ndar:src_subject_id "sub-21"^^xsd:string .
 
 niiri:b764435c-af97-11f1-8357-00155d407b6d a prov:Agent,
         prov:Person ;
-    ndar:src_subject_id "sub-22" .
+    ndar:src_subject_id "sub-22"^^xsd:string .
 
 niiri:b8c58a76-af97-11f1-8357-00155d407b6d a prov:Agent,
         prov:Person ;
-    ndar:src_subject_id "sub-31" .
+    ndar:src_subject_id "sub-31"^^xsd:string .
 
 niiri:b9219122-af97-11f1-8357-00155d407b6d a prov:Agent,
         prov:Person ;
-    ndar:src_subject_id "sub-33" .
+    ndar:src_subject_id "sub-33"^^xsd:string .
 
 niiri:b96bca08-af97-11f1-8357-00155d407b6d a prov:Agent,
         prov:Person ;
-    ndar:src_subject_id "sub-37" .
+    ndar:src_subject_id "sub-37"^^xsd:string .
 
 niiri:b9c235c8-af97-11f1-8357-00155d407b6d a prov:Agent,
         prov:Person ;
-    ndar:src_subject_id "sub-39" .
+    ndar:src_subject_id "sub-39"^^xsd:string .
 
 niiri:b9e7eb92-af97-11f1-8357-00155d407b6d a prov:Agent,
         prov:Person ;
-    ndar:src_subject_id "sub-42" .
+    ndar:src_subject_id "sub-42"^^xsd:string .
 
 niiri:bac86974-af97-11f1-8357-00155d407b6d a prov:Agent,
         prov:Person ;
-    ndar:src_subject_id "sub-50" .
+    ndar:src_subject_id "sub-50"^^xsd:string .
 
 niiri:c4181192-af97-11f1-8357-00155d407b6d a prov:Agent,
         prov:Person ;
-    ndar:src_subject_id "sub-02" .
+    ndar:src_subject_id "sub-02"^^xsd:string .
 
 niiri:c4b475f0-af97-11f1-8357-00155d407b6d a prov:Agent,
         prov:Person ;
-    ndar:src_subject_id "sub-05" .
+    ndar:src_subject_id "sub-05"^^xsd:string .
 
 niiri:c5a88960-af97-11f1-8357-00155d407b6d a prov:Agent,
         prov:Person ;
-    ndar:src_subject_id "sub-09" .
+    ndar:src_subject_id "sub-09"^^xsd:string .
 
 niiri:c6115bca-af97-11f1-8357-00155d407b6d a prov:Agent,
         prov:Person ;
-    ndar:src_subject_id "sub-11" .
+    ndar:src_subject_id "sub-11"^^xsd:string .
 
 niiri:c6604582-af97-11f1-8357-00155d407b6d a prov:Agent,
         prov:Person ;
-    ndar:src_subject_id "sub-12" .
+    ndar:src_subject_id "sub-12"^^xsd:string .
 
 niiri:c729e84c-af97-11f1-8357-00155d407b6d a prov:Agent,
         prov:Person ;
-    ndar:src_subject_id "sub-19" .
+    ndar:src_subject_id "sub-19"^^xsd:string .
 
 niiri:c8259ce6-af97-11f1-8357-00155d407b6d a prov:Agent,
         prov:Person ;
-    ndar:src_subject_id "sub-26" .
+    ndar:src_subject_id "sub-26"^^xsd:string .
 
 niiri:c8964360-af97-11f1-8357-00155d407b6d a prov:Agent,
         prov:Person ;
-    ndar:src_subject_id "sub-28" .
+    ndar:src_subject_id "sub-28"^^xsd:string .
 
 niiri:c8f77ea0-af97-11f1-8357-00155d407b6d a prov:Agent,
         prov:Person ;
-    ndar:src_subject_id "sub-32" .
+    ndar:src_subject_id "sub-32"^^xsd:string .
 
 niiri:c9f67c16-af97-11f1-8357-00155d407b6d a prov:Agent,
         prov:Person ;
-    ndar:src_subject_id "sub-43" .
+    ndar:src_subject_id "sub-43"^^xsd:string .
 
 niiri:ca9ec484-af97-11f1-8357-00155d407b6d a prov:Agent,
         prov:Person ;
-    ndar:src_subject_id "sub-48" .
+    ndar:src_subject_id "sub-48"^^xsd:string .
 
 niiri:d6d0abc4-af97-11f1-8357-00155d407b6d a prov:Agent,
         prov:Person ;
-    ndar:src_subject_id "sub-14" .
+    ndar:src_subject_id "sub-14"^^xsd:string .
 
 niiri:d6ee50ca-af97-11f1-8357-00155d407b6d a prov:Agent,
         prov:Person ;
-    ndar:src_subject_id "sub-16" .
+    ndar:src_subject_id "sub-16"^^xsd:string .
 
 niiri:d71bd928-af97-11f1-8357-00155d407b6d a prov:Agent,
         prov:Person ;
-    ndar:src_subject_id "sub-18" .
+    ndar:src_subject_id "sub-18"^^xsd:string .
 
 niiri:d7e59c5e-af97-11f1-8357-00155d407b6d a prov:Agent,
         prov:Person ;
-    ndar:src_subject_id "sub-25" .
+    ndar:src_subject_id "sub-25"^^xsd:string .
 
 niiri:d8624ed4-af97-11f1-8357-00155d407b6d a prov:Agent,
         prov:Person ;
-    ndar:src_subject_id "sub-27" .
+    ndar:src_subject_id "sub-27"^^xsd:string .
 
 niiri:d94ce05c-af97-11f1-8357-00155d407b6d a prov:Agent,
         prov:Person ;
-    ndar:src_subject_id "sub-35" .
+    ndar:src_subject_id "sub-35"^^xsd:string .
 
 niiri:d95a83a6-af97-11f1-8357-00155d407b6d a prov:Agent,
         prov:Person ;
-    ndar:src_subject_id "sub-36" .
+    ndar:src_subject_id "sub-36"^^xsd:string .
 
 niiri:da54241a-af97-11f1-8357-00155d407b6d a prov:Agent,
         prov:Person ;
-    ndar:src_subject_id "sub-45" .
+    ndar:src_subject_id "sub-45"^^xsd:string .
 
 niiri:dabab7ac-af97-11f1-8357-00155d407b6d a prov:Agent,
         prov:Person ;
-    ndar:src_subject_id "sub-49" .
+    ndar:src_subject_id "sub-49"^^xsd:string .
 
 niiri:e3c6334a-af97-11f1-8357-00155d407b6d a prov:Agent,
         prov:Person ;
-    ndar:src_subject_id "sub-01" .
+    ndar:src_subject_id "sub-01"^^xsd:string .
 
 niiri:e4e7704a-af97-11f1-8357-00155d407b6d a prov:Agent,
         prov:Person ;
-    ndar:src_subject_id "sub-06" .
+    ndar:src_subject_id "sub-06"^^xsd:string .
 
 niiri:e6fcc650-af97-11f1-8357-00155d407b6d a prov:Agent,
         prov:Person ;
-    ndar:src_subject_id "sub-17" .
+    ndar:src_subject_id "sub-17"^^xsd:string .
 
 niiri:e746845c-af97-11f1-8357-00155d407b6d a prov:Agent,
         prov:Person ;
-    ndar:src_subject_id "sub-20" .
+    ndar:src_subject_id "sub-20"^^xsd:string .
 
 niiri:e8b76504-af97-11f1-8357-00155d407b6d a prov:Agent,
         prov:Person ;
-    ndar:src_subject_id "sub-30" .
+    ndar:src_subject_id "sub-30"^^xsd:string .
 
 niiri:ea9185da-af97-11f1-8357-00155d407b6d a prov:Agent,
         prov:Person ;
-    ndar:src_subject_id "sub-47" .
+    ndar:src_subject_id "sub-47"^^xsd:string .
 
 niiri:f771bba4-af97-11f1-8357-00155d407b6d a prov:Agent,
         prov:Person ;
-    ndar:src_subject_id "sub-23" .
+    ndar:src_subject_id "sub-23"^^xsd:string .
 
 niiri:f7a0ee9c-af97-11f1-8357-00155d407b6d a prov:Agent,
         prov:Person ;
-    ndar:src_subject_id "sub-24" .
+    ndar:src_subject_id "sub-24"^^xsd:string .
 
 niiri:f8a8e790-af97-11f1-8357-00155d407b6d a prov:Agent,
         prov:Person ;
-    ndar:src_subject_id "sub-29" .
+    ndar:src_subject_id "sub-29"^^xsd:string .
 
 niiri:f93f836c-af97-11f1-8357-00155d407b6d a prov:Agent,
         prov:Person ;
-    ndar:src_subject_id "sub-34" .
+    ndar:src_subject_id "sub-34"^^xsd:string .
 
 niiri:f9cea39e-af97-11f1-8357-00155d407b6d a prov:Agent,
         prov:Person ;
-    ndar:src_subject_id "sub-40" .
+    ndar:src_subject_id "sub-40"^^xsd:string .
 
 niiri:f9da4550-af97-11f1-8357-00155d407b6d a prov:Agent,
         prov:Person ;
-    ndar:src_subject_id "sub-41" .
+    ndar:src_subject_id "sub-41"^^xsd:string .
 
 nidm:PersonalDataElement rdfs:subClassOf nidm:DataElement .
 
+fsl:DataElement rdfs:subClassOf nidm:DataElement .
+
+niiri:b2a78da6-b14e-11f1-9ed6-00155d39b9a7 a prov:Agent,
+        prov:SoftwareAgent ;
+    nidm:NIDM_0000164 fsl: .
+
 niiri:cb947db2-af97-11f1-8357-00155d407b6d a nidm:Project,
         prov:Activity ;
-    dctypes:title "Synthetic Phantom Multi-Scanner Clinical Dataset" .
+    dcmitype:title "Synthetic Phantom Multi-Scanner Clinical Dataset" .
 
