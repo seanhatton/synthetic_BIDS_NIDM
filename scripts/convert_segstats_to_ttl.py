@@ -69,7 +69,7 @@ def main():
     for i in range(1, 51):
         sub = f"sub-{i:02d}"
         segstats_path = base_dir / "derivatives" / "fsl" / sub / "ses-01" / "segstats.json"
-        output_path = base_dir / "derivatives" / "fsl" / sub / "fsl_nidm.ttl"
+        output_path = base_dir / "derivatives" / "fsl" / sub / "ses-01" / "fsl_nidm.ttl"
         
         if segstats_path.exists():
             print(f"Converting {segstats_path.name} for {sub}...")

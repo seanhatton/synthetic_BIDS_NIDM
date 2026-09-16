@@ -125,7 +125,7 @@ def main():
             "-d", str(fsl_dir / sub / args.session / "segstats.json"),
             "-subjid", sub,
             # -o is required by the CLI but unused when -n is given
-            "-o", str(fsl_dir / sub / "fsl_nidm.ttl"),
+            "-o", str(fsl_dir / sub / args.session / "fsl_nidm.ttl"),
             "-n", str(study_nidm),
         ]
         if args.force_nidm:
