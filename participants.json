@@ -32,7 +32,7 @@
         "isAbout": [
             {
                 "@id": "http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00718",
-                "label": "Wechsler abbreviated scale of intelligence"
+                "label": "Wechsler Adult Intelligence Scale"
             }
         ]
     },

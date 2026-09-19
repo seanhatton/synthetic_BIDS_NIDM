@@ -1,0 +1,4443 @@
+@prefix bids: <http://bids.neuroimaging.io/> .
+@prefix crypto: <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions#> .
+@prefix dcmitype: <http://purl.org/dc/dcmitype/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dicom: <http://neurolex.org/wiki/Category/DICOM_term/> .
+@prefix ndar: <https://ndar.nih.gov/api/datadictionary/v2/dataelement/> .
+@prefix nfo: <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#> .
+@prefix nidm: <http://purl.org/nidash/nidm#> .
+@prefix niiri: <http://iri.nidash.org/> .
+@prefix onli: <http://neurolog.unice.fr/ontoneurolog/v3.0/instrument.owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reproschema: <http://schema.repronim.org/> .
+@prefix schema: <https://schema.org/> .
+@prefix sio: <http://semanticscience.org/ontology/sio.owl#> .
+@prefix term_CAO_00718: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00718> .
+@prefix term_M0446358: <http://id.nlm.nih.gov/mesh/2018/M0446358> .
+@prefix term_OBI_0000312: <http://purl.obolibrary.org/obo/OBI_0000312> .
+@prefix term_cde_0161290: <http://uri.interlex.org/base/cde_0161290> .
+@prefix term_ilx_0100400: <http://uri.interlex.org/ilx_0100400> .
+@prefix term_ilx_0103677: <http://uri.interlex.org/ilx_0103677> .
+@prefix term_pde_01000079: <http://uri.interlex.org/pde_01000079> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+niiri:age_1l5g3rg a nidm:PersonalDataElement,
+        prov:Entity ;
+    rdfs:label "age" ;
+    dct:description "Age of the participant" ;
+    nidm:isAbout term_ilx_0100400: ;
+    nidm:sourceVariable "age" .
+
+niiri:d3640d10-b446-11f1-8537-00155df52554 a prov:Entity ;
+    rdfs:label "NIDM RDF document" ;
+    dct:format "turtle" ;
+    nidm:outputFormat "turtle" ;
+    nfo:filename "bids_nidm.ttl" ;
+    prov:wasGeneratedBy niiri:d3640a2c-b446-11f1-8537-00155df52554 .
+
+niiri:education_tt30i3 a nidm:PersonalDataElement,
+        prov:Entity ;
+    rdfs:label "education" ;
+    dct:description "Years of education" ;
+    nidm:isAbout term_ilx_0103677: ;
+    nidm:sourceVariable "education" .
+
+niiri:hamd_17_3et8dvi a nidm:PersonalDataElement,
+        prov:Entity ;
+    rdfs:label "Hamilton Depression Rating Scale (HAM-D)" ;
+    dct:description "Hamilton Depression Rating Scale" ;
+    nidm:isAbout term_cde_0161290: ;
+    nidm:sourceVariable "hamd_17" .
+
+niiri:handedness_l3cru3 a nidm:PersonalDataElement,
+        prov:Entity ;
+    rdfs:label "handedness" ;
+    dct:description "Hand preference" ;
+    nidm:isAbout term_pde_01000079: ;
+    nidm:sourceVariable "handedness" ;
+    reproschema:choices [ rdfs:label "right" ;
+            reproschema:value "right" ],
+        [ rdfs:label "left" ;
+            reproschema:value "left" ] .
+
+niiri:scanner_id_2g84gph a nidm:PersonalDataElement,
+        prov:Entity ;
+    rdfs:label "scanner_id" ;
+    dct:description "Scanner identifier for data acquisition" ;
+    nidm:isAbout term_OBI_0000312: ;
+    nidm:sourceVariable "scanner_id" ;
+    reproschema:choices [ rdfs:label "scanner_02" ;
+            reproschema:value "Siemens Prisma" ],
+        [ rdfs:label "scanner_01" ;
+            reproschema:value "GE Discovery MR750" ] .
+
+niiri:sex_cpa8jp a nidm:PersonalDataElement,
+        prov:Entity ;
+    rdfs:label "sex" ;
+    dct:description "Biological sex of the participant" ;
+    nidm:isAbout term_M0446358: ;
+    nidm:sourceVariable "sex" ;
+    reproschema:choices [ rdfs:label "F" ;
+            reproschema:value "female" ],
+        [ rdfs:label "M" ;
+            reproschema:value "male" ] .
+
+niiri:wais_iv_fsiq_1hqi7tu a nidm:PersonalDataElement,
+        prov:Entity ;
+    rdfs:label "wais_iv_fsiq" ;
+    dct:description "Wechsler Adult Intelligence Scale – Fourth Edition" ;
+    nidm:isAbout term_CAO_00718: ;
+    nidm:sourceVariable "wais_iv_fsiq" .
+
+term_M0446358: a prov:Entity ;
+    rdfs:label "Genotypic Sex" .
+
+niiri:a045a274-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:a075826e-b446-11f1-8537-00155df52554 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:b074e444-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ab0ac0f0-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:a0bb9df8-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:a113c186-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 4e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    crypto:sha512 "f8e6aa3c1efe97e331b558599022d436ba7781543c63425f27b73ca8b8d299900cb7a470802a2ce4ee539054ae460ccd1edd7f58bfba0e6eff28f3d9cbfdd3c2" ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-37/ses-01/anat/sub-37_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:f113bca4-b446-11f1-8537-00155df52554 .
+
+niiri:a1a70220-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 4e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    crypto:sha512 "3abffc85d32dc53a1aa6e11ad5dbe67b6670b5810d33d5f8f02302aca478ec4256ac0927cc6f28d860f579a40a7e2fab5c5ffcf2c4c8faa8f60b259d71b28251" ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-39/ses-01/anat/sub-39_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:c1a6fafa-b446-11f1-8537-00155df52554 .
+
+niiri:a2a12778-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:a3640c70-b446-11f1-8537-00155df52554 a prov:SoftwareAgent ;
+    rdfs:label "bidsmri2nidm" ;
+    nidm:command "bidsmri2nidm.py" ;
+    schema:isPartOf niiri:e3640cd4-b446-11f1-8537-00155df52554 ;
+    schema:runtimePlatform "Python 3.14.7" ;
+    schema:softwareVersion "1.0.1" .
+
+niiri:a88f480a-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:a8c582b2-b446-11f1-8537-00155df52554 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "31" ;
+    niiri:education_tt30i3 "15" ;
+    niiri:hamd_17_3et8dvi "29" ;
+    niiri:handedness_l3cru3 "left" ;
+    niiri:scanner_id_2g84gph "scanner_01" ;
+    niiri:sex_cpa8jp "M" ;
+    niiri:wais_iv_fsiq_1hqi7tu "117" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:d8c58168-b446-11f1-8537-00155df52554 ;
+    prov:wasInfluencedBy niiri:c8cba548-b446-11f1-8537-00155df52554 .
+
+niiri:a8fb28f4-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:a8fb2d2c-b446-11f1-8537-00155df52554 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "19" ;
+    niiri:education_tt30i3 "12" ;
+    niiri:hamd_17_3et8dvi "24" ;
+    niiri:handedness_l3cru3 "right" ;
+    niiri:scanner_id_2g84gph "scanner_02" ;
+    niiri:sex_cpa8jp "F" ;
+    niiri:wais_iv_fsiq_1hqi7tu "75" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:f8fb2bd8-b446-11f1-8537-00155df52554 ;
+    prov:wasInfluencedBy niiri:c901434c-b446-11f1-8537-00155df52554 .
+
+niiri:a906f6de-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:a9130c62-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:a91310e0-b446-11f1-8537-00155df52554 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "26" ;
+    niiri:education_tt30i3 "14" ;
+    niiri:hamd_17_3et8dvi "35" ;
+    niiri:handedness_l3cru3 "right" ;
+    niiri:scanner_id_2g84gph "scanner_01" ;
+    niiri:sex_cpa8jp "F" ;
+    niiri:wais_iv_fsiq_1hqi7tu "97" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:c9130f8c-b446-11f1-8537-00155df52554 ;
+    prov:wasInfluencedBy niiri:c92979ac-b446-11f1-8537-00155df52554 .
+
+niiri:aa476ad8-b446-11f1-8537-00155df52554 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "35" ;
+    niiri:education_tt30i3 "13" ;
+    niiri:hamd_17_3et8dvi "2" ;
+    niiri:handedness_l3cru3 "right" ;
+    niiri:scanner_id_2g84gph "scanner_02" ;
+    niiri:sex_cpa8jp "M" ;
+    niiri:wais_iv_fsiq_1hqi7tu "105" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:aa4766f0-b446-11f1-8537-00155df52554 ;
+    prov:wasInfluencedBy niiri:fa4ea884-b446-11f1-8537-00155df52554 .
+
+niiri:aa6d5ebe-b446-11f1-8537-00155df52554 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "29" ;
+    niiri:education_tt30i3 "15" ;
+    niiri:hamd_17_3et8dvi "49" ;
+    niiri:handedness_l3cru3 "right" ;
+    niiri:scanner_id_2g84gph "scanner_01" ;
+    niiri:sex_cpa8jp "M" ;
+    niiri:wais_iv_fsiq_1hqi7tu "111" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:ea6d5d60-b446-11f1-8537-00155df52554 ;
+    prov:wasInfluencedBy niiri:ea734324-b446-11f1-8537-00155df52554 .
+
+niiri:aad19834-b446-11f1-8537-00155df52554 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "50" ;
+    niiri:education_tt30i3 "11" ;
+    niiri:hamd_17_3et8dvi "14" ;
+    niiri:handedness_l3cru3 "left" ;
+    niiri:scanner_id_2g84gph "scanner_02" ;
+    niiri:sex_cpa8jp "M" ;
+    niiri:wais_iv_fsiq_1hqi7tu "96" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:aad196cc-b446-11f1-8537-00155df52554 ;
+    prov:wasInfluencedBy niiri:caec4896-b446-11f1-8537-00155df52554 .
+
+niiri:ac3c5f88-b446-11f1-8537-00155df52554 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "36" ;
+    niiri:education_tt30i3 "13" ;
+    niiri:hamd_17_3et8dvi "13" ;
+    niiri:handedness_l3cru3 "left" ;
+    niiri:scanner_id_2g84gph "scanner_02" ;
+    niiri:sex_cpa8jp "F" ;
+    niiri:wais_iv_fsiq_1hqi7tu "80" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:ac3c5c2c-b446-11f1-8537-00155df52554 ;
+    prov:wasInfluencedBy niiri:ac4241c8-b446-11f1-8537-00155df52554 .
+
+niiri:ac47f848-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:ac47ff50-b446-11f1-8537-00155df52554 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "33" ;
+    niiri:education_tt30i3 "14" ;
+    niiri:hamd_17_3et8dvi "42" ;
+    niiri:handedness_l3cru3 "right" ;
+    niiri:scanner_id_2g84gph "scanner_01" ;
+    niiri:sex_cpa8jp "F" ;
+    niiri:wais_iv_fsiq_1hqi7tu "114" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:fc47fd20-b446-11f1-8537-00155df52554 ;
+    prov:wasInfluencedBy niiri:ec62cca4-b446-11f1-8537-00155df52554 .
+
+niiri:ac8d72ce-b446-11f1-8537-00155df52554 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "31" ;
+    niiri:education_tt30i3 "15" ;
+    niiri:hamd_17_3et8dvi "17" ;
+    niiri:handedness_l3cru3 "right" ;
+    niiri:scanner_id_2g84gph "scanner_01" ;
+    niiri:sex_cpa8jp "M" ;
+    niiri:wais_iv_fsiq_1hqi7tu "97" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:cc8d7170-b446-11f1-8537-00155df52554 ;
+    prov:wasInfluencedBy niiri:eca90318-b446-11f1-8537-00155df52554 .
+
+niiri:ad20c970-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:ad20cede-b446-11f1-8537-00155df52554 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "44" ;
+    niiri:education_tt30i3 "14" ;
+    niiri:hamd_17_3et8dvi "4" ;
+    niiri:handedness_l3cru3 "left" ;
+    niiri:scanner_id_2g84gph "scanner_01" ;
+    niiri:sex_cpa8jp "F" ;
+    niiri:wais_iv_fsiq_1hqi7tu "83" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:ad20cd80-b446-11f1-8537-00155df52554 ;
+    prov:wasInfluencedBy niiri:fd2d5dfc-b446-11f1-8537-00155df52554 .
+
+niiri:ad6f51a8-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 3e-03 ;
+    bids:FlipAngle "11"^^xsd:int ;
+    crypto:sha512 "5c7f86bd8208ec21b509326f20a6150f9b0e640d7ba8c66c649514ddcde61344a121dd861381c74a37f7749e8f662950abf7b3fab766f35115521ae48ab68405" ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 8e-03 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-02/ses-01/anat/sub-02_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:dd6f4cf8-b446-11f1-8537-00155df52554 .
+
+niiri:ada36178-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:ada3fb7e-b446-11f1-8537-00155df52554 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:ada36178-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:b82ba8fe-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:ada40038-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 3e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    crypto:sha512 "edd43a23babc9819db890dea3579d73d4a80d1b44c145bd5dc0ce512f1e57f47040d740fcf75dbbe195ed0262f02e185af9279648f352d73886cf7d5076d3933" ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 8e-03 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-06/ses-01/anat/sub-06_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:ada3fb7e-b446-11f1-8537-00155df52554 .
+
+niiri:adb18c4e-b446-11f1-8537-00155df52554 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:bdb0ff04-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:e83fce42-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:addc81a6-b446-11f1-8537-00155df52554 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:fddbfe02-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:c87341c8-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:ae4fe376-b446-11f1-8537-00155df52554 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:ee4f4768-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:c8fb30ec-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:ae709b3e-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:ae712b9e-b446-11f1-8537-00155df52554 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:ae709b3e-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:e906ffbc-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:ae9d1cf4-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 3e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    crypto:sha512 "e41dc8ccd0ef9272db291d165989389734c0c2573c9dd1bd27c62917e45a09afaa7cc08576230c70760f5c39f203225e5185539a552d5515e542edea50f5acb8" ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 8e-03 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-19/ses-01/anat/sub-19_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:fe9d1880-b446-11f1-8537-00155df52554 .
+
+niiri:aef314ba-b446-11f1-8537-00155df52554 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:fef28b6c-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:f9ac2f1e-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:aef31ad2-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 3e-03 ;
+    bids:FlipAngle "11"^^xsd:int ;
+    crypto:sha512 "3543d179b3897a3245d9711c74e42e8904ef3334590e88a03b34c871d28d2eac25ae69a9a98331e552bf769a781cb17e3f4ab903e18a74cf1ee462d2b44d919a" ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 8e-03 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-22/ses-01/anat/sub-22_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:aef314ba-b446-11f1-8537-00155df52554 .
+
+niiri:af1a96d4-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 3e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    crypto:sha512 "ce022d6b907983e26aabd7ab3d78a493c7af4bb8ad4cc5ad0fb088382ef30eba92459ba37bbe7a2b06da20b3702a32501c0b5d0afd1b1fd41cf6fce6b2938b70" ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 8e-03 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-23/ses-01/anat/sub-23_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:ff1a921a-b446-11f1-8537-00155df52554 .
+
+niiri:af54a824-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 3e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    crypto:sha512 "70b2028a39c34e576c3a12b84ddce38f969f8d127d73b5d3182827b5d69a944e9425cc1bd13b4aa8853137873f3544fa40771fe8aef4522e2133b65a14db651b" ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 8e-03 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-25/ses-01/anat/sub-25_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:bf54a2fc-b446-11f1-8537-00155df52554 .
+
+niiri:af619c6e-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 4e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    crypto:sha512 "49ad0b53fcf49f91f8fc453201650df0daa73023dda88022fd2209ce942cd2269236cd6baf89b6fb44f75f6eafadb0a0716b80dfd8cfbc1fe072fc19e5720450" ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-26/ses-01/anat/sub-26_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:ef6197b4-b446-11f1-8537-00155df52554 .
+
+niiri:afee35f2-b446-11f1-8537-00155df52554 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:bfedabfa-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:fa6d6076-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:b0000048-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:b01c65da-b446-11f1-8537-00155df52554 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:f01bd462-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ea914aea-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:b0463748-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 4e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    crypto:sha512 "c1b3ef0f63c7c7f53045b5840843847e2c207671da3d3bc2a960f6b3cb0a61eeb576a9bb1c2cb206415f612db261162b4451dd234d68408cf2f3b7f68c068955" ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-32/ses-01/anat/sub-32_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:f04632a2-b446-11f1-8537-00155df52554 .
+
+niiri:b074e444-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:b08eaf46-b446-11f1-8537-00155df52554 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:e08df95c-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:bb27d884-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:b1756c24-b446-11f1-8537-00155df52554 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:c143b1de-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:bbc86b96-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:b21f18fa-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 4e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    crypto:sha512 "16e534c2d5a2cceb0016c785c2f65898895b7ced0cf06fa07d5f709d3c65258cc62887aee02ff90ab8a2b457206935439329ece78b8fbc8b4210c5f5f64c9267" ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-42/ses-01/anat/sub-42_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:d21f144a-b446-11f1-8537-00155df52554 .
+
+niiri:b246ccb0-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 4e-03 ;
+    bids:FlipAngle "11"^^xsd:int ;
+    crypto:sha512 "183506c3473c91edf3efbcfc7e53893d3cb11ace59ffce233bf96200b1f77d7fbb2ca1251a8827c5eefd7a3c10407dfd0711bbdbb185821e5e7cc22b9fb0e413" ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-43/ses-01/anat/sub-43_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:f246c7c4-b446-11f1-8537-00155df52554 .
+
+niiri:b25b6e72-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 4e-03 ;
+    bids:FlipAngle "11"^^xsd:int ;
+    crypto:sha512 "48e2b8a4f6c36abcbb57cb263595c0e60e9d54d08834a8f0e8c75448fdd590a167f95e64ad84c926604c7fa775616c05833a5f0628a8050dfa7f7a0508698d56" ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-44/ses-01/anat/sub-44_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:c25b56e4-b446-11f1-8537-00155df52554 .
+
+niiri:b2a1c1e2-b446-11f1-8537-00155df52554 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:a2a12778-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:eccafd6a-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:b2f97612-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:b2fa46c8-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 4e-03 ;
+    bids:FlipAngle "11"^^xsd:int ;
+    crypto:sha512 "8ee188f589cc099d03b16b9ee0260f3fb3c233baf255408653f30332b63c9378d92a19c3444a88e8f04f26f122d8bd138571c9e8e891eb7123dee5f2ede7e0e9" ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-48/ses-01/anat/sub-48_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:d2fa3ee4-b446-11f1-8537-00155df52554 .
+
+niiri:b81f545a-b446-11f1-8537-00155df52554 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "33" ;
+    niiri:education_tt30i3 "13" ;
+    niiri:hamd_17_3et8dvi "22" ;
+    niiri:handedness_l3cru3 "right" ;
+    niiri:scanner_id_2g84gph "scanner_01" ;
+    niiri:sex_cpa8jp "M" ;
+    niiri:wais_iv_fsiq_1hqi7tu "87" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:a81f52fc-b446-11f1-8537-00155df52554 ;
+    prov:wasInfluencedBy niiri:b8258a00-b446-11f1-8537-00155df52554 .
+
+niiri:b82ba304-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:b83fcc6c-b446-11f1-8537-00155df52554 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "49" ;
+    niiri:education_tt30i3 "14" ;
+    niiri:hamd_17_3et8dvi "38" ;
+    niiri:handedness_l3cru3 "left" ;
+    niiri:scanner_id_2g84gph "scanner_02" ;
+    niiri:sex_cpa8jp "M" ;
+    niiri:wais_iv_fsiq_1hqi7tu "84" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:f83fcadc-b446-11f1-8537-00155df52554 ;
+    prov:wasInfluencedBy niiri:c8540268-b446-11f1-8537-00155df52554 .
+
+niiri:b86687b2-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:b88f4de6-b446-11f1-8537-00155df52554 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "40" ;
+    niiri:education_tt30i3 "14" ;
+    niiri:hamd_17_3et8dvi "2" ;
+    niiri:handedness_l3cru3 "left" ;
+    niiri:scanner_id_2g84gph "scanner_01" ;
+    niiri:sex_cpa8jp "F" ;
+    niiri:wais_iv_fsiq_1hqi7tu "76" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:d88f4c06-b446-11f1-8537-00155df52554 ;
+    prov:wasInfluencedBy niiri:a8b16a98-b446-11f1-8537-00155df52554 .
+
+niiri:b8b8b0d2-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:b8d37430-b446-11f1-8537-00155df52554 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "37" ;
+    niiri:education_tt30i3 "14" ;
+    niiri:hamd_17_3et8dvi "34" ;
+    niiri:handedness_l3cru3 "right" ;
+    niiri:scanner_id_2g84gph "scanner_01" ;
+    niiri:sex_cpa8jp "M" ;
+    niiri:wais_iv_fsiq_1hqi7tu "127" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:a8d36f58-b446-11f1-8537-00155df52554 ;
+    prov:wasInfluencedBy niiri:f8e6eea2-b446-11f1-8537-00155df52554 .
+
+niiri:b906fde6-b446-11f1-8537-00155df52554 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "30" ;
+    niiri:education_tt30i3 "12" ;
+    niiri:hamd_17_3et8dvi "5" ;
+    niiri:handedness_l3cru3 "right" ;
+    niiri:scanner_id_2g84gph "scanner_02" ;
+    niiri:sex_cpa8jp "F" ;
+    niiri:wais_iv_fsiq_1hqi7tu "107" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:b906fc38-b446-11f1-8537-00155df52554 ;
+    prov:wasInfluencedBy niiri:b90d03f8-b446-11f1-8537-00155df52554 .
+
+niiri:b93110f4-b446-11f1-8537-00155df52554 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "38" ;
+    niiri:education_tt30i3 "15" ;
+    niiri:hamd_17_3et8dvi "18" ;
+    niiri:handedness_l3cru3 "right" ;
+    niiri:scanner_id_2g84gph "scanner_01" ;
+    niiri:sex_cpa8jp "M" ;
+    niiri:wais_iv_fsiq_1hqi7tu "72" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:f9310fb4-b446-11f1-8537-00155df52554 ;
+    prov:wasInfluencedBy niiri:b94748b0-b446-11f1-8537-00155df52554 .
+
+niiri:b9607bbe-b446-11f1-8537-00155df52554 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "27" ;
+    niiri:education_tt30i3 "14" ;
+    niiri:hamd_17_3et8dvi "40" ;
+    niiri:handedness_l3cru3 "right" ;
+    niiri:scanner_id_2g84gph "scanner_02" ;
+    niiri:sex_cpa8jp "M" ;
+    niiri:wais_iv_fsiq_1hqi7tu "71" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:c9607a6a-b446-11f1-8537-00155df52554 ;
+    prov:wasInfluencedBy niiri:f9773ce6-b446-11f1-8537-00155df52554 .
+
+niiri:b97ec704-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:ba391dde-b446-11f1-8537-00155df52554 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "30" ;
+    niiri:education_tt30i3 "15" ;
+    niiri:hamd_17_3et8dvi "4" ;
+    niiri:handedness_l3cru3 "right" ;
+    niiri:scanner_id_2g84gph "scanner_02" ;
+    niiri:sex_cpa8jp "M" ;
+    niiri:wais_iv_fsiq_1hqi7tu "71" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:ba391bf4-b446-11f1-8537-00155df52554 ;
+    prov:wasInfluencedBy niiri:ea40f716-b446-11f1-8537-00155df52554 .
+
+niiri:ba546706-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:ba78e824-b446-11f1-8537-00155df52554 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "31" ;
+    niiri:education_tt30i3 "12" ;
+    niiri:hamd_17_3et8dvi "18" ;
+    niiri:handedness_l3cru3 "right" ;
+    niiri:scanner_id_2g84gph "scanner_02" ;
+    niiri:sex_cpa8jp "F" ;
+    niiri:wais_iv_fsiq_1hqi7tu "114" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:da78e69e-b446-11f1-8537-00155df52554 ;
+    prov:wasInfluencedBy niiri:ca7ed8e2-b446-11f1-8537-00155df52554 .
+
+niiri:bb0aaed0-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:bb66a4f6-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:bb889a16-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:bbc86498-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:bbc869b6-b446-11f1-8537-00155df52554 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "18" ;
+    niiri:education_tt30i3 "12" ;
+    niiri:hamd_17_3et8dvi "23" ;
+    niiri:handedness_l3cru3 "left" ;
+    niiri:scanner_id_2g84gph "scanner_01" ;
+    niiri:sex_cpa8jp "F" ;
+    niiri:wais_iv_fsiq_1hqi7tu "125" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:fbc8684e-b446-11f1-8537-00155df52554 ;
+    prov:wasInfluencedBy niiri:cbdfdc7c-b446-11f1-8537-00155df52554 .
+
+niiri:bc12498c-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:bc30353c-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:bcbd8ae0-b446-11f1-8537-00155df52554 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "21" ;
+    niiri:education_tt30i3 "14" ;
+    niiri:hamd_17_3et8dvi "44" ;
+    niiri:handedness_l3cru3 "right" ;
+    niiri:scanner_id_2g84gph "scanner_01" ;
+    niiri:sex_cpa8jp "F" ;
+    niiri:wais_iv_fsiq_1hqi7tu "91" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:fcbd88f6-b446-11f1-8537-00155df52554 ;
+    prov:wasInfluencedBy niiri:dcc46040-b446-11f1-8537-00155df52554 .
+
+niiri:bd7c3b66-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 3e-03 ;
+    bids:FlipAngle "11"^^xsd:int ;
+    crypto:sha512 "42bed161525f73da18893e2f55cf80409a8c71e6a6c27cbdec3b8b440df559988e7c8e99e7b8ddf61a3bd75ba3e2f507c67ee01af6049581f85fb1ea947f4692" ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 8e-03 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-03/ses-01/anat/sub-03_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:fd7c36b6-b446-11f1-8537-00155df52554 .
+
+niiri:bd89e25c-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 3e-03 ;
+    bids:FlipAngle "11"^^xsd:int ;
+    crypto:sha512 "4ccf3785b58877fe7a1093f5689861dd2178e02d7c3f0a66a1f39c4fe1908f1c15c8acdccec1eaa6df299262e3cacc0230452fdb4816747a68a44cdeb114bb11" ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 8e-03 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-04/ses-01/anat/sub-04_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:dd89ddc0-b446-11f1-8537-00155df52554 .
+
+niiri:bd96526c-b446-11f1-8537-00155df52554 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:fd95c8f6-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:e81f5658-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:bdb0ff04-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:be4fe83a-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 3e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    crypto:sha512 "2d5c3935218b0f0152da4a654267675eee7743e7eb9f4c9703c7d3a9601262fe1693e2fe45d784a52e7b1f28d1d3d41525afc448a51847e5f27e1257574b0363" ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 8e-03 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-15/ses-01/anat/sub-15_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:ae4fe376-b446-11f1-8537-00155df52554 .
+
+niiri:be7dd394-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:be7e69a8-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 3e-03 ;
+    bids:FlipAngle "11"^^xsd:int ;
+    crypto:sha512 "6e4d36399d430f283d8236ff6d0e101c0b9960f328f635a1e270bd7aeb19ab532fd248d45a81729372dbabacb41190909067992d6e8075cc39145cfdef427f3f" ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 8e-03 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-17/ses-01/anat/sub-17_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:de7e6548-b446-11f1-8537-00155df52554 .
+
+niiri:bf54a2fc-b446-11f1-8537-00155df52554 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:df541ab2-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ca39207c-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:bf610fc4-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:bfd70062-b446-11f1-8537-00155df52554 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:ffd67c46-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ca612914-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:bfedabfa-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:c0008d60-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 4e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    crypto:sha512 "9a86255945eb925efd636d05b03a981a34c4d179128d0d0e96c14045b0a8a8220f91010775a473cee1aeae81ff3119893865a574e77e85c9f655727b2062ccaf" ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-30/ses-01/anat/sub-30_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:f00087c0-b446-11f1-8537-00155df52554 .
+
+niiri:c0758962-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 4e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    crypto:sha512 "10451c4824f9871644f39426fc303bfaaddf4321285dfbbc7e1b31f683f35ccf8e4a05b9fb594c40981ef34892c6fbf8100b01e1453370fc647c0fbd390a005f" ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-33/ses-01/anat/sub-33_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:a075826e-b446-11f1-8537-00155df52554 .
+
+niiri:c0bc624c-b446-11f1-8537-00155df52554 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:a0bb9df8-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ab456908-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:c0bc6850-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 4e-03 ;
+    bids:FlipAngle "11"^^xsd:int ;
+    crypto:sha512 "13a92c3df83e7c94d895232f0a9587fa3e81014d4f26a76c4c12e9a3648a3f10df28c372896c42e64c6fa162eb73819f4d88b6d47ae00405e1a5b5ec8fa06ecb" ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-35/ses-01/anat/sub-35_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:c0bc624c-b446-11f1-8537-00155df52554 .
+
+niiri:c0e71686-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 4e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    crypto:sha512 "c54de037da85c10f0d903a23c14e3cb2702dde8bf7374f755af3fa7e6f1d40497b1b18076b274fc33a1b986cc076384b0e18f00ed574983db8f06ecddbee039f" ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-36/ses-01/anat/sub-36_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:d0e71186-b446-11f1-8537-00155df52554 .
+
+niiri:c143b1de-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:c1a6fafa-b446-11f1-8537-00155df52554 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:e1a64bf0-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:fbf2290e-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:c20c6a70-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:c25b56e4-b446-11f1-8537-00155df52554 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:f25ab874-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ac8d74ae-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:c315f4e0-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:c7d05f26-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:c8137e78-b446-11f1-8537-00155df52554 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "49" ;
+    niiri:education_tt30i3 "15" ;
+    niiri:hamd_17_3et8dvi "6" ;
+    niiri:handedness_l3cru3 "right" ;
+    niiri:scanner_id_2g84gph "scanner_01" ;
+    niiri:sex_cpa8jp "M" ;
+    niiri:wais_iv_fsiq_1hqi7tu "117" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:d8137d1a-b446-11f1-8537-00155df52554 ;
+    prov:wasInfluencedBy niiri:c8193700-b446-11f1-8537-00155df52554 .
+
+niiri:c81f502c-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:c83fc7ee-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:c8733be2-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:c8c57e66-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:c9607754-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:c97ecc4a-b446-11f1-8537-00155df52554 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "22" ;
+    niiri:education_tt30i3 "13" ;
+    niiri:hamd_17_3et8dvi "39" ;
+    niiri:handedness_l3cru3 "left" ;
+    niiri:scanner_id_2g84gph "scanner_01" ;
+    niiri:sex_cpa8jp "F" ;
+    niiri:wais_iv_fsiq_1hqi7tu "75" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:e97eca92-b446-11f1-8537-00155df52554 ;
+    prov:wasInfluencedBy niiri:c9858b52-b446-11f1-8537-00155df52554 .
+
+niiri:c9ac2cee-b446-11f1-8537-00155df52554 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "33" ;
+    niiri:education_tt30i3 "11" ;
+    niiri:hamd_17_3et8dvi "36" ;
+    niiri:handedness_l3cru3 "left" ;
+    niiri:scanner_id_2g84gph "scanner_01" ;
+    niiri:sex_cpa8jp "F" ;
+    niiri:wais_iv_fsiq_1hqi7tu "84" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:b9ac2b9a-b446-11f1-8537-00155df52554 ;
+    prov:wasInfluencedBy niiri:e9c5d478-b446-11f1-8537-00155df52554 .
+
+niiri:c9ddcbb4-b446-11f1-8537-00155df52554 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "36" ;
+    niiri:education_tt30i3 "13" ;
+    niiri:hamd_17_3et8dvi "12" ;
+    niiri:handedness_l3cru3 "left" ;
+    niiri:scanner_id_2g84gph "scanner_02" ;
+    niiri:sex_cpa8jp "M" ;
+    niiri:wais_iv_fsiq_1hqi7tu "102" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:c9ddc9a2-b446-11f1-8537-00155df52554 ;
+    prov:wasInfluencedBy niiri:b9f9a2e4-b446-11f1-8537-00155df52554 .
+
+niiri:ca39178a-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:ca4763a8-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:ca546bac-b446-11f1-8537-00155df52554 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "24" ;
+    niiri:education_tt30i3 "14" ;
+    niiri:hamd_17_3et8dvi "42" ;
+    niiri:handedness_l3cru3 "left" ;
+    niiri:scanner_id_2g84gph "scanner_02" ;
+    niiri:sex_cpa8jp "F" ;
+    niiri:wais_iv_fsiq_1hqi7tu "82" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:fa546a4e-b446-11f1-8537-00155df52554 ;
+    prov:wasInfluencedBy niiri:ea5b66aa-b446-11f1-8537-00155df52554 .
+
+niiri:cad1935c-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:cb27d686-b446-11f1-8537-00155df52554 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "24" ;
+    niiri:education_tt30i3 "13" ;
+    niiri:hamd_17_3et8dvi "24" ;
+    niiri:handedness_l3cru3 "right" ;
+    niiri:scanner_id_2g84gph "scanner_02" ;
+    niiri:sex_cpa8jp "F" ;
+    niiri:wais_iv_fsiq_1hqi7tu "98" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:bb27d514-b446-11f1-8537-00155df52554 ;
+    prov:wasInfluencedBy niiri:cb37a3ea-b446-11f1-8537-00155df52554 .
+
+niiri:cbf221f2-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:cc303a46-b446-11f1-8537-00155df52554 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "41" ;
+    niiri:education_tt30i3 "13" ;
+    niiri:hamd_17_3et8dvi "22" ;
+    niiri:handedness_l3cru3 "right" ;
+    niiri:scanner_id_2g84gph "scanner_01" ;
+    niiri:sex_cpa8jp "F" ;
+    niiri:wais_iv_fsiq_1hqi7tu "121" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:ec3038f2-b446-11f1-8537-00155df52554 ;
+    prov:wasInfluencedBy niiri:ac36389c-b446-11f1-8537-00155df52554 .
+
+niiri:cc8d6d88-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:ccbd83ce-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:cce392e4-b446-11f1-8537-00155df52554 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "30" ;
+    niiri:education_tt30i3 "14" ;
+    niiri:hamd_17_3et8dvi "41" ;
+    niiri:handedness_l3cru3 "right" ;
+    niiri:scanner_id_2g84gph "scanner_01" ;
+    niiri:sex_cpa8jp "M" ;
+    niiri:wais_iv_fsiq_1hqi7tu "79" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:bce39190-b446-11f1-8537-00155df52554 ;
+    prov:wasInfluencedBy niiri:ecf96fec-b446-11f1-8537-00155df52554 .
+
+niiri:cd6ec24c-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:cd895d46-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:cdb19108-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 3e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    crypto:sha512 "f197319938fe1e9c111d16d7803bae87c9d365ec982a79875edf2962549bb71fac85d9686e48e4af6ed9126551f26143da6afc33f3f2934def78c9823d1b68d0" ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 8e-03 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-07/ses-01/anat/sub-07_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:adb18c4e-b446-11f1-8537-00155df52554 .
+
+niiri:cddc8624-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 3e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    crypto:sha512 "52444a0cf69c2100c00632a11c962c618e5078bd4cadd7b2a6469fe03fbc3fd5dbff42a7e8f37cddbf5533cc2e9cf383bfb59406dfc5c999c17c002f67369635" ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 8e-03 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-09/ses-01/anat/sub-09_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:addc81a6-b446-11f1-8537-00155df52554 .
+
+niiri:ce11b8f8-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:ce12d788-b446-11f1-8537-00155df52554 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:ce11b8f8-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:c8d3767e-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:ce3f25d6-b446-11f1-8537-00155df52554 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:fe3e915c-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:c8eefe08-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:ce3f2ba8-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 3e-03 ;
+    bids:FlipAngle "11"^^xsd:int ;
+    crypto:sha512 "b77f76fd13460ca0f9921753e84e16f0f6fc4eca36173714117375f62707906b9fdae48a8131d3e3804f4fdb5cdacc3546fb78d6689247b71ba9a40827d9cc9b" ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 8e-03 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-14/ses-01/anat/sub-14_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:ce3f25d6-b446-11f1-8537-00155df52554 .
+
+niiri:ce8fbea6-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 3e-03 ;
+    bids:FlipAngle "11"^^xsd:int ;
+    crypto:sha512 "69e645155565eedd39f1769bcec1b6e369def571c02e57143bd7fbb8f4d14fdba67f1ea21d8043d85db3978098c244ddc0631ac1801d542d53483756b3a5b740" ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 8e-03 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-18/ses-01/anat/sub-18_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:fe8fb9e2-b446-11f1-8537-00155df52554 .
+
+niiri:cea9f8ac-b446-11f1-8537-00155df52554 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:fea96d7e-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:b97ecf42-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:ced1ea56-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 3e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    crypto:sha512 "c97ba802537ea9e5d0ac70d8b94b2792f5f941d352b1a358e75ca830475157b0396ad9830ec4e8b71a0f9fab5565319ef99e0c861cba0a1d96b9618211df9d39" ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 8e-03 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-21/ses-01/anat/sub-21_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:eed1e51a-b446-11f1-8537-00155df52554 .
+
+niiri:cf42a84a-b446-11f1-8537-00155df52554 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:ef41e1b2-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:da123a66-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:cfa66a06-b446-11f1-8537-00155df52554 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:ffa5d9ba-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ea546d8c-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:d08eb4fa-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 4e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    crypto:sha512 "1a4190c1763dcb60e0fe992a38c1e624ccd1ed8c9624d99004cef1022c16ed6bc2b323f92aa1a734becd4685afe1f12c3d51faa0db6b57fd0b04feec7bfcca00" ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-34/ses-01/anat/sub-34_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:b08eaf46-b446-11f1-8537-00155df52554 .
+
+niiri:d0e71186-b446-11f1-8537-00155df52554 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:e0e68cde-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:fb66acbc-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:d112fda0-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:d1759302-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 4e-03 ;
+    bids:FlipAngle "11"^^xsd:int ;
+    crypto:sha512 "63cd8058c777c1ea09056bf37bc6eddd8e0db0b31bfb1ff63d6662d42409224e327991f75948bab89b1522d14265cb07022b3da0fb583a1405a0b8576e9fe21d" ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-38/ses-01/anat/sub-38_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:b1756c24-b446-11f1-8537-00155df52554 .
+
+niiri:d20d84aa-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 4e-03 ;
+    bids:FlipAngle "11"^^xsd:int ;
+    crypto:sha512 "1f44cc23d0d024029d5ff0d6aedc34fb7474784ff68d737c5f852559a4061ea0cd4f1eba1b34defcd8ef3e7550fe53d7a2c14f76e2eb5943ff937bc5e860e01a" ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-41/ses-01/anat/sub-41_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:f20d6254-b446-11f1-8537-00155df52554 .
+
+niiri:d21f144a-b446-11f1-8537-00155df52554 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:e21e7d28-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ec3c61d6-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:d2461b94-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:d268ff06-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:d2698f8e-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 4e-03 ;
+    bids:FlipAngle "11"^^xsd:int ;
+    crypto:sha512 "7db120824fc3a8186ec58d723d367743cdbc2f100454a67e97974299c7a326bdc992abe373fb368d50d9aa82cab84c4baef7bd2051d5fbdc9f787cd2c1c6b225" ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-45/ses-01/anat/sub-45_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:f2698ade-b446-11f1-8537-00155df52554 .
+
+niiri:d2a1c6ce-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 4e-03 ;
+    bids:FlipAngle "11"^^xsd:int ;
+    crypto:sha512 "f8ceffb5e4ce8b939ff603164093f93e264fbd6cd09d98a64099fe0e4cd76f0de1824e7ce36a9bd3c1b32f25f41e642febbd78a704831da45ce430484fecbd6a" ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-46/ses-01/anat/sub-46_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:b2a1c1e2-b446-11f1-8537-00155df52554 .
+
+niiri:d2fa3ee4-b446-11f1-8537-00155df52554 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:b2f97612-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:cd20d0f0-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:d30945b0-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 4e-03 ;
+    bids:FlipAngle "11"^^xsd:int ;
+    crypto:sha512 "37060e68650d6f7690f96a5b8c4106ee69cc39b76324443d8ea442e95ecb0d7b9fdc7ef6cf9d4d985572f3a2fb1264773fd1c40cf6e7322058b94e0f727726d5" ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-49/ses-01/anat/sub-49_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:f309406a-b446-11f1-8537-00155df52554 .
+
+niiri:d3640a2c-b446-11f1-8537-00155df52554 a prov:Activity ;
+    rdfs:label "Create NIDM RDF from BIDS dataset" ;
+    nidm:outputFormat "turtle" ;
+    prov:endedAtTime "2026-09-19T16:23:03.340786+00:00" ;
+    prov:startedAtTime "2026-09-19T16:23:03.340786+00:00" ;
+    prov:used niiri:f2ab330e-b446-11f1-8537-00155df52554 ;
+    prov:wasAssociatedWith niiri:a3640c70-b446-11f1-8537-00155df52554 .
+
+niiri:d8eef7a0-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:d9ddc54c-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:da123796-b446-11f1-8537-00155df52554 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "22" ;
+    niiri:education_tt30i3 "14" ;
+    niiri:hamd_17_3et8dvi "45" ;
+    niiri:handedness_l3cru3 "left" ;
+    niiri:scanner_id_2g84gph "scanner_02" ;
+    niiri:sex_cpa8jp "F" ;
+    niiri:wais_iv_fsiq_1hqi7tu "108" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:ea1235ca-b446-11f1-8537-00155df52554 ;
+    prov:wasInfluencedBy niiri:fa225cde-b446-11f1-8537-00155df52554 .
+
+niiri:da612234-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:da913e06-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:db456098-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:db4566ce-b446-11f1-8537-00155df52554 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "41" ;
+    niiri:education_tt30i3 "12" ;
+    niiri:hamd_17_3et8dvi "17" ;
+    niiri:handedness_l3cru3 "left" ;
+    niiri:scanner_id_2g84gph "scanner_01" ;
+    niiri:sex_cpa8jp "M" ;
+    niiri:wais_iv_fsiq_1hqi7tu "107" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:eb456494-b446-11f1-8537-00155df52554 ;
+    prov:wasInfluencedBy niiri:db56a290-b446-11f1-8537-00155df52554 .
+
+niiri:dbf22738-b446-11f1-8537-00155df52554 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "22" ;
+    niiri:education_tt30i3 "15" ;
+    niiri:hamd_17_3et8dvi "10" ;
+    niiri:handedness_l3cru3 "right" ;
+    niiri:scanner_id_2g84gph "scanner_02" ;
+    niiri:sex_cpa8jp "F" ;
+    niiri:wais_iv_fsiq_1hqi7tu "70" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:abf2258a-b446-11f1-8537-00155df52554 ;
+    prov:wasInfluencedBy niiri:fc004020-b446-11f1-8537-00155df52554 .
+
+niiri:dc124ea0-b446-11f1-8537-00155df52554 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "36" ;
+    niiri:education_tt30i3 "12" ;
+    niiri:hamd_17_3et8dvi "23" ;
+    niiri:handedness_l3cru3 "left" ;
+    niiri:scanner_id_2g84gph "scanner_02" ;
+    niiri:sex_cpa8jp "M" ;
+    niiri:wais_iv_fsiq_1hqi7tu "118" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:cc124d42-b446-11f1-8537-00155df52554 ;
+    prov:wasInfluencedBy niiri:fc27a4f8-b446-11f1-8537-00155df52554 .
+
+niiri:dccafb94-b446-11f1-8537-00155df52554 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "28" ;
+    niiri:education_tt30i3 "14" ;
+    niiri:hamd_17_3et8dvi "43" ;
+    niiri:handedness_l3cru3 "left" ;
+    niiri:scanner_id_2g84gph "scanner_01" ;
+    niiri:sex_cpa8jp "M" ;
+    niiri:wais_iv_fsiq_1hqi7tu "87" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:dccafa40-b446-11f1-8537-00155df52554 ;
+    prov:wasInfluencedBy niiri:acdd38a4-b446-11f1-8537-00155df52554 .
+
+niiri:dd3486b8-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:dd610332-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:dd6f4cf8-b446-11f1-8537-00155df52554 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:cd6ec24c-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:f7fa7ee6-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:dd7ba61a-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:dd89ddc0-b446-11f1-8537-00155df52554 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:cd895d46-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:b813804e-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:dde966be-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 3e-03 ;
+    bids:FlipAngle "11"^^xsd:int ;
+    crypto:sha512 "3cf37062b6f397437c91ce812af7397ab6932bd6148b7b4ea2e80a9c95ec8ecb24a7ac6072eb92ae620b4ca294a6bd0b155996dddf6cac2968ffce3ecd995ab0" ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 8e-03 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-10/ses-01/anat/sub-10_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:ede961dc-b446-11f1-8537-00155df52554 .
+
+niiri:de045168-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 3e-03 ;
+    bids:FlipAngle "11"^^xsd:int ;
+    crypto:sha512 "708119f2ead30e3fe55cdba8e25bdb6f015e059380d01ce1ea6255785aa4651937c3ef65175ec4b80abd81182c9b2a1ff6071595e3cf553cc4a255a56af7c713" ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 8e-03 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-12/ses-01/anat/sub-12_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:fe044bb4-b446-11f1-8537-00155df52554 .
+
+niiri:de7e6548-b446-11f1-8537-00155df52554 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:be7dd394-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:a91312fc-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:de9c8c12-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:dea9fd84-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 3e-03 ;
+    bids:FlipAngle "11"^^xsd:int ;
+    crypto:sha512 "16c27bd9f72df4155cb6d2858a6aabb32cce67a71d9d8ec1784a5fa1303ba33b781931c7eb2e7680559d82390c1ec89979a73cc49259d9ba45aca8a43519726d" ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 8e-03 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-20/ses-01/anat/sub-20_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:cea9f8ac-b446-11f1-8537-00155df52554 .
+
+niiri:df19e8ec-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:df42af0c-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 3e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    crypto:sha512 "321969fb9d97fc2d0c5ac19eeefea64a734340838894390473bca23c7bd6e794e196bad4d76eef2893c6b8c88dc2714606ab2649a108e30910d7d48a0a5e1530" ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 8e-03 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-24/ses-01/anat/sub-24_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:cf42a84a-b446-11f1-8537-00155df52554 .
+
+niiri:df541ab2-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:dfd704e0-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 4e-03 ;
+    bids:FlipAngle "11"^^xsd:int ;
+    crypto:sha512 "3f638a41b86a2a40cce658e47731fceb8c915cd1a11ad747b0fdb7f25761314850e1f9c44f2f5e57cc6f16cd56cd78bf0afb60bb522bfcff68d5bbeb95e6526c" ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-28/ses-01/anat/sub-28_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:bfd70062-b446-11f1-8537-00155df52554 .
+
+niiri:e08df95c-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:e0e68cde-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:e1a64bf0-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:e1d58866-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:e21e7d28-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:e2d01178-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:e2d0beca-b446-11f1-8537-00155df52554 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:e2d01178-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:fce394a6-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:e30897dc-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:e316b01a-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 4e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    crypto:sha512 "a2f05faddc12e74376e924137fd9d5a1f0f0c2ec3c68ae054eeb448a8672be3d268b00702dda88fcd8f7b879c4edb351b5efd2608d0383a189854b9156f84cfd" ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-50/ses-01/anat/sub-50_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:f31698be-b446-11f1-8537-00155df52554 .
+
+niiri:e3640cd4-b446-11f1-8537-00155df52554 a prov:SoftwareAgent ;
+    rdfs:label "PyNIDM" ;
+    schema:softwareVersion "4.1.0.post187+g7479355" .
+
+niiri:e7d065f2-b446-11f1-8537-00155df52554 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "39" ;
+    niiri:education_tt30i3 "13" ;
+    niiri:hamd_17_3et8dvi "6" ;
+    niiri:handedness_l3cru3 "left" ;
+    niiri:scanner_id_2g84gph "scanner_02" ;
+    niiri:sex_cpa8jp "F" ;
+    niiri:wais_iv_fsiq_1hqi7tu "110" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:c7d06426-b446-11f1-8537-00155df52554 ;
+    prov:wasInfluencedBy niiri:b7e4f68e-b446-11f1-8537-00155df52554 .
+
+niiri:e807a40e-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:e807a846-b446-11f1-8537-00155df52554 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "41" ;
+    niiri:education_tt30i3 "13" ;
+    niiri:hamd_17_3et8dvi "24" ;
+    niiri:handedness_l3cru3 "right" ;
+    niiri:scanner_id_2g84gph "scanner_01" ;
+    niiri:sex_cpa8jp "F" ;
+    niiri:wais_iv_fsiq_1hqi7tu "71" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:e807a6de-b446-11f1-8537-00155df52554 ;
+    prov:wasInfluencedBy niiri:d80d6164-b446-11f1-8537-00155df52554 .
+
+niiri:e8137a40-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:e8668cd0-b446-11f1-8537-00155df52554 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "42" ;
+    niiri:education_tt30i3 "13" ;
+    niiri:hamd_17_3et8dvi "16" ;
+    niiri:handedness_l3cru3 "right" ;
+    niiri:scanner_id_2g84gph "scanner_01" ;
+    niiri:sex_cpa8jp "M" ;
+    niiri:wais_iv_fsiq_1hqi7tu "78" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:c8668b2c-b446-11f1-8537-00155df52554 ;
+    prov:wasInfluencedBy niiri:e86d11d6-b446-11f1-8537-00155df52554 .
+
+niiri:e8734010-b446-11f1-8537-00155df52554 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "31" ;
+    niiri:education_tt30i3 "13" ;
+    niiri:hamd_17_3et8dvi "51" ;
+    niiri:handedness_l3cru3 "left" ;
+    niiri:scanner_id_2g84gph "scanner_02" ;
+    niiri:sex_cpa8jp "M" ;
+    niiri:wais_iv_fsiq_1hqi7tu "117" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:e8733e9e-b446-11f1-8537-00155df52554 ;
+    prov:wasInfluencedBy niiri:c878e0d8-b446-11f1-8537-00155df52554 .
+
+niiri:e8d36c60-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:e8eefc0a-b446-11f1-8537-00155df52554 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "18" ;
+    niiri:education_tt30i3 "14" ;
+    niiri:hamd_17_3et8dvi "7" ;
+    niiri:handedness_l3cru3 "left" ;
+    niiri:scanner_id_2g84gph "scanner_01" ;
+    niiri:sex_cpa8jp "F" ;
+    niiri:wais_iv_fsiq_1hqi7tu "104" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:b8eefaa2-b446-11f1-8537-00155df52554 ;
+    prov:wasInfluencedBy niiri:f8f5427c-b446-11f1-8537-00155df52554 .
+
+niiri:e9310cb2-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:e98c4cc6-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:e9ac2866-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:ea123188-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:ea914608-b446-11f1-8537-00155df52554 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "29" ;
+    niiri:education_tt30i3 "14" ;
+    niiri:hamd_17_3et8dvi "5" ;
+    niiri:handedness_l3cru3 "right" ;
+    niiri:scanner_id_2g84gph "scanner_02" ;
+    niiri:sex_cpa8jp "F" ;
+    niiri:wais_iv_fsiq_1hqi7tu "104" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:ba91416c-b446-11f1-8537-00155df52554 ;
+    prov:wasInfluencedBy niiri:fab5dc98-b446-11f1-8537-00155df52554 .
+
+niiri:eb66aa6e-b446-11f1-8537-00155df52554 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "23" ;
+    niiri:education_tt30i3 "15" ;
+    niiri:hamd_17_3et8dvi "29" ;
+    niiri:handedness_l3cru3 "right" ;
+    niiri:scanner_id_2g84gph "scanner_02" ;
+    niiri:sex_cpa8jp "F" ;
+    niiri:wais_iv_fsiq_1hqi7tu "87" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:eb66a910-b446-11f1-8537-00155df52554 ;
+    prov:wasInfluencedBy niiri:fb77952c-b446-11f1-8537-00155df52554 .
+
+niiri:ece38d94-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:ed348bd6-b446-11f1-8537-00155df52554 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "37" ;
+    niiri:education_tt30i3 "13" ;
+    niiri:hamd_17_3et8dvi "38" ;
+    niiri:handedness_l3cru3 "left" ;
+    niiri:scanner_id_2g84gph "scanner_01" ;
+    niiri:sex_cpa8jp "F" ;
+    niiri:wais_iv_fsiq_1hqi7tu "118" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:ed348a82-b446-11f1-8537-00155df52554 ;
+    prov:wasInfluencedBy niiri:ad3a5822-b446-11f1-8537-00155df52554 .
+
+niiri:ed40a01a-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:ed61c04c-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 3e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    crypto:sha512 "7b5805d841b3ce1f8542790be805cf3869f7f3ae9ec968573ca1cfd2970834f9174214dff3a19090c670298f9d9fd68e924ec0d8d9f45312716554e4cfba6986" ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 8e-03 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-01/ses-01/anat/sub-01_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:fd61b868-b446-11f1-8537-00155df52554 .
+
+niiri:ed9656f4-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 3e-03 ;
+    bids:FlipAngle "11"^^xsd:int ;
+    crypto:sha512 "3a0d99bb334a861d838e6f9c50a3afd1280368d43396e9fe5b9db9598b71393a80597f6c899919acf39769b0efbb8dca2f5e176ef530784b883d1aac0afaaec8" ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 8e-03 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-05/ses-01/anat/sub-05_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:bd96526c-b446-11f1-8537-00155df52554 .
+
+niiri:edc33f0c-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:edc40734-b446-11f1-8537-00155df52554 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:edc33f0c-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:d8668ff0-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:ede8cd58-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:ede961dc-b446-11f1-8537-00155df52554 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:ede8cd58-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:f88f51f6-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:edf61756-b446-11f1-8537-00155df52554 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:fdf5909c-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:d8b8bb36-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:edf61bfc-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 3e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    crypto:sha512 "4cf455f607c2c6c4653804ee8da203d9efd5eed9986f7fd77243b277454b889bfb5daf2e1becb5587f9dc2c0c2a4a48a1b1b4c49da0ec6b642180b6c8c559e9e" ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 8e-03 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-11/ses-01/anat/sub-11_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:edf61756-b446-11f1-8537-00155df52554 .
+
+niiri:ee12de86-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 3e-03 ;
+    bids:FlipAngle "11"^^xsd:int ;
+    crypto:sha512 "36bcda2c5baca58f04dd2e79079266cfcc647f113a1c876dc6d431fc72dac0f3f57376f6afd3324528f48c54d066ebf1d97cc18d4b31d0a354f652a217f36293" ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 8e-03 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-13/ses-01/anat/sub-13_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:ce12d788-b446-11f1-8537-00155df52554 .
+
+niiri:ee4f4768-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:eed154e2-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:eed1e51a-b446-11f1-8537-00155df52554 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:eed154e2-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:f98c5388-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:ef41e1b2-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:ef6197b4-b446-11f1-8537-00155df52554 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:bf610fc4-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ea476d58-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:f00087c0-b446-11f1-8537-00155df52554 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:b0000048-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ba78e9e6-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:f01bd462-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:f01c6ad0-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 4e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    crypto:sha512 "489f620aa4cfc5b869cb0bb7452ae9315d3756137812a772d217bae114804604dad5cf891f33e233cc2b9ed66ab21f0e41cb4656a6a3f0447642e505e6f86ac8" ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-31/ses-01/anat/sub-31_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:b01c65da-b446-11f1-8537-00155df52554 .
+
+niiri:f04632a2-b446-11f1-8537-00155df52554 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:a045a274-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ead19a00-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:f113bca4-b446-11f1-8537-00155df52554 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:d112fda0-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:eb88a146-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:f1d6440e-b446-11f1-8537-00155df52554 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:e1d58866-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:fc125094-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:f1d64ab2-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 4e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    crypto:sha512 "4c20e3a8074ecf0db1280990ef8e5f08f6370655bab6d8258b70c1538db4b1bdb5d57387c98a23684a82f25dd8c862d8ad5cee683ea9865ca79cf3b24c55ecaa" ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-40/ses-01/anat/sub-40_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:f1d6440e-b446-11f1-8537-00155df52554 .
+
+niiri:f20d6254-b446-11f1-8537-00155df52554 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:c20c6a70-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:cc303c1c-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:f246c7c4-b446-11f1-8537-00155df52554 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:d2461b94-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ec48022a-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:f25ab874-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:f2698ade-b446-11f1-8537-00155df52554 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:d268ff06-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:fcbd8de2-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:f2ab330e-b446-11f1-8537-00155df52554 a bids:Dataset,
+        prov:Collection,
+        prov:Entity ;
+    bids:BIDSVersion "1.8.0" ;
+    prov:hadMember niiri:a113c186-b446-11f1-8537-00155df52554,
+        niiri:a1a70220-b446-11f1-8537-00155df52554,
+        niiri:a8b16a98-b446-11f1-8537-00155df52554,
+        niiri:a8c582b2-b446-11f1-8537-00155df52554,
+        niiri:a8fb2d2c-b446-11f1-8537-00155df52554,
+        niiri:a91310e0-b446-11f1-8537-00155df52554,
+        niiri:aa476ad8-b446-11f1-8537-00155df52554,
+        niiri:aa6d5ebe-b446-11f1-8537-00155df52554,
+        niiri:aad19834-b446-11f1-8537-00155df52554,
+        niiri:ac36389c-b446-11f1-8537-00155df52554,
+        niiri:ac3c5f88-b446-11f1-8537-00155df52554,
+        niiri:ac4241c8-b446-11f1-8537-00155df52554,
+        niiri:ac47ff50-b446-11f1-8537-00155df52554,
+        niiri:ac8d72ce-b446-11f1-8537-00155df52554,
+        niiri:acdd38a4-b446-11f1-8537-00155df52554,
+        niiri:ad20cede-b446-11f1-8537-00155df52554,
+        niiri:ad3a5822-b446-11f1-8537-00155df52554,
+        niiri:ad6f51a8-b446-11f1-8537-00155df52554,
+        niiri:ada40038-b446-11f1-8537-00155df52554,
+        niiri:ae9d1cf4-b446-11f1-8537-00155df52554,
+        niiri:aef31ad2-b446-11f1-8537-00155df52554,
+        niiri:af1a96d4-b446-11f1-8537-00155df52554,
+        niiri:af54a824-b446-11f1-8537-00155df52554,
+        niiri:af619c6e-b446-11f1-8537-00155df52554,
+        niiri:b0463748-b446-11f1-8537-00155df52554,
+        niiri:b21f18fa-b446-11f1-8537-00155df52554,
+        niiri:b246ccb0-b446-11f1-8537-00155df52554,
+        niiri:b25b6e72-b446-11f1-8537-00155df52554,
+        niiri:b2fa46c8-b446-11f1-8537-00155df52554,
+        niiri:b7e4f68e-b446-11f1-8537-00155df52554,
+        niiri:b81f545a-b446-11f1-8537-00155df52554,
+        niiri:b8258a00-b446-11f1-8537-00155df52554,
+        niiri:b83fcc6c-b446-11f1-8537-00155df52554,
+        niiri:b88f4de6-b446-11f1-8537-00155df52554,
+        niiri:b8d37430-b446-11f1-8537-00155df52554,
+        niiri:b906fde6-b446-11f1-8537-00155df52554,
+        niiri:b90d03f8-b446-11f1-8537-00155df52554,
+        niiri:b93110f4-b446-11f1-8537-00155df52554,
+        niiri:b94748b0-b446-11f1-8537-00155df52554,
+        niiri:b9607bbe-b446-11f1-8537-00155df52554,
+        niiri:b9f9a2e4-b446-11f1-8537-00155df52554,
+        niiri:ba391dde-b446-11f1-8537-00155df52554,
+        niiri:ba78e824-b446-11f1-8537-00155df52554,
+        niiri:bbc869b6-b446-11f1-8537-00155df52554,
+        niiri:bcbd8ae0-b446-11f1-8537-00155df52554,
+        niiri:bd7c3b66-b446-11f1-8537-00155df52554,
+        niiri:bd89e25c-b446-11f1-8537-00155df52554,
+        niiri:be4fe83a-b446-11f1-8537-00155df52554,
+        niiri:be7e69a8-b446-11f1-8537-00155df52554,
+        niiri:c0008d60-b446-11f1-8537-00155df52554,
+        niiri:c0758962-b446-11f1-8537-00155df52554,
+        niiri:c0bc6850-b446-11f1-8537-00155df52554,
+        niiri:c0e71686-b446-11f1-8537-00155df52554,
+        niiri:c8137e78-b446-11f1-8537-00155df52554,
+        niiri:c8193700-b446-11f1-8537-00155df52554,
+        niiri:c8540268-b446-11f1-8537-00155df52554,
+        niiri:c878e0d8-b446-11f1-8537-00155df52554,
+        niiri:c8bf75ac-b446-11f1-8537-00155df52554,
+        niiri:c8cba548-b446-11f1-8537-00155df52554,
+        niiri:c901434c-b446-11f1-8537-00155df52554,
+        niiri:c92979ac-b446-11f1-8537-00155df52554,
+        niiri:c97ecc4a-b446-11f1-8537-00155df52554,
+        niiri:c9858b52-b446-11f1-8537-00155df52554,
+        niiri:c9ac2cee-b446-11f1-8537-00155df52554,
+        niiri:c9ddcbb4-b446-11f1-8537-00155df52554,
+        niiri:ca546bac-b446-11f1-8537-00155df52554,
+        niiri:ca7ed8e2-b446-11f1-8537-00155df52554,
+        niiri:caec4896-b446-11f1-8537-00155df52554,
+        niiri:cb27d686-b446-11f1-8537-00155df52554,
+        niiri:cb37a3ea-b446-11f1-8537-00155df52554,
+        niiri:cbdfdc7c-b446-11f1-8537-00155df52554,
+        niiri:cc303a46-b446-11f1-8537-00155df52554,
+        niiri:cce392e4-b446-11f1-8537-00155df52554,
+        niiri:cdb19108-b446-11f1-8537-00155df52554,
+        niiri:cddc8624-b446-11f1-8537-00155df52554,
+        niiri:ce3f2ba8-b446-11f1-8537-00155df52554,
+        niiri:ce8fbea6-b446-11f1-8537-00155df52554,
+        niiri:ced1ea56-b446-11f1-8537-00155df52554,
+        niiri:d08eb4fa-b446-11f1-8537-00155df52554,
+        niiri:d1759302-b446-11f1-8537-00155df52554,
+        niiri:d20d84aa-b446-11f1-8537-00155df52554,
+        niiri:d2698f8e-b446-11f1-8537-00155df52554,
+        niiri:d2a1c6ce-b446-11f1-8537-00155df52554,
+        niiri:d30945b0-b446-11f1-8537-00155df52554,
+        niiri:d80120de-b446-11f1-8537-00155df52554,
+        niiri:d80d6164-b446-11f1-8537-00155df52554,
+        niiri:da123796-b446-11f1-8537-00155df52554,
+        niiri:db198da6-b446-11f1-8537-00155df52554,
+        niiri:db4566ce-b446-11f1-8537-00155df52554,
+        niiri:db56a290-b446-11f1-8537-00155df52554,
+        niiri:dba9e37e-b446-11f1-8537-00155df52554,
+        niiri:dbf22738-b446-11f1-8537-00155df52554,
+        niiri:dc124ea0-b446-11f1-8537-00155df52554,
+        niiri:dcc46040-b446-11f1-8537-00155df52554,
+        niiri:dccafb94-b446-11f1-8537-00155df52554,
+        niiri:dde966be-b446-11f1-8537-00155df52554,
+        niiri:de045168-b446-11f1-8537-00155df52554,
+        niiri:dea9fd84-b446-11f1-8537-00155df52554,
+        niiri:df42af0c-b446-11f1-8537-00155df52554,
+        niiri:dfd704e0-b446-11f1-8537-00155df52554,
+        niiri:e316b01a-b446-11f1-8537-00155df52554,
+        niiri:e7d065f2-b446-11f1-8537-00155df52554,
+        niiri:e807a846-b446-11f1-8537-00155df52554,
+        niiri:e833f018-b446-11f1-8537-00155df52554,
+        niiri:e8668cd0-b446-11f1-8537-00155df52554,
+        niiri:e86d11d6-b446-11f1-8537-00155df52554,
+        niiri:e8734010-b446-11f1-8537-00155df52554,
+        niiri:e8eefc0a-b446-11f1-8537-00155df52554,
+        niiri:e9c5d478-b446-11f1-8537-00155df52554,
+        niiri:ea40f716-b446-11f1-8537-00155df52554,
+        niiri:ea5b66aa-b446-11f1-8537-00155df52554,
+        niiri:ea6777e2-b446-11f1-8537-00155df52554,
+        niiri:ea734324-b446-11f1-8537-00155df52554,
+        niiri:ea914608-b446-11f1-8537-00155df52554,
+        niiri:eb66aa6e-b446-11f1-8537-00155df52554,
+        niiri:ec62cca4-b446-11f1-8537-00155df52554,
+        niiri:eca90318-b446-11f1-8537-00155df52554,
+        niiri:ecf96fec-b446-11f1-8537-00155df52554,
+        niiri:ed348bd6-b446-11f1-8537-00155df52554,
+        niiri:ed46da34-b446-11f1-8537-00155df52554,
+        niiri:ed61c04c-b446-11f1-8537-00155df52554,
+        niiri:ed9656f4-b446-11f1-8537-00155df52554,
+        niiri:edf61bfc-b446-11f1-8537-00155df52554,
+        niiri:ee12de86-b446-11f1-8537-00155df52554,
+        niiri:f01c6ad0-b446-11f1-8537-00155df52554,
+        niiri:f1d64ab2-b446-11f1-8537-00155df52554,
+        niiri:f2d0d4c8-b446-11f1-8537-00155df52554,
+        niiri:f7fa7cf2-b446-11f1-8537-00155df52554,
+        niiri:f82ba732-b446-11f1-8537-00155df52554,
+        niiri:f8b8b532-b446-11f1-8537-00155df52554,
+        niiri:f8e6eea2-b446-11f1-8537-00155df52554,
+        niiri:f8f5427c-b446-11f1-8537-00155df52554,
+        niiri:f9773ce6-b446-11f1-8537-00155df52554,
+        niiri:f98c5162-b446-11f1-8537-00155df52554,
+        niiri:f9a2ae6c-b446-11f1-8537-00155df52554,
+        niiri:fa225cde-b446-11f1-8537-00155df52554,
+        niiri:fa4ea884-b446-11f1-8537-00155df52554,
+        niiri:fa6126f8-b446-11f1-8537-00155df52554,
+        niiri:fab5dc98-b446-11f1-8537-00155df52554,
+        niiri:fb0abc72-b446-11f1-8537-00155df52554,
+        niiri:fb77952c-b446-11f1-8537-00155df52554,
+        niiri:fb889f34-b446-11f1-8537-00155df52554,
+        niiri:fc004020-b446-11f1-8537-00155df52554,
+        niiri:fc27a4f8-b446-11f1-8537-00155df52554,
+        niiri:fd2d5dfc-b446-11f1-8537-00155df52554,
+        niiri:fd40a588-b446-11f1-8537-00155df52554,
+        niiri:fdc40da6-b446-11f1-8537-00155df52554,
+        niiri:fe713076-b446-11f1-8537-00155df52554,
+        niiri:ffa66f24-b446-11f1-8537-00155df52554,
+        niiri:ffee3b92-b446-11f1-8537-00155df52554 .
+
+niiri:f2d0d4c8-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 4e-03 ;
+    bids:FlipAngle "11"^^xsd:int ;
+    crypto:sha512 "754765e67d730259f297cdf3f8ac9f114f290b0c2e68d9e19ada6fb44336de95ec6aa3dad36442fdab0d91262374117b443d905f78331bfe261e5cd2e7f20151" ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-47/ses-01/anat/sub-47_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:e2d0beca-b446-11f1-8537-00155df52554 .
+
+niiri:f309406a-b446-11f1-8537-00155df52554 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:e30897dc-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:fd348db6-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:f31698be-b446-11f1-8537-00155df52554 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:c315f4e0-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:dd40a768-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:f7fa782e-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:f7fa7cf2-b446-11f1-8537-00155df52554 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "34" ;
+    niiri:education_tt30i3 "13" ;
+    niiri:hamd_17_3et8dvi "5" ;
+    niiri:handedness_l3cru3 "left" ;
+    niiri:scanner_id_2g84gph "scanner_01" ;
+    niiri:sex_cpa8jp "M" ;
+    niiri:wais_iv_fsiq_1hqi7tu "77" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:d7fa7b3a-b446-11f1-8537-00155df52554 ;
+    prov:wasInfluencedBy niiri:d80120de-b446-11f1-8537-00155df52554 .
+
+niiri:f82ba732-b446-11f1-8537-00155df52554 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "33" ;
+    niiri:education_tt30i3 "11" ;
+    niiri:hamd_17_3et8dvi "22" ;
+    niiri:handedness_l3cru3 "left" ;
+    niiri:scanner_id_2g84gph "scanner_02" ;
+    niiri:sex_cpa8jp "M" ;
+    niiri:wais_iv_fsiq_1hqi7tu "85" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:c82ba5de-b446-11f1-8537-00155df52554 ;
+    prov:wasInfluencedBy niiri:e833f018-b446-11f1-8537-00155df52554 .
+
+niiri:f8b8b532-b446-11f1-8537-00155df52554 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "31" ;
+    niiri:education_tt30i3 "14" ;
+    niiri:hamd_17_3et8dvi "46" ;
+    niiri:handedness_l3cru3 "right" ;
+    niiri:scanner_id_2g84gph "scanner_02" ;
+    niiri:sex_cpa8jp "M" ;
+    niiri:wais_iv_fsiq_1hqi7tu "113" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:f8b8b3e8-b446-11f1-8537-00155df52554 ;
+    prov:wasInfluencedBy niiri:c8bf75ac-b446-11f1-8537-00155df52554 .
+
+niiri:f98c5162-b446-11f1-8537-00155df52554 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "48" ;
+    niiri:education_tt30i3 "14" ;
+    niiri:hamd_17_3et8dvi "23" ;
+    niiri:handedness_l3cru3 "left" ;
+    niiri:scanner_id_2g84gph "scanner_02" ;
+    niiri:sex_cpa8jp "M" ;
+    niiri:wais_iv_fsiq_1hqi7tu "83" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:c98c4ffa-b446-11f1-8537-00155df52554 ;
+    prov:wasInfluencedBy niiri:f9a2ae6c-b446-11f1-8537-00155df52554 .
+
+niiri:fa6126f8-b446-11f1-8537-00155df52554 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "37" ;
+    niiri:education_tt30i3 "14" ;
+    niiri:hamd_17_3et8dvi "14" ;
+    niiri:handedness_l3cru3 "left" ;
+    niiri:scanner_id_2g84gph "scanner_01" ;
+    niiri:sex_cpa8jp "M" ;
+    niiri:wais_iv_fsiq_1hqi7tu "115" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:ca612590-b446-11f1-8537-00155df52554 ;
+    prov:wasInfluencedBy niiri:ea6777e2-b446-11f1-8537-00155df52554 .
+
+niiri:fa6d59f0-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:fa78e31a-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:fb0abc72-b446-11f1-8537-00155df52554 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "34" ;
+    niiri:education_tt30i3 "10" ;
+    niiri:hamd_17_3et8dvi "6" ;
+    niiri:handedness_l3cru3 "left" ;
+    niiri:scanner_id_2g84gph "scanner_02" ;
+    niiri:sex_cpa8jp "M" ;
+    niiri:wais_iv_fsiq_1hqi7tu "84" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:ab0ab4e8-b446-11f1-8537-00155df52554 ;
+    prov:wasInfluencedBy niiri:db198da6-b446-11f1-8537-00155df52554 .
+
+niiri:fb27d0fa-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:fb889f34-b446-11f1-8537-00155df52554 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "36" ;
+    niiri:education_tt30i3 "14" ;
+    niiri:hamd_17_3et8dvi "40" ;
+    niiri:handedness_l3cru3 "right" ;
+    niiri:scanner_id_2g84gph "scanner_02" ;
+    niiri:sex_cpa8jp "F" ;
+    niiri:wais_iv_fsiq_1hqi7tu "121" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:db889dc2-b446-11f1-8537-00155df52554 ;
+    prov:wasInfluencedBy niiri:dba9e37e-b446-11f1-8537-00155df52554 .
+
+niiri:fc3c5876-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:fccaf64e-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:fd40a588-b446-11f1-8537-00155df52554 a onli:assessment-instrument,
+        nidm:AcquisitionObject,
+        prov:Entity ;
+    niiri:age_1l5g3rg "18" ;
+    niiri:education_tt30i3 "12" ;
+    niiri:hamd_17_3et8dvi "40" ;
+    niiri:handedness_l3cru3 "left" ;
+    niiri:scanner_id_2g84gph "scanner_02" ;
+    niiri:sex_cpa8jp "F" ;
+    niiri:wais_iv_fsiq_1hqi7tu "91" ;
+    nfo:filename "bids::participants.tsv" ;
+    prov:wasGeneratedBy niiri:dd40a420-b446-11f1-8537-00155df52554 ;
+    prov:wasInfluencedBy niiri:ed46da34-b446-11f1-8537-00155df52554 .
+
+niiri:fd61b868-b446-11f1-8537-00155df52554 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:dd610332-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:b7d0689a-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:fd7c36b6-b446-11f1-8537-00155df52554 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:dd7ba61a-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:f807aa12-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:fd95c8f6-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:fdc40da6-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 3e-03 ;
+    bids:FlipAngle "11"^^xsd:int ;
+    crypto:sha512 "675c9296a851d8707d6227837677e814807ece5d07a2d1af9a203e88221c0468c8d546ebf2dfd2ddfc8606ff44577368ebbf51d739c45f64378d1db0f727f8a9" ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 8e-03 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-08/ses-01/anat/sub-08_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:edc40734-b446-11f1-8537-00155df52554 .
+
+niiri:fddbfe02-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:fdf5909c-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:fe03b442-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:fe044bb4-b446-11f1-8537-00155df52554 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:fe03b442-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:b8c58474-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:fe3e915c-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:fe713076-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 3e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    crypto:sha512 "472d3f8c87fba07bc9a95208594ccde1d2a53c2c8e8816a5c1191705bc83529c120a636eb26aefc85d3717f6b092045d9fd5c2179c0f44d0e7ccdb0d43c10f32" ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 8e-03 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-16/ses-01/anat/sub-16_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:ae712b9e-b446-11f1-8537-00155df52554 .
+
+niiri:fe8f0e02-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:fe8fb9e2-b446-11f1-8537-00155df52554 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:fe8f0e02-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:f93112c0-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:fe9d1880-b446-11f1-8537-00155df52554 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:de9c8c12-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:e9607d8a-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:fea96d7e-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:fef28b6c-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:ff1a921a-b446-11f1-8537-00155df52554 a nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:df19e8ec-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:a9ddcfba-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:ffa5d9ba-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:ffa66f24-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 4e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    crypto:sha512 "a4c5e0369b2eaea52e2aeb049e7298a4348ff5133c70c455653ff48a22068e23df18d46fb8004b796c7ffdcc9d21a20f9713fa9aebfea98c9262628e088c478d" ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-27/ses-01/anat/sub-27_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:cfa66a06-b446-11f1-8537-00155df52554 .
+
+niiri:ffd67c46-b446-11f1-8537-00155df52554 a nidm:Session,
+        prov:Activity ;
+    bids:session_number "01" ;
+    dct:isPartOf niiri:f2ab29fe-b446-11f1-8537-00155df52554 .
+
+niiri:ffee3b92-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 4e-03 ;
+    bids:FlipAngle "11"^^xsd:int ;
+    crypto:sha512 "e3e4de13564e020291a1374bd55d9cdb54b86a6a150f99873aacf6468551debb0a386a30df514ac5b1b125fa268866785dfc3f10eaedab6a58694ce492a8e923" ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-29/ses-01/anat/sub-29_ses-01_T1w.nii.gz" ;
+    prov:wasGeneratedBy niiri:afee35f2-b446-11f1-8537-00155df52554 .
+
+term_OBI_0000312: a prov:Entity ;
+    rdfs:label "imaging protocol" .
+
+term_cde_0161290: a prov:Entity ;
+    rdfs:label "Hamilton Depression Rating Scale (HAM-D)" .
+
+term_ilx_0100400: a prov:Entity ;
+    rdfs:label "Age" .
+
+term_ilx_0103677: a prov:Entity ;
+    rdfs:label "Education Assessment" .
+
+term_pde_01000079: a prov:Entity ;
+    rdfs:label "Handedness" .
+
+term_CAO_00718: a prov:Entity ;
+    rdfs:label "Wechsler abbreviated scale of intelligence" .
+
+niiri:a81f52fc-b446-11f1-8537-00155df52554 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:c81f502c-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:e81f5658-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:a8b16a98-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:d88f4c06-b446-11f1-8537-00155df52554 .
+
+niiri:a8d36f58-b446-11f1-8537-00155df52554 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:e8d36c60-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:c8d3767e-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:a91312fc-b446-11f1-8537-00155df52554 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-17" .
+
+niiri:a9ddcfba-b446-11f1-8537-00155df52554 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-23" .
+
+niiri:aa4766f0-b446-11f1-8537-00155df52554 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:ca4763a8-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ea476d58-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:aad196cc-b446-11f1-8537-00155df52554 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:cad1935c-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ead19a00-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:ab0ab4e8-b446-11f1-8537-00155df52554 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:bb0aaed0-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ab0ac0f0-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:ab0ac0f0-b446-11f1-8537-00155df52554 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-33" .
+
+niiri:ab456908-b446-11f1-8537-00155df52554 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-35" .
+
+niiri:abf2258a-b446-11f1-8537-00155df52554 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:cbf221f2-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:fbf2290e-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:ac36389c-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:ec3038f2-b446-11f1-8537-00155df52554 .
+
+niiri:ac3c5c2c-b446-11f1-8537-00155df52554 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:fc3c5876-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ec3c61d6-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:ac4241c8-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:ac3c5c2c-b446-11f1-8537-00155df52554 .
+
+niiri:ac8d74ae-b446-11f1-8537-00155df52554 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-44" .
+
+niiri:acdd38a4-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:dccafa40-b446-11f1-8537-00155df52554 .
+
+niiri:ad20cd80-b446-11f1-8537-00155df52554 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:ad20c970-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:cd20d0f0-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:ad3a5822-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:ed348a82-b446-11f1-8537-00155df52554 .
+
+niiri:b7d0689a-b446-11f1-8537-00155df52554 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-01" .
+
+niiri:b7e4f68e-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:c7d06426-b446-11f1-8537-00155df52554 .
+
+niiri:b813804e-b446-11f1-8537-00155df52554 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-04" .
+
+niiri:b8258a00-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:a81f52fc-b446-11f1-8537-00155df52554 .
+
+niiri:b82ba8fe-b446-11f1-8537-00155df52554 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-06" .
+
+niiri:b8c58474-b446-11f1-8537-00155df52554 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-12" .
+
+niiri:b8eefaa2-b446-11f1-8537-00155df52554 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:d8eef7a0-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:c8eefe08-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:b906fc38-b446-11f1-8537-00155df52554 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:a906f6de-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:e906ffbc-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:b90d03f8-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:b906fc38-b446-11f1-8537-00155df52554 .
+
+niiri:b94748b0-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:f9310fb4-b446-11f1-8537-00155df52554 .
+
+niiri:b97ecf42-b446-11f1-8537-00155df52554 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-20" .
+
+niiri:b9ac2b9a-b446-11f1-8537-00155df52554 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:e9ac2866-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:f9ac2f1e-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:b9f9a2e4-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:c9ddc9a2-b446-11f1-8537-00155df52554 .
+
+niiri:ba391bf4-b446-11f1-8537-00155df52554 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:ca39178a-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ca39207c-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:ba78e9e6-b446-11f1-8537-00155df52554 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-30" .
+
+niiri:ba91416c-b446-11f1-8537-00155df52554 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:da913e06-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ea914aea-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:bb27d514-b446-11f1-8537-00155df52554 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:fb27d0fa-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:bb27d884-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:bb27d884-b446-11f1-8537-00155df52554 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-34" .
+
+niiri:bbc86b96-b446-11f1-8537-00155df52554 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-38" .
+
+niiri:bce39190-b446-11f1-8537-00155df52554 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:ece38d94-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:fce394a6-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:c7d06426-b446-11f1-8537-00155df52554 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:c7d05f26-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:b7d0689a-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:c8193700-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:d8137d1a-b446-11f1-8537-00155df52554 .
+
+niiri:c82ba5de-b446-11f1-8537-00155df52554 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:b82ba304-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:b82ba8fe-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:c8540268-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:f83fcadc-b446-11f1-8537-00155df52554 .
+
+niiri:c8668b2c-b446-11f1-8537-00155df52554 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:b86687b2-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:d8668ff0-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:c87341c8-b446-11f1-8537-00155df52554 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-09" .
+
+niiri:c878e0d8-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:e8733e9e-b446-11f1-8537-00155df52554 .
+
+niiri:c8bf75ac-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:f8b8b3e8-b446-11f1-8537-00155df52554 .
+
+niiri:c8cba548-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:d8c58168-b446-11f1-8537-00155df52554 .
+
+niiri:c8d3767e-b446-11f1-8537-00155df52554 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-13" .
+
+niiri:c8eefe08-b446-11f1-8537-00155df52554 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-14" .
+
+niiri:c8fb30ec-b446-11f1-8537-00155df52554 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-15" .
+
+niiri:c901434c-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:f8fb2bd8-b446-11f1-8537-00155df52554 .
+
+niiri:c9130f8c-b446-11f1-8537-00155df52554 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:a9130c62-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:a91312fc-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:c92979ac-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:c9130f8c-b446-11f1-8537-00155df52554 .
+
+niiri:c9607a6a-b446-11f1-8537-00155df52554 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:c9607754-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:e9607d8a-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:c9858b52-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:e97eca92-b446-11f1-8537-00155df52554 .
+
+niiri:c98c4ffa-b446-11f1-8537-00155df52554 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:e98c4cc6-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:f98c5388-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:c9ddc9a2-b446-11f1-8537-00155df52554 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:d9ddc54c-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:a9ddcfba-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:ca39207c-b446-11f1-8537-00155df52554 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-25" .
+
+niiri:ca612590-b446-11f1-8537-00155df52554 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:da612234-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ca612914-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:ca612914-b446-11f1-8537-00155df52554 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-28" .
+
+niiri:ca7ed8e2-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:da78e69e-b446-11f1-8537-00155df52554 .
+
+niiri:caec4896-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:aad196cc-b446-11f1-8537-00155df52554 .
+
+niiri:cb37a3ea-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:bb27d514-b446-11f1-8537-00155df52554 .
+
+niiri:cbdfdc7c-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:fbc8684e-b446-11f1-8537-00155df52554 .
+
+niiri:cc124d42-b446-11f1-8537-00155df52554 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:bc12498c-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:fc125094-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:cc303c1c-b446-11f1-8537-00155df52554 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-41" .
+
+niiri:cc8d7170-b446-11f1-8537-00155df52554 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:cc8d6d88-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ac8d74ae-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:cd20d0f0-b446-11f1-8537-00155df52554 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-48" .
+
+niiri:d7fa7b3a-b446-11f1-8537-00155df52554 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:f7fa782e-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:f7fa7ee6-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:d80120de-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:d7fa7b3a-b446-11f1-8537-00155df52554 .
+
+niiri:d80d6164-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:e807a6de-b446-11f1-8537-00155df52554 .
+
+niiri:d8137d1a-b446-11f1-8537-00155df52554 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:e8137a40-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:b813804e-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:d8668ff0-b446-11f1-8537-00155df52554 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-08" .
+
+niiri:d88f4c06-b446-11f1-8537-00155df52554 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:a88f480a-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:f88f51f6-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:d8b8bb36-b446-11f1-8537-00155df52554 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-11" .
+
+niiri:d8c58168-b446-11f1-8537-00155df52554 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:c8c57e66-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:b8c58474-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:da123a66-b446-11f1-8537-00155df52554 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-24" .
+
+niiri:da78e69e-b446-11f1-8537-00155df52554 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:fa78e31a-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ba78e9e6-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:db198da6-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:ab0ab4e8-b446-11f1-8537-00155df52554 .
+
+niiri:db56a290-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:eb456494-b446-11f1-8537-00155df52554 .
+
+niiri:db889dc2-b446-11f1-8537-00155df52554 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:bb889a16-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:eb88a146-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:dba9e37e-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:db889dc2-b446-11f1-8537-00155df52554 .
+
+niiri:dcc46040-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:fcbd88f6-b446-11f1-8537-00155df52554 .
+
+niiri:dccafa40-b446-11f1-8537-00155df52554 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:fccaf64e-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:eccafd6a-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:dd40a420-b446-11f1-8537-00155df52554 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:ed40a01a-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:dd40a768-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:dd40a768-b446-11f1-8537-00155df52554 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-50" .
+
+niiri:e807a6de-b446-11f1-8537-00155df52554 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:e807a40e-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:f807aa12-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:e81f5658-b446-11f1-8537-00155df52554 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-05" .
+
+niiri:e833f018-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:c82ba5de-b446-11f1-8537-00155df52554 .
+
+niiri:e83fce42-b446-11f1-8537-00155df52554 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-07" .
+
+niiri:e86d11d6-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:c8668b2c-b446-11f1-8537-00155df52554 .
+
+niiri:e8733e9e-b446-11f1-8537-00155df52554 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:c8733be2-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:c87341c8-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:e906ffbc-b446-11f1-8537-00155df52554 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-16" .
+
+niiri:e9607d8a-b446-11f1-8537-00155df52554 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-19" .
+
+niiri:e97eca92-b446-11f1-8537-00155df52554 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:b97ec704-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:b97ecf42-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:e9c5d478-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:b9ac2b9a-b446-11f1-8537-00155df52554 .
+
+niiri:ea1235ca-b446-11f1-8537-00155df52554 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:ea123188-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:da123a66-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:ea40f716-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:ba391bf4-b446-11f1-8537-00155df52554 .
+
+niiri:ea476d58-b446-11f1-8537-00155df52554 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-26" .
+
+niiri:ea546d8c-b446-11f1-8537-00155df52554 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-27" .
+
+niiri:ea5b66aa-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:fa546a4e-b446-11f1-8537-00155df52554 .
+
+niiri:ea6777e2-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:ca612590-b446-11f1-8537-00155df52554 .
+
+niiri:ea6d5d60-b446-11f1-8537-00155df52554 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:fa6d59f0-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:fa6d6076-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:ea734324-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:ea6d5d60-b446-11f1-8537-00155df52554 .
+
+niiri:ea914aea-b446-11f1-8537-00155df52554 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-31" .
+
+niiri:ead19a00-b446-11f1-8537-00155df52554 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-32" .
+
+niiri:eb456494-b446-11f1-8537-00155df52554 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:db456098-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ab456908-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:eb66a910-b446-11f1-8537-00155df52554 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:bb66a4f6-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:fb66acbc-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:eb88a146-b446-11f1-8537-00155df52554 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-37" .
+
+niiri:ec3038f2-b446-11f1-8537-00155df52554 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:bc30353c-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:cc303c1c-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:ec3c61d6-b446-11f1-8537-00155df52554 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-42" .
+
+niiri:ec48022a-b446-11f1-8537-00155df52554 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-43" .
+
+niiri:ec62cca4-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:fc47fd20-b446-11f1-8537-00155df52554 .
+
+niiri:eca90318-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:cc8d7170-b446-11f1-8537-00155df52554 .
+
+niiri:eccafd6a-b446-11f1-8537-00155df52554 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-46" .
+
+niiri:ecf96fec-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:bce39190-b446-11f1-8537-00155df52554 .
+
+niiri:ed348a82-b446-11f1-8537-00155df52554 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:dd3486b8-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:fd348db6-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:ed46da34-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:dd40a420-b446-11f1-8537-00155df52554 .
+
+niiri:f7fa7ee6-b446-11f1-8537-00155df52554 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-02" .
+
+niiri:f807aa12-b446-11f1-8537-00155df52554 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-03" .
+
+niiri:f83fcadc-b446-11f1-8537-00155df52554 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:c83fc7ee-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:e83fce42-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:f88f51f6-b446-11f1-8537-00155df52554 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-10" .
+
+niiri:f8b8b3e8-b446-11f1-8537-00155df52554 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:b8b8b0d2-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:d8b8bb36-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:f8e6eea2-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:a8d36f58-b446-11f1-8537-00155df52554 .
+
+niiri:f8f5427c-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:b8eefaa2-b446-11f1-8537-00155df52554 .
+
+niiri:f8fb2bd8-b446-11f1-8537-00155df52554 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:a8fb28f4-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:c8fb30ec-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:f9310fb4-b446-11f1-8537-00155df52554 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:e9310cb2-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:f93112c0-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:f93112c0-b446-11f1-8537-00155df52554 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-18" .
+
+niiri:f9773ce6-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:c9607a6a-b446-11f1-8537-00155df52554 .
+
+niiri:f98c5388-b446-11f1-8537-00155df52554 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-21" .
+
+niiri:f9a2ae6c-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:c98c4ffa-b446-11f1-8537-00155df52554 .
+
+niiri:f9ac2f1e-b446-11f1-8537-00155df52554 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-22" .
+
+niiri:fa225cde-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:ea1235ca-b446-11f1-8537-00155df52554 .
+
+niiri:fa4ea884-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:aa4766f0-b446-11f1-8537-00155df52554 .
+
+niiri:fa546a4e-b446-11f1-8537-00155df52554 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:ba546706-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ea546d8c-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:fa6d6076-b446-11f1-8537-00155df52554 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-29" .
+
+niiri:fab5dc98-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:ba91416c-b446-11f1-8537-00155df52554 .
+
+niiri:fb66acbc-b446-11f1-8537-00155df52554 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-36" .
+
+niiri:fb77952c-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:eb66a910-b446-11f1-8537-00155df52554 .
+
+niiri:fbc8684e-b446-11f1-8537-00155df52554 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:bbc86498-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:bbc86b96-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:fbf2290e-b446-11f1-8537-00155df52554 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-39" .
+
+niiri:fc004020-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:abf2258a-b446-11f1-8537-00155df52554 .
+
+niiri:fc125094-b446-11f1-8537-00155df52554 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-40" .
+
+niiri:fc27a4f8-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:cc124d42-b446-11f1-8537-00155df52554 .
+
+niiri:fc47fd20-b446-11f1-8537-00155df52554 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:ac47f848-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:ec48022a-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:fcbd88f6-b446-11f1-8537-00155df52554 a onli:instrument-based-assessment,
+        nidm:Acquisition,
+        prov:Activity ;
+    dct:isPartOf niiri:ccbd83ce-b446-11f1-8537-00155df52554 ;
+    prov:qualifiedAssociation [ a prov:Association ;
+            prov:agent niiri:fcbd8de2-b446-11f1-8537-00155df52554 ;
+            prov:hadRole sio:Subject ] .
+
+niiri:fcbd8de2-b446-11f1-8537-00155df52554 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-45" .
+
+niiri:fce394a6-b446-11f1-8537-00155df52554 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-47" .
+
+niiri:fd2d5dfc-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::participants.json" ;
+    prov:wasGeneratedBy niiri:ad20cd80-b446-11f1-8537-00155df52554 .
+
+niiri:fd348db6-b446-11f1-8537-00155df52554 a prov:Agent,
+        prov:Person ;
+    ndar:src_subject_id "sub-49" .
+
+nidm:PersonalDataElement rdfs:subClassOf nidm:DataElement .
+
+niiri:7010000-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::sub-01/ses-01/anat/sub-01_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:b010000-b446-11f1-853b-00155df52554 .
+niiri:7020000-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::sub-02/ses-01/anat/sub-02_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:b020000-b446-11f1-853b-00155df52554 .
+niiri:7030000-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::sub-03/ses-01/anat/sub-03_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:b030000-b446-11f1-853b-00155df52554 .
+niiri:7040000-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::sub-04/ses-01/anat/sub-04_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:b040000-b446-11f1-853b-00155df52554 .
+niiri:7050000-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::sub-05/ses-01/anat/sub-05_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:b050000-b446-11f1-853b-00155df52554 .
+niiri:7060000-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::sub-06/ses-01/anat/sub-06_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:b060000-b446-11f1-853b-00155df52554 .
+niiri:7070000-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::sub-07/ses-01/anat/sub-07_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:b0b0000-b446-11f1-853b-00155df52554 .
+niiri:7080000-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::sub-08/ses-01/anat/sub-08_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:b080000-b446-11f1-853b-00155df52554 .
+niiri:7090000-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::sub-09/ses-01/anat/sub-09_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:b090000-b446-11f1-853b-00155df52554 .
+niiri:7100000-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::sub-10/ses-01/anat/sub-10_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:b100000-b446-11f1-853b-00155df52554 .
+niiri:7110000-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::sub-11/ses-01/anat/sub-11_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:b110000-b446-11f1-853b-00155df52554 .
+niiri:7120000-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::sub-12/ses-01/anat/sub-12_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:b120000-b446-11f1-853b-00155df52554 .
+niiri:7130000-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::sub-13/ses-01/anat/sub-13_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:b130000-b446-11f1-853b-00155df52554 .
+niiri:7140000-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::sub-14/ses-01/anat/sub-14_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:b140000-b446-11f1-853b-00155df52554 .
+niiri:7150000-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::sub-15/ses-01/anat/sub-15_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:b150000-b446-11f1-853b-00155df52554 .
+niiri:7160000-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::sub-16/ses-01/anat/sub-16_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:b160000-b446-11f1-853b-00155df52554 .
+niiri:7170000-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::sub-17/ses-01/anat/sub-17_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:b1b0000-b446-11f1-853b-00155df52554 .
+niiri:7180000-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::sub-18/ses-01/anat/sub-18_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:b180000-b446-11f1-853b-00155df52554 .
+niiri:7190000-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::sub-19/ses-01/anat/sub-19_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:b190000-b446-11f1-853b-00155df52554 .
+niiri:7200000-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::sub-20/ses-01/anat/sub-20_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:b200000-b446-11f1-853b-00155df52554 .
+niiri:7210000-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::sub-21/ses-01/anat/sub-21_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:b210000-b446-11f1-853b-00155df52554 .
+niiri:7220000-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::sub-22/ses-01/anat/sub-22_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:b220000-b446-11f1-853b-00155df52554 .
+niiri:7230000-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::sub-23/ses-01/anat/sub-23_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:b230000-b446-11f1-853b-00155df52554 .
+niiri:7240000-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::sub-24/ses-01/anat/sub-24_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:b240000-b446-11f1-853b-00155df52554 .
+niiri:7250000-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::sub-25/ses-01/anat/sub-25_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:b250000-b446-11f1-853b-00155df52554 .
+niiri:7260000-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::sub-26/ses-01/anat/sub-26_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:b260000-b446-11f1-853b-00155df52554 .
+niiri:7270000-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::sub-27/ses-01/anat/sub-27_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:b2b0000-b446-11f1-853b-00155df52554 .
+niiri:7280000-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::sub-28/ses-01/anat/sub-28_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:b280000-b446-11f1-853b-00155df52554 .
+niiri:7290000-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::sub-29/ses-01/anat/sub-29_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:b290000-b446-11f1-853b-00155df52554 .
+niiri:7300000-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::sub-30/ses-01/anat/sub-30_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:b300000-b446-11f1-853b-00155df52554 .
+niiri:7310000-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::sub-31/ses-01/anat/sub-31_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:b310000-b446-11f1-853b-00155df52554 .
+niiri:7320000-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::sub-32/ses-01/anat/sub-32_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:b320000-b446-11f1-853b-00155df52554 .
+niiri:7330000-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::sub-33/ses-01/anat/sub-33_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:b330000-b446-11f1-853b-00155df52554 .
+niiri:7340000-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::sub-34/ses-01/anat/sub-34_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:b340000-b446-11f1-853b-00155df52554 .
+niiri:7350000-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::sub-35/ses-01/anat/sub-35_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:b350000-b446-11f1-853b-00155df52554 .
+niiri:7360000-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::sub-36/ses-01/anat/sub-36_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:b360000-b446-11f1-853b-00155df52554 .
+niiri:7370000-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::sub-37/ses-01/anat/sub-37_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:b3b0000-b446-11f1-853b-00155df52554 .
+niiri:7380000-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::sub-38/ses-01/anat/sub-38_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:b380000-b446-11f1-853b-00155df52554 .
+niiri:7390000-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::sub-39/ses-01/anat/sub-39_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:b390000-b446-11f1-853b-00155df52554 .
+niiri:7400000-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::sub-40/ses-01/anat/sub-40_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:b400000-b446-11f1-853b-00155df52554 .
+niiri:7410000-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::sub-41/ses-01/anat/sub-41_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:b410000-b446-11f1-853b-00155df52554 .
+niiri:7420000-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::sub-42/ses-01/anat/sub-42_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:b420000-b446-11f1-853b-00155df52554 .
+niiri:7430000-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::sub-43/ses-01/anat/sub-43_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:b430000-b446-11f1-853b-00155df52554 .
+niiri:7440000-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::sub-44/ses-01/anat/sub-44_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:b440000-b446-11f1-853b-00155df52554 .
+niiri:7450000-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::sub-45/ses-01/anat/sub-45_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:b450000-b446-11f1-853b-00155df52554 .
+niiri:7460000-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::sub-46/ses-01/anat/sub-46_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:b460000-b446-11f1-853b-00155df52554 .
+niiri:7470000-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::sub-47/ses-01/anat/sub-47_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:b4b0000-b446-11f1-853b-00155df52554 .
+niiri:7480000-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::sub-48/ses-01/anat/sub-48_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:b480000-b446-11f1-853b-00155df52554 .
+niiri:7490000-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::sub-49/ses-01/anat/sub-49_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:b490000-b446-11f1-853b-00155df52554 .
+niiri:7500000-b446-11f1-8537-00155df52554 a bids:sidecar_file,
+        prov:Entity ;
+    nfo:filename "bids::sub-50/ses-01/anat/sub-50_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:b500000-b446-11f1-853b-00155df52554 .
+niiri:8010000-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 4e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-01/ses-01/anat/sub-01_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:a010000-b446-11f1-a537-00155df52554 .
+niiri:8020000-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 3e-03 ;
+    bids:FlipAngle "11"^^xsd:int ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-02/ses-01/anat/sub-02_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:a020000-b446-11f1-a537-00155df52554 .
+niiri:8030000-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 4e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 8e-03 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-03/ses-01/anat/sub-03_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:a030000-b446-11f1-a537-00155df52554 .
+niiri:8040000-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 3e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-04/ses-01/anat/sub-04_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:a040000-b446-11f1-a537-00155df52554 .
+niiri:8050000-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 4e-03 ;
+    bids:FlipAngle "11"^^xsd:int ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-05/ses-01/anat/sub-05_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:a050000-b446-11f1-a537-00155df52554 .
+niiri:8060000-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 3e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-06/ses-01/anat/sub-06_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:a060000-b446-11f1-a537-00155df52554 .
+niiri:8070000-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 4e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 8e-03 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-07/ses-01/anat/sub-07_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:a070000-b446-11f1-a537-00155df52554 .
+niiri:8080000-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 3e-03 ;
+    bids:FlipAngle "11"^^xsd:int ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-08/ses-01/anat/sub-08_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:a0a0000-b446-11f1-a537-00155df52554 .
+niiri:8090000-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 4e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-09/ses-01/anat/sub-09_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:a090000-b446-11f1-a537-00155df52554 .
+niiri:8100000-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 3e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-10/ses-01/anat/sub-10_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:a100000-b446-11f1-a537-00155df52554 .
+niiri:8110000-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 4e-03 ;
+    bids:FlipAngle "11"^^xsd:int ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 8e-03 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-11/ses-01/anat/sub-11_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:a110000-b446-11f1-a537-00155df52554 .
+niiri:8120000-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 3e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-12/ses-01/anat/sub-12_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:a120000-b446-11f1-a537-00155df52554 .
+niiri:8130000-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 4e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-13/ses-01/anat/sub-13_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:a130000-b446-11f1-a537-00155df52554 .
+niiri:8140000-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 3e-03 ;
+    bids:FlipAngle "11"^^xsd:int ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-14/ses-01/anat/sub-14_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:a140000-b446-11f1-a537-00155df52554 .
+niiri:8150000-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 4e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 8e-03 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-15/ses-01/anat/sub-15_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:a150000-b446-11f1-a537-00155df52554 .
+niiri:8160000-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 3e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-16/ses-01/anat/sub-16_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:a160000-b446-11f1-a537-00155df52554 .
+niiri:8170000-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 4e-03 ;
+    bids:FlipAngle "11"^^xsd:int ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-17/ses-01/anat/sub-17_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:a170000-b446-11f1-a537-00155df52554 .
+niiri:8180000-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 3e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-18/ses-01/anat/sub-18_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:a1a0000-b446-11f1-a537-00155df52554 .
+niiri:8190000-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 4e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 8e-03 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-19/ses-01/anat/sub-19_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:a190000-b446-11f1-a537-00155df52554 .
+niiri:8200000-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 3e-03 ;
+    bids:FlipAngle "11"^^xsd:int ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-20/ses-01/anat/sub-20_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:a200000-b446-11f1-a537-00155df52554 .
+niiri:8210000-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 4e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-21/ses-01/anat/sub-21_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:a210000-b446-11f1-a537-00155df52554 .
+niiri:8220000-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 3e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-22/ses-01/anat/sub-22_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:a220000-b446-11f1-a537-00155df52554 .
+niiri:8230000-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 4e-03 ;
+    bids:FlipAngle "11"^^xsd:int ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 8e-03 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-23/ses-01/anat/sub-23_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:a230000-b446-11f1-a537-00155df52554 .
+niiri:8240000-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 3e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-24/ses-01/anat/sub-24_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:a240000-b446-11f1-a537-00155df52554 .
+niiri:8250000-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 4e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-25/ses-01/anat/sub-25_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:a250000-b446-11f1-a537-00155df52554 .
+niiri:8260000-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 3e-03 ;
+    bids:FlipAngle "11"^^xsd:int ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-26/ses-01/anat/sub-26_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:a260000-b446-11f1-a537-00155df52554 .
+niiri:8270000-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 4e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 8e-03 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-27/ses-01/anat/sub-27_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:a270000-b446-11f1-a537-00155df52554 .
+niiri:8280000-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 3e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-28/ses-01/anat/sub-28_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:a2a0000-b446-11f1-a537-00155df52554 .
+niiri:8290000-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 4e-03 ;
+    bids:FlipAngle "11"^^xsd:int ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-29/ses-01/anat/sub-29_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:a290000-b446-11f1-a537-00155df52554 .
+niiri:8300000-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 3e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-30/ses-01/anat/sub-30_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:a300000-b446-11f1-a537-00155df52554 .
+niiri:8310000-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 4e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 8e-03 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-31/ses-01/anat/sub-31_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:a310000-b446-11f1-a537-00155df52554 .
+niiri:8320000-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 3e-03 ;
+    bids:FlipAngle "11"^^xsd:int ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-32/ses-01/anat/sub-32_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:a320000-b446-11f1-a537-00155df52554 .
+niiri:8330000-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 4e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-33/ses-01/anat/sub-33_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:a330000-b446-11f1-a537-00155df52554 .
+niiri:8340000-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 3e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-34/ses-01/anat/sub-34_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:a340000-b446-11f1-a537-00155df52554 .
+niiri:8350000-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 4e-03 ;
+    bids:FlipAngle "11"^^xsd:int ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 8e-03 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-35/ses-01/anat/sub-35_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:a350000-b446-11f1-a537-00155df52554 .
+niiri:8360000-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 3e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-36/ses-01/anat/sub-36_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:a360000-b446-11f1-a537-00155df52554 .
+niiri:8370000-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 4e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-37/ses-01/anat/sub-37_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:a370000-b446-11f1-a537-00155df52554 .
+niiri:8380000-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 3e-03 ;
+    bids:FlipAngle "11"^^xsd:int ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-38/ses-01/anat/sub-38_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:a3a0000-b446-11f1-a537-00155df52554 .
+niiri:8390000-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 4e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 8e-03 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-39/ses-01/anat/sub-39_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:a390000-b446-11f1-a537-00155df52554 .
+niiri:8400000-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 3e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-40/ses-01/anat/sub-40_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:a400000-b446-11f1-a537-00155df52554 .
+niiri:8410000-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 4e-03 ;
+    bids:FlipAngle "11"^^xsd:int ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-41/ses-01/anat/sub-41_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:a410000-b446-11f1-a537-00155df52554 .
+niiri:8420000-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 3e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-42/ses-01/anat/sub-42_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:a420000-b446-11f1-a537-00155df52554 .
+niiri:8430000-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 4e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 8e-03 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-43/ses-01/anat/sub-43_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:a430000-b446-11f1-a537-00155df52554 .
+niiri:8440000-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 3e-03 ;
+    bids:FlipAngle "11"^^xsd:int ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-44/ses-01/anat/sub-44_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:a440000-b446-11f1-a537-00155df52554 .
+niiri:8450000-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 4e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-45/ses-01/anat/sub-45_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:a450000-b446-11f1-a537-00155df52554 .
+niiri:8460000-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 3e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-46/ses-01/anat/sub-46_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:a460000-b446-11f1-a537-00155df52554 .
+niiri:8470000-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 4e-03 ;
+    bids:FlipAngle "11"^^xsd:int ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 8e-03 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-47/ses-01/anat/sub-47_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:a470000-b446-11f1-a537-00155df52554 .
+niiri:8480000-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 3e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-48/ses-01/anat/sub-48_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:a4a0000-b446-11f1-a537-00155df52554 .
+niiri:8490000-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 4e-03 ;
+    bids:FlipAngle "9"^^xsd:int ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "Siemens" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-49/ses-01/anat/sub-49_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:a490000-b446-11f1-a537-00155df52554 .
+niiri:8500000-b446-11f1-8537-00155df52554 a nidm:AcquisitionObject,
+        prov:Entity ;
+    bids:EchoTime 3e-03 ;
+    bids:FlipAngle "11"^^xsd:int ;
+    dicom:MRAcquisitionType "3D" ;
+    dicom:MagneticFieldStrength "3"^^xsd:int ;
+    dicom:Manufacturer "GE" ;
+    dicom:RepetitionTime 1.5e-02 ;
+    dicom:ScanningSequence "GR" ;
+    dicom:SequenceName "synthetic_GRE_T1w" ;
+    nidm:hadAcquisitionModality nidm:MagneticResonanceImaging ;
+    nidm:hadImageContrastType nidm:T1Weighted ;
+    nidm:hadImageUsageType nidm:Anatomical ;
+    nfo:filename "bids::sub-50/ses-01/anat/sub-50_ses-01_T1w.json" ;
+    prov:wasGeneratedBy niiri:a500000-b446-11f1-a537-00155df52554 .
+niiri:f2ab29fe-b446-11f1-8537-00155df52554 a nidm:Project,
+        prov:Activity ;
+    dcmitype:title "Synthetic Phantom Multi-Scanner Clinical Dataset" .
+
