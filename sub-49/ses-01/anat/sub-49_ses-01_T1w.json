@@ -6,7 +6,9 @@
   "EchoTime": 0.004,
   "RepetitionTime": 0.015,
   "SyntheticImage": true,
-  "Description": "Synthetic T1w GRE, PD*(1-exp(-TR/T1))*exp(-TE/T2), with unique multi-scale anatomical deformation.",
-  "ManufacturersModelName": "Prisma",
-  "Manufacturer": "Siemens"
+  "Description": "Synthetic T1w GRE scan on GE Discovery MR750",
+  "ManufacturersModelName": "Discovery MR750",
+  "Manufacturer": "GE",
+  "FlipAngle": 11,
+  "MagneticFieldStrength": 3
 }

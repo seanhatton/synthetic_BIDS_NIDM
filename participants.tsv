@@ -1,51 +1,51 @@
-participant_id	age	sex	wais_iv_fsiq	hamd_17
-sub-01	39	F	110	6
-sub-02	34	M	77	5
-sub-03	41	F	71	24
-sub-04	49	M	117	6
-sub-05	33	M	87	22
-sub-06	33	M	85	22
-sub-07	49	M	84	38
-sub-08	42	M	78	16
-sub-09	31	M	117	51
-sub-10	40	F	76	2
-sub-11	31	M	113	46
-sub-12	31	M	117	29
-sub-13	37	M	127	34
-sub-14	18	F	104	7
-sub-15	19	F	75	24
-sub-16	30	F	107	5
-sub-17	26	F	97	35
-sub-18	38	M	72	18
-sub-19	27	M	71	40
-sub-20	22	F	75	39
-sub-21	48	M	83	23
-sub-22	33	F	84	36
-sub-23	36	M	102	12
-sub-24	22	F	108	45
-sub-25	30	M	71	4
-sub-26	35	M	105	2
-sub-27	24	F	82	42
-sub-28	37	M	115	14
-sub-29	29	M	111	49
-sub-30	31	F	114	18
-sub-31	29	F	104	5
-sub-32	50	M	96	14
-sub-33	34	M	84	6
-sub-34	24	F	98	24
-sub-35	41	M	107	17
-sub-36	23	F	87	29
-sub-37	36	F	121	40
-sub-38	18	F	125	23
-sub-39	22	F	70	10
-sub-40	36	M	118	23
-sub-41	41	F	121	22
-sub-42	36	F	80	13
-sub-43	33	F	114	42
-sub-44	31	M	97	17
-sub-45	21	F	91	44
-sub-46	28	M	87	43
-sub-47	30	M	79	41
-sub-48	44	F	83	4
-sub-49	37	F	118	38
-sub-50	18	F	91	40
+participant_id	age	sex	wais_iv_fsiq	hamd_17	education	handedness	scanner_id
+sub-01	39	F	110	6	13	left	scanner_02
+sub-02	34	M	77	5	13	left	scanner_01
+sub-03	41	F	71	24	13	right	scanner_01
+sub-04	49	M	117	6	15	right	scanner_01
+sub-05	33	M	87	22	13	right	scanner_01
+sub-06	33	M	85	22	11	left	scanner_02
+sub-07	49	M	84	38	14	left	scanner_02
+sub-08	42	M	78	16	13	right	scanner_01
+sub-09	31	M	117	51	13	left	scanner_02
+sub-10	40	F	76	2	14	left	scanner_01
+sub-11	31	M	113	46	14	right	scanner_02
+sub-12	31	M	117	29	15	left	scanner_01
+sub-13	37	M	127	34	14	right	scanner_01
+sub-14	18	F	104	7	14	left	scanner_01
+sub-15	19	F	75	24	12	right	scanner_02
+sub-16	30	F	107	5	12	right	scanner_02
+sub-17	26	F	97	35	14	right	scanner_01
+sub-18	38	M	72	18	15	right	scanner_01
+sub-19	27	M	71	40	14	right	scanner_02
+sub-20	22	F	75	39	13	left	scanner_01
+sub-21	48	M	83	23	14	left	scanner_02
+sub-22	33	F	84	36	11	left	scanner_01
+sub-23	36	M	102	12	13	left	scanner_02
+sub-24	22	F	108	45	14	left	scanner_02
+sub-25	30	M	71	4	15	right	scanner_02
+sub-26	35	M	105	2	13	right	scanner_02
+sub-27	24	F	82	42	14	left	scanner_02
+sub-28	37	M	115	14	14	left	scanner_01
+sub-29	29	M	111	49	15	right	scanner_01
+sub-30	31	F	114	18	12	right	scanner_02
+sub-31	29	F	104	5	14	right	scanner_02
+sub-32	50	M	96	14	11	left	scanner_02
+sub-33	34	M	84	6	10	left	scanner_02
+sub-34	24	F	98	24	13	right	scanner_02
+sub-35	41	M	107	17	12	left	scanner_01
+sub-36	23	F	87	29	15	right	scanner_02
+sub-37	36	F	121	40	14	right	scanner_02
+sub-38	18	F	125	23	12	left	scanner_01
+sub-39	22	F	70	10	15	right	scanner_02
+sub-40	36	M	118	23	12	left	scanner_02
+sub-41	41	F	121	22	13	right	scanner_01
+sub-42	36	F	80	13	13	left	scanner_02
+sub-43	33	F	114	42	14	right	scanner_01
+sub-44	31	M	97	17	15	right	scanner_01
+sub-45	21	F	91	44	14	right	scanner_01
+sub-46	28	M	87	43	14	left	scanner_01
+sub-47	30	M	79	41	14	right	scanner_01
+sub-48	44	F	83	4	14	left	scanner_01
+sub-49	37	F	118	38	13	left	scanner_01
+sub-50	18	F	91	40	12	left	scanner_02

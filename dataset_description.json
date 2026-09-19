@@ -1,5 +1,13 @@
 {
     "Name": "Synthetic Phantom Multi-Scanner Clinical Dataset",
     "BIDSVersion": "1.8.0",
-    "DatasetType": "raw"
+    "DatasetType": "raw",
+    "ClinicalAssessmentMeasures": [
+        "age",
+        "sex",
+        "wais_iv_fsiq",
+        "hamd_17",
+        "education",
+        "handedness"
+    ]
 }

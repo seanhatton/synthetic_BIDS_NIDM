@@ -6,7 +6,9 @@
   "EchoTime": 0.004,
   "RepetitionTime": 0.015,
   "SyntheticImage": true,
-  "Description": "Synthetic T1w GRE, PD*(1-exp(-TR/T1))*exp(-TE/T2), with unique multi-scale anatomical deformation.",
+  "Description": "Synthetic T1w GRE scan on Siemens Prisma",
   "ManufacturersModelName": "Prisma",
-  "Manufacturer": "Siemens"
+  "Manufacturer": "Siemens",
+  "FlipAngle": 9,
+  "MagneticFieldStrength": 3
 }

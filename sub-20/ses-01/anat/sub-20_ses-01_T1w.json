@@ -6,7 +6,9 @@
   "EchoTime": 0.003,
   "RepetitionTime": 0.008,
   "SyntheticImage": true,
-  "Description": "Synthetic T1w GRE, PD*(1-exp(-TR/T1))*exp(-TE/T2), with unique multi-scale anatomical deformation.",
+  "Description": "Synthetic T1w GRE scan on GE Discovery MR750",
   "ManufacturersModelName": "Discovery MR750",
-  "Manufacturer": "GE"
+  "Manufacturer": "GE",
+  "FlipAngle": 11,
+  "MagneticFieldStrength": 3
 }
